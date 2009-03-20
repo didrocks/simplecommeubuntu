@@ -1,0 +1,137 @@
+\chapitre{Découverte et installation}{Maintenant que nous sommes}{ un peu plus renseignés sur les fondements du \RefGlossaire{Système}{OS}{Système d'exploitation}{système d'exploitation} GNU/Linux, et plus particulièrement sur la distribution Ubuntu avec ses atouts et ses rares inconvénients, vous vous demandez sûrement comment l'obtenir et l'installer afin de l'essayer sans plus tarder ? Dans ce chapitre, nous vous indiquerons précisément où vous procurer Ubuntu, la tester sans rien toucher à vos disques durs, et ensuite, comment procéder à l'installation. Nous aborderons également un point essentiel : la cohabitation avec votre \RefGlossaire{Système}{OS}{Système d'exploitation}{système d'exploitation} Windows, et le partage de données entre ces systèmes.}
+\section{Le CD}
+\subsection{Obtenir le CD de Ubuntu}
+Notez qu'à partir de la version 6.06 de Ubuntu, c'en est fini des appellations de «~CD Live~» et de «~CD d'installation~», il n'y a plus qu'un seul CD regroupant les deux fonctionnalités, appelé «~Desktop CD~». Une session Live permet de tester une distribution Linux sans installer quoi que ce soit sur le disque dur. Le système est plus lent qu'une distribution Linux installée, mais au moins, vous ne touchez pas à votre système. Il existe plusieurs méthodes pour l'obtenir :
+\subsubsection{Pour les patients qui n'ont pas de connexion ADSL}
+Commandez votre CD sur le site «~Shipit~» d'Ubuntu à cette adresse : \url{http://shipit.ubuntu.com}. En procédant ainsi, vous recevrez un colis dans les 3 à 4 semaines qui suivent votre demande. Le Shipit est gratuit et vous permet de commander %la version LTS de Ubuntu Dapper Drake (6.06) et
+ la dernière version en date, Intrepid Ibex (8.10).\par
+Vous pouvez également venir à l'une de nos Ubuntu Party. En plus de bénéficier d'une ambiance très conviviale, vous pourrez discuter avec de véritables passionnés du Logiciel \AddIndex{Philosophie}{-}{Libre}{Libre}. Pour savoir où et quand se déroule cette fête près de chez vous, n'hésitez pas à aller visiter \url{http://www.ubuntu-party.com}.
+\subsubsection{Pour les impatients qui n'ont pas de connexion ADSL}
+Rendez-vous dans le G.U.L.\NotePage{Groupe d'Utilisateurs Linux} le plus proche de chez vous et demandez s'ils n'ont pas un CD de Ubuntu 8.10 Intrepix Ibex sous la main. Consultez la liste des G.U.L. francophones sur \url{http://www.aful.org/gul/liste} pour savoir où trouver ces associations. Ubuntu-fr, l'association francophone des utilisateurs d'Ubuntu en propose également en version intégralement francisée d'office -- plus d'information sur \url{http://www.ubuntu-fr.org}
+\subsubsection{Pour ceux qui ont une connexion ADSL}
+\begin{itemize}
+\item Rendez-vous sur le site officiel, dans la section download à cette adresse : \url{http://www.ubuntu.com/getubuntu/download}.
+\item Choisissez la version désirée --- traditionnellement le «~Desktop CD~» de la dernière version sauf si vous cherchez la stabilité sans faille et dans ce cas, vous prendrez la version marquée LTS\NotePage{Voir la remarque sur les différentes versions dans la section \ref{RefVersionUbuntu}}.
+\item Sélectionnez ensuite l'architecture correspondante à votre ordinateur. Cette architecture correspond la plupart du temps -- et c'est sûrement le cas si vous ne connaissez pas cette notion -- à celle indiquée sous le nom «~Standard personal~» (architecture i386, pour les processeurs 32 bits), «~64bit AMD and Intel computers~» (pour les processeurs 64 bits), ou enfin «~Sun UltraSPARC based~» (pour les possesseurs d'ordinateur Macintosh).
+\item Choisissez un des serveurs de téléchargement proposés. Le plus proche de chez vous fait généralement l'affaire.
+\item Si vous savez en quoi cela consiste, vérifiez si le fichier téléchargé n'est pas corrompu en comparant l'empreinte md5sum\NotePage{Une petite recherche Google vous aidera, le principe est très simple et vous évite de graver un cd inutilisable}. Si le fichier est corrompu re-téléchargez-le.
+\item Gravez le fichier .iso. ATTENTION IL FAUT UTILISER LA FONCTIONNALITÉ CORRESPONDANTE DE VOTRE LOGICIEL DE GRAVURE (le plus souvent nommée «~Graver une image~» ou «~Graver à partir d'une image disque~»), IL NE FAUT PAS EXTRAIRE LES FICHIERS DE L'ARCHIVE OU GRAVER DIRECTEMENT L'ISO DANS UN CD DE DONNÉES. Si vous avez le logiciel WinRAR\NotePage{Ou équivalent comme 7zip qui fait le même boulot «~librement~»}, le fichier .iso aura une \RefGlossaire{-}{-}{Icône}{icône} correspondant à ce logiciel car ce dernier peut extraire les fichiers de ce type d'archive, surtout n'utilisez pas cette possibilité pour faire un disque de données, votre CD ne serait pas bootable, c'est-à-dire qu'il ne pourra pas démarrer lorsque vous mettrez votre ordinateur sous tension.
+\end{itemize}
+\begin{nota}
+En indiquant qu'il n'y a plus de CD d'installation, en fait, je vous ai quelque peu menti\NotePage{Ah bah\dots{} ça commence bien !}. Il existe encore et toujours l'Alternate CD permettant une installation directe. Vous pourriez avoir besoin de ce CD dans principalement deux cas :\par
+\begin{itemize}
+\item Le «~Desktop CD~» ne démarre pas sur votre PC ou votre PC possède moins de 384 Mio\NotePage{Et non Mo, pour plus de renseignements sur ce point, voir \ref{RefMoMio}.} de \RefGlossaire{-}{Mémoire vive}{RAM}{RAM}. Dans ce cas, l'installation directe, toujours avec le même CD, peut s'imposer en sélectionnant au démarrage «~Installer Ubuntu~» et en abandonnant la section «~Session Live~» du point \ref{RefSessionLive}. Ubuntu demande un minimum de 256 Mio pour tourner correctement, une fois installé.
+\item Vous êtes un utilisateur avancé\NotePage{Pourquoi lisez-vous ce livre alors? :-)} et vous préférez avoir quelques options supplémentaires de configuration que ne propose pas l'installateur graphique\NotePage{Très simplifié, certes} du Live CD.
+\end{itemize}
+\end{nota}
+Vous pouvez également trouver ce CD sur le site officiel d'Ubuntu, au sein de la section download\NotePage{\url{http://www.ubuntu.com/getubuntu/download}} en cochant la case -- tout en bas -- «~Check here if you need the alternate desktop CD. This CD does not include the Live CD, instead it uses a text-based installer.~».\par
+Dans la suite de cette documentation, nous détaillerons l'installation pour le Desktop CD. Sachez cependant que l'installation par l'Alternate CD est très similaire, même si graphiquement, moins jolie.
+\subsection{J'ai mon CD, que faire maintenant ?}
+\subsubsection{Insérez le CD d'installation}
+Deux cas :
+\begin{itemize}
+\item Votre ordinateur est allumé, c'est facile : vous ouvrez le lecteur, insérez le CD, refermez et redémarrez en espérant que votre ordinateur est configuré pour démarrer à partir de votre lecteur CD-ROM (voir la section suivante).
+\item Votre ordinateur est éteint. Là, c'est relativement amusant car vous ne pouvez donc pas ouvrir votre lecteur de CD et pourtant le CD doit être en place au démarrage. La solution la plus simple est d'entrer dans le \RefGlossaire{Système}{-}{BIOS}{BIOS} pour avoir le temps de mettre le CD-ROM dans le lecteur avant que la procédure de démarrage ne se poursuive. Vous gagnerez ainsi du temps ;). Au démarrage de l'ordinateur, une ligne doit vous indiquer comment activer le «~setup~». Généralement il s'agit d'une des touches : \Touche{Suppr}\NotePage{\Touche{Del} en anglais}, \Touche{F2} ou encore \Touche{F8}.
+\end{itemize}
+\ImgCentree{4.45}{corps/chapitre2/img/ChoisirLecteur.png}{Vous pouvez choisir ici de démarrer sur le CD-ROM}{ImgChooseStart}
+\begin{nota}
+Une option vous permet aussi d'installer Ubuntu sous Windows : plus simple me direz-vous et cependant je vous le déconseille. En effet, Ubuntu fonctionnera alors en tant que  «~surcouche~» de Windows et consommera par conséquent énormément de \RefGlossaire{-}{RAM}{Mémoire vive}{mémoire vive}, sera plus lent et certaines incompatibilités matériels peuvent apparaître. Bref, rien ne vaut une bonne installation indépendante comme décrite dans la suite de ce chapitre.
+\end{nota}
+\subsubsection{Démarrez sur le CD}
+La \RefGlossaire{Système}{-}{Séquence de démarrage}{séquence de démarrage} est l'ordre dans lequel votre PC va consulter les périphériques à la recherche d'un \RefGlossaire{Système}{OS}{Système d'exploitation}{système d'exploitation}. Pour que l'installation commence, votre ordinateur doit activer le lecteur CD avant le disque dur. Si votre ordinateur n'affiche pas le logo Ubuntu après un redémarrage, alors que le CD-ROM se trouvait à l'intérieur de votre lecteur, rendez-vous dans le  \RefGlossaire{Système}{-}{BIOS}{BIOS} pour modifier cette séquence.\par
+\subsubsubsection{Modifier la séquence de démarrage}
+Sur les ordinateurs récents, il est souvent possible d'appuyer simplement sur la touche \Touche{F12} au démarrage pour pouvoir choisir le lecteur à activer en premier comme le montre la figure \ref{ImgChooseStart}. Sélectionnez CD-ROM/DVD Drive (ou toute ligne à l'orthographe proche), validez et vous vous ouvrirez les portes de l'univers Ubuntu. La figure \ref{ImgLiveCD1} est une copie de l'écran devant lequel vous devriez faire face à présent.\par
+Si cela ne fonctionne pas ou que vous ne vous sentez pas à même de configurer \RefGlossaire{Système}{-}{Séquence de démarrage}{l'ordre de démarrage}, Ubuntu peut effectuer cette tâche pour vous. Pour cela, insérez votre CD-ROM lorsque Windows est démarré. La fenêtre \ref{ImgHelpBootOnCD} apparaîtra alors et vous proposera plusieurs options en anglais. Choississez «~Démo and full installation~». Redémarrer la machine sera alors nécessaire et la troisième option «~Help me to boot from CD~» devra alors être sélectionné.
+\ImgCentree{8}{corps/chapitre2/img/HelpBootSurCD.png}{Vous pouvez choisir ici de démarrer sur le CD-ROM}{ImgHelpBootOnCD}
+\subsubsubsection{Premier écran et lancement d'Ubuntu}
+Un menu est automatiquement présenté sur lequel vous pourrez choisir la langue désirée par les touches fléchées puis en appuyant sur \Touche{Entrée}. Il vous est possible de revenir sur votre choix en appuyant sur la touche \Touche{F2}.\par
+Vous obtiendrez ainsi un menu et une interface en Français (ou autres) comme montré sur la figure \ref{ImgLiveCD2}.\par
+\ChoixDebutInstall
+À noter que vous n'aurez pas à faire cette action si vous utilisez le CD d'ubuntu-fr entièrement francisé, on l'a fait pour vous.
+\section{Session Live}
+\label{RefSessionLive}
+C'est parti, vous avez validé «~Essayer Ubuntu sans rien changer sur votre ordinateur~», une session live se lance. Soyez patient, la détection du matériel de votre ordinateur est en cours et une jolie barre de chargement est là pour vous faire patienter --- cf \ref{ImgLiveCD3}\ldots{}\par
+\ImgCentree{4.99}{corps/chapitre2/img/LiveCD3.png}{Démarrage du Desktop CD}{ImgLiveCD3}
+\begin{nota}
+Vous aurez noté l'option «~Installer Ubuntu~» sur l'image \ref{ImgLiveCD2}. Cette option correspond à un raccourci vous amenant directement à installer votre nouveau système d'exploitation sans essai au préalable. Le résultat est le même que la démarche plus complète que je vous donne -- hormis que vous ne pourrez pas configurer votre connexion à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} par ce moyen-ci.\\
+Les autres options permettent de vérifier la bonne intégration de votre CD-ROM, tester la mémoire vive de votre ordinateur ou encore de démarrer classiquement à partir du disque dur.
+\end{nota}
+Une fois l'interface graphique chargée, vous devriez retrouver l'écran comme présenté en image \ref{ImgLiveCD4}.\par
+\ImgCentree{12}{corps/chapitre2/img/LiveCD4.png}{L'interface graphique par défaut d'Ubuntu}{ImgLiveCD4}
+Profitez-en pour découvrir votre futur \RefGlossaire{Système}{OS}{Système d'exploitation}{système d'exploitation}. C'est plus lent que si vous utilisiez une version installée\NotePage{Vous n'utilisez que votre lecteur de CD-ROM et la mémoire vive de l'ordinateur} mais grâce à cela vous pouvez tester un système Ubuntu Linux et constater que tout fonctionne avant d'installer et de modifier quoi que ce soit dans votre ordinateur.
+\begin{nota}
+Je vous conseille, si vous avez accès à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}, de configurer ce dernier si cela n'est déjà fait automatiquement. En effet, vous aurez ainsi les dernières mises à jour si vous décidez d'installer Ubuntu sur votre ordinateur, et ce, dès l'installation ! Essayez de lancer Firefox -- la première \RefGlossaire{-}{-}{Icône}{icône} à côté du menu «~Système~» -- pour le vérifier. Cela devrait être le cas, si vous êtes connecté par un câble Ethernet,  avec ou sans\NotePage{Oui, vous avez bien lu, même «~sans~», grâce à \RefGlossaire{Réseau}{Connexion réseau}{Avahi}{Avahi} que l'on peut choisir comme indiqué en \ref{RefAvahi}.} attribution des adresses par \RefGlossaire{Réseau}{Connexion réseau}{DHCP}{DHCP}. Dans tous les cas, veuillez vous référer à la section d'installation du réseau en \ref{RefInstallReseau}.
+\end{nota}
+\section{L'installation}
+Un Live c'est beau, une installation c'est mieux ! Vous aimez Ubuntu et voulez l'installer ? Double-cliquez sur l'\RefGlossaire{-}{-}{Icône}{icône} «~Installer~» présente sur le bureau. L'installeur répondant au doux nom «~d'Ubiquity~» se lance\ldots{}
+\begin{attention}
+Petite remarque préalable sur les PCs tatoués.\label{RefTatouage}
+Le tatouage est un dispositif, imposé par Microsoft, interdisant à la version Windows livrée avec votre ordinateur d'être installée sur un autre ordinateur. Concrètement il s'agit de quelques octets placés sur la carte mère, sur le disque dur -- en particulier le \RefGlossaire{Système}{Zone d'amorçage}{MBR}{MBR}-- sur la partition de restauration Windows, sur les CD de réinstallation, voire aussi dans le \RefGlossaire{Système}{-}{BIOS}{BIOS}, et qui communiquent entre eux. Si l'un de ces éléments est changé, votre Windows ne pourra plus être réinstallé et au pire, plus démarrer non plus. Ce dispositif est utilisé par de grandes marques de constructeurs d'ordinateurs. Cela est d'autant plus vrai depuis l'arrivée de Windows VISTA.\\
+L'installation d'Ubuntu depuis le «~Desktop CD~» en dualboot avec Windows installe GRUB\NotePage{Le logiciel vous permettant de choisir quel \RefGlossaire{Système}{OS}{Système d'exploitation}{système d'exploitation} démarrer} sur le \RefGlossaire{Système}{Zone d'amorçage}{MBR}{MBR} du disque dur amorçable. Ce faisant, GRUB\NotePage{GRand Unified \RefGlossaire{Système}{Chargeur d'amorce}{Boot loader}{Boot loader}} écrase le \RefGlossaire{Système}{Zone d'amorçage}{MBR}{MBR}, vous perdez alors le tatouage, ce qui entraîne l'impossibilité de démarrer Windows. Si vous pensez que votre ordinateur est tatoué, des méthodes existent pour que vous ne perdiez pas votre Windows. Les procédures évoluant trop rapidement, elles ne peuvent actuellement être éditées dans un livre. Vous trouverez, ici, des liens vers la description de celles-ci : \url{http://doc.ubuntu-fr.org/windows/pc_tatoue} et \url{http://doc.ubuntu-fr.org/installation/multiboot_tatoo}.
+\end{attention}\par
+Ce point étant clarifié, c'est parti pour une installation.
+\subsection{Bienvenue}
+Choisissez en premier lieu la langue d'installation comme montré en figure \ref{ImgInstall1}. Jusqu'ici, rien de bien compliqué. Quoi que\ldots{}
+\ImgCentree{8.78}{corps/chapitre2/img/Install1.png}{Choix de la langue}{ImgInstall1}
+\subsection{Emplacement géographique}
+Choisissez ici votre fuseau horaire. Si ce dernier n'est pas le bon, cliquez sur «~Ville sélectionnée~» ou sur la ville la plus proche de la carte comme Paris pour la France métropolitaine. Si vous avez Windows sur le même ordinateur, je vous encourage à lire la section \ref{RefHeureNTP}.
+\ImgCentree{8.78}{corps/chapitre2/img/Install2.png}{Choix du fuseau horaire}{ImgInstall2}
+\subsection{Disposition du clavier}
+Par défaut, la sélection se porte sur un type de clavier par défaut comme «~France~»\NotePage{En réalité, il s'agit d'une version dérivée du clavier fr-latin9} -- ce choix pouvant varier selon votre configuration, bien entendu -- qui correspond à un clavier français\NotePage{Clavier azerty} équipé de la touche «~\texteuro{}~» sur la touche E, ce qui devrait donc être la bonne disposition à moins que vous ne soyez Suisse ou Québécois. Si vous résidez en Belgique, vous devrez aussi porter votre choix sur ce clavier. Pour être sûr de ne pas vous tromper, vous pouvez tester la configuration choisie en tapant des caractères spéciaux dans l'espace prévu à cet effet en bas de la fenêtre.
+\ImgCentree{8.78}{corps/chapitre2/img/Install3.png}{Choix du type de clavier}{ImgInstall3}
+\begin{nota}
+La disposition «~France - (Legacy) Alternative~» permet entre autres de taper «~œ~» à la place de «~²~». Ces différences pourront s'avérer intéressantes pour certains.
+\end{nota}
+\subsection{Sélectionner un disque / Préparer l'espace disque}
+\label{RefFormatPartition}
+Tout d'abord, sachez qu'il existe trois procédures automatisées à cette étape :
+\begin{itemize}
+\item Vous pouvez redimensionner une partition de votre disque dur pour dégager assez d'espace afin d'installer votre système Ubuntu. Vous aurez alors accès à une petite réglette sur laquelle vous pourrez redimensionner une partition Windows. N'effectuez cette opération que si vous avez récemment défragmenté votre disque dur Windows.
+\item Si vous souhaitez assigner un disque complet à GNU/Linux sur la machine, il vous suffit ici de sélectionner : «~Assisté - utiliser un disque entier~». Vous pourrez ensuite choisir quel disque dur utiliser.
+\item Si vous avez préalablement dégagé un espace libre sur votre disque dur, vous pourrez sélectionner «~Assisté - utiliser le plus grand espace disque disponible~»
+\end{itemize}\par
+\ImgCentree{8.78}{corps/chapitre2/img/Install4.png}{Choix du mode de partitionnement}{ImgInstall4}
+Dans les autres cas, il va falloir en passer par le partitionnement manuel. Étape que beaucoup redoutent. Mais n'ayez crainte, l'installateur Ubuntu propose une interface graphique qui simplifie grandement la chose.\par
+Que faut-il faire pour partitionner correctement son disque ? Cela reste assez complexe à résumer puisque tout dépend de vos besoins et de votre matériel. Toutefois, voici quelques conseils :
+\begin{itemize}
+\item Si vous souhaitez faire cohabiter Windows et Linux, vous devrez dégager un espace libre en redimensionnant l'une des partitions de Windows comme indiqué en \ref{RefKeepWindows}.
+\item Vous devez créer ensuite deux partitions ou plus :
+\Partitionnement
+\begin{itemize}
+\item La partition principale symbolisée par «~\Chemin{/}\NotePage{Appelé «~slash~», root, ou encore racine du système}~», qui accueillera le système et qui doit être au minimum de 2 Gio\NotePage{Et non Go, une fois de plus, cf. \ref{RefMoMio}.}. Si vous prévoyez de n'y mettre que vos programmes, une taille entre 7 et 10 Gio sera amplement suffisante. Si vous souhaitez également y placer vos données personnelles, et donc ne pas créer de partition \Chemin{/home} comme décrit plus loin, 16 Gio constitueront un minimum.
+\item La partition d'échange, appelée «~swap~» : 256 Mio est le minimum conseillé. La règle habituelle est de créer une partition swap égale au double de la taille de la \RefGlossaire{-}{RAM}{Mémoire vive}{mémoire vive}\NotePage{Cette mémoire vive est également appelée \RefGlossaire{-}{Mémoire vive}{RAM}{RAM}}. Ainsi, avec 512 Mio de \RefGlossaire{-}{Mémoire vive}{RAM}{RAM}, il faudrait créer une partition swap de 1Gio. Si vous manquez d'espace sur votre disque dur, une swap comprise entre 256 Mio et 1 Gio fera très bien son travail. Si vous souhaitez utiliser les fonctionnalités d'hibernation, il faut alors obligatoirement que la taille de la swap soit au moins égale à celle de la \RefGlossaire{-}{Mémoire vive}{RAM}{RAM}.
+\item Enfin, la partition utilisateur nommé «~\Chemin{/home}~», n'est pas une nécessité\NotePage{D'ailleurs, le partitionnement automatique ne la crée pas}. Cependant, elle offre l'avantage de pouvoir réinstaller le système entièrement -- \Chemin{/} et swap -- sans avoir à sauvegarder préalablement les données des utilisateurs qui resteront «~à l'abri~» dans la partition \Chemin{/home}. Je vous conseille d'en créer une si vous effectuez un partitionnement manuel. Toutes vos données seront enregistrées sur cette partition. Par conséquent, dimensionnez-la en fonction de vos besoins.
+\item Bien entendu, vous êtes libre de créer autant d'autres partitions que vous le souhaitez, si vous savez ce que vous faites.
+\end{itemize}
+\begin{nota}
+FAT32 et NTFS sont des systèmes de fichiers utilisés par Windows. Un format de fichiers définit, en quelque sorte, la manière dont sont classées et enregistrées vos données sur le disque. Les partitions Linux utilisent, en général, le format EXT3 pour les données / logiciels et SWAP pour la partition swap. N'étant pas sectaire, Ubuntu peut aussi bien lire sur les partitions FAT32 que NTFS, alors que Windows ne sait pas lire et/ou écrire au format EXT3\ldots{} Vous comprendrez donc rapidement qu'il vous faut utiliser les partitions en FAT32 ou en NTFS de Windows pour partager des données entre Ubuntu et Windows. Vous pouvez alors penser à ce stade que le plus simple consiste alors à mettre directement les partitions \Chemin{/home} et \Chemin{/} d'Ubuntu sur une partition au format FAT32 ou NTFS\dots{} Cela n'est pas conseillé car Ubuntu n'est pas optimisé pour ces types de partition et il préfère son propre système de fichiers\NotePage{Élémentaire mon cher Watson !}. De plus, si vous passez outre mes recommendations et mettez \Chemin{/home} et \Chemin{/} en FAT32 ou en NTFS, Windows va «~mettre le bazar\NotePage{Windows enregistre des fichiers cachés et fragmente énormément ses disques durs, ce que ne fait pas GNU/Linux}~» dans les données de GNU/Linux. Il faut donc, de préférence, que vous créiez une partition de partage séparée, en FAT32 ou en NTFS.
+\end{nota}
+\end{itemize}\par
+Il vous faudra créer les partitions à l'aide de «~Nouvelle partition~» et indiquer quelles partitions correspondent à «~\Chemin{/}~», «~swap~» et éventuellement les partitions supplémentaires décrites précédemment comme «~\Chemin{/home}~». Vous pouvez également cocher une case indiquant que vous désirez formater la partition --- opération obligatoire si vous venez de la créer. Pour plus d'informations sur les dossiers et la structure d'un système GNU/Linux, se référer à la section \ref{RefArboFichiers}.\par
+Vous pouvez également redimensionner les partitions existantes en les éditant. Un clic sur «~Valider~» et un message vous demandera s'il faut appliquer immédiatement les modifications déjà effectuées. Il ne restera qu'à confirmer !
+\begin{nota}
+Il sera possible d'accéder aux partitions des autres \RefGlossaire{Système}{OS}{Système d'exploitation}{systèmes d'exploitation} comme Windows, si vous les avez conservés, comme expliqué à la section \ref{AutrePartitions}.
+\end{nota}
+\subsection{Votre identité}
+\AddIndex{-}{Login}{Identifiant}{-}
+\label{InstallIdentite}
+Il faut désormais indiquer votre nom, votre pseudonyme\NotePage{Surnom qui correspondra à votre \RefGlossaire{-}{Login}{Identifiant}{identifiant}}, un mot de passe et le nom que vous souhaitez donner à votre ordinateur. Concernant le mot de passe, seules des étoiles apparaîtront à l'écran pour empêcher quiconque de le lire par dessus votre épaule. Pour être sûr que vous n'avez pas fait de fautes de frappe, il vous est demandé de le saisir une seconde fois. Une petite case vous permet de vous connecter automatiquement au démarrage de votre ordinateur. Ceci est conseillé si vous êtes l'unique utilisateur de votre ordinateur -- vous ne verrez pas alors l'écran d'accueil présenté à la section \ref{PremiereConnexion}, sinon, utilisez un compte par personne qui utilisera votre machine. Il s'agit là d'un des concepts forts des UNIX et dérivés et un grand avantage à l'utilisation. Alors, ne passez pas à côté de cette chance, vraiment.\par
+\ImgCentree{8}{corps/chapitre2/img/Nouvel_Utilisateur.png}{Création d'un nouvel utilisateur}{ImgNouvelUtilisateur}
+\subsection{Migration des données depuis Windows vers Ubuntu}
+Si votre disque dur comporte une version de Microsoft Windows, il vous est possible de récupérer certaines données depuis votre partition Windows comme vos favoris d'Internet Explorer, vos marques-pages Firefox, votre fond d'écran, vos contacts AOL et Yahoo par exemple. Il faudra alors lier ces paramètres à un compte. Les opérations à effectuer pour la création d'un compte sont similaires à celles de l'étape suivante. Si vous voulez sauter cette étape représentée en \ref{ImgMigrationAssistant}, appuyez alors directement sur «~Suivant~».\par
+\ImgCentree{8}{corps/chapitre2/img/Migration_Assistant.png}{Assistant de migration de données}{ImgMigrationAssistant}
+\subsection{Prêt à installer}
+Pour finir, l'installeur «~Ubiquity~» vous fait un récapitulatif de ce que vous avez sélectionné.\par
+\ImgCentree{6.78}{corps/chapitre2/img/Verif_Avant_Install.png}{Confirmation avant installation}{ImgVerifAvantInstall}
+\begin{nota}
+En cliquant sur «~Avancé\dots{}~», vous avez également la possibilité de choisir où installer GRUB. Si vous ne savez pas ce que cela signifie et que votre PC n'est pas tatoué\NotePage{Se référer à l'encart sur le tatouage des PC, section \ref{RefTatouage}}, c'est que la valeur par défaut vous conviendra très bien ! De même, vous pouvez participer aux statistiques d'utilisation des logiciels -- veuillez vous référer à la note de la section \ref{RefSourceMAJ} de la page \pageref{RefSourceMAJ} -- et configurer directement un proxy.
+\ImgCentree{5.78}{corps/chapitre2/img/Choix_Grub.png}{Installation particulière de GRUB}{ImgChoixGrub}
+\end{nota}
+Vérifiez et validez.\par
+Il s'ensuit une longue étape où l'ensemble des sélections précédentes sont appliquées : création et initialisation des partitions, installation du système, configuration des langues, du clavier\ldots{} Cette procédure, d'une durée variable, dépend de la vitesse de votre lecteur CD-ROM et des performances globales de votre ordinateur.\par
+\ImgCentree{5}{corps/chapitre2/img/Installation_En_Cours.png}{Installation en cours, prenez un café !}{ImgInstallInProgress}
+Si votre connexion \RefGlossaire{-}{L'Internet}{Internet}{Internet} est active, les localisations françaises des logiciels seront téléchargées et installées. Ces opérations peuvent prendre du temps\NotePage{Le jour de la sortie de Gutsy (la 7.04) je suis resté plus de 50 minutes sur «~Examen du miroir~»}, notamment si votre connexion est lente et/ou les serveurs d'Ubuntu surchargés. Vous pouvez arrêter la procédure d'installation des traductions en cliquant à tout moment sur «~Ignorer~».\par
+\ImgCentree{5}{corps/chapitre2/img/Telechargement_Paquets.png}{Installation de la localisation française}{ImgInstallFr}
+Ceci terminé, vous aurez la possibilité de continuer à travailler sur votre session Live\NotePage{Attention, le système est toujours plus lent qu'un système installé et rien ne sera sauvegardé sur le disque dur}, ou de redémarrer -- avec demande de retrait du CD-ROM -- afin que votre ordinateur lance le nouveau système fraîchement installé. Il ne vous reste qu'à saisir le «~pseudo~» et le mot de passe que vous aviez fournis précédemment et\ldots{} en voiture\NotePage{Quoi ? Il ne s'agit pas d'automobile ? On m'aurait menti ? :-)} !!!\par
+\ImgCentree{5}{corps/chapitre2/img/Installation_Terminee.png}{Redémarrer ?}{ImgInstall13}
+Était-ce vraiment compliqué ? \ldots{}

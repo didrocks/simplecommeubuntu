@@ -1,0 +1,4 @@
+delim_0 ""
+preamble "\n\\begin{leglossaire}"
+postamble "\n\\end{leglossaire}"
+keyword "\\glossaryentry"

@@ -1,0 +1,614 @@
+%% Informations générales
+\NeedsTeXFormat{LaTeX2e}[1999/01/01]
+\ProvidesPackage{framabook/framabook}[2007/09/04]
+
+%% Déclaration des options
+%\DeclareOption{option}{action}
+\DeclareOption{versionpdf}{\versionpdftrue} % pour savoir si l'on utilise une version pdf
+\DeclareOption{versionpapier}{\versionpdffalse} % pour savoir si l'on utilise une version papier
+\newif\ifversionpdf
+\DeclareOption*{\PassOptionsToPackage\CurrentOption{inputenc}}% l'option correpond au format d'encodage
+\ProcessOptions
+
+%% Chargement des extensions
+\RequirePackage[pdftex]{graphicx}
+\RequirePackage[english,french]{babel}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\RequirePackage{textcomp}
+\RequirePackage{inputenc}
+\RequirePackage{verbatim} 
+%\RequirePackage{ae,aecompl,aeguill}
+\RequirePackage{xcolor}
+\RequirePackage{fancyhdr}
+\RequirePackage{framed}
+\RequirePackage{fancybox}
+\RequirePackage{wrapfig}
+\RequirePackage[pdftex]{geometry}
+\RequirePackage{subfigure}
+\RequirePackage{afterpage} % permet de placer des images plus intelligemment
+\RequirePackage{multirow}
+\RequirePackage{framabook/picins}
+
+\RequirePackage{ifthen}
+\RequirePackage{calc}
+\RequirePackage{makeidx}
+
+
+\RequirePackage{main/VosImagesMultiples}
+%% Mise en page et commandes à exécuter automatiquement
+	% On augmente les espaces entre paragraphes pour tout le livre	
+\setlength{\parskip}{4pt plus 4pt minus 2pt}
+	
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\renewcommand{\dbltopfraction}{.66}
+\renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+
+% Format du livre
+\geometry{
+	paperwidth=150mm, paperheight=200mm,
+	left=15mm,top=15mm,
+	width=120mm, height=160mm,
+	headheight=6mm,headsep=4mm,
+	footskip=10mm,
+%	marginparsep=4mm,
+%	marginparwidth=15mm
+}
+	% Insertion de l'image sur une page paire vide avant un nouveau chapitre
+\renewcommand{\cleardoublepage}{
+	\clearpage % termine la page précédente et force l'affichage des toutes les images
+	\ifodd
+		\c@page
+	\else
+		\hbox{}
+		\vspace{\stretch{1}}
+		\begin{figure}[h!]
+			\begin{center}
+				\includegraphics[width=7.48cm]{main/Logo_Livre.png}
+			\end{center}
+		\end{figure}
+		\vspace{\stretch{1}}
+		\thispagestyle{empty}%page vide (sans en-tête ni pied de page)
+		\newpage
+	\fi
+}
+
+	% Personnalisation des en-têtes en pied de page
+\pagestyle{fancy} % on utilise le style d'en-tête fancy
+\fancyhf{} % on efface tout
+% le cas de la première page d'un chapitre
+\fancypagestyle{plain}{%
+    \fancyhf{}% on efface tout
+    \if@frontmatter% introduction
+       \fancyfoot[C]{\textsc{\thepage}}% numéro en bas de la page en petites capitales
+    \else
+       \fancyfoot[C]{\thepage}% numéro en bas de la page
+    \fi
+	% on efface le trait de l'en-tête
+	\renewcommand{\headrulewidth}{0pt}%
+	\makeatother
+}
+	% l'intro ne contient pas d'en-tête et les pages sont numérotées en roman majuscule
+\newif\if@frontmatter
+\renewcommand\frontmatter{%
+  \cleardoublepage
+  \@frontmattertrue
+  \@mainmatterfalse
+	% on fait le trait du pied de page :
+	\renewcommand{\headrulewidth}{0pt}%
+	\renewcommand{\footrulewidth}{1pt}
+	% pied de page :
+	\let\indexORI\index% sauvegarde de la définition initiale
+	\renewcommand{\index}[1]{\indexORI{##1|textsc}}
+	\fancyfoot[C]{\textsc{\thepage}} % numéro de page au centre, en petites capitales
+	\pagenumbering{roman}% numérotation en romain
+}
+\renewcommand\mainmatter{%
+	 \cleardoublepage
+	 \let\index\indexORI% pour revenir à la définitinon initiale
+	%on fait le trait de l'en-tête :
+	\renewcommand{\headrulewidth}{1pt}  
+	% en-tête :
+	\fancyhead[LE]{\nouppercase\rightmark}%nom de la section en minuscule
+	\fancyhead[RO]{\nouppercase\leftmark}%nom du chapitre en minuscule
+	\@mainmattertrue
+	\@frontmatterfalse
+	 \pagenumbering{arabic}% num\u00e9rotation en chi\ufb00res arabes
+}
+\renewcommand\backmatter{%
+	\cleardoublepage
+	\@frontmatterfalse
+  	\@mainmatterfalse
+}
+
+	% Style et commandes de création du glossaire
+\makeglossary
+\newcommand{\boiteentreeglossaire}[1]{%
+	\parbox[b]{\labelwidth}{%
+    \setlength{\fboxsep}{3pt}%
+    \setlength{\fboxrule}{.4pt}%
+    \shadowbox{\sffamily#1}\\\hfill\mbox{}}}
+	\newenvironment{leglossaire}{\begin{list}{}{%
+      \setlength{\labelwidth}{.5\textwidth}%
+      \setlength{\labelsep}{-.8\labelwidth}%
+      \setlength{\itemindent}{\parindent}%
+      \setlength{\leftmargin}{25pt}%
+      \setlength{\rightmargin}{0pt}%
+      \setlength{\itemsep}{.8\baselineskip}%
+      \renewcommand{\makelabel}[1]{\boiteentreeglossaire{##1}}}}
+{\end{list}}
+\newcommand{\pasdenumerodepage}[1]{}% Permet de supprimer l'argument des pages (système ingénieux, merci à son auteur !)
+	
+	\newcommand{\entreeglossaire}[2]{%
+	\glossary{[#1] #2|pasdenumerodepage}}
+
+	\newcommand{\printglossary}[1]{%
+    \chapter*{Glossaire}
+	\label{chap-glossaire}
+    \markboth{Glossaire}{Glossaire}% entite de page
+    % insertion dans la table des matières :
+    \addcontentsline{toc}{chapter}{Glossaire}
+    % insertion des entrées de glossaire :
+    \InputIfFileExists{#1}{%
+    	\typeout{Données du glossaire}}{%
+    	\typeout{Pas de fichier glossaire.tex}%
+	}
+     % insertion du fichier. glx
+     \InputIfFileExists{\jobname.glx}{%
+     	\typeout{Glossaire trié}}{%
+     	\typeout{Pas de fichier \jobname.glx}%
+	 }
+}
+
+
+
+	% Double lignes tableaux = lignes plus larges
+\setlength{\doublerulesep}{\arrayrulewidth}
+
+	% Index
+\renewcommand\indexspace{\par \vskip 20pt plus5pt minus3pt\relax}
+
+	% Mettre les hyperliens en couleur si la sortie est une version pdf
+\ifversionpdf
+	\RequirePackage[plainpages=false, pdftex=true, hyperindex=true, colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
+\else
+	\RequirePackage[hypertex=true, hyperindex=true, colorlinks=false]{hyperref}
+\fi
+
+\FrenchFootnotes % pour les notes de bas de page
+\AddThinSpaceBeforeFootnotes % pour les puristes (donc tout le monde!) qui veulent une espace fine entre le mot et l'appel de note 
+
+
+%% Définition des commandes
+	% Presentation des parties
+\newcommand\TitreIntro[1]{%
+	\section*{#1}%
+	\addcontentsline{toc}{section}{#1}%
+}
+\newcommand\chapitre[3]{%
+	\chapter{#1}\par%
+	\lettrine{#2}#3\par\newpage%
+}
+
+\newlength{\indletB}
+\newlength{\larligB}
+\newlength{\indletH}
+\newlength{\larligH}
+\setlength{\indletB}{.8cm}% au pif
+\setlength{\larligB}{\textwidth-\indletB}
+\setlength{\indletH}{1.5cm}% au pif
+\setlength{\larligH}{\textwidth-\indletH}
+\DeclareFixedFont{%
+  \lettrinefont}{T1}{ppl}{m}{n}{2\baselineskip}
+\newcommand{\lettrine}[1]{%
+  \creerlettrine#1/%
+  \addtolength{\indletB}{3pt}% pour avoir un peu d'espace
+  \setlength{\larligH}{\textwidth-\indletH}%
+  \setlength{\larligB}{\textwidth-\indletB}%
+  \parshape=3%
+  \indletH\larligH\indletB\larligB0cm\textwidth%
+  \noindent\hspace{-\indletH}%
+  \raisebox{-\baselineskip}[0pt][0pt]{\usebox{\lalettrine}}}
+\newsavebox{\lalettrine}% une boite pour la lettrine
+\def\creerlettrine#1#2/{%
+  \savebox{\lalettrine}{%
+    {\lettrinefont#1}\raisebox{\baselineskip}{\textsc{#2}}}%
+  \settowidth{\indletB}{{\lettrinefont#1}}%
+  \settowidth{\indletH}{\usebox{\lalettrine}}}
+
+
+	% Presentation des chapitres
+\DeclareFixedFont{\chapnumfont}{T1}{phv}{b}{n}{80pt}
+\DeclareFixedFont{\chapchapfont}{T1}{phv}{b}{n}{16pt}
+\DeclareFixedFont{\chapfont}{T1}{phv}{b}{n}{24.88pt}
+\renewcommand{\@makechapterhead}[1]{%
+ 	\begin{cadrechap}
+    \if@mainmatter
+{\flushright\chapchapfont{}Chapitre\\\vspace{1cm}\chapnumfont\thechapter\par\vspace{2cm}\chapfont#1\par}
+    \else
+    	\mbox{}\hfill{\chapfont#1}
+    \fi
+	\vspace{2cm}
+  \end{cadrechap}
+\vspace{1cm}}
+\newenvironment{cadrechap}%
+{\begin{list}{}{%
+      \setlength{\leftmargin}{0pt}%
+      \setlength{\rightmargin}{-0.5cm}% on se met au large
+      \setlength{\itemindent}{0pt}%
+      \setlength{\labelsep}{0pt}%
+    }\item}%
+{\end{list}}
+
+% Descriptions des chapitres dans le sommaire
+\newcommand{\titredescriptionchapitre}[1]{%
+  \parbox[b]{\labelwidth}{%
+    \setlength{\fboxsep}{3pt}%
+    \setlength{\fboxrule}{.4pt}%
+    \mbox{\sffamily#1}\\\hfill\mbox{}}}
+\newenvironment{DescriptionChapitres}{\begin{list}{}{%
+      \setlength{\labelwidth}{.5\textwidth}%
+      \setlength{\labelsep}{-.8\labelwidth}%
+      \setlength{\itemindent}{\parindent}%
+      \setlength{\leftmargin}{25pt}%
+      \setlength{\rightmargin}{0pt}%
+      \setlength{\itemsep}{.8\baselineskip}%
+      \renewcommand{\makelabel}[1]{\titredescriptionchapitre{##1}}}}
+  {\end{list}}
+	
+	% Presentation des sections
+\setcounter{tocdepth}{4}
+\newlength{\sectiontitleindent}
+\newlength{\subsectiontitleindent}
+\newlength{\subsubsectiontitleindent}
+\newlength{\subsubsubsectiontitleindent}
+\newcounter{subsubsubsection}
+\@addtoreset{subsubsubsection}{subsubsection}
+\renewcommand{\thesubsubsubsection}{\thesubsubsection.\arabic{subsubsubsection}}
+\setlength{\sectiontitleindent}{-0.5cm}
+\setlength{\subsectiontitleindent}{-.37cm}
+\setlength{\subsubsectiontitleindent}{-.23cm}
+\setlength{\subsubsubsectiontitleindent}{-.10cm}
+%  font PostScript Avant-Garde en gras condensé
+\newcommand{\sectionfont}{%
+	\fontencoding{\encodingdefault}%
+	\fontfamily{pag}%
+	\fontseries{bc}%
+	\fontshape{n}%
+\selectfont}
+\renewcommand{\section}{%
+ 	\@startsection%
+ 	{section}%
+ 	{1}%
+ 	{\sectiontitleindent}%
+ 	{-3.5ex plus -1ex minus -.2ex}%
+ 	{2.3ex plus.2ex}%
+{\sectionfont\Large}}
+\renewcommand{\subsection}{%
+ 	\@startsection%
+ 	{subsection}%
+ 	{2}%
+ 	{\subsectiontitleindent}%
+ 	{-3ex plus -1ex minus -.2ex}%
+ 	{1.8ex plus.2ex}%
+{\sectionfont\large}}
+\renewcommand{\subsubsection}{%
+ 	\@startsection%
+ 	{subsubsection}%
+ 	{3}%
+ 	{\subsubsectiontitleindent}%
+ 	{-2.5ex plus -1ex minus -.2ex}%
+ 	{1.2ex plus.2ex}%
+{\sectionfont\normalsize}}
+\def\subsubsubsection{%
+ 	\@startsection%
+ 	{subsubsubsection}%
+ 	{4}%
+ 	{\subsubsubsectiontitleindent}%
+ 	{-2ex plus -1ex minus -.2ex}%
+ 	{0.7ex plus.2ex}%
+{\sectionfont\small}}
+\def\subsubsubsectionmark#1{}
+\def\l@subsubsubsection{\@dottedtocline%
+	{4}%
+	{12em}%
+	{5em}%
+}
+\def\toclevel@subsubsubsectionmark{4} % pour hypperef (qu'il prenne en compte le niveau 4)
+
+	% Insertion d'une image dans un paragraphe
+	% 1 : droite/gauche, 2 : largeur de l'image, 3 : chemin de l'image
+\newlength{\largeurboite}%
+\newcommand{\ImgPar}[3]{%
+\parpic[#1]{\includegraphics[width=#2cm]{#3}}%
+}
+	
+	% Insertion d'une image centrée
+	% 1 : largeur, 2 : chemin vers l'image, 3 : sous-titre de l'image, 4 ref de l'image
+\newcommand{\ImgCentree}[4]{%
+	\begin{figure}[h!]%
+		\begin{center}%
+			\includegraphics[width=#1cm]{#2}%
+			\caption{#3}%
+			\label{#4}%
+		\end{center}%
+	\end{figure}%
+}
+
+	% environnement remerciements
+\newenvironment{Remerciements}{%
+%\setlength{\parskip}{2\baselineskip}}%
+}{\vspace{\stretch{1}}\centering%
+		{\fontsize{12}{36}\selectfont\MakeAuteur}\par\vspace{\stretch{4}}%
+}
+
+	% environnement de citation
+\newenvironment{citationlongue}[1]{%
+ \definecolor[named]{shadecolor}{rgb}{0.90,0.90,0.90}%
+ \begin{shaded}%
+	\begin{center}%
+		\textbf{#1}%
+	\end{center} \par%
+}{\end{shaded}\par}	
+
+	% environnement de notes
+\newlength{\largeurnota}
+\newlength{\paddingnota}
+\newlength{\indentationnota}
+\newlength{\largeurlignenota}
+\setlength{\largeurnota}{23pt}
+\setlength{\paddingnota}{3pt}
+\newenvironment{nota}{%
+  \begin{list}{}{%
+   	   \setlength{\labelsep}{0pt}%
+		\setlength{\rightmargin}{15pt}}
+		\item%
+   		 \setlength{\indentationnota}{%
+ 		 \@totalleftmargin+\largeurnota+\paddingnota}%
+		 \setlength{\largeurlignenota}{%
+	      \linewidth-\largeurnota-\paddingnota}%
+    	\parshape=3%
+	   	 \indentationnota\largeurlignenota%
+  		\indentationnota\largeurlignenota%
+  		\@totalleftmargin\linewidth%
+		  \raisebox{-\largeurnota+1.7ex}[0pt][0pt]{%
+		    \makebox[0pt][r]{%
+      \includegraphics[width=\largeurnota]{framabook/img/note.png}%
+      \hspace{\paddingnota}}}%
+	  \ignorespaces}{%
+\end{list}}
+
+	% environnement attention
+\newenvironment{attention}{%
+  \begin{list}{}{%
+   	   \setlength{\labelsep}{0pt}%
+		\setlength{\rightmargin}{15pt}}
+		\item%
+   		 \setlength{\indentationnota}{%
+ 		 \@totalleftmargin+\largeurnota+\paddingnota}%
+		 \setlength{\largeurlignenota}{%
+	      \linewidth-\largeurnota-\paddingnota}%
+    	\parshape=3%
+	   	 \indentationnota\largeurlignenota%
+  		\indentationnota\largeurlignenota%
+  		\@totalleftmargin\linewidth%
+		  \raisebox{-\largeurnota+1.8ex}[0pt][0pt]{%
+		    \makebox[0pt][r]{%
+      \includegraphics[width=\largeurnota]{framabook/img/attention.png}%
+      \hspace{\paddingnota}}}%
+	  \ignorespaces}{%
+\end{list}}
+
+	%sommaire
+\newcommand{\sommaire}{%
+  \chapter*{Sommaire}
+  \@starttoc{som}}
+% sauvegarde de l'originale
+\let\aclORIG\addcontentsline
+% redéfinition
+\renewcommand{\addcontentsline}[3]{%
+  \aclORIG{#1}{#2}{#3}% appel de l'originale
+  \ifthenelse{% on insère sections, chapitres et parties
+    \equal{#2}{section} \or \equal{#2}{chapter} \or \equal{#2}{part}}{%
+    \aclORIG{som}{#2}{#3}}{}}
+
+
+	% Élement de glossaire avec insertion dans l'index : 1er élément (optionnel) : catégorie de l'index, 2ème (optionnel) : terme 1 de l'index, 3ème élément : terme 2 de l'index, 4ème élément : terme à afficher.
+\newcommand\RefGlossaire[4]{%
+	#4$^*$%
+	\ifthenelse{\not\equal{#1}{-}}{% si catégorie, on l'ajoute à l'index sous catégorie
+		\protect\index{#1!#3}%
+	}{}%
+	\protect\index{#3}%
+	\ifthenelse{\not\equal{#2}{-}}{% si présence d'un second terme d'indexage
+		\ifthenelse{\not\equal{#1}{-}}{% si catégorie, on l'ajoute à l'index sous catégorie
+			\protect\index{#1!#2}%
+		}{}%		
+		\protect\index{#2}%
+	}{}%
+}
+	% Élement de l'index : 1er élément (optionnel) : catégorie de l'index, 2ème (optionnel) : terme 1 de l'index, 3ème élément : terme 2 de l'index, 4ème élément : terme à afficher.
+\newcommand\AddIndex[4]{%
+	\ifthenelse{\not\equal{#4}{-}}{#4}{}%
+	\ifthenelse{\not\equal{#1}{-}}{% si catégorie, on l'ajoute à l'index sous catégorie
+		\protect\index{#1!#3}%
+	}{}%
+	\protect\index{#3}%
+	\ifthenelse{\not\equal{#2}{-}}{% si présence d'un second terme d'indexage
+		\ifthenelse{\not\equal{#1}{-}}{% si catégorie, on l'ajoute à l'index sous catégorie
+			\protect\index{#1!#2}%
+		}{}%		
+		\protect\index{#2}%
+	}{}%
+}
+
+
+	% Touche clavier
+\newcommand\Touche[1]{\Ovalbox{#1}}
+	% Mets le prénom de la personne suivi du nom en petites capitales
+\newcommand\Personne[2]{#1~\textsc{#2}}
+	% Mets en évidence une commande
+\newcommand\Commande[1]{\textbf{#1}}
+	% Note de pied de page
+\newcommand\NotePage[1]{\footnote{#1}}
+	% Mise en présentation "chemin"
+\newcommand\Chemin[1]{\NoAutoSpaceBeforeFDP\textit{#1}\AutoSpaceBeforeFDP}
+	% Mettre une flèche (l'espace de fin est important, sinon bouffé)
+\newcommand\FlecheDroite{$\Rightarrow$ }
+	% Mise en présentation "code"
+\newcommand\Code[1]{%
+	\begin{breakbox}%
+		\begin{otherlanguage}{english}
+			\textit{#1}%
+		\end{otherlanguage}
+	\end{breakbox}%
+}
+\newcommand\IndicCesure{%
+\discretionary{}{}{}%
+}
+
+	% Commandes pour stocker les données du livre
+\newcommand\Titre[1]{%
+	\def\titre{#1}%
+	\title{#1}%
+}
+\newcommand\MakeTitre{%
+	\titre%
+}
+\newcommand\Auteur[2]{%
+	\def\prenomauteur{#1}%
+	\def\nomauteur{#2}%
+	\author{#1 #2}%
+}
+\newcommand\MakeAuteur{%
+	\Personne{\prenomauteur}{\nomauteur}%
+}
+
+%%%% debut macro %%%%
+% eclbkbox.sty by Hideki Isozaki, 1992
+% Date: May  28, 1993
+	
+% permet d'encadrer sur plusieurs pages
+\newbox\bk@bxb
+\newbox\bk@bxa
+\newif\if@bkcont
+\newif\ifbkcount
+\newcount\bk@lcnt
+
+\def\breakboxskip{2pt}
+\def\breakboxparindent{1.8em}
+
+\def\breakbox{\vskip\breakboxskip\relax
+\setbox\bk@bxb\vbox\bgroup
+\advance\linewidth -2\fboxrule
+\advance\linewidth -2\fboxsep
+\hsize\linewidth\@parboxrestore
+\parindent\breakboxparindent\relax}
+
+% \@tempdimb: amount of vertical skip
+% between the first line (\bk@bxa) and the rest (\bk@bxb)
+\def\bk@split{%
+\@tempdimb\ht\bk@bxb % height of original box
+\advance\@tempdimb\dp\bk@bxb
+\setbox\bk@bxa\vsplit\bk@bxb to\z@ % split it
+\setbox\bk@bxa\vbox{\unvbox\bk@bxa}% recover height & depth of \bk@bxa
+\setbox\@tempboxa\vbox{\copy\bk@bxa\copy\bk@bxb}% naive concatenation
+\advance\@tempdimb-\ht\@tempboxa
+\advance\@tempdimb-\dp\@tempboxa}% gap between two boxes
+
+
+% \@tempdima: height of the first line (\bk@bxa) + fboxsep
+\def\bk@addfsepht{%
+     \setbox\bk@bxa\vbox{\vskip\fboxsep\box\bk@bxa}}
+
+\def\bk@addskipht{%
+     \setbox\bk@bxa\vbox{\vskip\@tempdimb\box\bk@bxa}}
+
+% \@tempdima: depth of the first line (\bk@bxa) + fboxsep
+\def\bk@addfsepdp{%
+     \@tempdima\dp\bk@bxa
+     \advance\@tempdima\fboxsep
+     \dp\bk@bxa\@tempdima}
+
+% \@tempdima: depth of the first line (\bk@bxa) + vertical skip
+\def\bk@addskipdp{%
+     \@tempdima\dp\bk@bxa
+     \advance\@tempdima\@tempdimb
+     \dp\bk@bxa\@tempdima}
+
+\def\bk@line{%
+    \hbox to \linewidth{\ifbkcount\smash{\llap{\the\bk@lcnt\ }}\fi
+    \vrule \@width\fboxrule\hskip\fboxsep
+    \box\bk@bxa\hfil
+    \hskip\fboxsep\vrule \@width\fboxrule}}
+
+\def\endbreakbox{\egroup
+\ifhmode\par\fi{\noindent\bk@lcnt\@ne
+\@bkconttrue\baselineskip\z@\lineskiplimit\z@
+\lineskip\z@\vfuzz\maxdimen
+\bk@split\bk@addfsepht\bk@addskipdp
+\ifvoid\bk@bxb      % Only one line
+\def\bk@fstln{\bk@addfsepdp
+\vbox{\hrule\@height\fboxrule\bk@line\hrule\@height\fboxrule}}%
+\else               % More than one line
+\def\bk@fstln{\vbox{\hrule\@height\fboxrule\bk@line}\hfil
+\advance\bk@lcnt\@ne
+\loop
+ \bk@split\bk@addskipdp\leavevmode
+\ifvoid\bk@bxb      % The last line
+ \@bkcontfalse\bk@addfsepdp
+ \vtop{\bk@line\hrule\@height\fboxrule}%
+\else               % 2,...,(n-1)
+ \bk@line
+\fi
+ \hfil\advance\bk@lcnt\@ne
+\if@bkcont\repeat}%
+\fi
+\leavevmode\bk@fstln\par}\vskip\breakboxskip\relax}
+
+\bkcountfalse
+%%%% fin macro %%%%
+
+
+%%%%%%%%%%%%%% MODIFICATION DE L'ECRITURE DES ANNEXES :
+\renewcommand\tableofcontents{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\contentsname
+        \@mkboth{%
+           \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+	   \addcontentsline{toc}{chapter}{\contentsname}
+    \@starttoc{toc}%
+    \if@restonecol\twocolumn\fi
+    }
+
+\renewenvironment{theindex}
+               {\if@twocolumn
+                  \@restonecolfalse
+                \else
+                  \@restonecoltrue
+                \fi
+                \twocolumn[\@makeschapterhead{\indexname}]%
+		\addcontentsline{toc}{chapter}{Index}
+                \@mkboth{\MakeUppercase\indexname}%
+                        {\MakeUppercase\indexname}%
+                \thispagestyle{plain}\parindent\z@
+                \parskip\z@ \@plus .3\p@\relax
+                \columnseprule \z@
+                \columnsep 35\p@
+                \let\item\@idxitem}
+               {\if@restonecol\onecolumn\else\clearpage\fi}
+
+
+
+\endinput

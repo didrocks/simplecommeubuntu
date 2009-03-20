@@ -1,0 +1,278 @@
+\chapitre{À la découverte de votre nouveau système Ubuntu}{Vous avez maintenant}{ à votre disposition une distribution Ubuntu fraîchement installée. Je suis certain que vous êtes impatient d'essayer et de configurer votre nouveau système. Ce chapitre traite des concepts que vous devez connaître pour pouvoir profiter pleinement de votre système Ubuntu, sans être perdu par vos habitudes «~windowsiennes~». Vous y serez initié aux principales différences entre votre système Windows et votre système GNU/Linux afin de mieux les appréhender.}
+\section{Qu'est-ce qu'une session ?}
+\AddIndex{-}{Login}{Identifiant}{-}
+\label{PremiereConnexion}
+Au démarrage d'Ubuntu, apparaît l'écran de connexion, sauf si vous aviez coché «~Se connecter automatiquement~» lors de l'installation. Celui-ci vous permet de vous connecter à un compte d'utilisateur sur votre \RefGlossaire{Système}{OS}{Système d'exploitation}{système d'exploitation}.\par
+\ImgCentree{12}{corps/chapitre3/img/GDM.png}{Identification avant ouverture de session}{ImgGDM}
+Ubuntu -- à l'instar de tous les autres systèmes GNU/Linux -- est un \RefGlossaire{Système}{OS}{Système d'exploitation}{système d'exploitation} multi-utilisateurs, c'est-à-dire qu'il peut être utilisé par plusieurs personnes. Chacune de ces personnes peut disposer de son propre compte d'utilisateur sur votre ordinateur. L'avantage étant que chacun aura ses propres dossiers personnels, bureaux et réglages inaccessibles aux autres\ldots{} Durant la procédure d'installation, un ou plusieurs comptes d'utilisateur a (ont) été créé(s) ; vous pouvez en créer d'autres à l'aide de l'outil de gestion de comptes d'utilisateurs décrit plus loin.\par 
+Afin de choisir le compte utilisateur auquel vous vous connectez au démarrage de l'ordinateur, Ubuntu vous propose tout d'abord un écran de connexion, nommé GDM\NotePage{GNOME Display Manager}, permettant de préciser le nom du compte utilisateur, ainsi que quelques autres options avancées, comme le choix de votre interface graphique préférée, si plusieurs ont été installées.\par
+\begin{nota}
+GNOME Display Manager est l'écran de connexion installé par défaut avec Ubuntu, Edubuntu et Xubuntu comme décrit dans la section \ref{RefConnexionX}. Les utilisateurs de Kubuntu devraient plutôt s'informer au sujet de \AddIndex{Environnement graphique}{-}{KDE}{KDE} Display Manager\NotePage{Répondant au nom de KDM}.
+\end{nota}
+Par défaut, l'interface de l'écran de connexion est simple et minimaliste. Elle contient un champ de connexion et quelques boutons, vous permettant d'effectuer les opérations de connexion à vos comptes d'utilisateurs ainsi que l'arrêt ou le redémarrage de l'ordinateur.\\ 
+Le champ «~\RefGlossaire{-}{Login}{Identifiant}{Identifiant}~» est sans doute l'objet le plus important de cette interface. Il vous permet de préciser le nom du compte utilisateur sur lequel vous connecter. Une fois ce nom renseigné, la touche \Touche{Entrée} de votre clavier valide ce choix. Le champ se modifie et devient «~Mot de passe~», dans lequel vous devez fournir le mot de passe du compte utilisateur saisi.\par
+\begin{nota}
+En cas d'erreur d'\RefGlossaire{-}{Login}{Identifiant}{identifiant} ou de mot de passe, GDM ne vous rend pas la main instantanément. Cela constitue juste une mesure de sécurité pour éviter les attaques «~brute force~» où un utilisateur, par le biais d'un logiciel, essaie en série un grand nombre de mots de passe pour s'introduire dans votre système.
+\end{nota}
+Effectuer cette action ouvre ce que l'on appelle une «~session~». Cette dernière restera ouverte jusqu'à votre «~déconnexion~», correspondant au retour sous GDM.
+\section{Pourquoi me redemande-t-on parfois mon mot de passe ?}
+\label{RefMdpRoot}\AddIndex{-}{Login}{Identifiant}{-}
+Il n'y a pas d'utilisateur «~root~» sous Ubuntu contrairement à de nombreuses distributions GNU/Linux.\\
+Mais qui est root ? C'est l'administrateur ! Par exemple, seul ce dernier possède les droits pour installer ou supprimer des applications, et plus globalement, il est l'unique personne ayant le droit d'effectuer des opérations «~critiques~» sur le système.\\
+Mais alors, comment faire s'il n'y a pas d'administrateur(s) sur le système ? En réalité, le premier utilisateur créé lors de l'installation est par défaut «~Ami de root~», c'est-à-dire que si une action requiert des droits d'administrateur, votre mot de passe est redemandé pour s'assurer que c'est bien vous qui effectuez cette action et non une personne malveillante\ldots{} Pour cela, l'écran se grise et une boîte de dialogue s'affiche, sollicitant votre mot de passe une nouvelle fois. Un temps de session «~Ami de root~» vous est alors octroyé grâce auquel une action demandant des pouvoirs d'administrateur ne réclamera pas votre mot de passe. Il se peut également que l'application se lance normalement, mais que toutes les options soient grisées. Il faudra alors cliquer sur «~Déverrouiller~», pour que votre mot de passe soit de nouveau demandé -- en sélectionnant par défaut l'utilisateur courant -- et que les options d'administration en tant qu'«~Ami de root~» vous soient accessibles comme présenté sur l'image \ref{ImgUnlockRoot}. Il peut ainsi y avoir plusieurs «~Ami de root~» sur votre système. Cela se configure lors de la création d'un nouvel utilisateur\NotePage{Système \FlecheDroite Administration \FlecheDroite Utilisateurs et groupes, onglet «~Privilèges utilisateur~», cochez «~Exécuter des tâches d'administration système~»}.
+\ImgCentree{8}{corps/chapitre3/img/UnlockRoot.png}{Accès aux droits d'administration}{ImgUnlockRoot}
+\section{Bureaux virtuels}
+\label{RefBureauxVirtuels}
+Vous aimez faire plusieurs choses en même temps sur votre ordinateur ? Par exemple, vous voulez ouvrir : The Gimp pour modifier quelques photos, une fenêtre Jabber pour discuter avec vos amis, une fenêtre IRC pour discuter avec d'autres personnes, votre navigateur web, votre client email, OpenOffice.org pour rédiger des documents\ldots{} Ça commence vite à faire beaucoup, n'est-ce pas ?
+Alors, trions un peu les fenêtres et séparons-les par thème\ldots{}\\
+Imaginez que vous ayez un bureau pour tout ce qui est \RefGlossaire{-}{L'Internet}{Internet}{internet}\NotePage{Si vous avez bien lu le glossaire, on parle tout simplement ici d'un réseau, interne, ou externe comme l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}}, un autre pour la bureautique… Ce serait le pied, n'est-ce pas ?\par
+Eh bien, c'est ce que vous permettent les bureaux virtuels…\\
+Par défaut, sur la plupart des environnements -- \AddIndex{Environnement graphique}{-}{KDE}{KDE}, \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} pour ne citer que ceux-ci -- vous avez sur un de vos tableaux de bord un ensemble de petits carrés -- 2 par défaut sur Ubuntu -- ; cliquez sur chacun de ces carrés -- qui représentent les bureaux -- pour vous faire une idée…\\
+Il est également possible de le faire au clavier  avec \Touche{Ctrl} + \Touche{ALT} + \Touche{flèches}, vous pouvez vous déplacer d'un bureau à l'autre.
+Si dans l'\AddIndex{Environnement graphique}{-}{Applet}{applet}\NotePage{Cf. section \ref{RefApplet} pour savoir ce qu'est un -- et non une -- \AddIndex{Environnement graphique}{-}{Applet}{applet}.} de bureau, sous \AddIndex{Environnement graphique}{Personnalisation}{GNOME}{GNOME}, vos bureaux sont représentés sur une seule ligne, seules les flèches gauche et droite sont utilisables ; par contre, si vous les avez sur deux lignes, vous pouvez également utiliser les flèches haut et bas.\par
+Pour passer une application d'un bureau à l'autre, un clic-droit\NotePage{Ce qui aurait pour effet d'ouvrir un \RefGlossaire{-}{-}{Menu contextuel}{menu contextuel}} sur sa barre de titre vous permet de spécifier vers quel bureau envoyer l'application par «~Déplacer vers un autre espace de travail~»\ldots{}\\
+Au clavier, à l'aide des touches \Touche{Ctrl} + \Touche{ALT} + \Touche{SHIFT} + \Touche{flèches}, vous déplacez la fenêtre active dans le bureau de votre choix\ldots{}
+\section{Organisation de votre poste de travail}
+\subsection{Les tableaux de bord}
+\AddIndex{Environnement graphique}{-}{GNOME}{-}
+La première chose que vous pouvez remarquer est l'existence de deux barres sur votre bureau. Ces barres sont appelées «~tableaux de bord~» :
+\ImgCentree{12}{corps/chapitre3/img/Presentation_Tableau_Bord.png}{Le bureau par défaut de GNOME}{ImgGNOMEDefaut}
+\subsubsection{Changer le fond d'un tableau de bord}
+Il est possible de changer la couleur de fond d'un tableau de bord, de le rendre transparent ou de mettre une image en fond. Pour cela, rien de plus simple : clic-droit sur le tableau de bord, Propriétés, Onglet «~Arrière-plan~», Couleur unie -- pour changer la couleur de fond -- et changez le niveau de transparence de la barre! Vous pouvez également spécifier une image à mettre en fond. On verra dans le chapitre \ref{ChapitreMieuxUtiliserGnome} comment changer facilement et trouver de nouveaux \RefGlossaire{Environnement graphique}{Personnalisation}{Thème}{thèmes} de bureau.
+\subsubsection{Déplacer un tableau de bord}
+Un tableau de bord est attaché à un côté de l'écran. Vous pouvez très facilement déplacer un tableau de bord sur n'importe quel côté de l'écran --- haut, bas, gauche, droite. Pour cela, cliquez avec le bouton gauche de la souris, dans une zone vide, sur le tableau de bord à déplacer. Le curseur de la souris se transforme alors en main. Ensuite, tout en tenant le clic, déplacez la souris vers un des côtés de l'écran. Vous verrez alors votre tableau de bord se déplacer vers le bord choisi.
+\subsubsection{Créer/Supprimer un tableau de bord}
+Oui, vous avez bien lu! Il est possible\NotePage{Tout est possible sous GNU/Linux :-)} de créer un nouveau tableau de bord. Pour cela, rien de plus simple : clic-droit dans une zone vide d'un tableau de bord et vous voyez plusieurs options, comme «~Nouveau tableau de bord~» ou encore «~Supprimer ce tableau de bord~». Expérimentez, n'ayez pas peur !
+\subsubsection{Les éléments du tableau de bord}
+Le tableau de bord supérieur contient plusieurs zones distinctes. Celles-ci sont constituées d'un ou plusieurs éléments regroupés par fonctionnalités communes, comme les menus, l'affichage de la date et de l'heure, des raccourcis, une liste des applications ouvertes, le gestionnaire de niveau sonore ou encore la corbeille\ldots{} Ceux-ci sont appelés «~\AddIndex{Environnement graphique}{-}{Applet}{applets}~».
+\subsubsection{Les Applets}
+\label{RefApplet}
+\subsubsubsection{Déplacer les applets}
+Tous\NotePage{Ce terme est effectivement de genre masculin} ces \AddIndex{Environnement graphique}{-}{Applet}{applets} sont facilement déplaçables et même interchangeables d'un tableau de bord à un autre par un clic-droit sur l'\AddIndex{Environnement graphique}{-}{Applet}{applet}, et «~Déplacer~». Si cela est impossible, c'est que cet \AddIndex{Environnement graphique}{-}{Applet}{applet} est verrouillé. Pour pouvoir le déplacer, cliquez-droit dessus, et dans le menu qui apparaît, décochez «~Verrouiller au tableau de bord~». Vous pourrez à nouveau verrouiller à tout moment un applet en cochant cette case.
+\subsubsubsection{Insérez de nouveaux applets}
+Rien de plus simple, encore une fois, clic-droit sur une zone vide du tableau de bord, puis «~Ajouter au tableau de bord~». Là, une fenêtre s'ouvre vous montrant les \AddIndex{Environnement graphique}{-}{Applet}{applets} disponibles. Sélectionnez-en un et \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glissez-déposez} le sur un tableau de bord -- ou cliquez sur «~Ajouter~». Le nouvel \AddIndex{Environnement graphique}{-}{Applet}{applet} est alors inséré au tableau de bord.\\
+\ImgCentree{8}{corps/chapitre3/img/Insertion_Applet.png}{Insertion d'un nouvel applet}{ImgAddNewApplet}
+Certains sont totalement inutiles, donc absolument indispensables : «~Geyes~»\NotePage{Des yeux suivent votre curseur !} est un exemple, mais d'autres comme «~Bulletin météo~» ou encore l'intégrateur de pense-bête -- voir Tomboy à la section \ref{RefTomboy} -- vous deviendront très vite irremplaçables.\par
+\ImgPar{l}{0.6}{corps/chapitre3/img/Applet_Tiroir.png}
+Il est également possible de créer des tiroirs contenant des «~Lanceurs d'applications~» -- cf. section \ref{RefLanceur} --  Essayez ! Ci-contre, l'exemple d'un tiroir avec 2 lanceurs : un pour activer la sortie TV de la carte graphique, et l'autre pour l'arrêter !\\\\\\
+\subsubsubsection{Configurer un applet}
+Pour cela, tout est, la plupart du temps, accessible par le clic-droit, puis «~Propriétés~». Dans tous les cas, n'hésitez pas à expérimenter\NotePage{Je crois qu'il s'agit du maître mot de ce livre} !
+\subsubsubsection{Supprimer des applets}
+Encore une fois, rien de plus simple : clic-droit sur l'\AddIndex{Environnement graphique}{-}{Applet}{applet}, puis «~Enlever de ce tableau de bord~».\\
+Le premier des \AddIndex{Environnement graphique}{-}{Applet}{applets} qui nous intéresse plus particulièrement concerne les menus dont voici un  descriptif assez complet.
+\subsection{Les menus}
+\label{RefMenuGNOME}
+\AddIndex{Environnement graphique}{-}{GNOME}{-}
+\ImgCentree{6.77}{corps/chapitre3/img/Applet_Menu.png}{L'applet menu de l'environnement GNOME}{ImgAppletMenu}
+\subsubsection{Menu Applications}
+Tous les logiciels que vous installerez «~classiquement~» et disposant d'une interface graphique se trouveront dans ce menu accessible par le raccourci \Touche{Alt} + \Touche{F1}.\par
+Vous pouvez tout de suite remarquer que ce menu est divisé en plusieurs catégories suivant le type d'utilisation. Vos applications, après installation, sont automatiquement rangées, dans le bon sous-dossier. Par exemple, si vous installez un logiciel de type messagerie instantanée\NotePage{«~MSN~» n'a pas été le premier logiciel à permettre cela\ldots{}}, vous le retrouverez dans : Applications \FlecheDroite Internet ! Un logiciel de retouche photo  se retrouvera dans Applications \FlecheDroite Graphisme ou encore un logiciel de lecture de musique, dans Applications \FlecheDroite Son et Vidéo\ldots{}\\
+Le menu est donc rangé par type d'utilisation et lorsque vous aurez des centaines et des centaines de programmes installés, il suffira de se demander «~au fait, à quoi sert ce logiciel?~», puis de pointer sur la bonne catégorie ! Beaucoup plus simple que de se souvenir du nom de l'application et de l'ouvrir par menu Démarrer/Tous les programmes/etc ??? Isn't it ? ;-)\par
+Enfin, vous remarquez un menu «~Ajouter/Supprimer\dots{}~». C'est par ce menu que vous installerez, très facilement, vos nouvelles applications. Ceci sera décrit très prochainement dans la section \ref{RefInstallApp}, n'ayez crainte!\\
+\subsubsection{Menu Raccourcis}
+Le menu Raccourcis fournit un accès rapide aux dossiers fréquemment utilisés et aux périphériques de votre ordinateur. Il procure également des outils pour se connecter à des ressources partagées par d'autres ordinateurs, lorsque votre ordinateur est relié à un réseau local -- LAN -- ou à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}. Par commodité, le menu Raccourcis contient aussi un outil de recherche pour retrouver les fichiers et dossiers de votre disque dur ; il conserve la trace des documents et fichiers récemment utilisés et ouverts avec les applications adéquates. Voici ce que vous y trouverez :
+\subsubsection{Dossier personnel}
+Sur Ubuntu, chaque utilisateur possède son propre «~dossier personnel~». Tous les dossiers personnels des utilisateurs résident dans \Chemin{/home}, chacun dans un sous-dossier pour chaque compte d'utilisateur. Chaque utilisateur contrôle donc entièrement tous les fichiers et dossiers contenus dans son dossier personnel mais n'a strictement aucun accès aux dossiers des autres utilisateurs, si bien que les données de ces derniers demeurent en sécurité. 
+Vous trouverez par défaut tout un ensemble de sous-dossiers pré-existants triés par thèmes, comme Images, Modèles, Musique, Vidéo... Ils vous permettront d'organiser facilement vos documents.\par
+Votre dossier personnel contient non seulement vos fichiers et dossiers, mais aussi vos préférences d'utilisateur, enregistrées dans des dossiers cachés\NotePage{Ce sont tout simplement des fichiers ou dossiers dont le nom commence par un point, comme vous pourrez le voir dans le point développé en \ref{RefFichierCache}.}. Ces dossiers sont cachés pour deux raisons : d'une part, pour ne pas encombrer l'affichage du dossier personnel et d'autre part, pour diminuer les risques d'effacement accidentel pendant votre travail. Il est possible de voir tous les dossiers cachés en sélectionnant Affichage \FlecheDroite Afficher les fichiers cachés.\\
+En conservant toutes vos données et informations importantes en un endroit unique, il est facile de réaliser des copies de sauvegarde du dossier tout entier ou d'un dossier particulier et de son contenu, en utilisant le Gestionnaire d'archives.
+\begin{nota}
+Lorsque vous réalisez des copies de sauvegarde d'un dossier personnel, assurez-vous que les dossiers cachés soient également sauvegardés. De cette façon et dans l'éventualité d'un problème, vos données et paramètres de réglage pourront facilement être restaurés. 
+\end{nota}
+\subsubsection{Bureau}
+L'option Bureau est un raccourci pour l'affichage du bureau. Elle est surtout utile lorsque beaucoup d'applications ouvertes recouvrent le bureau et que vous voulez accéder directement au bureau sans avoir à les minimiser une à une. Ce dossier se trouve en réalité dans \Chemin{/home/VotrePseudo/Bureau}.
+\subsubsection{Documents, Musique, Images, Vidéos...}
+Ces options sont les signets\NotePage{Vous trouverez plus d'informations sur les signets et le moyen d'en ajouter/supprimer dans la section \ref{RefSignets} page \pageref{RefSignets}} vers les dossiers précédemments cités. Ils correspondent donc tous à des dossiers de \Chemin{/home/VotrePseudo}.
+\subsubsection{Poste de travail}
+L'option Poste de travail affiche une fenêtre du gestionnaire de fichiers Nautilus --- équivalent \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} de l'explorateur de Windows nommé «~Explorer~». La fenêtre présente tous les disques et périphériques amovibles reliés à l'ordinateur. 
+\subsubsection{CD audio}
+Le menu CD audio s'affiche lorsqu'un média audio est inséré dans le lecteur CD-ROM. Un raccourci semblable vient également s'ajouter sur le bureau. La sélection du menu CD audio affiche le contenu du média dans une fenêtre. 
+\subsubsection{Créateur de CD/DVD}
+Cette fonction ouvre une fenêtre où vous pourrez très simplement créer un CD-ROM ou un DVD-ROM de sauvegarde. Vous trouverez plus d'explications sur ce fonctionnement dans la section \ref{RefGravureNautilus}.
+\subsubsection{Autre dossiers présents\ldots{}}
+\label{AutrePartitions}
+Vous retrouverez ici -- mais également sur le bureau -- les autres partitions non spécifiques dédiées au système Ubuntu telles définies -- automatiquement ou manuellement -- lors de l'installation. Ce sera notamment le cas pour vos partitions Windows et tout périphérique éjectable comme les clefs USB, les CD/DVD-ROM, etc.\par
+Pour les périphériques éjectables sur lesquels vous pouvez écrire comme les clefs USB ou les disquettes, n'oubliez pas, avant de les déconnecter de l'ordinateur, de cliquer droit sur l'icône les représentant sur le bureau, et de choisir «~Éjecter~» ou «~Démonter~» suivant le périphérique.
+\subsubsection{Réseau}
+\AddIndex{Réseau}{-}{Configuration Réseau}{-}
+L'option «~Réseau~» s'affiche si l'ordinateur est relié à un réseau local --- LAN. La sélection du menu «~Réseau~» ouvre une fenêtre présentant les types de réseaux, leurs hôtes et les ressources de tout ordinateur de ceux-ci auxquels le système est connecté. Cette option est semblable au «~voisinage réseau~» de Windows.
+\subsubsection{Se connecter à un serveur\ldots{}}
+Le menu «~Connecter au serveur~» lance une petite application permettant facilement aux utilisateurs de définir et d'établir des connexions avec des ordinateurs résidant sur différents types de réseaux. Les connexions réseau sont définies en fonction du type de \RefGlossaire{Système}{Démon}{Service}{service} disponible sur l'ordinateur distant. 
+\subsubsection{Rechercher des fichiers\ldots{}}
+La boîte de dialogue «~Rechercher des fichiers~» fournit une interface facile à utiliser grâce à laquelle vous pouvez rechercher des fichiers, dossiers, ou encore des éléments dont le nom ou le contenu contient un texte particulier. Les éléments correspondant au critère de recherche sont affichés sous forme de liste. Double-cliquez sur un élément pour l'ouvrir. 
+\subsubsection{Documents récents}
+Le menu Documents récents déroule un sous-menu contenant les dix derniers documents ouverts par l'utilisateur. Sélectionnez un document du sous-menu pour l'ouvrir à nouveau. Le sous-menu peut être effacé en choisissant Raccourcis \FlecheDroite  Documents récents \FlecheDroite  Vider les documents récents.
+\subsection{Menu Système}
+Le menu système contient des applications pour l'administration de votre ordinateur et le réglage de vos préférences personnelles. De plus, le menu Système fournit un accès rapide aux systèmes d'aide en ligne et aux outils pour gérer votre session. 
+\subsubsection{Préférences}
+Ubuntu fournit une vaste palette d'applications faciles à utiliser permettant aux utilisateurs de personnaliser leur bureau selon leurs exigences particulières. Toutes ces applications sont disponibles à partir de Système \FlecheDroite Préférences. 
+% \subsubsubsection{Accès universel}
+% Le deuxième, quant à lui, active l'aide technique dans le bureau \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}. Cet outil sert également à spécifier quelles applications des aides techniques démarrer lorsque vous vous connectez : Lecteur d'écran, Loupe ou Clavier visuel.
+\subsubsubsection{Apparence}
+Ce nouvel élément de menu regroupe tout ce dont vous aurez besoin afin d'agrémenter l'apparence de votre environnement graphique de travail. Vous y retrouverez plusieurs onglets :
+\begin{itemize}
+\item C'est dans le premier onglet que vous trouverez plusieurs choix de \RefGlossaire{Environnement graphique}{Personnalisation}{Thème}{thèmes} pré-sélectionnés. En sélectionner un modifie l'apparence de vos fenêtres. Vous pouvez également installer de nouveaux \RefGlossaire{Environnement graphique}{Personnalisation}{Thème}{thèmes} que vous aurez téléchargés --- par GNOME Art, par exemple, cf. \ref{RefInstallTheme}.
+\item Avec cette fenêtre de préférence, vous pouvez configurer votre arrière-plan\NotePage{Ou encore fond d'écran}. Vous avez le choix entre une image ou une couleur unie ou dégradée. Un certain nombre de papiers peints sont disponibles dans la liste. Si vous désirez en ajouter de nouveaux, il suffit de cliquer sur le bouton «~Ajouter\ldots{}~» et de choisir une -- ou plusieurs -- nouvelle(s) image(s) qui apparaîtra/ont ensuite dans la liste des papiers peints disponibles.
+\item Servez-vous de l'outil de configuration Police pour sélectionner les polices utilisées pour vos applications, vos fenêtres, vos terminaux ou encore votre bureau. 
+\item Cet onglet permet de personnaliser l'apparence des menus, des barres de menus et des barres d'outils pour les applications \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}. 
+\item Vous aurez, ici, trois options d'activation des effets graphiques 3D permis par la puissance de votre carte graphique. Pour plus d'informations sur ce point, voir la section \ref{RefBureau3D}.
+\end{itemize}
+\subsubsubsection{Applications préférées}
+Utilisez Applications préférées pour paramétrer les applications par défaut de votre système comme le navigateur Web, le lecteur de courrier, lecteur multimédia ou encore le \RefGlossaire{-}{Console}{Terminal}{terminal} et quelques options d'outils d'accessibilité.
+\subsubsubsection{À propos de moi}
+Vous pouvez, ici, vérifier et, éventuellement compléter, vos données personnelles --- Nom, Prénom, Adresse, E-mail\ldots{} L'intérêt est que ces informations seront accessibles pour tous vos programmes. Ainsi, à chaque fois que vous configurerez un logiciel ayant besoin d'un minimum d'informations vous concernant -- votre client de messagerie par exemple -- vous n'aurez plus besoin de les re-saisir, elles seront automatiquement récupérées.  Vous pouvez également y modifier votre mot de passe.
+\subsubsubsection{Bluetooth}
+Cette application vous permettra de paramétrer l'affichage d'une icône de notification lorsqu'un périphérique Bluetooth est connecté à votre ordinateur.
+\subsubsubsection{Bureau à distance}
+L'option Bureau à distance affiche une boîte de dialogue permettant aux utilisateurs de partager leur bureau avec des utilisateurs distants. Les connexions à un bureau distant peuvent s'effectuer au moyen de la technologie VNC\NotePage{Virtual Network Connection}. L'application «~Visionneur de bureaux distants~» du menu «~Applications \FlecheDroite Internet~» permet aux utilisateurs d'ordinateurs distants de se connecter, d'accéder et d'interagir avec le bureau de l'utilisateur comme s'ils étaient réellement assis devant l'ordinateur auquel ils sont connectés. Normalement, vous devriez laisser cette option désactivée si vous n'en avez pas l'utilité.
+\subsubsubsection{Chiffrement et trousseaux}
+Vous pouvez ici paramétrer et choisir la clef de chiffrement GPG à utiliser par défaut. Signer ses mails est important pour spécifier que vous en êtes bien l'expéditeur\NotePage{Tout le monde peut, avec des connaissances basiques, envoyer un mail president@ubuntu-fr.org, par exemple, ce qui serait un sacrilège !}. Vous pouvez permettre ici de signer automatiquement vos mails sans répéter la phrase de passe -- mot de passe très très long ressemblant plus à une phrase -- ou encore quelques paramètres visuels.
+% PLUS LE CAS : voir si on ajoute seahorse. dans le futur
+%Vous pouvez sauvegarder sous un trousseau de clef les mots de passe et clef de chiffrement que vous avez à utiliser régulièrement. Ces trousseaux de clefs enregistrent vos différents mots de passe et clefs de manière cryptée par un mot de passe que vous définissez pour le trousseau. Comme cela, vous n'avez plus qu'un seul mot de passe à mémoriser et pas les dizaines associées à vos sites FTP et autres\ldots{} Dès que vous aurez la possibilité d'ajouter un mot de passe à un trousseau, Ubuntu vous fera signe. Vous pourrez ensuite les gérer à votre guise.\par
+\subsubsubsection{Clavier}
+Utilisez l'outil de configuration Clavier pour modifier les préférences d'auto-répétition pour votre clavier, et pour régler les paramètres de pause de saisie.
+\begin{itemize}
+\item Le premier onglet, «~Général~», concerne le délai, la vitesse de répétition des touches et la vitesse de clignotement du curseur.
+\item Dans l'onglet «~Agencements~», vous pouvez choisir le modèle (générique 105 touches, Cherry, Dell, etc.) et la disposition des touches (français, américain, etc.) de votre clavier. Vous pouvez choisir plusieurs agencements. Le bouton «~Options de l'agencement~», vous permet de créer un raccourci pour passer d'un agencement à l'autre, sous le libellé : «~Combinaisons pour changer de groupe~».
+\item Cet onglet d'accessibilité vous permet de gérer l'option de collage des touches, utile si vous avez du mal à appuyer simultanément sur deux touches à la fois. Dans ce cas, les touches comme \Touche{Alt-Gr} ou \Touche{Ctrl} restent virtuellement enfoncées. Vous pourrez également configurer les touches lentes et les touches rebonds. Quelques évènements sonores peuvent être ajoutés lorsque les outils d'accessibilité sont activés/désactivés.
+\item L'onglet «~Touches de la souris~» permet un paramétrage plus personnalisé de la souris. 
+\item Le dernier onglet, «~Pause de saisie~», vous permet de paramétrer des pauses. Lorsque vous travaillez sur un ordinateur, il est recommandé de faire régulièrement une pause. En activant l'option, vous pourrez choisir votre intervalle de travail et la durée de la pause. Par défaut, si cette option est active, l'écran se verrouillera pendant trois minutes au bout d'une heure de travail.
+\end{itemize}\par
+Imaginons un cas pratique et que vous parliez Espéranto\NotePage{Si si, vous ne saviez pas ? :-)}. Certains caractères comme les «~s, c ou h~», agrémentés d'un accent circonflexe ne sont pas directement accessibles. Revenez à l'onglet «~Agencements~» et ajoutez -- par l'icône représentant un \Touche{+} «~Espéranto\NotePage{Prenez garde à choisir l'agencement «~France~» par défaut sinon, au prochain démarrage de \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}, vous n'aurez pas un clavier français}~». Vous remarquerez d'ailleurs que vous aurez un aperçu -- que vous pouvez imprimer par la suite -- de la disposition du clavier. Cliquez sur l'onglet «~Options de l'agencement~», puis sur «~Combinaisons pour changer de groupe~» et choisissez une méthode de changement d'agencement. Par défaut, cette dernière est l'appui simultané des deux touches \Touche{Alt} + \Touche{Alt Gr}. Essayez et lancez un éditeur de texte, tapez quelques lettres, le clavier est en espéranto. Un nouvel appui sur les douches touche \Touche{Alt} et \Touche{Alt Gr} et le clavier revient en français.
+\subsubsubsection{Configuration de la méthode de saisie SCIM}
+Pour écrire des langues dont l'écriture s'effectue sans alphabet, comme par exemple le chinois (on parle de sinogrammes), on utilise un logiciel de saisie spécialisé. Dans Ubuntu\NotePage{Coup de chance, sachez que cette fonctionnalité n'est pas aussi aisée à utiliser sur tous les systèmes d'exploitation ;-)}, ce logiciel est intégré ! Cet outil dans le menu permet de configurer le logiciel qui permet d'écrire dans ces langues.
+\subsubsubsection{Économiseur d'écran}
+Cette option\NotePage{Écran de veille dans une autre langue :-)} sert à paramétrer l'activation ou non d'un économiseur d'écran lorsque vous vous éloignez de votre ordinateur. Plusieurs choix s'offrent à vous : d'humeur égale et vous choississez un seul économiseur d’écran, ou d'humeur changeante et ce dernier variera aléatoirement. Un raccourci vers le gestionnaire d'énergie est proposé.
+\subsubsubsection{Fenêtres}
+L'application Fenêtres permet aux utilisateurs de paramétrer l'interface selon leurs propres préférences. Les paramètres des fenêtres comprennent trois groupes : 
+\begin{itemize}
+\item Sélection de la fenêtre\\
+Utilisez ces options pour définir le comportement d'une fenêtre lorsqu'elle est ouverte. On peut changer la sélection des fenêtres, de sorte qu'une fenêtre soit mise en avant sitôt la souris placée au-dessus. Une option supplémentaire vous permet de mettre en avant une fenêtre seulement après un intervalle de temps que vous estimez opportun. 
+\item Action de la barre de titre\\
+Utilisez les options à disposition pour déterminer l'action associée au double-clic sur la barre de titre. Les actions disponibles comprennent d'une part replier, qui fait en sorte que seule la barre de titre soit visible, et d'autre part agrandir, qui minimise ou maximise la taille de la fenêtre. 
+\item Touche de mouvement\\
+Utilisez les options à disposition pour paramétrer le raccourci clavier permettant de déplacer une fenêtre dans le champ du bureau. Sélectionnez une option, puis cliquez à l'intérieur de la fenêtre active pour la déplacer. Ceci est utile si votre fenêtre est plus grande que la résolution de votre bureau. 
+\end{itemize}
+\subsubsubsection{Gestionnaire d'énergie}
+Cet outil est surtout utile pour les possesseurs de portables et permet de gérer les modes d'économie d'énergie de ce dernier suivant les cas d'alimentation (branché sur secteur, sur batterie\ldots{}).
+\subsubsubsection{Imprimante par défaut}
+Si plusieurs imprimantes sont installées comme indiqué en \ref{RefInstallImprimante} page \pageref{RefInstallImprimante}, cet écran permet de choisir l'imprimante proposée par défaut pour toutes les applications du système.
+\subsubsubsection{Menu principal}
+Cette option ouvre un éditeur de menus afin que vous puissiez les personnaliser. Pour plus d'explications sur son fonctionnement, référez-vous à la section \ref{RefEditerMenus}. La même application peut être ouverte par simple clic-droit \FlecheDroite Éditer les menus.
+\subsubsubsection{Network Configuration}
+\AddIndex{Réseau}{-}{Configuration}{-}
+L'outil de configuration des connexions réseau vous permet de spécifier la façon dont votre système se connecte à d'autres ordinateurs et à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} : filaire, sans fil, par téléphone mobile\ldots{} Plus d'explications sur son utilisation à la section \ref{ConfigReseauManuelle} page \pageref{ConfigReseauManuelle}.
+\subsubsubsection{Outils d'accessibilité}
+Cette fenêtre contient quatre éléments, raccourcis d'autres menus décrits dans cette section : Applications préférées, Accessibilité du clavier, Accessibilité de l'identification et Accessibilité de la souris. Ces outils -- mais ce ne sont pas les seuls -- seront notamment utiles pour les personnes atteintes d'un handicap, et leur permettront de disposer aisément de leur Ubuntu.
+%\subsubsubsection{Périphériques et médias amovibles}
+%\label{RefMediaAmovible}
+%Vous aimez que tout se fasse automatiquement sur votre PC : vous insérez un DVD Vidéo -- et hop ! -- ce dernier se lance automatiquement, les photos de votre appareil numérique s'enregistrent automatiquement sur votre disque dur, votre lecteur de musique portatif ouvre directement un logiciel de transfert de musique ? Tous ces comportements\NotePage{Et bien d'autres : synchronisation PDA, détection de scanner\ldots{}} sont paramétrables dans ce menu si le comportement par défaut ne vous sied pas.\par
+%Voici une description des différents onglets :
+%\begin{itemize}
+%\item «~Appareils photos et caméscope~» : ici les options pour activer l'importation des photos de votre appareil lors de leur branchement ou éditer la vidéo de votre caméra une fois connectée,
+%\item «~PDAs~» : options pour les appareils de type Palm et PocketPC,
+%\item «~Imprimantes et scanners~» : lancez une commande de votre choix lors du branchement d'un de ces deux périphériques,
+%\item «~Périphériques de saisie~»: idem que pour imprimantes et scanners, mais avec les souris, claviers et tablettes graphiques ;
+%%\item «~Stockage~» : vous avez accès aux options concernant les disques externes et les CD/DVD vierges 
+%%\item «~Multimédia~» : vous pourrez paramétrer ici l'action à exécuter lorsque le système détectera l'insertion d'un CD, DVD audio ou lecteurs de musique portatifs (exemple: cochez «~lecture des CD audio lors de leur insertion~» et dès qu'un CD audio sera inséré dans le lecteur il sera automatiquement lu) 
+%\end{itemize}
+\subsubsubsection{Périphériques PalmOS}
+Utilisez «~Périphériques PalmOS~» pour lancer l'application Paramètres de Gnome Pilot, laquelle permet la gestion des paramètres de communication avec les appareils Palm OS™ supportant la technologie HotSync™. 
+\subsubsubsection{Raccourcis clavier}
+Un raccourci clavier est une touche ou une combinaison de touches fournissant une alternative rapide aux moyens usuels d'exécuter une tâche. Utilisez l'outil de configuration Raccourcis clavier pour afficher les raccourcis clavier par défaut et pour personnaliser vos raccourcis.
+\subsubsubsection{Recherche et indexation}
+Utilisez préférences d'indexation pour configurer le mode de fonctionnement du tracker. Ces éléments seront développés plus en détail à la section \ref{RefTracker} page \pageref{RefTracker}.
+\subsubsubsection{Résolution de l'écran}
+Ce panel tant attendu des Linuxiens vous permet de configurer très facilement la résolution, la fréquence, l'orientation et de tester tous ces choix. Vous pourrez également activer un seul ou plusieurs écrans -- en étendant votre écran ou en mode clone. Un nom et une couleur sont attribués à chaque écran et ceux-ci sont visibles en haut à gauche de chaque espace d'affichage détecté.
+%Un système d'enregistrement des configurations, similaire à celui qui sera décrit pour les réseaux à la section \ref{RefEnregistrementConfig} page \pageref{RefEnregistrementConfig} vous facilitera le basculement entre plusieurs groupes de paramètres.
+\subsubsubsection{Serveur mandataire}
+Un serveur mandataire, souvent appelé «~proxy réseau~», joue le rôle d'intermédiaire entre vous et l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}(d'où son nom). Lorsqu'un grand nombre d'utilisateurs exercent une activité commune, une partie conséquente des données qu'ils consultent sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} sont identiques. Il est inutile de télécharger ces données plusieurs fois. Un serveur mandataire a pour rôle de gérer ce problème pour les utilisateurs d'un réseau de manière à économiser leur connexion.\\
+En utilisant cet outil, vous pouvez configurer votre connexion à \RefGlossaire{-}{L'Internet}{Internet}{Internet} pour qu'elle passe par un serveur mandataire, ou même -- si vous êtes administrateur -- configurer la connexion pour que tous les utilisateurs de votre ordinateur passent par ce serveur mandataire.
+\subsubsubsection{Sessions}
+Utilisez la boîte de dialogue de Sessions pour déterminer vos options de session et les programmes qui seront automatiquement lancés lors de l'ouverture d'une session. Plus d'informations sur ce point en \ref{RefEnrSession}.
+\subsubsubsection{Son}
+Cette boîte de dialogue vous permet de choisir les périphériques -- matériels -- de sortie pour chaque type de son, très utile si vous possédez plusieurs cartes son. Les sons système, joués lors d'interactions ou d'événements système, y sont également listés et peuvent être désactivés et/ou changés. Le dernier onglet «~Bip système~» permet de changer l'option pour obtenir seulement une sonnerie audible ou l'allier avec un clignotement de vos fenêtres afin d'attirer l'attention. 
+\subsubsubsection{Souris}
+Utilisez l'outil de configuration Souris pour régler celle-ci pour droitier ou pour gaucher. Vous pouvez également spécifier la vitesse et la sensibilité des mouvements de la souris :
+\begin{itemize}
+\item L'option «~Souris pour gaucher~» va inverser les boutons de votre souris, la sélection et le clic se feront via le bouton droit de la souris et le menu contextuel apparaîtra lors d'un clic gauche.
+\item La localisation du pointeur propose l'option «~Afficher la position du pointeur quand la touche \Touche{Ctrl} est appuyée~». Avec cette option lorsque vous appuierez sur la touche \Touche{Ctrl} des formes géométriques en mouvement apparaîtront autour de votre pointeur pour vous aider à le retrouver si vous ne le voyez plus.
+\item Les autres éléments vous permettent de régler la vitesse d'accélération et de sensibilité de la souris et celle du double-clic.
+\item Le deuxième onglet nommé «~Accessibilité~» vous donne accès à quelques items permettant de faciliter la manipulation de la souris.
+\end{itemize}
+\subsubsection{Administration}
+Ubuntu fournit une vaste palette d'applications faciles d'usage permettant aux utilisateurs d'administrer les différents aspects de leur système. Toutes ces applications se trouvent sous Système \FlecheDroite Administration. Pour avoir accès à ces applications, il faut être «~Ami de root~» comme vu au paragraphe \ref{RefMdpRoot}.
+\subsubsubsection{Autorisations}
+Cette application permet un réglage précis des droits et permissions directement utilisateur par utilisateur, ou par groupe. Les options paramétrables sont les droits de changer l'heure courante, d'arrêter l'ordinateur, de changer de place les tableaux de bord\ldots{}
+\subsubsubsection{Create a USB startup}
+Cet outil permet de créer facilement à partir d'un desktop CD ou d'une image iso, une clef USB bootable qui permet, selon l'option choisie, de garder ou non les documents créés dans votre répertoire personnel.
+\subsubsubsection{Date et heure}
+Date et heure\NotePage{Également accessible en cliquant-droit sur la date, puis «~Régler la date et l'heure~» \FlecheDroite «~régler l'heure du système~»} vous permet d'ajuster les réglages de la date et de l'heure de votre ordinateur, de spécifier votre fuseau horaire, et de synchroniser la date et l'heure avec des serveurs \RefGlossaire{-}{L'Internet}{Internet}{Internet}. Vous pouvez opter pour une synchronisation périodique avec des serveurs \RefGlossaire{-}{L'Internet}{Internet}{Internet} si vous avez installé au préalable le support NTP\NotePage{Network Time Protocol}. Lorsque vous activez l'option pour synchroniser périodiquement l'horloge avec des serveurs \RefGlossaire{-}{L'Internet}{Internet}{Internet}, vous avez alors la possibilité d'installer le support NTP si ce n'est déjà fait. Plus d'informations sur cette fonctionnalité en \ref{RefHeureNTP}, page \pageref{RefHeureNTP}. Une version plus légère, destinée à l'utilisateur courant uniquement est disponible par clic-droit sur la date, puis «~Régler la date et l'heure~».
+\subsubsubsection{Fenêtre de connexion}
+Utilisez la boîte de dialogue de configuration de l'écran de connexion pour régler l'écran initial de connexion. Vous pouvez spécifier le texte de bienvenue, définir l'image d'arrière-plan, activer les modules d'accessibilité, configurer la sécurité de la connexion, et faire en sorte que vous soyez automatiquement connecté au démarrage du système.
+\subsubsubsection{Gestionnaire de mises à jour}
+Le Gestionnaire de mises à jour d'Ubuntu est une application simple et facile à utiliser qui aide les utilisateurs à maintenir leur système et leurs logiciels à jour. Si des mises à jour sont disponibles, vous serez automatiquement prévenu par l'intermédiaire de la zone de notification du tableau de bord supérieur.
+\subsubsubsection{Gestionnaire de paquets Synaptic}
+Le Gestionnaire de paquets Synaptic est utilisé pour gérer les logiciels supportés par votre ordinateur. Utilisez-le pour installer, mettre à jour ou supprimer des applications. Contrairement au gestionnaire de mises à jour d'Ubuntu, Synaptic permet un contrôle fin du système de gestion des paquets. Cependant, cette application reste réservée à des utilisateurs avertis comme vous pourrez le voir en \ref{RefInstallSynaptic}.
+\subsubsubsection{Impression}
+Utilisez la boîte de dialogue Impression pour gérer/supprimer/ajouter des imprimantes, ainsi que gérer les tâches d'impression des imprimantes existantes. Plus d'informations à ce sujet à la section \ref{RefInstallImprimante}.
+\subsubsubsection{Moniteur système}
+Cet outil ressemble beaucoup au gestionnaire des tâches de Windows. Vous pourrez y voir les processus (programmes) en cours et l'utilisation du processeur, de la mémoire vive, etc.
+%\subsubsubsection{Nettoyage du système} PAS PAR Défaut dans cette release
+%Cette application assez récente permet de nettoyer facilement tous les résidus systèmes de votre gestionnaire de paquets. Plus d'explication sur son utilité et son usage à la section \ref{RefCleaner} 
+\subsubsubsection{Outils réseau}
+L'outil réseau permet d'effectuer de nombreux tests sur votre réseau, comme des pings, des traceroutes, ou un scannage de \RefGlossaire{Réseau}{-}{Port}{ports}, etc. Bref, l'utilisateur moyen n'en aura pas besoin !
+\subsubsubsection{Pilotes de périphériques}
+Cet outil vous permet d'installer des \RefGlossaire{Système}{Pilote}{Driver}{drivers} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires}, nécessaires, par exemple, lors de l'utilisation de la 3D par votre carte graphique. Vous trouverez plus d'informations sur ce point à la section \ref{RefInstallProprio}.
+\subsubsubsection{Prise en charge linguistique}
+Si votre système n'était pas connecté à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} lors de l'installation, il se peut que votre système ne soit pas entièrement francisé. Vous pourrez ici demander le téléchargement des traductions manquantes. Il est également possible d'installer d'autres langues si des utilisateurs de différentes nationalités utilisent votre ordinateur. Se référer à la section \ref{RefSupportLangue}.
+\subsubsubsection{Services}
+Un \RefGlossaire{Système}{Démon}{Service}{service} est un programme qui tourne en tâche de fond, c'est-à-dire continuellement\NotePage{Exemple : l'heure qui s'affiche est en quelque sorte, «~un \RefGlossaire{Système}{Démon}{Service}{service}~»}. Les \RefGlossaire{Système}{Démon}{Service}{services} sont démarrés dès que l'affichage graphique est lancé. Vous pouvez ici désactiver les \RefGlossaire{Système}{Démon}{Service}{services} dont vous n'avez pas besoin. Un autre nom également utilisé est \RefGlossaire{Système}{Service}{Démon}{démon}.
+\subsubsubsection{Sources de logiciels}
+Vous gérerez ici, entres autres, la localité des serveurs d'où Ubuntu télécharge les programmes et vérifie les mises à jour. Plus d'informations dans la section \ref{RefSourceMAJ}.
+\subsubsubsection{Test du matériel}
+Ce logiciel vous permet de voir facilement les différents composants constituant votre ordinateur. Cet élément est assez similaire au gestionnaire de périphériques de Windows.
+\subsubsubsection{Utilisateurs et groupes}
+La boîte de dialogue «~Utilisateurs et groupes~» vous permet de gérer les comptes des utilisateurs et les groupes. Chaque utilisateur possède son propre nom de connexion et son mot de passe, ainsi qu'un bureau indépendant, des paramètres et préférences individuels pour le courrier électronique, la navigation sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} et les autres applications. Généralement, vous utiliserez cet outil pour gérer les utilisateurs humains de votre ordinateur.
+\subsubsubsection{Visionneur de journaux systèmes}
+Tout ce qui se passe -- en bien et en mal ! -- sur votre ordinateur est archivé dans des fichiers \RefGlossaire{Système}{Fichier de configuration}{Texte brut}{textes} pour un certain temps. Cela permet de vérifier ce qui s'est mal déroulé lors d'un bug. Cet outil permet d'avoir un accès aisé à la lecture de ces fichiers\NotePage{Ces derniers se trouvent, la plupart du temps, dans \Chemin{/var/log}}.
+\subsubsection{Autres applications et entrées du menu Système}
+\subsubsubsection{Aide et soutien}
+L'option Aide et soutien vous permet de visualiser différentes documentations sur votre ordinateur.
+\subsubsubsection{À propos de GNOME}
+Cette option ouvre une page d'introduction à \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} dans un navigateur.
+\subsubsubsection{À propos d'Ubuntu}
+Cette option ouvre une page d'introduction à Ubuntu dans un navigateur.
+\subsubsubsection{Verrouiller l'écran}
+Également accessible par la combinaison de touches \Touche{Ctrl} + \Touche{Alt} + \Touche{L} comme indiqué \ref{RefVerrouillageOrdi} ou encore par clic sur l'applet de changement rapide d'utilisateur décrit à la section \ref{RefSwitchUser}, en cas d'absence prolongée\NotePage{Pause café par exemple ? Le temps de commander une
+pizza ? ;-)}, cela vous permet de bloquer immédiatement l'écran et un mot de passe est requis pour pouvoir avoir accès à nouveau à votre bureau.
+\subsubsubsection{Fermer la session\ldots{}}
+Vous pouvez, par le biais de ce bouton, choisir de vous déconnecter -- c'est à dire fermer votre session courante et revenir à l'écran présenté en \ref{ImgGDM} comme si votre ordinateur venait de démarrer -- ou encore changer d'utilisateur -- ce qui signifie de suspendre temporairement votre session pour qu'un autre utilisateur puisse se connecter. Une fois que ce dernier aura terminé ou cliqué également sur «~changer d'utilisateur~», vous pourrez retrouver votre session dans l'état où vous l'avez quittée (les programmes déjà ouverts le resteront à la reprise).
+\ImgCentree{5}{corps/chapitre3/img/Deco.png}{Action de déconnexion}{ImgChoixDeco}
+\subsubsubsection{Éteindre\ldots{}}
+Vous aurez le choix dans cette boîte de dialogue entre plusieurs opérations plus importantes pour votre ordinateur : l'éteindre, le redémarrer, le mettre en veille (permet de le passer en mode économie d'énergie et de retrouver l'état actuel assez rapidement lors de sa réactivation) ou encore hiberner votre ordinateur (permet de l'éteindre, et, lors de son redémarrage, vous retrouverez votre session dans l'état exact où elle était lors de sa mise en hibernation : applications/documents ouverts)\ldots{}
+\ImgCentree{5}{corps/chapitre3/img/Quitter.png}{Action d'extinction}{ImgChoixQuitter}
+\subsection{Autres éléments du tableau de bord supérieur}
+\label{RefSwitchUser}
+\AddIndex{Environnement graphique}{-}{GNOME}{-}
+Se trouvent immédiatement à droite de la zone «~menu~», deux raccourcis vers des applications bien pratiques : le premier concerne Firefox, le célèbre navigateur \RefGlossaire{-}{L'Internet}{Internet}{Internet} -- équivalent d'Internet Explorer -- que vous connaissez et utilisez sûrement.\par
+Le second est un gestionnaire de messagerie -- équivalent d'Outlook -- nommé Évolution, offrant une intégration parfaite au bureau \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}, notamment au niveau de la gestion de votre agenda, carnet d'adresses ou encore de vos différentes tâches. Nous verrons ces points dans la partie \ref{RefCalendrierEvolution}. Suit ensuite l'aide très complète de GNOME.\par
+Vous avez plutôt sur la droite, entres autres : une zone de notification dans laquelle le système fera apparaître, par exemple, une petite \RefGlossaire{-}{-}{Icône}{icône} avec un message lors de la disponibilité de nouvelles mises à jour, une application pourra également y intégrer des évènements --- comme prévenir de l'arrivée de nouveaux mails. Les -- heureux -- possesseurs d'un ordinateur portable y ont également un indicateur de batterie.\\
+Puis nous retrouvons le Network-Manager, gestionnaire de réseaux dont l'utilisation sera décrite dans la section \ref{RefUtilisationNM}. Celui-ci se présente sous la forme de 2 \RefGlossaire{-}{-}{Icône}{icônes} différentes selon que vous soyez en connexion filaire -- figure \ref{ImgConnexionFilaire} -- ou en connexion sans fil --- figure \ref{ImgConnexionWifi}.\\
+Apparaît ensuite un contrôleur de volume\NotePage{En utilisant la roulette de souris sur cet indicateur de volume général, il est possible ainsi de directement contrôler le niveau sonore !}, puis la date et l'heure avec possibilité de les copier par un simple clic-droit !\par
+Vous trouvez également l'applet de changement rapide d'utilisateurs qui permet de passer de manière pragmatique d'un utilisateur à un autre sans avoir à clôturer sa session courante\NotePage{Il est possible de ne pas avoir à renseigner à chaque fois son mot de passe lorsque vous basculez entre plusieurs sessions déjà ouvertes en cliquant-droit, puis «~Préférences~» et en décochant «~Vérrouiller l'écran après avoir changé d'utilisateur~»}. D'autres options comme le paramétrage de l'affichage ou des raccourcis à des éléments comme la modification des informations personnelles, utilisateurs et groupes ou encore les paramètres de l'écran de connexion sont disponibles.\\
+Une option spéciale «~utilisateur invité~» est disponible. Ce compte temporaire vous permet de laisser une personne -- un ami ou leur des expositions/démonstrations -- utiliser votre système d'exploitation en toute sécurité et en préservant vos données personnelles. De plus, tout dossier/fichier créé sera détruit lors de la déconnexion. Vous n'aurez vraiment plus aucune excuse pour laisser une autre individu utiliser votre compte utilisateur\NotePage{Ce qui est MAL, je le répète : un compte = un utilisateur} !\\
+Vous y retrouvez également les options de déconnexion, hibernation, redémarrage et extinction classiques. Enfin, une option et non des moindres : vous verrez et pourrez changer votre statut d'activité de votre outil de messagerie instantanée -- à noter que pour l'instant seul Pidgin, cf \ref{RefPidgin} page \pageref{RefPidgin}, installé par défaut et Telepathy le supportent.
+\IconeBarreHaut
+\subsection{Le tableau de bord inférieur}
+Celui-ci contient par défaut quatre \AddIndex{Environnement graphique}{-}{Applet}{applets} :
+\begin{itemize}
+\ImgPar{r}{0.66}{corps/chapitre3/img/Applet_Afficher_Bureau.png}
+\item Le premier permet de masquer toutes les applications ouvertes afin de voir votre bureau. 
+\item Le deuxième est une liste de fenêtre(s). Vous pouvez y voir toutes les applications ouvertes sur le bureau en cours. Cliquer dessus les fera s'agrandir ou se réduire, les passer au premier plan\ldots{} Vous pouvez passer d'une application à l'autre, en utilisant la roulette de la souris, ou encore, comme sous Windows, par les touches \Touche{Alt} + \Touche{TAB}.
+\ImgCentree{12}{corps/chapitre3/img/Applet_Barre_Des_Taches.png}{La barre des tâches}{ImgBarreTaches}
+\item Le troisième est le sélecteur de bureaux virtuels. Vous y voyez en modèle réduit les différentes fenêtres ouvertes dans vos bureaux virtuels. Vous pouvez alors passer d'un bureau à l'autre en cliquant sur le bureau\NotePage{Ou encore, espace de travail, cf. section \ref{RefBureauxVirtuels}.} désiré. Vous pouvez également \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} une application entre plusieurs bureaux -- quatre dans cet exemple -- grâce à cet \AddIndex{Environnement graphique}{-}{Applet}{applet}. Il est aussi possible, de la même manière, de passer d'un bureau à l'autre à l'aide de la roulette de la souris.
+\ImgCentree{5.66}{corps/chapitre3/img/Applet_Workspace.png}{Le sélecteur de bureau}{ImgSelecteurBureau}
+\ImgPar{r}{0.71}{corps/chapitre3/img/Applet_Corbeille.png}
+\item Enfin, vous serez peut-être surpris de trouver le dernier \AddIndex{Environnement graphique}{-}{Applet}{applet} ici : il s'agit de la corbeille. À chaque fois que vous supprimez un fichier ou un dossier en sélectionnant «~Mettre à la corbeille~» dans le menu contextuel, par la touche \Touche{Suppr} ou encore par simple \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer}, celui-ci n'est pas vraiment effacé et se retrouve dans la corbeille. Ceci permet d'éviter les opérations malheureuses. Vous pouvez récupérer les fichiers situés dans la corbeille en cliquant-gauche sur celle-ci, puis en les coupant/collant, en les déplaçant ou encore en les restaurant par clic-droit \FlecheDroite «~Restaurer~». Quand vous voulez réellement supprimer tous les fichiers et dossiers, cliquez sur «~Vider la corbeille\NotePage{Rassurez-vous, il n'y a pas d'étages à descendre, ni de sac poubelle à vider ;-)}~». Pour supprimez un seul élément, cliquez-droit dessus et sélectionnez «~Supprimer définitivement~». Vous pouvez court-circuiter la corbeille et supprimer directement l'élément en maintenant la touche \Touche{Shift} lors d'un appui sur \Touche{Suppr}.
+\end{itemize}

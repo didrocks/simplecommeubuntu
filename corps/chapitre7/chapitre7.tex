@@ -1,0 +1,168 @@
+\chapitre{Les derniers détails}{A ce stade, il ne vous reste sûrement}{ plus beaucoup de questions. Ce chapitre vous guide pas à pas dans les derniers éléments de configuration d'Ubuntu, à savoir imprimante, scanner, accélération du matériel graphique. Si vous redémarriez encore sous Windows pour imprimer vos documents ou pour scanner vos photos, ce chapitre signe la fin de votre calvaire ! Je clôture ce chapitre en vous présentant quelques friandises visuelles et autres fignolages propres à Ubuntu.\label{RefDebutChap7}}
+\section{Installer son imprimante}
+\label{RefInstallImprimante}
+Ubuntu possède une gestion des imprimantes simple, claire et sans détour. Aucune configuration n'est nécessaire puisque tout est complètement automatisé et nous allons voir, étape par étape, comment tout cela s'articule. 
+\subsection{Reconnaissance de l'imprimante}
+\ImgPar{r}{0.8}{corps/chapitre7/img/Imprimante_1.png}
+Au premier branchement de votre imprimante, une \RefGlossaire{-}{-}{Icône}{icône} apparaît dans la barre supérieure de \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}. Ubuntu va chercher le \RefGlossaire{Système}{Driver}{Pilote}{pilote} correspondant à votre imprimante et le configurer afin de vous permettre une utilisation optimale de votre imprimante.
+Une fois cette dernière prête, le système vous en fera part comme dans l'image \ref{ImgImpress1}.\par
+\ImgCentree{5}{corps/chapitre7/img/Imprimante_2.png}{Imprimante installée}{ImgImpress1}
+\subsection{Configuration de l'imprimante}
+L'appui sur le bouton «~Configurer~» revient à cliquer sur Système \FlecheDroite Administration \FlecheDroite Impression, et permet d'ouvrir la fenêtre \ref{ImgImpress2} de gestion des imprimantes. Dans celle-ci, vous pouvez imprimer une page de test, nettoyer les têtes d'impression et accéder à des fonctions plus avancées comme l'accès aux imprimantes réseaux, la politique de comportement en cas d'erreur, le choix de la résolution, de l'orientation du papier\ldots{}\par
+\ImgCentree{11}{corps/chapitre7/img/Imprimante_3.png}{Panneau d'administration des imprimantes}{ImgImpress2}
+\subsection{Une deuxième imprimante ?}
+Vous remarquerez également qu'est installée par défaut une imprimante virtuelle PDF, qui vous permettra de créer de tels documents depuis n'importe quelle application. Vous pourrez la sélectionner depuis la boîte de dialogue de choix de l'imprimante accessible la plupart du temps par Fichier \FlecheDroite Imprimer\dots{} comme indiqué sur l'illustration \ref{ImgImpress3}.\par
+\ImgCentree{11}{corps/chapitre7/img/Imprimante_4.png}{Choix de l'imprimante}{ImgImpress3}
+\subsection{Derniers conseils}
+Comme vous pouvez le voir, la reconnaissance d'une imprimante avec Ubuntu n'est en rien complexe. Pour les imprimantes récalcitrantes, l'application de configuration de l'imprimante \ref{ImgImpress2} permet d'ajouter manuellement une imprimante et de sélectionner son driver. Par ce moyen et l'aide de forums tels celui de \url{http://www.ubuntu-fr.org}, il est possible de faire fonctionner pratiquement n'importe quel type d'imprimante et vous aurez quasiment toujours la possibilité de la faire fonctionner. Si tel n'était pas le cas, cela signifierait que le constructeur de l'imprimante a refusé de délivrer la moindre information à propos de son matériel mais, fort heureusement, ce cas est de plus en plus rare.
+\section{Passons au scanner}
+\ImgPar{r}{3}{corps/chapitre7/img/Installer_Scanner_1.png}
+Avec Ubuntu, le scanner s'installe et s'utilise avec l'application XSane. Vous trouverez XSane dans le menu  Applications \FlecheDroite Images \FlecheDroite Scanneur d'images XSane. C'est un outil d'acquisition graphique, il permet aussi de faire de la reconnaissance de caractère, si le paquet «~gocr~» est installé. Pour cela, installez simplement le paquet «~gocr~» via Synaptic\NotePage{Toujours selon la méthode expliquée à la section \ref{RefInstallSynaptic}}.\par
+XSane permet de :
+\begin{itemize}
+\item scanner une image, photo, dessin ou document texte, 
+\item créer un courriel, 
+\item créer un fax. 
+\end{itemize}
+Lançons-nous dans l'installation sans plus attendre.
+\subsection{Reconnaissance de votre matériel}
+Au premier lancement, XSane tentera de détecter et reconnaître votre matériel. XSane, lors de son démarrage, cherchera la présence de scanner(s) et affichera la fenêtre d'attente \ref{ImgScanner2}.
+\ImgCentree{7.8}{corps/chapitre7/img/Installer_Scanner_2.png}{Recherche de scanner}{ImgScanner2}
+\subsection{Interface XSane}
+Dès votre matériel détecté, trois fenêtres apparaîtront à l'écran : 
+\ScannerPresentation
+\begin{itemize}
+\item La fenêtre principale \ref{ImgScanner3}, le bouton clé est «~Numériser~» qui va effectuer la numérisation proprement dite. Il y est possible d'ajuster un grand nombre de paramètres automatiquement en choisissant la destination -- fichier, écran, photo, impression\ldots{} -- du document numérisé ou en les ajustant manuellement.
+\item La fenêtre d'aperçu \ref{ImgScanner4} dans laquelle vous pourrez lancer un\ldots{} aperçu\NotePage{Oui, j'ai mis 3 heures pour nommer la fenêtre} et définir la zone du document à scanner.
+\item Et enfin, l'histogramme \ref{ImgScanner5}, qui pourra rappeler à certains des -- mauvais ? -- souvenirs de cours sur le traitement d'imagerie numérique.
+\end{itemize}
+\subsection{Mettons tout ceci en pratique par un exemple}
+\subsubsection{Étape 1 : L'aperçu}
+Placez votre document sur la vitre du scanner et dans la fenêtre d'aperçu, choisissez «~Acquisition de l'aperçu~», vous devriez obtenir un écran comme celui-ci représenté en \ref{ImgScanner6}.\\
+Sélectionnez ensuite la zone à numériser par les délimitations en pointillés comme en \ref{ImgScanner7}. Cela peut s'effectuer d'une manière similaire à la sélection par la souris de plusieurs fichiers : on clique sur un endroit, puis, sans relacher la souris, on déplace le curseur jusqu'à la zone finale de délimitation. On peut ensuite «~ajuster~» en déplacer chaque bord du cadre comme si l'on redimensionnait une fenêtre.\par
+\ScannerEtapeUn
+\subsubsection{Étape 2 : La numérisation}
+Lancez la numérisation proprement dite, via le bouton «~Numériser~» de la fenêtre principale. Une barre de progression \ref{ImgScanner8} vous indiquera l'état d'avancement du scanner. La vitesse dépend essentiellement de votre scanner et des agents de transmission des informations, comme le type de câble et le \RefGlossaire{Système}{-}{Port}{port} utilisé.\par
+\ImgCentree{3.69}{corps/chapitre7/img/Installer_Scanner_8.png}{Étape 2 : Acquisition en cours}{ImgScanner8}
+\subsubsection{Étape 3 : Retoucher et enregistrer votre image}
+Votre fichier est dorénavant numérisé. Par défaut, le résultat s'affiche dans une visionneuse d'images représentée en \ref{ImgScanner9}.\\
+Vous pouvez rester dans l'interface XSane \ref{ImgScanner10} pour effectuer une rotation par exemple, ou d'autres petites transformations d'image. Il ne vous reste plus qu'à enregistrer votre image via le menu «~Fichier \FlecheDroite Sauver l'image~».\par
+\ScannerEtapeDeux
+\begin{nota}
+La fenêtre principale, comme indiqué précédemment, contient de nombreuses options que vous pourrez «~dompter~» au fur et à mesure de l'utilisation de XSane. Un exemple très pratique est la possibilité d'envoyer directement le résultat par mail, ou encore de l'enregistrer automatiquement dans un format donné.
+\end{nota}
+\section{Les pilotes propriétaires}
+\label{RefInstallProprio}
+\subsection{Cartes graphiques et accélération 3D}
+\subsubsection{ATI}
+\ImgPar{r}{1.5}{corps/chapitre7/img/Logo_ATI.png}
+Les cartes graphiques de marque ATI sont assez mal supportées sous GNU/Linux en général, bien que la politique d'ATI tende à changer ces derniers mois depuis le rachat par AMD plus favorable aux Logiciels Libres. Ubuntu propose toutefois deux \RefGlossaire{Accélération graphique}{Driver}{Pilote}{pilotes} permettant de tirer parti de l'accélération matérielle de ces cartes. Attention, ces \RefGlossaire{Accélération graphique}{Driver}{Pilote}{pilotes} ont des performances relativement faibles par rapport à leur homologue sous Windows. Il n'est cependant, pas recommandé d'installer le \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} pour toute carte graphique antérieure à la 9250Pro : en effet, les deux \RefGlossaire{Accélération graphique}{Pilote}{Driver}{drivers} \AddIndex{Philosophie}{-}{Libre}{Libres} proposés directement par Ubuntu fonctionnent très bien. Si vous possédez une telle carte et ne souhaitez pas en changer, vous pouvez toujours vous rendre sur le wiki de Ubuntu-fr : \url{http://doc.ubuntu-fr.org/ati} ou tenter directement l'installation du \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} -- mais ce terme «~\RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire}~» pourra gêner certains : le code source n'est pas accessible et par conséquent, Ubuntu n'a absolument aucun contrôle sur la sécurité de ces derniers -- qui sera détaillée dans la partie \ref{RefInstallDriverProprietaire}.
+\subsubsection{nVIDIA}
+\ImgPar{r}{1.5}{corps/chapitre7/img/Logo_nVIDIA.png}
+Le \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} proposé par Ubuntu permet un affichage graphique, mais ne tire absolument pas parti de l'accélération graphique. Donc, tous les jeux en 3D ou autres, ne fonctionnent pas par défaut. Un \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \AddIndex{Philosophie}{-}{Libre}{Libre} appelé «~nouveau~» est en cours d'élaboration mais reste, à l'heure actuelle, dans un état très expérimental. Heureusement, nVIDIA propose de très bons \RefGlossaire{Accélération graphique}{Pilote}{Driver}{drivers} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires} -- mais nous pouvons faire la même remarque que précédemment, car «~\RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires}~» -- pour GNU/Linux. Pour plus d'informations, référez-vous au wiki d'Ubuntu-fr à l'adresse suivante : \url{http://doc.ubuntu-fr.org/nvidia}. L'installation du \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} est décrite dans la section suivante.
+\newpage
+\subsubsection{Intel}
+\ImgPar{r}{1.5}{corps/chapitre7/img/Logo_Intel.png}
+Je peux donner directement une bonne nouvelle à tous les possesseurs d'une telle carte : Intel a libéré depuis quelques temps son \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} GNU/Linux, qui était à l'époque très en retard au regard de ses performances. Ceci lui a rapidement permis de profiter de très grandes améliorations de la part de la communauté du \AddIndex{Philosophie}{-}{Libre}{Libre}\NotePage{Et notamment, un très bon support pour la gestion de l'énergie ainsi que la mise en hibernation.} et il intègre, dorénavant, l'accélération graphique par défaut. Vous n'avez donc rien à faire de particulier !
+\subsection{Installation d'un driver propriétaire}
+\AddIndex{Système}{Driver}{Pilote}{-}
+\label{RefInstallDriverProprietaire}
+Pour installer tout \RefGlossaire{Système}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} et être sûr de ne pas se tromper, il suffit d'activer le «~Pilote de périphériques~» de l'image \ref{ImgPiloteProprio1} que vous trouverez par le biais du menu «~Système \FlecheDroite Administration~» ou de cliquer sur l'icône de notification dans le tableau de bord supérieur lorsque celui-ci apparaît --- ce qui sera le cas uniquement si vous possédez un matériel nécessitant de tels drivers. Il faut, de plus, que les sources de logiciels «~restricted~» soient activées, ce qui vous sera demandé de faire si tel n'est pas le cas. Plus d'informations sont disponibles à ce sujet si l'on se réfère à la partie \ref{RefSourceMAJ}.\\
+Une fois lancé, vous visualiserez les \RefGlossaire{Système}{Driver}{Pilote}{pilotes} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires} -- correspondant à votre matériel -- et pourrez sélectionner ceux à installer et, enfin, cliquez sur «~Activate~». Renseignez votre mot de passe. Vous aurez, après l'installation, un avertissement \ref{ImgPiloteProprio2} selon lequel le système doit être redémarré\NotePage{En fait, il suffit simplement, dans le cas des \RefGlossaire{Système}{Pilote}{Driver}{drivers} de cartes graphiques, de redémarrer l'interface graphique après vous être déconnecté de votre session par les touches \Touche{Ctrl} + \Touche{Alt} + \Touche{BackSpace}, mais choisissez le redémarrage si vous n'êtes pas sûr de ce que vous faites.}. Ceci effectué, vous aurez accès à un autre panneau d'informations \ref{ImgPiloteProprio3} vous confirmant la bonne prise en charge de votre \RefGlossaire{Système}{Driver}{Pilote}{pilote} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire}.
+\PiloteProprio
+\section{Activer le bureau en 3D}
+\label{RefBureau3D}
+\subsection{Présentation}
+Si vous possédez une carte graphique 3D, l'installation éventuelle  des \RefGlossaire{Système}{Pilote}{Driver}{drivers} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires} vous fera bénéficier des derniers effets de bureaux disponibles sous GNU/Linux qui n'ont vraiment rien à envier aux effets Aéro de Vista qualifiés pompeusement de «~Waow$^{TM}$~»\NotePage{Je n'ai pas pu m'en empêcher \ldots{}} !!!\par
+\subsection{Installation}
+Vous êtes sceptique ou tout simplement tenté ? Direction Système \FlecheDroite Préférences \FlecheDroite Apparence. Cette fonctionnalité peut s'activer par simple sélection de l'option «~Normal~» ou «~Extra~» de l'onglet «~Effets Visuels~» comme illustré en \ref{ImgInstallBureau3D}, la dernière option vous donnant plus de possibilités que la première. Si vous n'avez pas encore installé de \RefGlossaire{Système}{Driver}{Pilote}{pilote} permettant l'accélération graphique comme explicité dans la section \ref{RefInstallProprio} page \pageref{RefInstallProprio}, il vous sera proposé de le faire comme montré par l'image \ref{ImgInstallerPilotePrioprioAuto}.\par
+\InstallBureauTroisD
+Enfin, après l'activation des effets graphiques, vous pourrez constater si le résultat vous convient --- en clair, si vous ne tombez pas sur un écran illisible. Sélectionnez alors «~Conserver les paramètres ~» pour valider votre choix sur l'écran \ref{ImgBureau3DConfirm}. Il est possible à tout moment de revenir au gestionnaire de fenêtre par défaut en sélectionnant «~Aucun~».
+\begin{attention}
+Par la suite, nous présenterons les commandes et effets disponibles si vous avez coché «~Extra~». Il est alors naturel que certaines options ne seront pas disponibles si vous avez seulement sélectionné le mode «~Normal~».
+\end{attention}
+\ImgCentree{7}{corps/chapitre7/img/Installer_Bureau3D2.png}{Confirmez votre choix}{ImgBureau3DConfirm}
+\subsection{Utilisation}
+Je vous laisse contempler à loisir ces effets graphiques qui apparaissent lors du redimensionnement des fenêtres -- accessible également par les touches \Touche{Alt} + \Touche{F8} ou encore \Touche{Alt} + appui du bouton central de la souris --, de leur agrandissement/réduction, de leur apparition. Vous remarquerez également l'existence de fenêtres «~molles~» ainsi que leur résistance au bord de l'écran\ldots{}\par
+Certaines touches permettent d'avoir accès à des effets avancés. Par exemple, lors de l'utilisation de \Touche{Alt} + \Touche{Tabulation} afin d'afficher le sélectionneur entre les applications d'un même bureau, le focus passe automatiquement sur les différentes fenêtres et vous pouvez voir un aperçu de celles-ci\NotePage{Vous remarquerez que si une vidéo est en cours de visionnage, cette dernière continue d'être lue et d'afficher son contenu !}. La combinaison de touches \Touche{Super}\NotePage{Touche Windows} + \Touche{Tabulation} permet d'accéder à un autre effet graphique remplissant la même fonction. Si vous ajoutez à la première combinaison la touche \Touche{Ctrl}, vous pourrez alors faire défiler toutes les applications lancées sur votre système, quel que soit le bureau sur lequel elles se trouvent. Ajoutez à toutes ces combinaisons la touche \Touche{Shift}\NotePage{Eh oui, il faut être souple !} pour faire défiler les fenêtres dans l'ordre inverse. Vous pouvez également passer en toute simplicité les fenêtres d'un espace de travail à un autre en les glissant sur le bord de l'écran.\par
+Le passage d'un espace de travail à un autre est rendu possible en appuyant simultanément sur \Touche{Ctrl} + \Touche{Alt} + \Touche{Flèches}. Si vous ajoutez à nouveau la touche \Touche{Shift}, vous «~emporterez~» alors avec vous la fenêtre en cours d'utilisation.\par
+Un zoom est accessible par l'appui prolongé de la touche \Touche{Super} en faisant défiler la roulette de souris. Par contre, si vous maintenez la touche \Touche{Alt} enfoncée, toujours en faisant défiler la roulette, ce sera l'opacité de la fenêtre en cours d'utilisation que vous réglerez. Garder la touche \Touche{Alt} enfoncée permet de déplacer la fenêtre à l'aide du clic-gauche de la souris, ou encore appuyez pour cela sur \Touche{Alt} + \Touche{F7}, puis utilisez les touches fléchées de votre clavier. Enfin, à destination toute particulière des personnes atteintes d'un handicap, il est possible d'augmenter les contrastes sur une fenêtre par \Touche{Super} + \Touche{N} ou de tout l'espace de travail par \Touche{Super} + \Touche{M}.\par
+Activez en tenant enfoncé les touches \Touche{Shift} + \Touche{Alt} + \Touche{Flèche haut}\NotePage{C'est vrai qu'il faut avoir également de la mémoire\ldots{}}, une fonction très similaire à la fonction «~exposé~» d'Apple permettant de voir d'un seul coup d'oeil toutes les fenêtres appartenant à un espace de travail, et de sélectionner par un clic de souris ou par les touches fléchées, la fenêtre à placer au premier plan. Réorganisez tout aussi aisément vos fenêtres en affichant tous les bureaux côte à côte en appuyant simultanément sur \Touche{Super} + \Touche{e}. Vous pouvez y \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} les différentes fenêtres selon votre gré.
+Vous avez perdu la souris ? Il suffit d'appuyer sur \Touche{Super} + \Touche{c} pour la replacer au centre de votre écran !
+\subsection{Comment avoir plus de choix ?}
+Il existe bien d'autres effets graphiques, beaucoup plus avancés que ceux auquels vous avez accès par défaut. Attention, certains peuvent éventuellement rendre votre système instable.\par
+Pour les activer, il vous faudra installer un gestionnaire de configuration spécifique illustré par l'image \ref{ImgBureauConfig3D} que vous pourrez trouver sous le nom de «~Gestionnaire de configuration des effets de bureau~» par «~Ajouter/supprimer\dots{}~», puis y accéder dans «~Système \FlecheDroite Préférences~». Vous pourrez paramétrer également tous ces raccourcis et bien plus encore !\par
+\ImgCentree{8}{corps/chapitre7/img/Bureau3D_config.png}{Configuration avancée du bureau 3D}{ImgBureauConfig3D}
+\section{Optimisation selon le processeur}
+Cette partie est à réserver aux seuls utilisateurs «~avertis~».\\
+Par défaut l'installation devrait choisir le \RefGlossaire{Système}{Kernel}{Noyau}{noyau} le plus adapté à votre installation. Cela est à vérifier car il est à noter qu'un \RefGlossaire{Système}{Kernel}{Noyau}{noyau} adapté à votre matériel est vivement conseillé. Notez aussi que si vous avez beaucoup de RAM -- 1 Gio ou plus -- toute votre RAM ne sera pas prise en compte avec le \RefGlossaire{Système}{Kernel}{Noyau}{noyau} 386.\par
+Il existe plusieurs versions du \RefGlossaire{Système}{Kernel}{Noyau}{noyau} adaptées aux différents types de microprocesseurs «~PC~» et utilisation. Vous les trouverez toutes listées dans le logiciel Synaptic. Voici un tableau récapitulatif des \RefGlossaire{Système}{Kernel}{Noyau}{noyaux} adaptés au différents types de microprocesseur et de cas d'utilisation :\par
+\renewcommand{\multirowsetup}{\centering}
+\begin{center}
+\begin{tabular}{||c|c||}
+\hline
+\hline
+Microprocesseur & Noyaux\\
+\hline
+\hline
+386, 486, Intel Pentium 1, AMD K6 & linux-image-386\\
+\hline
+%\multirow{2}{10cm}{Intel Pentium 2, 3, 4, AMD Athlon,\\Athlon Thunderbird, Athlon XP} & linux-image-generic\\
+%& (noyau par défaut)\\
+Intel Pentium 2, 3, 4, AMD Athlon,& linux-image-generic\\
+Athlon Thunderbird, Athlon XP & (noyau par défaut)\\
+\hline
+Noyau temps réel & linux-image-rt\\
+\hline
+Utilisation serveur & linux-image-server\\
+\hline
+Environnement virtualisé & linux-image-virtual\\
+\hline
+\hline
+\end{tabular}
+\end{center}\par
+Mais comment connaitre la version de votre \RefGlossaire{Système}{Kernel}{Noyau}{noyau} ? Il suffit de saisir la commande suivante dans un \RefGlossaire{-}{Console}{Terminal}{terminal}\NotePage{Encore une fois, accessible par Applications \FlecheDroite Accessoires \FlecheDroite Terminal ou directement par \Touche{Alt} + \Touche{F2}} : \Commande{uname -r}. Vous obtiendrez alors quelque chose ressemblant à cela : \Code{2.6.27.X-generic}
+Ce qui nous intéresse ici, c'est la dernière partie --- generic ici. Cela vous renseignera ainsi sur la version et le type de \RefGlossaire{Système}{Kernel}{Noyau}{noyau} en cours d'utilisation.\par
+Pour installer un nouveau \RefGlossaire{Système}{Kernel}{Noyau}{noyau}, installez à partir de Synaptic\NotePage{Plus d'informations sur l'installation d'un paquet par Synaptic dans la section \ref{RefInstallSynaptic}}  le paquet «~linux-image-???~» où «~???~» varie suivant l'élément au tableau ci-dessus. Enfin, si vous avez installé un \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire}, n'oubliez pas de remplacer, par Synaptic\NotePage{Même remarque} au besoin, linux-restricted-modules-generic\NotePage{Votre ancien \RefGlossaire{Système}{Kernel}{Noyau}{noyau}} par linux-restricted-modules-???.
+\section{Fignoler le démarrage}
+\subsection{Modification de GRUB}
+Pour utilisateurs «~avertis~» seulement !\\
+\ImgCentree{11}{corps/chapitre7/img/Grub.png}{Le menu GRUB}{ImgGrubModif}
+Ce logiciel visible par l'image \ref{ImgGrubModif} s'occupe de démarrer les différents \RefGlossaire{Système}{OS}{Système d'exploitation}{systèmes d'exploitation} présents sur votre ordinateur. Il vous donne dix secondes pour choisir GNU/Linux ou Windows -- si vous avez une partition Windows -- et prend 3 secondes au démarrage si vous n'avez que GNU/Linux. Il est personnalisable, pour cela il suffit d'éditer son \AddIndex{Système}{Texte brut}{Fichier de configuration}{fichier de configuration} : taper la commande\NotePage{Toujours et encore dans un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal ou après avoir fait \Touche{ALT} + \Touche{F2}} : \Commande{gksudo gedit /boot/grub/menu.lst}\NotePage{Si vous vous rappelez ce qui a été indiqué en \ref{RefMdpRoot}, gksudo -- le module graphique de sudo -- indique que l'on prend les droits de l'administrateur afin d'éditer un fichier, ici le fichier menu.lst se trouvant dans \Chemin{/boot/grub/}, d'où la demande de votre mot de passe}.\\
+Quelques éléments intéressants sont :
+\begin{itemize}
+\item default 0 : \RefGlossaire{Système}{OS}{Système d'exploitation}{Système d'exploitation} lancé par défaut -- ici le premier.
+\item timeout 10 : Le temps d'attente en secondes avant de lancer le choix par défaut.
+\item \#{}hiddenmenu : Cette ligne est commentée\NotePage{Indiqué par la présence du \# en début de ligne}, cette option est donc désactivée. Si vous ne voulez pas voir le menu à chaque démarrage, enlevez le \#. Ensuite, pour afficher GRUB, Il faudra appuyer sur la touche \Touche{Échap}\NotePage{Ou \Touche{Esc}} dans les 3 secondes du démarrage.
+\item \#{}color cyan/blue white/blue : Pour les personnes préférant la couleur, décommentez cette ligne, «~it's more eye-candy~». ;-)
+\end{itemize}
+Il y a d'autres options pour les plus érudits. Une dernière, tout de même intéressante : un mot de passe qui permet de bloquer l'édition de GRUB.\par
+On peut aussi améliorer la résolution d'écran lors du démarrage -- et corriger un problème d'inaccessibilité aux \RefGlossaire{-}{Terminal}{Console}{consoles} virtuelles sur certaines cartes graphiques avec le \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} nVIDIA -- en ajoutant vga=791 au bout de la ligne : \Code{\# defoptions=quiet splash} qui ainsi deviendra :\\
+\Code{\# defoptions=quiet splash vga=791}
+Il faut ensuite entrer la commande\NotePage{Dans un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal ou après avoir appuyé sur \Touche{ALT} + \Touche{F2}} : \Commande{sudo update-grub} pour que ce paramètre prenne effet.\\ Pour ajuster au mieux ce paramètre, référez-vous au tableau suivant :\par
+\begin{tabular}{||c||c|c|c|c|c||}
+\cline{2-6}
+\cline{2-6}
+\multicolumn{1}{c||}{} & \multicolumn{5}{c|}{Résolution}\\
+\hline
+\hline
+Couleurs & 640x480 & 800x600 & 1024x768 & 1280x1024 & 1600x1200\\
+\hline
+\hline
+8 bits (256) & 769 & 771 & 773 & 775 &796\\
+\hline
+15 bits (32k) & 784 & 787 & 790 & 793 & 797\\
+\hline
+16 bits (64k) & 785 & 788 & 791 & 794 & 798\\
+\hline
+24 bits (16m) & 786 & 789 & 792 & 795 & 799\\
+\hline
+\hline
+\end{tabular}
+\subsection{GDM : Se connecter automatiquement}
+\label{RefConnexionAuto}
+GDM\NotePage{GNOME Desktop Manager} correspond au logiciel auquel vous faites face lorsque vous devez vous connecter sur votre session. Si votre poste est mono-utilisateur, vous pouvez trouver inutile de saisir votre \RefGlossaire{-}{Identifiant}{Login}{login} ainsi que votre mot de passe à chaque démarrage. Soyez donc certains que vous serez le seul à avoir accès phyiquement à la machine, je ne reviendrai pas sur les bienfaits d'un utilisateur par personne, pour cela, référez-vous à la partie \ref{PremiereConnexion}.\par
+Maintenant que vous êtes averti, que faire alors pour que \AddIndex{Environnement graphique}{Personnalisation}{GNOME}{GNOME} démarre directement ?\\
+Il était, comme présenté lors de l'installation à la section \ref{InstallIdentite} page \pageref{InstallIdentite}, possible de l'activer dès l'installation. Sinon, cliquez sur Système \FlecheDroite Administration \FlecheDroite Fenêtre de connexion. Cochez la case «~Activer la connexion automatique~» de l'onglet «~Sécurité~» et choisissez un utilisateur de votre système dans la liste.\par
+Vous pouvez également activer un utilisateur par défaut : par exemple après 30 secondes, si rien n'est saisi, cet utilisateur sera connecté automatiquement. Pour cela, cochez la case «~Activer la connexion différée~».
+

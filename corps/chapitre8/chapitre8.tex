@@ -1,0 +1,808 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ATTENTION : ce chapitre est très moche dans sa mis en page, si vous êtes un expert LateX, une
+% solution serait le bienvenue car je sais que les /newpage ne sont pas trop dans l'esprit :
+% le paquet wrapfigure pour les images ne peut être utilisé car on utilise ici des listes, picins a
+% été choisi. Mais il est impossible de facilement avoir du texte à côté de l'image, puis ce texte
+% continu en dessous de l'image. Les /begingroup et /endgroup ainsi que {/par} sont une astuce
+% obtenue sur fr.comp.tex.tex mais n'est vraiment vraiment pas aisé d'utilisation
+% De plus, les /newpage sont présents car les titres peuvent-être désolidarisé de la liste.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapitre{Logiciels}{Ce chapitre va vous présenter}{ un grand nombre de logiciels indexés par catégories qui conviendront à la plupart des utilisateurs. Pour chacun, vous y trouverez le site Web officiel (en français, s'il existe) afin d'en tirer plus d'informations. Vous pourrez par la suite vous reporter à ce chapitre si vous cherchez un logiciel dans un domaine particulier. Bien évidemment, cette liste cible une large gamme d'applications mais n'est en rien exhaustive. Si vous ne trouvez pas ce qui vous convient, parcourez vous-même le menu Applications \FlecheDroite Ajouter/supprimer\dots{} à la recherche de la perle rare. Je suis certain que vous trouverez votre bonheur dans tous les cas allant de la gestion de recettes de cuisine à un générateur de fractales.\label{RefChapLogiciel}}
+\section{Préambule}
+Pour que vous puissiez installer tous les logiciels et jeux présentés,  il faut avoir modifié la liste des sources de logiciels comme décrit précédemment à la section \ref{RefSourceMAJ}.\par
+Les équivalences -- quand elles existent -- permettent de mieux visualiser l'utilité d'un logiciel, en aucune façon on ne parle ici d'équivalence de qualité. Certains logiciels ont donc parfois des fonctionnalités non présentes dans leur(s) équivalent(s) et inversement. Un exemple : Gimp existe sous Windows, il n'est pas cité comme équivalent à lui-même mais plutôt comme équivalent au logiciel le plus connu dans sa catégorie. Cependant, dans certains cas, aucun autre logiciel équivalent n'a été trouvé.\\
+Un grand soin a été apporté à cette liste pour n'avoir qu'un seul logiciel par type d'utilisation et ne pas vous perdre dans un marasme de choix. Sachez que de nombreux autres logiciels aux fonctionnalités similaires existent et je vous encourage à les rechercher si celui proposé ne vous convient pas. Des logiciels semblant avoir la même finalité sont répertoriés, mais certains apportent des fonctionnalités que les autres n'ont pas et vice-versa. Cette remarque n'est pas valable pour les programmes de dessin vectoriel, car chacun a ses préférences à logiciel équivalent. Sachez également que tous ceux présentés ici ne sont pas forcément \AddIndex{Philosophie}{-}{Libre}{Libres} -- c'est le cas, par exemple, de Google Earth -- cependant, ils sont tous gratuits.\\
+Certains logiciels cités sont déjà installés par défaut sous Ubuntu, ils sont tout de même présents dans cette liste pour indiquer comment ajouter quelques fonctions, modifier certains paramètres, expliquer leur utilité,\ldots{}\par
+En plus de toutes les applications présentées ici, je suis sûr que vous trouverez également quelques perles par le biais de Applications \FlecheDroite Ajouter/supprimer\dots{} Il suffit de chercher souvent le terme anglais. Exemple : «~Comics~» pour un logiciel spécialisé dans l'affichage de bandes dessinées\NotePage{Si si, ça existe, il est même présent dans ce livre !}, etc ! Vous pouvez aussi vous laisser guider par les thèmes -- exemple : «~\RefGlossaire{-}{L'Internet}{Internet}{Internet}~» -- pour trouver ce que vous désirez.\par
+\begin{nota}
+Voici un lien regroupant de nombreuses équivalences logiciels Windows/Linux : \\\url{http://www.om-conseil.com/sections.php?op=viewarticle&artid=42}. Attention cependant, toutes ces applications ne sont peut-être pas disponibles dans les sources de logiciels que nous avons paramétrées.
+\end{nota}
+\section{Différents cas d'installation}
+\label{RefInstallJeuEtLogiciel}
+\subsection{Installation «~classique~»}
+L'installation des jeux et logiciels est indiquée en ligne de commande. Vous pouvez bien sûr utiliser l'application «~Ajouter/supprimer\dots{}~» du menu Applications -- à quelques exceptions près -- si vous préférez les interfaces graphiques. Pour cela, recherchez-y directement le nom du jeu. Il faudra vous assurer, comme décrit dans la partie \ref{RefInstallAjouterSupprimer}, que vous avez sélectionné «~Toutes les applications disponibles~».\\
+Vous pouvez aussi les installer par Synaptic : si vous lisez par exemple \Commande{sudo apt-get install tagtool}, il faudra que vous installiez le paquet «~tagtool~». Toutes les lignes de commande indiquées, même si typographiquement cela reste impossible pour un livre, doivent être écrites sur une seule ligne. De même, il est indiqué comment lancer les logiciels dans un \RefGlossaire{-}{Console}{Terminal}{terminal} de commande par\NotePage{Oui, je sais, je radote\ldots{} mais quand vous vous référerez à cette partie dans un an, vous me remercierez peut-être.} Applications \FlecheDroite Accessoires \FlecheDroite Terminal. Vous pouvez utiliser le raccourci \Touche{ALT} + \Touche{F2} pour lancer directement ces logiciels en tapant leurs noms, ou encore, les rechercher graphiquement dans le menu «~Applications~».\\ Pour les désinstaller, référez-vous aux parties \ref{RefInstallSynaptic} et \ref{RefInstallAjouterSupprimer}.
+\subsection{Installation d'un .deb téléchargé}
+Parfois, certains logiciels ne sont pas dans les sources de logiciels. Cependant, certains utilisateurs les ont déjà compilés pour votre distribution Ubuntu. C'est pour cela que sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}, vous pourrez trouver des fichiers .deb pour Ubuntu. Je vous rappelle que depuis les sources de logiciels, lors d'une installation par «~Ajouter/supprimer\dots{}~» ou par Synaptic, vous ne faites que télécharger automatiquement un fichier .deb, puis l'installer. Ici, c'est donc la première partie de ce processus que vous effectuez manuellement.\\
+Donc, une fois un fichier .deb en votre possession, il suffit de double-cliquer dessus, puis de choisir «~installer le paquet~». Les dépendances éventuelles seront directement téléchargées depuis l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}. Vous pouvez ensuite effacer le fichier .deb.\\
+Pour le désinstaller, il suffit de le faire par Synaptic -- le logiciel n'est pas présent dans «~Ajouter/supprimer\dots{} puisque vous l'avez installé manuellement -- comme expliqué à la section \ref{RefInstallSynaptic}.\par
+\begin{attention}
+Les .deb extérieurs, et spécialement ceux faits par «~getdeb~» ne donnent absolument aucune garantie en terme de fiabilité de contenu et de qualité de packaging. De plus, ceux-ci sont très souvent mis à jour et il est difficile de garantir que la version que j'ai testée soit encore disponible. Préférez toujours les logiciels et jeux disponibles dans les sources de mises à jour officielles. Concernant les jeux que je conseille d'installer par getdeb, certains sont disponibles pour de plus anciennes versions d'Ubuntu mais ont été installés sans problème chez moi.
+\end{attention}
+\subsection{Installation d'un .bin, d'un .sh ou de .run}
+Certains jeux ou logiciels ne sont malheureusement pas accessibles dans les sources de logiciels. Vous allez alors télécharger des fichiers en .run ou en .bin. Pour les installer, une fois en possession du fichier (.run, d'un .sh ou d'un .bin) : clic-droit sur l'\RefGlossaire{-}{-}{Icône}{icône}, onglet Permissions, cochez  «~Autoriser l'exécution du fichier comme un programme~». Fermer. Puis, ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal}\NotePage{Non, non, pas de panique ! Et c'est toujours par Applications \FlecheDroite Accessoires \FlecheDroite Terminal}. Écrivez alors \Commande{sudo sh } -- notez qu'il y a une espace\NotePage{Eh oui, une espace : le genre féminin désigne alors les petites tiges métalliques utilisées autrefois en imprimerie pour séparer les mots et les lettres. Aujourd'hui, le genre féminin est utilisé dans le monde de la typographie et de la photo-composition.} à la fin -- puis faites un \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} du fichier -- .run ou .bin -- dans votre \RefGlossaire{-}{Console}{Terminal}{terminal}. Normalement, vous devrez vous retrouver avec quelque chose du genre \Commande{sudo sh '/\ldots{}/VotreFichier.run'} où \ldots{} est variable, tout comme VotreFichier. Appuyez sur \Touche{Entrée}. Une fois votre mot de passe renseigné -- car vous utilisez les droits de root, l'administrateur -- l'installation démarre. Gardez les champs «~Install path~»\NotePage{Chemin d'installation} et «~Link path~» ou «~Binary Path~»\NotePage{Chemin vers l'exécutable} inchangés avant d'appuyer sur «~Lancer l'installation~». C'est bon, votre jeu ou votre logiciel est installé ! Si vous avez laissé coché «~Entrées du menu Démarrer~», normalement un raccourci dans le menu Applications est disponible. Sinon vous pouvez créer un raccourci dans le menu Applications comme expliqué dans la section \ref{RefEditerMenus}. Renseignez dans le champ «~Commande~» ou «~Exécutable~» la valeur qui se trouve après «~Pour jouer :~» de chaque jeu ou «~Pour le lancer :~» de chaque logiciel.\\
+Il y a toujours une \RefGlossaire{-}{-}{Icône}{icône} uninstall dans le dossier d'installation -- comme par exemple dans le dossier \Chemin{/usr/local/games/alienarena2006} -- vous permettant, par double-clic, de désinstaller le jeu ou le logiciel. Vous pouvez ensuite effacer le .run ou le .bin.\par
+\begin{nota}
+Les .run se situant sur le site \url{http://www.liflg.org/}\NotePage{Site officiel de Loki Installer : l'installeur gérant les fichiers .run} sont des liens torrent : ils ouvrent GNOMETorrent, qui est un système de partage de fichiers, et lance le téléchargement. Cependant, celui-ci peut ne pas démarrer immédiatement, mais une fois lancé, le téléchargement est rapide.
+\end{nota}
+\subsection{Installation d'un .package}
+L'installation d'un tel jeu -- les .package ne concernent, en général, que les jeux -- n'est pas anodin : il installe tout d'abord un «~installeur~» pour gérer les .package --- alors que l'installeur des .run ou .bin est inclus directement dans le fichier et ne laisse pas de résidu sur votre système. Sinon, son installation est similaire à un .run ou à un .bin. Vous pouvez supprimer le fichier .package une fois l'installation terminée.\\
+Lors de la désinstallation, il faudra donc supprimer l'installeur si vous n'avez plus de jeux installés à partir d'un .package. Pour cela :  \Commande{sudo package remove autopackage} ou supprimer le paquet nommé «~autopackage~» directement par Synaptic comme -- brillamment -- expliqué dans le point \ref{RefInstallSynaptic}.
+\subsection{Installer un .rar, .zip, un .tar.bz2, un .tgz ou encore un .tar.gz}
+\begin{nota}
+Attention, cette méthode n'est valable que pour les liens indiqués dans cette documentation correspondants à des fichiers déjà compilés. En effet, les sources, qui ne sont pas directement exécutables contrairement aux binaires -- cf. section \ref{RefSourceBinaire} pour plus d'explications à ce sujet -- sont souvent distribuées dans des archives en .tar.gz.
+\end{nota}
+Téléchargez le fichier .tar.gz -- par exemple -- que je vous indiquerai. Double-cliquez dessus et décompressez l'archive. Ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal. Entrez la commande \Commande{sudo cp -r  } avec de nouveau l'espace finale. faites ensuite un \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} du dossier décompressé sur le \RefGlossaire{-}{Console}{Terminal}{terminal}. Rajoutez une espace, puis tapez, par exemple\NotePage{Ce sera indiqué pour chaque fichier, soyez rassuré} \Chemin{/opt/maniadrive}. Vous devrez avoir à la fin quelque chose s'apparentant à ceci : \Commande{sudo cp -r '/\ldots{}/ManiaDrive-'version'-linux-i386' /opt/maniadrive} où, à nouveau, \ldots{} est variable, tout comme 'version'. Validez avec la touche \Touche{Entrée}. Si tout se passe bien, rien n'est affiché. Entrez ensuite la commande : \Commande{sudo chmod -R 777 /opt/maniadrive} et à nouveau la touche \Touche{Entrée}. Si rien n'est affiché, c'est qu'il n'y a pas eu d'erreur. Créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/maniadrive/\IndicCesure{}mania\_drive.sh} comme expliqué à la section \ref{RefEditerMenus} pour plus de simplicité. Vous pouvez ensuite effacer l'archive -- .rar, .zip , .tar.gz \ldots{} -- ainsi que le dossier décompressé.\\
+Pour le désinstaller, il suffit de tapez la commande -- dans cet exemple -- \Commande{sudo rm -r  /opt/maniadrive}.
+\begin{nota}
+Le problème de cette dernière méthode d'installation est qu'elle n'installe pas les dépendances nécessaires. Il se peut alors que le jeu ne fonctionne pas à cause d'une dépendance manquante alors qu'il fonctionne très bien chez une autre personne ayant installé un autre jeu qui a installé ladite dépendance. Si un jeu installé de cette manière ne fonctionne pas, n'hésitez pas à chercher sur les forums où on vous indiquera les dépendances à installer. Par exemple, vous trouverez sur le Wiki d'Ubuntu-fr que ActionCube a besoin des dépendances suivantes : libsdl1.2debian et libsdl-image1.2. Il vous faudra alors installer, si ce n'est déjà fait, ces deux paquets par Synaptic.
+\end{nota}
+\subsection{Notes d'installation}
+\subsubsection{Si aucun raccourci n'apparaît dans le menu}
+Cela peut arriver parfois. Essayez de vous déconnecter de votre session -- à noter que je ne parle pas de redémarrage, juste de déconnexion -- puis de vous reconnecter pour vous assurer qu'effectivement, aucune \RefGlossaire{-}{-}{Icône}{icône} n'est accessible dans le menu. Dans ce cas, vous pouvez créer un raccourci dans le menu Applications vers la commande indiquée à côté de «~Pour jouer~» ou de «~Pour le lancer~» comme expliqué dans la partie \ref{RefEditerMenus}. Notez que dès que vous «~installez~» un .tar.gz, ceci sera toujours le cas -- vous n'effectuez, en réalité, aucune «~réelle installation~» mais seulement une copie manuelle de fichiers -- et à chaque fois, je vous indique vers quelle commande créer le raccourci comme dans l'exemple précédent avec maniadrive.
+\begin{attention}
+Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est souvent un fichier avec le numéro de version de l'application, donc, de nature à changer. Il vous faut donc aller sur le site officiel pour vous assurer de la dernière version et donc, du nom du fichier à télécharger.
+\end{attention}
+\section{Audio}
+\subsection{Audacious}
+\label{RefInstallAudacious}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Audacious.png}
+\item Description : Vous connaissez Winamp ? Eh bien, audacious fait exactement la même chose. C'est un \RefGlossaire{-}{-}{Fork}{fork} de BMP (Beep Media Player), lui même fork de xmms qui est le Winamp linuxien historique ! Ce frère jumeau va même jusqu'à accepter les skins Winamp 1 \& 2 !{\par}
+\item Équivalent Windows : Winamp{\par}
+\item Pour l'installer : \Commande{sudo apt-get install audacious}{\par}
+\item Pour le lancer : \Commande{audacious}{\par}
+\item Post-installation :  En installant le paquet audacious-plugins-extra vous aurez accès à des greffons supplémentaires. Une intégration pidgin-audacious existe également.{\par}
+\endgroup
+\item Site officiel : \url{http://www.audacious-media-player.org}{\par}
+\end{itemize}
+\subsection{Audacity}
+\begingroup
+\ImgPar{r}{2.9}{corps/chapitre8/img/Audacity.png}
+\begin{itemize}
+\item Description : Enregistreur et éditeur audio multipiste{\par}
+\item Équivalent Windows : Sound Forge{\par}
+\item Pour l'installer : \Commande{sudo apt-get install audacity}{\par}
+\item Pour le lancer : \Commande{audacity}{\par}
+\item Site officiel : \url{http://audacity.sourceforge.net}{\par}
+\end{itemize}
+\subsection{EasyTAG}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/EasyTAG.png}
+\item Description : Simple d'utilisation, il permet d'éditer en masse les tags des fichiers audio (titre, auteur, année, style) facilitant l'usage des  logiciels utilisant ces données --- Listen par exemple. Il peut également aller chercher les informations depuis une base de données gratuite de l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}.{\par}
+\endgroup
+\item Équivalent Windows : Audio Tags Editor
+\item Pour l'installer : \Commande{sudo apt-get install easytag}
+\item Pour le lancer : \Commande{easytag}
+\item Site officiel : \url{http://easytag.sourceforge.net}
+\end{itemize}
+\subsection{Gnormalize}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Gnormalize.png}
+\item Description : Efficace convertisseur de fichiers audio d'un format vers un autre. Il permet aussi d'égaliser les niveaux sonores d'un groupe de fichiers audio et le rip des CDs.{\par}
+\item Équivalent Windows : CDex{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install gnormalize}{\par}
+\item Pour le lancer : \Commande{gnormalize}{\par}
+\item Post-installation : Installez également les paquets normalize-audio, vorbis-tools, cdcd, cdparanoia, cdda2wav, flac, sox, mpg321, libcddb-get-perl, faac, libmp3-info-perl, faad et lame pour être sûr de pouvoir éditer tous les formats de compression de musique.{\par}
+\item Site officiel : \url{http://gnormalize.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Jokosher}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Jokosher.png}
+\item Description : Logiciel de mixage voulant «~rendre la production audio simple~». L'interface est donc très éloignée d'une table professionnelle de mixage et se veut simple, mais puissante.{\par}
+\item Équivalent Windows : Virtual DJ Anglais{\par}
+\item Pour l'installer : \Commande{sudo apt-get install jokosher}{\par}
+\item Pour le lancer : \Commande{jokosher}{\par}
+\item Site officiel : \url{http://jokosher.python-hosting.com}{\par}
+\endgroup
+\end{itemize}
+%\subsection{Listen}
+%\begin{itemize}
+%\begingroup
+%\ImgPar{r}{3}{corps/chapitre8/img/Listen.png}
+%\item Description : Organiseur / lecteur de fichiers audio. Son esthétique et sa simplicité d'utilisation font de lui le tant attendu G-Amarok ! Cependant, on peut concéder que le lecteur par défaut, Rhythmbox rattrape de plus en plus son retard en terme de fonctionnalité et ergonomie.{\par}
+%\endgroup
+%\item Équivalent Windows : iTunes{\par}
+%\item Pour l'installer : \Commande{sudo apt-get install listen}{\par}
+%\item Pour le lancer : \Commande{listen}{\par}
+%\item Post-installation :  Importez vos fichiers audio dans la base de données de Listen : Fichier \FlecheDroite Importer un dossier.{\par}
+%\item Site officiel : \url{http://listengnome.free.fr}{\par}
+%\end{itemize}
+\subsection{Rhythmbox}
+\label{RefInstallRhythmbox}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Rhythmbox.png}
+\item Description : Logiciel intégré à \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} permettant, de manière similaire à Listen, le classement sous forme de bibliothèques des fichiers audio, d'accès aux paroles des musiques et d'afficher éventuellement les pochettes d'album directement depuis l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}. On y peut aussi écouter des radios comme Last.fm. De plus, grâce à \RefGlossaire{Réseau}{Connexion réseau}{Avahi}{Avahi}\NotePage{Se reporter à la section \ref{RefAvahi}}, les musiques partagées sur votre réseau local sont automatiquement accessibles dans cette application. Il est enfin possible d'écouter directement de la musique \AddIndex{Philosophie}{-}{Libre}{Libre} de droit en ligne depuis des serveurs musicaux comme Jamendo\NotePage{Grand site proposant uniquement des musiques \AddIndex{Philosophie}{-}{Libre}{Libres}} ou Magnatude\NotePage{Musique commerciale. Écoute gratuite mais le téléchargement ne l'est pas. Cependant, la particularité est que ce \RefGlossaire{Système}{Démon}{Service}{service} vous laisse décider le montant de votre paiement.} et de les télécharger par un simple clic-droit.{\par}
+\item Équivalent Windows : iThunes\NotePage{Oui, je sais, le vrai nom est iTunes\ldots{}}{\par}
+\endgroup
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{rhythmbox}{\par}
+\item Accéder au catalogue Jamendo, Magnatude, afficher les paroles des musiques, accéder à Last.fm : Il suffit d'activer les greffons correspondant via le menu Édition \FlecheDroite Greffons.{\par}
+\item Site officiel : \url{http://www.gnome.org/projects/rhythmbox}{\par}
+\end{itemize}
+\subsection{Serpentine}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Serpentine.png}
+\item Description : Logiciel léger de création de CD audio.{\par}
+\item Équivalent Windows : DeepBurner Free{\par}
+\item Pour l'installer : \Commande{sudo apt-get install serpentine}{\par}
+\item Pour le lancer : \Commande{serpentine}{\par}
+\item Site officiel :\\\url{http://s1x.homelinux.net/projects/serpentine}{\par}
+\endgroup
+\end{itemize}
+\subsection{Sound Juicer}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Sound_Juicer.png}
+\item Description : Lecteur et encodeur efficace de CD-ROM audio. Ce programme existe depuis de nombreuses années faisant de lui un logiciel robuste et très facile d'accès car en totale adéquation avec la philosophie de \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}.{\par}
+\item Équivalent Windows : CDex{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{sound-juicer}{\par}
+\endgroup
+\item Site officiel : \url{http://www.burtonini.com/blog/computers/sound-juicer}{\par}
+\end{itemize}
+\subsection{StreamTuner}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/StreamTuner.png}
+\item Description : Application permettant de se connecter facilement à des radios \RefGlossaire{-}{L'Internet}{Internet}{Internet}, voire de les enregistrer. Peut également lancer les radios dans votre lecteur préféré comme xmms ou bmp.{\par}
+%%%\item Équivalent Windows : CDex{\par}
+\item Pour l'installer : \Commande{sudo apt-get install streamtuner}{\par}
+\item Pour le lancer : \Commande{streamtuner}{\par}
+\endgroup
+\item Post-installation : Pour pouvoir enregistrer des radios\NotePage{Ne faites cela qu'avec des  radios diffusant des musiques \AddIndex{Philosophie}{-}{Libre}{Libres}}, installez StreamRipper : \Commande{sudo apt-get install streamripper}. Puis, dans StreamTuner, «~Édition/Préférences~». Dans «~Applications~», ajoutez à «~Enregistrer une radio~» : \Commande{x-terminal-emulator -e streamripper \%q}.{\par}
+\item Site officiel : \url{http://www.nongnu.org/streamtuner}{\par}
+\end{itemize}
+\section{Bureautique}
+\subsection{gLabels}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/gLabels.png}
+\item Description : Logiciel permettant de créer tout aussi facilement que rapidement des cartes de visite et de nombreux formats d'étiquettes comme ceux des CD/DVD, boîtes de confiture\ldots{}{\par}
+\item Équivalent Windows : CartaGoGo{\par}
+\item Pour l'installer : \Commande{sudo apt-get install glabels}{\par}
+\item Pour le lancer : \Commande{glabels}{\par}
+\item Site officiel : \url{http://glabels.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\subsection{OpenOffice.org}
+\label{RefInstallOOo}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/OOo.png}
+\item Description : Suite bureautique\NotePage{Son petit nom est OOo} complète, \AddIndex{Philosophie}{-}{Libre}{Libre} et gratuite très connue, notamment utilisée dans de nombreuses administrations comme la police nationale. Son format d'enregistrement, le OpenDocument, est à ce jour, le seul standard reconnu par les institutions européennes. Cette suite est compatible avec les fichiers -- non standardisés, donc -- provenant de Microsoft Office (doc, xls, ppt).{\par}
+\endgroup
+\item Équivalent Windows : Microsoft Office{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut sauf les modules base de données et mathématiques}. Pour installer toute la suite, cochez «~OpenOffice.org Office Suite~».{\par}
+\item Pour le lancer : \Commande{oobase}, \Commande{oocalc}, \Commande{oodraw}, \Commande{ooimpress}, \Commande{oowriter}\ldots{} selon votre besoin.{\par}
+\item Post installation :{\par}
+\begin{itemize}
+\item Accélération du démarrage : Outils \FlecheDroite Options \FlecheDroite OpenOffice.org \FlecheDroite  Mémoire vive \FlecheDroite Démarrage rapide de OpenOffice.org : cochez la case «~Activer le démarrage rapide de la zone de notification~».
+\item Quelques polices inutiles dans la plupart des cas -- polices bengali, hindoues, arabes, etc. -- à supprimer. Allez dans Synaptic et supprimez tous les paquets après le «~remove~» ou exécutez directement la commande : \Commande{sudo apt-get remove ttf-arabeyes ttf-arphic-bkai00mp ttf-arphic-bsmi00lp ttf-arphic-gbsn00lp ttf-arphic-gkai00mp ttf-baekmuk ttf-kochi-gothic ttf-kochi-mincho ttf-malayalam-fonts  ttf-indic-fonts ttf-farsiweb}{\par}
+\item Quelques jolies polices à installer : \Commande{sudo apt-get install ttf-dustin ttf-farsiweb ttf-isabella ttf-mgopen ttf-staypuft msttcorefonts cabextract}{\par}
+\end{itemize}
+\item Site officiel : \url{http://fr.openoffice.org}{\par}
+\end{itemize}
+\subsection{Planner}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/planner.png}
+\item Description : Logiciel de gestion de projet vous permettant la création de diagrammes de Gantt. Vous pouvez y attacher des ressources et ainsi, établir un planning.{\par}
+\item Équivalent Windows : Microsoft Project{\par}
+\item Pour l'installer : \Commande{sudo apt-get install planner}{\par}
+\item Pour le lancer : \Commande{planner}{\par}
+\item Site officiel : \url{http://live.gnome.org/Planner}{\par}
+\endgroup
+\end{itemize}
+\subsection{Scribus}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Scribus.png}
+\item Description : Logiciel de publication assistée par ordinateur.{\par}
+\item Équivalent Windows : Quark Xpress{\par}
+\item Pour l'installer : \Commande{sudo apt-get install scribus scribus-template}{\par}
+\item Pour le lancer : \Commande{scribus}{\par}
+\item Site officiel : \url{http://www.scribus.net}{\par}
+\endgroup
+\end{itemize}
+
+\section{Éducation}
+\subsection{Celestia}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Celestia.png}
+\item Description : Simulateur spatial permettant l'observation du système solaire en 3D temps réel avec un rendu très réaliste. Plus de 20 Go d'extensions (textures en plus hautes résolutions, ajout d'engins spatiaux, et de créations fictives) créées par la communauté d'utilisateurs sont disponibles.{\par}
+\endgroup
+%%%\item Équivalent Windows : Quark Xpress{\par}
+\item Pour l'installer : \Commande{sudo apt-get install celestia-gnome}{\par}
+\item Pour le lancer : \Commande{celestia-gnome}{\par}
+\item Post-installation : Site proposant de nombreux  compléments : \url{http://celestiamotherlode.net}.{\par}
+\item Site officiel : \url{http://www.shatters.net/celestia}{\par}
+\end{itemize}
+\subsection{ChemTool}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/ChemTool.png}
+\item Description : Logiciel permettant la saisie des représentations planes conventionnelles des molécules chimiques. Parfait pour exporter ses schémas. De plus, il calcule automatiquement la masse moléculaire de chaque molécule.{\par}
+%%%\item Équivalent Windows : Quark Xpress{\par}
+\item Pour l'installer : \Commande{sudo apt-get install chemtool}{\par}
+\item Pour le lancer : \Commande{chemtool}{\par}
+\item Site officiel : \url{http://ruby.chemie.uni-freiburg.de/~martin/chemtool/chemtool.html}{\par}
+\endgroup
+\end{itemize}
+
+\subsection{Dr Geo.}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Dr_Geo.png}
+\item Description : Logiciel de géométrie interactive permettant de créer des figures géométriques et de les manipuler. Ce logiciel est utilisable dans des situations d'enseignement ou d'apprentissage avec des élèves du primaire ou du secondaire. L'auteur se consacre actuellement à une version plus récente, basée sur Dr Geo, appelée Dr Genius. Malheureusement, non encore disponible à ce jour. A suivre de près !{\par}
+%%%\item Équivalent Windows : Quark Xpress{\par}
+\item Pour l'installer : \Commande{sudo apt-get install drgeo}{\par}
+\item Pour le lancer : \Commande{drgeo}{\par}
+\item Site officiel : \url{http://www.ofset.org/drgeo}{\par}
+\endgroup
+\end{itemize}
+\subsection{Geg}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Geg.png}
+\item Description : Ce petit logiciel avec une interface simple vous permettra de tracer des fonctions et de zoomer sur certaines parties. La prise en main est très intuitive.{\par}
+%%%\item Équivalent Windows : Quark Xpress{\par}
+\item Pour l'installer : \Commande{sudo apt-get install geg}{\par}
+\item Pour le lancer : \Commande{geg}{\par}
+\item Site officiel : \url{http://www.infolaunch.com/~daveb}{\par}
+\endgroup
+\end{itemize}
+\subsection{GPeriodic}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/GPeriodic.png}{\par}
+\item Description : Que dire, à part que l'on devrait toujours avoir une table de Mendeleïev sous la main ?{\par}
+%%%\item Équivalent Windows : Quark Xpress{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gperiodic}{\par}
+\item Pour le lancer : \Commande{gperiodic}{\par}
+\item Site officiel : \url{http://gperiodic.seul.org}{\par}
+\endgroup
+\end{itemize}
+
+\subsection{Maxima}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Maxima.png}
+\item Description : Maxima est un logiciel de calcul formel, totalement \AddIndex{Philosophie}{-}{Libre}{Libre}. Il dispose de quelques capacités graphiques. Maxima est le logiciel qui a donné naissance à Maple et à Macsygma. C'est l'outil idéal pour initier les élèves au calcul formel sur ordinateur.{\par}
+\item Équivalent Windows : Mapple{\par}
+\item Pour l'installer : \Commande{sudo apt-get install maxima}{\par}
+\item Pour le lancer en version ligne de commande : \Commande{maxima}{\par}
+\endgroup
+\item Post-installation : À noter que Maxima est le backend -- le programme permettant de calculer -- il faut donc, si vous le désirez, télécharger une interface graphique. De plus, afficher les graphes pourrait être intéressant : \Commande{sudo apt-get install wxmaxima gnuplot-nox}. Enfin, la documentation n'est pas installée automatiquement par «~Ajouter/supprimer\dots{}~» : \Commande{sudo apt-get install gnuplot maxima-doc}.{\par}
+\item Pour le lancer avec une interface graphique : \Commande{wxmaxima}{\par}
+\item Site en français avec une bonne documenation : \url{http://www.ma.utexas.edu/users/wfs/maxima.html}{\par}
+\item Site officiel : \url{http://wxmaxima.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Solfege}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Solfege.png}
+\item Description : Logiciel permettant d'entraîner votre oreille musicale. Il est composé de plusieurs types d'exercices, chacun associé à une leçon. Très complet, il est toutefois à réserver aux musiciens confirmés : en effet, il demande de bonnes bases de solfège.{\par}
+\item Équivalent Windows : Le Solfège Facile{\par}
+\item Pour l'installer : \Commande{sudo apt-get install solfege}{\par}
+\item Pour le lancer : \Commande{solfege}{\par}
+\endgroup
+\item Post-installation : En cas de problème avec le son, diminuez la taille des boîtes à outils par Éditer \FlecheDroite Préférences : Onglet configuration du son et cochez «~utiliser un programme midi externe~».{\par}
+\item Site officiel : \url{http://www.solfege.org}{\par}
+\end{itemize}
+\subsection{Stellarium}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Stellarium.png}
+\item Description : Planétarium d'apprentissage et d'observation du ciel. Entrez vos coordonnées et vous verrez exactement ce que vous voyez au dessus de votre tête, mais avec le nom des étoiles ! Il est moins complet que Kstar -- ce dernier permet même de contrôler votre téléscope -- mais plus facile d'accès au néophyte.{\par}
+%%%\item Équivalent Windows : Le Solfège Facile{\par}
+\item Pour l'installer : \Commande{sudo apt-get install stellarium}{\par}
+\item Pour le lancer : \Commande{stellarium}{\par}
+\item Site officiel : \url{http://www.stellarium.org}{\par}
+\endgroup
+\end{itemize}
+\section{Gestion monétaire}
+\subsection{GNUCash}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Gnucash.png}
+\item Description : Logiciel de comptabilité personnelle et pour les petites entreprises. Celui-ci est doté d'un tutoriel pour apprendre à l'utiliser et semble plus complet que Grisbi, mais aussi plus complexe.{\par}
+\item Équivalent Windows : Microsoft Money{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gnucash}{\par}
+\item Pour le lancer : \Commande{gnucash}{\par}
+\item Site officiel : \url{http://www.gnucash.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{Grisbi}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Grisbi.png}
+\item Description : Logiciel de comptabilité personnelle avec pour objectif d'en faire un programme le plus simple et le plus intuitif possible, pour un usage de base, tout en permettant un maximum de sophistications pour un usage avancé. Créé par des Français, il respecte ainsi l'esprit de la comptabilité à la française.{\par}
+\item Équivalent Windows : Microsoft Money{\par}
+\item Pour l'installer : \Commande{sudo apt-get install grisbi}{\par}
+\item Pour le lancer : \Commande{grisbi}{\par}
+\item Site officiel : \url{http://www.grisbi.org/index.fr.html}{\par}
+\endgroup
+\end{itemize}
+\section{Modélisation/Traitement de l'image/Dessin}
+\subsection{Art of Illusion}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Art_Of_Illusion.png}
+\item Description : Un logiciel multi-plateformes de modélisation et d'animation 3D écrit entièrement en java. Cependant, l'installation est assez difficile pour un débutant. Il n'est ici que pour l'exhaustivité si Blender ne vous satisfait pas.{\par}
+\item Équivalent Windows : 3D Studio Max{\par}
+\endgroup
+\item Pour l'installer : Ce logiciel requiert la configuration effective de votre machine virtuelle java comme expliquée en \ref{RefInstallJava}. Téléchargez le .zip correspondant au lien de l'étape 2 à cette adresse : \url{http://aoi.sourceforge.net/downloads#linux}. Suivez la procédure d'installation décrite après décompression de l'archive .zip pour l'installation du fichier aoisetup.sh que vous trouverez dans ce dernier. Acceptez le disclaimer. Laissez le chemin d'installation et le lien proposés.{\par}
+\item Pour le lancer : \Commande{aoi}{\par}
+\item Site officiel : \url{http://www.artofillusion.org}{\par}
+\end{itemize}
+\subsection{Blender}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Blender.png}
+\item Description : \RefGlossaire{Philosophie}{Libre}{Logiciel Libre}{Logiciel Libre} célèbre de modélisation et d'animation 3D.{\par}
+\item Équivalent Windows : 3D Studio Max{\par}
+\item Pour l'installer : \Commande{sudo apt-get install blender}{\par}
+\item Pour le lancer : \Commande{blender}{\par}
+\item Site officiel : \url{http://www.blender3d.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{Cheese}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Cheese.png}
+\item Description : Souriez, vous êtes filmés ! Cette application vous permet de prendre des photos et de réaliser des vidéos à partir de votre webcam avant d'y appliquer une large gamme didactique d'effets. Vous pouvez ensuite les partager avec vos amis, les exporter dans F-Spot -- cf section \ref{RefF-Spot} -- ou les utiliser comme photo de votre compte.{\par}
+%\item Équivalent Windows : 3D Studio Max{\par}
+\item Pour l'installer : \Commande{sudo apt-get install cheese}{\par}
+\item Pour le lancer : \Commande{cheese}{\par}
+\item Lancer dès le branchement d'une webcam : «~Système \FlecheDroite Applications \FlecheDroite  Périphériques et médias amovibles~», puis cochez «~Modifier la vidéo à la connexion~».{\par}
+\item Site officiel : \url{http://www.gnome.org/projects/cheese}{\par}
+\endgroup
+\end{itemize}
+\subsection{GNOME Scan}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Gnome_Scan.png}
+\item Description : Permet d'intégrer une alternative au scannage par Xsane pour les applications \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}.{\par}
+\item Équivalent Windows : EasyScan{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gnomescan}{\par}
+\item Pour le lancer : \Commande{flegita} ou dans Gimp, par exemple : Fichier \FlecheDroite Acquisition \FlecheDroite Numériser.{\par}
+\item Site officiel :\\\url{http://www.gnome.org/projects/gnome-scan/index}{\par}
+\endgroup
+\end{itemize}
+\subsection{Gimp}
+\label{RefInstallGimp}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/The_Gimp.png}
+\item Description : Logiciel de manipulation d'image et de dessin vectoriel très connu et reconnu.{\par}
+\item Équivalent Windows : Adobe Photoshop{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{gimp}{\par}
+\item Post-installation :{\par}
+\begin{itemize}
+\item Diminuer la taille des boîtes à outils : Fichier \FlecheDroite Préférences \FlecheDroite Thème : sélectionnez Small et cliquez sur Valider.{\par}
+\item Ajout de plugins : Il existe un moyen de changer l'apparence de Gimp en celui de photoshop si vous avez du mal à vous faire à l'ergonomie -- pourtant excellente -- de Gimp. Une petite recherche sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} vous montrera aussi qu'il y a possibilité de faire tourner de nombreux plugins photoshop sous Gimp.{\par}
+\endgroup
+\end{itemize}
+\item Site officiel : \url{http://www.gimp.org}{\par}
+\end{itemize}
+\subsection{ImageMagick}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/ImageMagick.png}
+\item Description : Programme polyvalent de traitement d'images. Celui-ci fonctionne uniquement en ligne de commande\NotePage{Son utilisation directe est donc réservée aux utilisateurs «~avertis~»}, mais cela constitue une véritable force car il se retrouve ainsi utilisé par d'autres outils -- par exemple XaraXtreme, cf. \ref{RefXaraXtreme}.{\par}
+\endgroup
+\item Équivalent Windows : Existe également sous Windows{\par}
+\item Pour l'installer : \Commande{sudo apt-get install imagemagick}{\par}
+\item Pour le lancer : \Commande{display}, utilisation directement en ligne de commande ou encore par le biais d'autres programmes\ldots{}{\par}
+\item Exemple d'utilisation en ligne de commande, pour redimensionner toutes les images jpeg d'un dossier : \Commande{mogrify -resize 800x600 *.jpg}. Ceci est également possible graphiquement par le visionneur d'images gThumb, en sélectionnant plusieurs images, puis  Outils \FlecheDroite Redimensionner les images.{\par}
+\item Site officiel : \url{http://www.imagemagick.org}{\par}
+\end{itemize}
+\subsection{Inkscape}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Inkscape.png}
+\item Description : Logiciel de dessin vectoriel d'excellente qualité. Comme tout logiciel de dessin vectoriel, c'est à vous qu'incombe la tâche de créer les ombres et les effets 3D.{\par}
+\item Équivalent Windows : Adobe Illustrator{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install inkscape}{\par}
+\item Pour le lancer : \Commande{inkscape}{\par}
+\item Post-installation : \Touche{Alt} + \Touche{Clic} pour sélectionner l'objet du dessous n'est pas utilisable car ce raccourci est utilisé par \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} pour le déplacement des fenêtres. Pour éviter ce conflit : Système \FlecheDroite Préférences \FlecheDroite Fenêtres \FlecheDroite Touche de mouvement : cochez, par exemple «~Super\NotePage{Correspondant à la touche avec le logo Windows}~».{\par}
+\item Site officiel : \url{http://inkscape.org}{\par}
+\end{itemize}
+\subsection{Qcad}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Qcad.png}
+\item Description : Logiciel de CAO\NotePage{Conception Assistée par Ordinateur}. Ce programme de dessin industriel en 2D est idéal pour tracer des pièces ou des assemblages. Vous pourrez également l'utiliser pour tracer des plans d'une maison, par exemple. Malheureusement, ce programme a été prévu pour un bureau KDE plutôt que \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}. Il y sera donc moins intégré graphiquement.{\par}
+\endgroup
+\item Équivalent Windows : AutoCAD, SolidWorks, QCAD version Windows\NotePage{Payante, elle}{\par}
+\item Pour l'installer : \Commande{sudo apt-get install qcad}{\par}
+\item Pour le lancer : \Commande{qcad}{\par}
+\item Site officiel : \url{www.ribbonsoft.com/qcad.html}{\par}
+\end{itemize}
+\subsection{XaraXtreme}
+\label{RefXaraXtreme}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/XaraXtreme.png}
+\item Description : Encore un logiciel de dessin vectoriel. Celui-ci est professionnel et a été libéré il y a peu de temps.{\par}
+\item Équivalent Windows : Adobe Illustrator{\par}
+\item Pour l'installer : \Commande{sudo apt-get install xaralx\\xaralx-examples xaralx-svg imagemagick}{\par}
+\item Pour le lancer : \Commande{xaraix}{\par}
+\item Site officiel : \url{http://www.xaraxtreme.org}{\par}
+\endgroup
+\end{itemize}
+
+\section{L'Internet et les réseaux}
+\AddIndex{-}{L'Internet}{Internet}{-}
+\subsection{Drivel}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Drivel.png}
+\item Description : Logiciel permettant de créer et de modifier les billets de votre blog sans devoir passer par l'interface d'administration de ce dernier. Il est également possible ainsi de pouvoir écrire ses billets hors-ligne -- très pratique dans le train !{\par}
+\endgroup
+\item Équivalent Windows : Windows Live Writer{\par}
+\item Pour l'installer : \Commande{sudo apt-get install drivel}{\par}
+\item Pour le lancer : \Commande{drivel}{\par}
+\item Post-installation : Vous devez entrer votre pseudonyme/mot de passe et l'adresse pour vous connecter à votre blog. Pour un blog sous WordPress par exemple, indiquez «~Movable Type~», puis comme adresse du serveur : \Chemin{http://\IndicCesure{}votre\_\IndicCesure{}blog.com/\IndicCesure{}xmlrpc.php}\NotePage{xmlrpc.php est un fichier se trouvant à la racine de WordPress}.{\par}
+\item Site officiel : \url{http://www.dropline.net/drivel}{\par}
+\end{itemize}
+\subsection{Ekiga}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Ekiga.png}
+\item Description : Logiciel de voix et de visio-conférence sur IP supportant les \RefGlossaire{Réseau}{-}{Protocole}{protocoles} de communication H.323 et SIP.{\par}
+\item Équivalent Windows : Skype{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{ekiga}{\par}
+\item Post-installation : Lancement automatique au démarrage : Système \FlecheDroite  Préférences \FlecheDroite Sessions \FlecheDroite Programmes au démarrage \FlecheDroite Nouveau. Tapez ekiga puis cliquez sur valider.{\par}
+\item Site officiel : \url{http://www.ekiga.org}{\par}
+\endgroup
+\end{itemize}
+
+\subsection{Evolution}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Evolution.png}
+\item Description : Evolution permet l'envoi et la réception des courriers électroniques. Il permet de plus de gérer ses contacts, son agenda -- synchronisé avec l'\AddIndex{Environnement graphique}{-}{Applet}{applet} affichant la date et l'heure -- ses mémos et ses tâches --- en local ou via l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}. C'est donc un outil particulièrement intéressant dans le cadre d'un travail à plusieurs, mais qui reste tout à fait adapté à une utilisation personnelle.{\par}
+\item Équivalent Windows : Microsoft Outlook{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{evolution}{\par}
+\item Site officiel : \url{http://www.gnome.org/projects/evolution}{\par}
+\endgroup
+\end{itemize}
+\subsection{gFTP}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/gFTP.png}
+\item Description : Si le logiciel FTP directement intégré à Nautilus ne vous convient pas, voici un autre logiciel de transfert FTP. Certains préfèrent FileZilla existant également sous Windows.{\par}
+\item Équivalent Windows : Bullet Proof FTP, CuteFTP, WSFTP\ldots{}{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gftp}{\par}
+\item Pour le lancer : \Commande{gftp}{\par}
+\item Site officiel : \url{http://gftp.seul.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{Liferea}
+\label{RefInstallLiferea}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Liferea.png}
+\item Description : Lecteur de flux \RefGlossaire{-}{-}{RSS}{RSS}. À mon avis, Liferea est l'agrégateur de news le mieux intégré à \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}. Pour ceux qui ne le savent pas, ce type de logiciel recherche pour vous les dernières nouvelles de vos sites préférés. De plus, si un flux se trouve à plusieurs endroits -- par exemple vous avez ajouté le flux d'un blog d'un ami, mais également celui d'un planet agrégeant notamment les billets de votre ami -- la lecture d'un billet marquera directement le même billet dans l'autre flux comme déjà lu.{\par}
+\item Équivalent Windows : RSS News Reader{\par}
+\item Pour l'installer : \Commande{sudo apt-get install liferea}{\par}
+\item Pour le lancer : \Commande{liferea}{\par}
+\item Site officiel : \url{http://liferea.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\subsection{Mozilla Firefox}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Firefox.png}
+\item Description : Navigateur connu de tous, ce n'est pas la peine d'en faire, une fois encore, l'éloge ;-). Vous trouverez un grand nombre d'informations sur son utilisation dans la section \ref{RefFF}.{\par}
+\endgroup
+\item Équivalent Windows : Internet Explorer{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{firefox}{\par}
+\item Post-installation : Exemples d'extensions non obligatoires mais appréciables : AdblockPlus, Foxmarks, MediaPlayerConnectivity, ScrapBook\ldots{}{\par}
+\item Site officiel : \url{http://www.mozilla-europe.org/fr/products/firefox}{\par}
+\end{itemize}
+\subsection{Mozilla Thunderbird}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Thunderbird.png}
+\item Description : Lecteur de courriels complet, complément idéal du navigateur Web Firefox.{\par}
+\item Équivalent Windows : Outlook Express{\par}
+\item Pour l'installer : \Commande{sudo apt-get install mozilla-thunderbird mozilla-thunderbird-locale-fr}{\par}
+\item Pour le lancer : \Commande{mozilla-thunderbird}{\par}
+\item Post-installation :{\par}
+\endgroup
+\begin{itemize}
+\item Exemples d'extensions intéressantes : Quote Colors, Webmail -- permet de relever les courriers Hotmail, Yahoo\ldots{} --, Lightning\ldots{}{\par}
+\item Mettre thunderbird comme lecteur de courriels par défaut : Système \FlecheDroite Préférences \FlecheDroite Applications préférées : Lecteur de courrier \FlecheDroite Mozilla Thunderbird.{\par}
+\item Ajouter le correcteur d'orthographe : Édition \FlecheDroite Préférences \FlecheDroite Rédaction \FlecheDroite  Télécharger d'autres dictionnaires.{\par}
+\end{itemize}
+\item Pour utiliser efficacement Thunderbird, je ne peux que vous conseiller l'excellent Framabook s'y rapportant. Plus d'informations sur \url{http://www.framabook.org}.
+\item Site officiel : \url{http://www.mozilla-europe.org/fr/products/thunderbird}{\par}
+\end{itemize}
+\subsection{Pidgin -- anciennement Gaim}
+\label{RefPidgin}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Pidgin.png}
+\item Description : Ce logiciel de messagerie instantanée permettant un support \RefGlossaire{Réseau}{-}{Protocole}{multi-protocoles} très bien intégré dans le bureau \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} est hélas incompatible avec la vidéo-conférence dans sa version actuelle, contrairement à aMSN --- mais ce dernier supporte uniquement le réseau MSN.{\par}
+\item Équivalent Windows : Trillian{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{pidgin}{\par}
+\item Site officiel : \url{http://www.pidgin.im}{\par}
+\endgroup
+\end{itemize}
+\section{Utiles}
+\subsection{GNOME-schedule}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Gnome-schedule.png}
+\item Description : Cron est le \RefGlossaire{Système}{Démon}{Service}{service} permettant de lancer, à des instants donnés, des processus -- logiciels, autres \RefGlossaire{Système}{Démon}{Service}{services}\ldots{} -- par le biais de crontab et at., périodiquement ou une seule fois. Si vous ne voulez pas éditer son \AddIndex{-}{Texte brut}{Fichier de configuration}{fichier de configuration} à la main -- ce qui peut se comprendre ! -- cette application vous conviendra parfaitement.{\par}
+\endgroup
+%%%\item Équivalent Windows : RSS News Reader{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gnome-schedule}{\par}
+\item Pour le lancer : \Commande{gnome-schedule}{\par}
+\item Site officiel : \url{http://gnome-schedule.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Baobab}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Baobab.png}
+\item Description : Vous n'avez plus de place sur le disque dur et vous vous demandez où toute celle-ci disparaît ? Naviguer dossier par dossier vous répugne ? Une solution : baobab. Ce logiciel permet de voir la taille des dossiers, sous dossiers, etc. sous forme de graphe permettant de repérer les zones d'engorgement de votre disque dur d'une manière terriblement\NotePage{Voire même dramatiquement !} efficace.{\par}
+\endgroup
+%%%\item Équivalent Windows : RSS News Reader{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{baobab}. Ce dernier se trouve sous le nom d'«~Analyseur d'utilisation des disques~» dans le menu Applications.{\par}
+\item Site officiel : \url{http://www.gnome.org/projects/baobab}{\par}
+\end{itemize}
+\subsection{Brasero}
+\label{RefInstallBrasero}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Brasero.png}
+\item Description : Même si Nautilus intègre un excellent graveur, il est parfois nécessaire d'utiliser un logiciel dédié. Brasero est simple d'utilisation et assez complet. Certains d'entre-vous préféreront peut-être Graveman ou encore GNOMEbaker.{\par}
+\item Équivalent Windows : Nero Burning Rom{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{brasero}{\par}
+\item Site officiel : \url{http://www.gnome.org/projects/brasero}{\par}
+\endgroup
+\end{itemize}
+\subsection{Comix}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Comix.png}
+\item Description : Comix est un visionneur d'images particulièrement ergonomique. Il est spécialement dédié aux bandes dessinées. Il peut lire les formats d'archives compressées ZIP, RAR, tar, gzip ou encore bzip2 et également les formats d'images classiques.{\par}
+%%%\item Équivalent Windows : Nero Burning Rom{\par}
+\item Pour l'installer : \Commande{sudo apt-get install comix}{\par}
+\item Pour le lancer : \Commande{comix}{\par}
+\item Site officiel : \url{http://comix.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+
+\subsection{FreeMind}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/FreeMind.png}
+\item Description : Logiciel de mind-mapping permettant de fixer immédiatement et simplement vos idées sous forme de liens logiques. On arrive ainsi à la création de cartes heuristiques. Très bon outil pour «~libérer son esprit~» et savoir où et comment retrouver rapidement et simplement une idée.{\par}
+\endgroup
+\item Équivalent Windows : Mindmapper{\par}
+\item Pour l'installer : Une machine virtuelle Java doit précédemment être installée comme expliqué en \ref{RefInstallJava}, puis \Commande{sudo apt-get install freemind}.{\par}
+\item Pour le lancer : \Commande{freemind}.{\par}
+\item Post-installation : Vous pouvez ajouter des plugins en installant depuis le même site les .deb sous la forme freemind-plugins\ldots{}{\par}
+\item Site officiel : \url{http://freemind.sourceforge.net}{\par}
+\end{itemize}
+\subsection{F-Spot}
+\label{RefF-Spot}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/F-Spot.png}
+\item Description : Ce n'est pas un simple visionneur d'images mais plutôt un gestionnaire d'images next-Gen ! Il est possible de rajouter des commentaires et des tags -- un peu comme le titre, l'album, l'artiste dans un fichier audio -- à vos photos pour pouvoir très facilement les trier, et ceci sans toucher vos photos originales ! Il possède également des outils de retouches et de partage. Vous allez l'adorer !{\par}
+\item Équivalent Windows : Lecteur d'image Windows{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : \Commande{f-spot}{\par}
+\item Site officiel : \url{http://f-spot.org}{\par}
+\endgroup
+\end{itemize}
+
+\subsection{GCstar}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/gcstar.png}
+\item Description : GCstar vous permet de gérer tout type de collections --- CD, DVD, jeux vidéo\ldots{} Les informations associées à chaque élément peuvent être récupérées automatiquement depuis l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}. Vous pouvez aussi faire des recherches dans vos collections selon différents critères et leur associer d'autres informations comme l'endroit où il se trouve ou à qui il a été prêté.{\par}
+\item Équivalent Windows : Existe également sous Windows{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gcstar}{\par}
+\item Pour le lancer : \Commande{gcstar}{\par}
+\item Site officiel : \url{http://www.gcstar.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{Google Earth}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Google_Earth.png}
+\item Description : Vous souhaitez en savoir plus sur un lieu précis ? Lancez-vous ! Google Earth met des informations géographiques sur le monde entier à votre portée en associant des images satellite, des plans, des cartes. Survolez le globe de notre chère planète.{\par}
+\endgroup
+\item Équivalent Windows : Existe également sous Windows{\par}
+\item Pour l'installer : \Commande{sudo apt-get install googleearth}{\par} Acceptez le contrat de licence -- après l'avoir lu ! -- par \Touche{Tab}, puis \Touche{Entrée}. Puis, confirmez : \Touche{$\leftarrow$} et \Touche{Entrée}.{\par}
+\item Pour le lancer : \Commande{googleearth}{\par}
+\item Site officiel : \url{http://earth.google.fr}{\par}
+\end{itemize}
+
+\subsection{Gourmet Recipe Manager}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Gourmet.png}
+\item Description : Vous ne savez jamais quoi faire à manger ? Ce gestionnaire de recettes vous permet de facilement importer des recettes depuis des logiciels commerciaux ou des pages Web, ou de les rentrer manuellement. Vous pourrez ensuite y faire des recherches et même générer des listes de courses !{\par}
+\endgroup
+\item Équivalent Windows : MealMaster ou encore MasterCook{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gourmet}{\par}
+\item Pour le lancer : \Commande{gourmet}{\par}
+\item Site officiel : \url{http://grecipe-manager.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Gramps}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Gramps.png}
+\item Description : Ce système informatique de recherche, de gestion et d'analyse généalogique, vous permettra de vous adonner à la gestion généalogique de vos aïeux. De plus, il est compatible avec le format de fichier GEDCOM, commun à de nombreuses applications généalogiques.{\par}
+\item Équivalent Windows : Hérédis{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gramps}{\par}
+\item Pour le lancer : \Commande{gramps}{\par}
+\item Site officiel : \url{http://gramps-project.org}{\par}
+\endgroup
+\end{itemize}
+
+\subsection{GShutdown}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/gshutdown.png}
+\item Description : GShutdown est un utilitaire qui vous permettra de programmer l'arrêt ou le redémarrage de votre ordinateur, ou la fermeture de la session en cours. Il donne la possibilité de programmer le temps de trois manières : «~à une heure et une date~», «~après un certain délai~» ou encore «~Maintenant~». Évidemment, une notification visuelle permet de prévenir l'utilisateur que l'ordinateur va être arrêté dans quelques secondes !{\par}
+\item Équivalent Windows : Sleepy{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gshutdown}{\par}
+\item Pour le lancer : \Commande{gshutdown}{\par}
+\item Site officiel : \url{http://gshutdown.tuxfamily.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{StarDict}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Stardict.png}
+\item Description : Dictionnaire/traducteur, ce logiciel est très intéressant car il contient un plug-in pouvant vous traduire les termes de n'importe quelle langue ou vous donner la définition par un simple double-clic.{\par}
+%%%\item Équivalent Windows : Sleepy{\par}
+\item Pour l'installer : \Commande{sudo apt-get install stardict}{\par}
+\item Pour le lancer : \Commande{stardict}{\par}
+\item Post-installation :{\par}
+\begin{itemize}
+\item Installez les dictionnaires «~classiques~» et les dictionnaires de traduction des langues désirées en suivant les conseils sur le site officiel.{\par}
+\item Dictionnaire fr : \url{http://stardict.sourceforge.net/Dictionaries_fr.php}{\par}
+\item Dico de traduction : \url{http://stardict.sourceforge.net/Dictionaries_Quick.php}{\par}
+\end{itemize}
+\item Site officiel : \url{http://stardict.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+
+\subsection{Tomboy}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Tomboy.png}
+\item Description : Utilitaire de prise de notes. Toujours sous la main, vos notes seront faciles à éditer et bien organisées. Plus d'informations dans la section \ref{RefTomboy}, correspond à ce logiciel.{\par}
+\endgroup
+\item Équivalent Windows : A Note{\par}
+\item Pour l'installer : \Commande{Déjà installé par défaut}{\par}
+\item Pour le lancer : Il suffit d'ajouter cet \AddIndex{Environnement graphique}{-}{Applet}{applet} à un tableau de bord.{\par}
+\item Site officiel : \url{http://www.beatniksoftware.com/tomboy}{\par}
+\end{itemize}
+\subsection{Wallpapoz}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Wallpapoz.png}
+\item Description : Une image différente sur chacun de vos bureaux virtuels. Bon, certains me diront que c'est en natif sur KDE ;-). Il offre également la possibilité de changer automatiquement l'arrière-plan à intervalle régulier. Ce n'est pas vraiment utile donc totalement indispensable !{\par}
+\endgroup
+\item Pas d'équivalent Windows, car pas de bureaux virtuels\ldots{}{\par}
+\item Pour l'installer : Ce programme nécessite que l'interpréteur python soit installé sur votre machine\NotePage{\Commande{sudo apt-get install python-glade2 python-gtk2}}. Une fois l'archive .tar.bz2 du site officiel téléchargée et décompressée, ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal}\NotePage{Toujours par Applications \FlecheDroite Accessoires \FlecheDroite Terminal}, puis entrez \Commande{sudo python } -- avec l'espace finale -- et glissez le fichier install.py sur votre \RefGlossaire{-}{Console}{Terminal}{terminal} avant de rajouter \Commande{ install} -- avec une espace au début. Vous obtenez alors quelque chose comme \Commande{sudo python '/\ldots{}/install.py' install} avant d'appuyer sur \Touche{Entrée}. Votre mot de passe sera demandé. Vous pouvez ensuite supprimer le dossier décompressé ainsi que l'archive.{\par}
+\item Pour le lancer : \Commande{python wallpapoz.py}{\par}
+\item Site officiel : \url{http://wallpapoz.sourceforge.net}{\par}
+\end{itemize}
+
+\section{Vidéo}
+\subsection{Avidemux}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Avidemux.png}
+\item Description : Le couteau suisse de la vidéo, permettant de faire les traitements les plus utilisés comme couper, joindre, recadrer, tourner la vidéo, décaler la piste son\ldots{}{\par}
+\item Équivalent Windows : VirtualDub{\par}
+\item Pour l'installer : \Commande{sudo apt-get install avidemux}{\par}
+\item Pour le lancer : \Commande{avidemux}{\par}
+\item Site officiel : \url{http://fixounet.free.fr/avidemux}{\par}
+\endgroup
+\end{itemize}
+\subsection{Cinelerra}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/cinelerra.png}
+\item Description : Outil de montage vidéo complet contenant quelques fonctions telles que les transitions, effets sonores et permettant de créer des effets vidéo complexes. Son concept peut dérouter au premier abord, car il n'aborde pas le montage sous l'angle du montage linéaire mais il consiste en un système de montage audio ou vidéo capable de lire des médias dans n'importe quel ordre sans que le support d'origine ne soit en aucune manière modifié, et c'est pourquoi on l'appelle aussi «~Système de Montage Non-Destructif~».{\par}
+\endgroup
+\item Équivalent Windows : Windows Movie Maker{\par}
+\item Pour l'installer : \Commande{sudo apt-get install cinelerra}{\par}
+\item Pour le lancer : \Commande{cinelerra}{\par}
+\item Site officiel : \url{http://cvs.cinelerra.org/about.php}{\par}
+\end{itemize}
+\subsection{K9Copy}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/K9Copy.png}
+\item Description : faites des sauvegardes de vos DVD9 en DVD5. K9copy est la meilleure des solutions testées pour les back-up de DVD bien que non-intégrée graphiquement à \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}\NotePage{C'est un programme KDE}.{\par}
+\item Équivalent Windows : DVD Shrink{\par}
+\item Pour l'installer : \Commande{sudo apt-get install k9copy}{\par}
+\item Pour le lancer : \Commande{k9copy}{\par}
+\item Site officiel : \url{http://k9copy.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\subsection{Kdenlive}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Kdenlive.png}
+\item Description : Cet outil de montage vidéo à mi-chemin entre la simplicité de Kino et la complétude de Cinerella. Cet éditeur vidéo non-linéaire, permettant de monter sons et images avec divers effets spéciaux.{\par}
+\endgroup
+\item Équivalent Windows : Windows Movie Maker{\par}
+\item Pour l'installer : \Commande{sudo apt-get install kdenlive}{\par}
+\item Pour le lancer : \Commande{kdenlive}{\par}
+\item Site officiel : \url{http://www.kdenlive.org/}{\par}
+\end{itemize}
+\subsection{Kino}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Kino.png}
+\item Description : Logiciel de capture et de montage vidéo. C'est bien un programme conçu pour \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}, bien qu'il commence par un K et puisse faire penser à KDE !{\par}
+\endgroup
+\item Équivalent Windows : Windows Movie Maker{\par}
+\item Pour l'installer : \Commande{sudo apt-get install kino}{\par}
+\item Pour le lancer : \Commande{kino}{\par}
+\item Post-installation : D'autres outils utiles pour pouvoir gérer un grand nombre de formats vidéo et audio : \Commande{sudo apt-get install mjpegtools ffmpeg kinoplus toolame mpeg2dec a52dec}
+\item Site officiel : \url{http://www.kinodv.org}{\par}
+\end{itemize}
+\subsection{Mplayer}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Mplayer.png}
+\item Description : Lecteur vidéo de référence. Même si Totem est mieux intégré à \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} que Mplayer, ce dernier a l'avantage de lire toutes les vidéos, même celles sur lesquelles Totem ou VLC se cassent les dents.{\par}
+\endgroup
+\item Équivalent Windows : Media Player{\par}
+\item Pour l'installer : \Commande{sudo apt-get install mplayer mplayer-fonts}{\par}
+\item Pour le lancer : \Commande{gmplayer}{\par}
+\item Site officiel : \url{http://www.mplayerhq.hu}{\par}
+\end{itemize}
+\subsection{VLC}
+\label{RefInstallVLC}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/VLC.png}
+\item Description : Lecteur vidéo, issu de l'illustre École Centrale de Paris, très différent des autres car comprenant ses propres codecs. Si les autres lecteurs ne peuvent lire une vidéo, essayez avec ce dernier. Ce projet supporte aussi des skins, au cas où vous n'aimez pas son style sobre et épuré.{\par}
+\item Équivalent Windows : Media Player{\par}
+\item Pour l'installer : \Commande{sudo apt-get install vlc}{\par}
+\item Pour le lancer : \Commande{vlc}{\par}
+\item Site officiel : \url{http://www.videolan.org/vlc}{\par}
+\endgroup
+\end{itemize}

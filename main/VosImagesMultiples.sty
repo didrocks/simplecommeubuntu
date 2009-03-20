@@ -1,0 +1,532 @@
+%% Informations générales
+\NeedsTeXFormat{LaTeX2e}[1999/01/01]
+\ProvidesPackage{main/VosImagesMultiples}[2007/09/04]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copier ces commandes suivantes selon ce que vous voulez faire :
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\DeuxImagesCentrees}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Description sous l'image 1]{%
+			\label{IdentifiantPourRefImage1}%
+			\includegraphics[width=LargeurImage1cm]{CheminImage1.png}}%
+		\hspace{EspaceEntreImagescm}%
+		\subfigure[Description sous l'image 2]{%
+			\label{IdentifiantPourRefImage2}%
+			\includegraphics[width=LargeurImage2cm]{CheminImage2.png}}%
+		\caption{Description sous les 2 images}%
+		\label{IdentifiantPourRefDes2Images}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\TroisImagesCentrees}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Description sous l'image 1]{%
+			\label{IdentifiantPourRefImage1}%
+			\includegraphics[width=LargeurImage1cm]{CheminImage1.png}}%
+		\hspace{EspaceEntreImagescm}%
+		\subfigure[Description sous l'image 2]{%
+			\label{IdentifiantPourRefImage2}%
+			\includegraphics[width=LargeurImage2cm]{CheminImage2.png}}%
+		\caption{Description sous les 2 images}%
+		\hspace{EspaceEntreImagescm}%
+		\subfigure[Description sous l'image 3]{%
+			\label{IdentifiantPourRefImage3}%
+			\includegraphics[width=LargeurImage3cm]{CheminImage3.png}}%
+		\caption{Description sous les 3 images}%
+		\label{IdentifiantPourRefDes3Images}%
+	\end{center}%
+\end{figure}%
+}
+
+
+\newcommand{\QuatreImagesCentrees}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Description sous l'image 1]{%
+			\label{IdentifiantPourRefImage1}%
+			\includegraphics[width=LargeurImage1cm]{CheminImage1.png}}%
+		\hspace{EspaceEntreImagescm}%
+		\subfigure[Description sous l'image 2]{%
+			\label{IdentifiantPourRefImage2}%
+			\includegraphics[width=LargeurImage2cm]{CheminImage2.png}}%
+		\caption{Description sous les 2 images}%
+		\hspace{EspaceEntreImagescm}%
+		\subfigure[Description sous l'image 3]{%
+			\label{IdentifiantPourRefImage3}%
+			\includegraphics[width=LargeurImage3cm]{CheminImage3.png}}%
+		\hspace{EspaceEntreImagescm}%
+		\subfigure[Description sous l'image 4]{%
+			\label{IdentifiantPourRefImage4}%
+			\includegraphics[width=LargeurImage4cm]{CheminImage4.png}}%
+		\caption{Description sous les 4 images}%
+		\label{IdentifiantPourRefDes4Images}%
+	\end{center}%
+\end{figure}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Exemple
+%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ImagesJeuxCentrees}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Jeu de FPS]{%
+			\label{JeuFPS}%
+			\includegraphics[width=3.47cm]{corps/chapitre1/img/Jeux_1.png}}%
+		\hspace{0.5cm}%
+		\subfigure[Jeu tetris-like]{%
+			\label{JeuTetrisLike}%
+			\includegraphics[width=3.47cm]{corps/chapitre1/img/Jeux_2.png}}%
+		\caption{Des jeux de qualité sous GNU/Linux !}%
+		\label{PresentationJeuxLinux}%
+	\end{center}%
+\end{figure}%
+}
+% il suffirait alors d'appeler \ImagesJeuxCentrees pour avoir alors vous images dans votre document !
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLLER VOS COMMANDES ICI,
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\PresentationJeux}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[FPS]{%
+			\label{ImgJeuFPS}%
+			\includegraphics[width=3.47cm]{corps/chapitre1/img/Jeux_1.png}}%
+		\hspace{0.2cm}%
+		\subfigure[Tetris-like]{%
+			\label{ImgJeuTetrisLike}%
+			\includegraphics[width=3.47cm]{corps/chapitre1/img/Jeux_2.png}}%
+		\hspace{0.2cm}%
+		\subfigure[Multi-joueurs]{%
+			\label{ImgJeuMulti}%
+			\includegraphics[width=3.47cm, height=2.62cm]{corps/chapitre1/img/Jeux_3.png}}%
+		\hspace{0.2cm}%
+		\subfigure[RTS]{%
+			\label{ImgJeuRTS}%
+			\includegraphics[width=3.47cm]{corps/chapitre1/img/Jeux_4.png}}%
+		\caption{Des jeux de qualité sous GNU/Linux !}%
+		\label{ImgPresentationJeuxLinux}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\ChoixDebutInstall}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Choisissez ici votre langue]{%
+			\label{ImgLiveCD1}%
+			\includegraphics[width=4.99cm]{corps/chapitre2/img/LiveCD1.png}}%
+		\hspace{1cm}%
+		\subfigure[Écran de démarrage en Français]{%
+			\label{ImgLiveCD2}%
+			\includegraphics[width=4.99cm]{corps/chapitre2/img/LiveCD2.png}}%
+		\caption{Choix de la langue}%
+		\label{ImgLiveCDDebut}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\Partitionnement}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Avant le partitionnement]{%
+			\label{ImgInstall5}%
+			\includegraphics[width=5.9cm]{corps/chapitre2/img/Partitionnement1.png}}%
+		\hspace{0.1cm}%
+		\subfigure[Nouvelle partition et point de montage]{%
+			\label{ImgInstall7}%
+			\includegraphics[width=4.99cm]{corps/chapitre2/img/Partitionnement2.png}}%
+		\hspace{1cm}%
+		\subfigure[Récapitulatif]{%
+			\label{ImgInstall8}%
+			\includegraphics[width=8cm]{corps/chapitre2/img/Partitionnement3.png}}%
+		\caption{Sélection des disques durs et partitions}%
+		\label{InstallPartition}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\IconeBarreHaut}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Firefox]{%
+			\label{ImgIconeFF}%
+			\includegraphics[width=1.7cm]{corps/chapitre3/img/Icone_Firefox.png}}%
+		\hspace{1cm}%
+		\subfigure[Evolution]{%
+			\label{ImgIconeEvolution}%
+			\includegraphics[width=1.7cm]{corps/chapitre3/img/Icone_Evolution.png}}%
+		\hspace{1cm}%
+		\subfigure[Connexion filaire]{%
+			\label{ImgConnexionFilaire}%
+			\includegraphics[width=1.7cm]{corps/chapitre3/img/Applet_NM_Cablee.png}}%
+		\hspace{1cm}%
+		\subfigure[Connexion sans fil]{%
+			\label{ImgConnexionWifi}%
+			\includegraphics[width=1.7cm]{corps/chapitre3/img/Applet_NM_Wifi.png}}%
+		\hspace{1cm}%
+		\subfigure[Niveau de batterie]{%
+			\label{ImgAppletBatterie}%
+			\includegraphics[width=1.7cm]{corps/chapitre3/img/Applet_Batterie.png}}%
+		\hspace{1cm}%
+		\subfigure[Gestion du volume]{%
+			\label{ImgAppletSon}%
+			\includegraphics[width=1.7cm]{corps/chapitre3/img/Applet_Son.png}}%
+		\hspace{1cm}%
+		\subfigure[Applet Date-Heure]{%
+			\label{ImgAppletDateHeure}%
+			\includegraphics[width=4.13cm]{corps/chapitre3/img/Applet_Heure.png}}%
+		\hspace{1cm}%
+		\subfigure[Utilisateur et quitter]{%
+			\label{ImgAppletSwitchUser}%
+			\includegraphics[width=2.7cm]{corps/chapitre3/img/Applet_Switch_User.png}}%
+		\caption{Les principaux éléments du tableau de bord supérieur}%
+		\label{ImgBarreSup}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\ReseauNM}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Choix du réseau]{%
+			\label{ImgChoixWifi}%
+			\includegraphics[width=4cm]{corps/chapitre4/img/Choix_Reseau_Wifi.png}}%
+		\hspace{1cm}%
+		\subfigure[Réseau avec identification]{%
+			\label{ImgClefWifi}%
+			\includegraphics[width=6cm]{corps/chapitre4/img/Wifi_Clef.png}}%
+		\caption{Gestion automatique du réseau}%
+		\label{ImgGestionNM}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\GestionReseauNM}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Connexion câblée]{%
+			\label{ImgConnexionCablee}%
+			\includegraphics[width=4.7cm]{corps/chapitre4/img/Connexion_Cablee.png}}%
+		\hspace{1cm}%
+		\subfigure[Connexion perdue]{%
+			\label{ImgConnexionPerdue}%
+			\includegraphics[width=4.7cm]{corps/chapitre4/img/Connexion_Perdue.png}}%
+		\hspace{1cm}%
+		\subfigure[Nouveau réseau trouvé]{%
+			\label{ImgNouveauReseau}%
+			\includegraphics[width=4.7cm]{corps/chapitre4/img/Nouveau_Reseau.png}}%
+		\caption{Gestion des réseaux par Network-Manager}%
+		\label{ImgGestionReseauNM}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\GestionReseauManuel}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Configuration manuelle de la connexion filaire]{%
+			\label{ImgManuFilaire}%
+			\includegraphics[width=5.5cm]{corps/chapitre4/img/Connexion_Manu_Filaire.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Configuration manuelle de la connexion Wi-Fi]{%
+			\label{ImgManuWifi}%
+			\includegraphics[width=5.5cm]{corps/chapitre4/img/Connexion_Manu_Wifi.png}}%
+		\label{ImgGestionReseauManuel}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\InstallationCodec}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Proposition]{%
+			\label{ImgCodec1}%
+			\includegraphics[width=3.99cm]{corps/chapitre5/img/Codec_Install1.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Choix des codecs]{%
+			\label{ImgCodec2}%
+			\includegraphics[width=3.99cm]{corps/chapitre5/img/Codec_Install2.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Avertissement légalité]{%
+			\label{ImgCodec3}%
+			\includegraphics[width=3.99cm]{corps/chapitre5/img/Codec_Install3.png}}%
+		\caption{Installation automatique des codecs}%
+		\label{InstallCodec}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\InstallationFlash}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Site nécessitant Flash]{%
+			\label{ImgFlash1}%
+			\includegraphics[width=4.99cm]{corps/chapitre5/img/Installer_Flash1.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Sélection du plugin]{%
+			\label{ImgFlash2}%
+			\includegraphics[width=4.99cm]{corps/chapitre5/img/Installer_Flash2.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Validation de la licence]{%
+			\label{ImgFlash3}%
+			\includegraphics[width=3.99cm]{corps/chapitre5/img/Installer_Flash3.png}}%
+		\caption{Installation automatique de Flash}%
+		\label{ImgInstallFlash}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\InstallationThemeGnome}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Encadré du thème]{%
+			\label{ImgThemeGnome}%
+			\includegraphics[width=6.4cm]{corps/chapitre6/img/Installer_Theme_1.png}}%
+		\hspace{1cm}%
+		\subfigure[Téléchargement]{%
+			\label{ImgThemeGnomeGlisse}%
+			\includegraphics[width=3cm]{corps/chapitre6/img/Installer_Theme_2.png}}%
+		\hspace{1cm}%
+		\subfigure[Thème installé]{%
+			\label{ImgThemeGnomeConfirm}%
+			\includegraphics[width=9cm]{corps/chapitre6/img/Installer_Theme_3.png}}%
+		\caption{Installation d'un thème}%
+		\label{ImgInstallTheme}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\ForcerTuer}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Applet forcer à quitter]{%
+			\label{ImgForceQuit}%
+			\includegraphics[width=5cm]{corps/chapitre6/img/Tuer.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Moniteur Système]{%
+			\label{ImgMoniteurSysteme}%
+			\includegraphics[width=5cm]{corps/chapitre6/img/Moniteur_Systeme.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Réaction de l'OS]{%
+			\label{ImgOSKillApp}%
+			\includegraphics[width=5cm]{corps/chapitre6/img/OS_Tuer_App.png}}%
+		\caption{Fermeture d'une application connaissant un dysfonctionnement}%
+		\label{ImgTuerApp}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\DeskBarPartieUn}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Recherche d'un fichier]{%
+			\label{ImgDeskBarFichier}%
+			\includegraphics[width=5cm]{corps/chapitre6/img/Deskbar_Fichier_Dossier.png}}%
+		\hspace{0.1cm}%
+		\subfigure[Recherche dans les signets]{%
+			\label{ImgDeskBarMarquePage}%
+			\includegraphics[width=5cm]{corps/chapitre6/img/Deskbar_Signet.png}}%
+		\hspace{0.1cm}%
+		\subfigure[Basculement entre applications]{%
+			\label{ImgDeskBarBascule}%
+			\includegraphics[width=5cm]{corps/chapitre6/img/Deskbar_Basculer.png}}%
+		\hspace{0.1cm}%
+		\subfigure[Effectuer une action]{%
+			\label{ImgDeskBarAction}%
+			\includegraphics[width=5cm]{corps/chapitre6/img/Deskbar_Action.png}}%
+		\caption{Quelques possibilités de la DeskBar}%
+		\label{ImgDeskBar1}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\DeskBarPartieDeux}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Recherche sur le web]{%
+			\label{ImgDeskBarRecherche}%
+			\includegraphics[width=5.5cm]{corps/chapitre6/img/Deskbar_Recherche.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Adresse e-mail]{%
+			\label{ImgDeskbarMail}%
+			\includegraphics[width=5.5cm]{corps/chapitre6/img/Deskbar_mail.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Nom d'un contact]{%
+			\label{ImgDeskBarContact}%
+			\includegraphics[width=5.5cm]{corps/chapitre6/img/Deskbar_Carnet_Adresse.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Tomboy et Tracker]{%
+			\label{ImgDeskBarTrackerTomboy}%
+			\includegraphics[width=5.5cm]{corps/chapitre6/img/Deskbar_Tomboy_Tracker.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Historique des actions]{%
+			\label{ImgDeskBarHistorique}%
+			\includegraphics[width=6.5cm]{corps/chapitre6/img/Desbar_Historique.png}}%
+		\caption{D'autres possibilités de la DeskBar}%
+		\label{ImgDeskBar2}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\NautilusTaille}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Espace disque restant]{%
+			\label{ImgNautilusEspaceDisque}%
+			\includegraphics[width=9.5cm]{corps/chapitre6/img/Nautilus_Taille_Disque.png}}%
+		\hspace{0.25cm}%
+		\subfigure[Taille du ou des fichiers]{%
+			\label{ImgNautilusTailleFichier}%
+			\includegraphics[width=9.5cm]{corps/chapitre6/img/Nautilus_Taille_Fichier.png}}%
+		\caption{Tailles affichées par Nautilus}%
+		\label{ImgNautilusTaille}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\ScannerPresentation}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Fenêtre principale]{%
+			\label{ImgScanner3}%
+			\includegraphics[width=3.69cm]{corps/chapitre7/img/Installer_Scanner_3.png}}%
+		\hspace{0.5cm}%
+		\subfigure[Fenêtre d'aperçu]{%
+			\label{ImgScanner4}%
+			\includegraphics[width=3.69cm]{corps/chapitre7/img/Installer_Scanner_4.png}}%
+		\hspace{0.5cm}%
+		\subfigure[Histogramme]{%
+			\label{ImgScanner5}%
+			\includegraphics[width=3.69cm]{corps/chapitre7/img/Installer_Scanner_5.png}}%
+		\caption{Les différents éléments de l'interface de Xsane}%
+		\label{ImgPresentationInterfaceXSane}%
+	\end{center}%
+\end{figure}%
+}
+
+%\ImgCentree{3.8}{corps/chapitre7/img/Installer_Scanner_3.png}{Fenêtre principale}{ImgScanner3}
+%\ImgCentree{3.8}{corps/chapitre7/img/Installer_Scanner_4.png}{Fenêtre d'aperçu}{ImgScanner4}
+%\ImgCentree{3.8}{corps/chapitre7/img/Installer_Scanner_5.png}{Histogramme}{ImgScanner5}
+
+\newcommand{\ScannerEtapeUn}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Aperçu du document]{%
+			\label{ImgScanner6}%
+			\includegraphics[width=4.69cm]{corps/chapitre7/img/Installer_Scanner_6.png}}%
+		\hspace{1cm}%
+		\subfigure[Définition de la zone de travail]{%
+			\label{ImgScanner7}%
+			\includegraphics[width=4.69cm]{corps/chapitre7/img/Installer_Scanner_7.png}}%
+		\caption{Étape 1 : Aperçu et définition de la zone à scanner}%
+		\label{ImgEtape1Scanner}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\ScannerEtapeDeux}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Aperçu du document]{%
+			\label{ImgScanner9}%
+			\includegraphics[width=4.69cm]{corps/chapitre7/img/Installer_Scanner_9.png}}%
+		\hspace{1cm}%
+		\subfigure[Définition de la zone de travail]{%
+			\label{ImgScanner10}%
+			\includegraphics[width=4.69cm]{corps/chapitre7/img/Installer_Scanner_10.png}}%
+		\caption{Étape 3 : Retouche et enregistrement du résultat}%
+		\label{ImgEtape3Scanner}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\PiloteProprio}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Pilotes propriétaires installés]{%
+			\label{ImgPiloteProprio1}%
+			\includegraphics[width=4.69cm]{corps/chapitre7/img/Installer_Pilote_Proprio1.png}}%
+		\hspace{1cm}%
+		\subfigure[Redémarrage nécessaire]{%
+			\label{ImgPiloteProprio2}%
+			\includegraphics[width=4.69cm]{corps/chapitre7/img/Installer_Pilote_Proprio2.png}}%
+		\hspace{1cm}%
+		\subfigure[Pilote pris en compte]{%
+			\label{ImgPiloteProprio3}%
+			\includegraphics[width=5.69cm]{corps/chapitre7/img/Installer_Pilote_Proprio3.png}}%
+		\caption{Installation d'un pilote propriétaire}%
+		\label{ImgPiloteProprio}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\InstallBureauTroisD}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Activation du bureau 3D]{%
+			\label{ImgInstallBureau3D}%
+			\includegraphics[width=6cm]{corps/chapitre7/img/Installer_Bureau3D.png}}%
+		\hspace{1cm}%
+		\subfigure[Installation accélération graphique]{%
+			\label{ImgInstallerPilotePrioprioAuto}%
+			\includegraphics[width=4.69cm]{corps/chapitre7/img/Installer_Pilote_Prioprio_Auto.png}}%
+		\caption{Installation des effets de bureau}%
+		\label{ImgInstallBureauTroisDim}%
+	\end{center}%
+\end{figure}%
+}
+
+\newcommand{\EnvironnementsBureau}{%
+\begin{figure}[h!]%
+	\begin{center}%
+		\leavevmode%
+		\subfigure[Gnome]{%
+			\label{ImgGnome}%
+			\includegraphics[width=5.9cm]{corps/chapitre10/img/Gnome.png}}%
+		\hspace{0.1cm}%
+		\subfigure[KDE]{%
+			\label{ImgKDE}%
+			\includegraphics[width=5.9cm]{corps/chapitre10/img/KDE.png}}%
+		\hspace{1cm}%
+		\subfigure[XFCE]{%
+			\label{ImgXFCE}%
+			\includegraphics[width=5.9cm]{corps/chapitre10/img/XFCE.png}}%
+		\hspace{0.1cm}%
+		\subfigure[Windows Maker]{%
+			\label{ImgWindowsMaker}%
+			\includegraphics[width=5.9cm]{corps/chapitre10/img/Windows_Maker.png}}%
+		\caption{Les différents environnements de bureau}%
+		\label{ImgEnvironnementsBureau}%
+	\end{center}%
+\end{figure}%
+}

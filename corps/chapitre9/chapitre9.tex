@@ -1,0 +1,1282 @@
+\chapitre{Les jeux}{Je vous entends déjà dire :}{ «~Il n'y a pas de jeux sur Linux~». Eh bien -- peut-être à votre plus grande surprise -- détrompez-vous, et cette liste de plus de 100 jeux de qualité, de tous types, est là pour vous le confirmer. Jouer sur Linux, c'est possible, et ça ne se limite pas à Tetris ! Ce chapitre, par analogie au précédent, vous présentera en quelques mots chaque jeu classé par thème, ainsi que la manière de l'installer. Bien évidemment, contrairement au chapitre précédent, de nombreux jeux sont similaires mais se trouvent listés car les goûts et préférences de chacun varient grandement dans ce domaine. La fin du chapitre traitera un peu plus des jeux commerciaux développés pour Linux, ainsi que la possibilité de faire fonctionner des jeux pour Windows sous votre \RefGlossaire{Système}{OS}{Système d'exploitation}{système d'exploitation}. Vous avez bien branché votre joystick ? Alors, c'est parti !\label{RefChapJeux}}
+\section{Préambule}
+Pour que la suite de cette section soit valable, il faut avoir modifié la liste des sources de logiciels comme décrit dans la section \ref{RefSourceMAJ}. La plupart des jeux nécessite l'accélération 3D que les \RefGlossaire{Système}{Pilote}{Driver}{drivers} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires} et certains \AddIndex{Philosophie}{-}{Libre}{Libres} -- pour les cartes ATI ou Intel -- proposent comme illustré dans la section \ref{RefInstallProprio}. Enfin, vous retrouverez les conseils sur les différents types d'installation dans la section \ref{RefInstallJeuEtLogiciel} du chapitre \ref{RefChapLogiciel}.\par
+De même, il est indiqué comment lancer les jeux dans un \RefGlossaire{-}{Console}{Terminal}{terminal}. Vous pouvez utiliser le raccourci \Touche{ALT} + \Touche{F2} pour lancer directement ces logiciels en tapant leur nom, ou encore, les rechercher graphiquement dans le menu Applications \FlecheDroite Jeux.\\
+En plus de tous les jeux présentés ici, je suis sûr que vous trouverez également quelques perles par le biais de «~Applications \FlecheDroite Ajouter/supprimer\dots{}~». Il suffit souvent de chercher le terme anglais : chess pour échecs, etc !\\
+Tous les jeux présentés dans cette liste ne sont pas forcément \AddIndex{Philosophie}{-}{Libre}{Libres}, cependant, ils sont tous gratuits. Vous retrouverez également une  énorme liste de jeux sur \url{http://jeuxlibres.net} et \url{http://www.jeuxlinux.fr}, dans la langue de Molière ; si vous êtes bilingues : \url{http://www.linux-gamers.net} ainsi que \url{http://www.happypenguin.org} en anglais, sans oublier Wikipédia, une nouvelle fois intarrissable sur le sujet : \url{http://fr.wikipedia.org/wiki/Liste_de_jeux_vidéo_libres}\par
+Vous trouverez également un recueil de jeux pour GNU/Linux téléchargeable sur \url{http://www.surlestracesdupingouin.tuxfamily.org}. Enfin, une bonne adresse pour des compléments d'informations et l'installation de certains jeux non cités ici à cause d'une installation trop complexe : \url{http://doc.ubuntu-fr.org/jeux}.
+\section{Les FPS (First-Person Shooters)}
+\subsection{Alien Arena}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/AlienArena.png}
+\item Description : FPS fun et très complet : Deathmatch, Capture the flag, All out attack (véhicules), Deathball (marquer des buts avec une balle). Le temps est venu d'exterminer la racaille alien.{\par}
+\item Pour l'installer : Téléchargez et installez les .deb alien-arena-data ainsi que alien-arena à partir du site getdeb.net :
+\url{http://www.getdeb.net}.{\par}
+\item Pour jouer : \Commande{alien-arena}{\par}
+\item Pour installer un serveur : \Commande{sudo apt-get install alien-arena-server}{\par}
+\item Site officiel : \url{http://red.planetarena.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{AssaultCube}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/AssaultCube.png}
+\item Description : FPS assez réussi, conversion totale du jeu Cube où deux équipes s'affrontent. Vous pouvez incarner les terroristes «~The Cubers Liberations Army~» ou les forces spéciales «~The Rabid Viper Special Forces~». De nombreux modes de jeux sont disponibles.{\par}
+\endgroup
+\item Pour l'installer : Téléchargez et installez les .deb assaultcube-data ainsi que assaultcube à partir du site getdeb.net :
+\url{http://www.getdeb.net}.{\par}
+\item Pour jouer : \Commande{assaultcube}{\par}
+\item Site officiel : \url{http://assault.cubers.net/} (vous y trouverez une liste des serveurs disponibles){\par}
+\end{itemize}
+\subsection{Cube}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/Cube.png}
+\item Description : FPS tournant même sur des configurations modestes. En solo, en réseau local ou sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}, c'est principalement en multi-joueurs que ce jeu pourra vous satisfaire. Pour les configurations plus musclées, Cube 2, un moteur plus avancé graphiquement, existe et se nomme Sauerbraten --- cf. plus loin.{\par}
+\endgroup
+\item Pour l'installer : Téléchargez le .run (qui ne se trouve pas sur le site officiel) : \url{http://liflg.org/?catid=6&gameid=67}.{\par}
+\item Pour jouer : \Commande{cube}{\par}
+\item Traduction des menus de cube : \url{http://jeuxlibres.net/news/70.html}.{\par}
+\item Site officiel : \url{http://www.cubeengine.com}{\par}
+\end{itemize}
+\subsection{Enemy Territory}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/Enemy_Territory.png}
+\item Description : Wolfenstein Enemy Territory simule l'affrontement entre 2 équipes adverses : L'Axe et les Alliés. L'action se déroule pendant la seconde guerre mondiale. Combattez dans des endroits aussi variés qu'une plage de Normandie, un village en Afrique, une forêt de Bavière\ldots{} Par défaut, ce jeu est uniquement multi-joueurs, mais des bots sont téléchargeables.{\par}
+\endgroup
+\item Pour l'installer : Téléchargez le .run du site officiel (Enemy Territory Linux  Full Install dans la catégorie Main){\par}
+\item Pour jouer : \Commande{et}{\par}
+\item Post-installation/régler les problèmes pour utilisateurs «~avertis~» : bots, raccourcis\ldots{} Consultez \url{http://doc.ubuntu-fr.org/enemy_territory}{\par}
+\item Site officiel : \url{http://enemy-territory.4players.de}{\par}
+\end{itemize}
+\subsection{Legends}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/Legends.png}
+\item Description : Ce FPS est seulement multi-joueurs et il vous permettra de varier un peu les plaisirs. Attention, ce jeu est pour l'instant fortement instable. Cependant, il semble extrêmement prometteur et à surveiller de près.{\par}
+\endgroup
+\item Pour l'installer : Installez le .run que vous trouverez sur le site officiel.{\par}
+\item Pour jouer : \Commande{legends}{\par}
+\item Site officiel : \url{http://www.legendsthegame.net}{\par}
+\end{itemize}
+\subsection{Nexuiz}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/Nexuiz.png}
+\item Description : FPS plutôt sympa avec de nombreuses maps, personnages et armes. La communauté de ce jeux semble  très active et composée de nombreuses personnes.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install nexuiz}{\par}
+\item Pour jouer : \Commande{nexuiz}{\par}
+\item Site officiel : \url{http://www.nexuiz.com}{\par}
+\endgroup
+\end{itemize}
+\subsection{OpenArena}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/OpenArena.png}
+\item Description : Quake 3-like libre, il pourra facilement vous faire passer de nombreuses heures de détente.\par
+\item Pour l'installer : \Commande{sudo apt-get install openarena}{\par}
+\item Pour jouer : \Commande{openarena}{\par}
+\item Pour installer un serveur : \Commande{sudo apt-get install openarena-server}{\par}
+\item Site officiel : \url{http://openarena.ws}{\par}
+\endgroup
+\end{itemize}
+\subsection{OpenQuartz}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/OpenQuartz.png}
+\item Description : FPS entièrement \AddIndex{Philosophie}{-}{Libre}{Libre} aussi bien par ses modèles, cartes, sons et textures utilisant le moteur graphique libéré de Quake. Passez par la porte des étoiles pour arriver sur différents mondes pour une lutte sans merci !{\par}
+\endgroup
+\item Pour l'installer : Suivez la procédure décrite en téléchargeant le .tar.gz du site officiel --- Binaries pour binaires. Remplacez \Chemin{/opt/maniadrive} par \Chemin{/opt/\IndicCesure{}openquartz}. Créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/\IndicCesure{}openquartz/\IndicCesure{}openquartz-glx} -- cf. section \ref{RefEditerMenus} -- pour plus de simplicité. Pour lancer un serveur et pouvoir jouer en réseau, il faudra aussi que vous fassiez un raccourci vers \Chemin{/opt/openquartz/openquartz-dedicated}.{\par}
+\item Pour jouer : Vous pourrez lancer directement OpenQuartz depuis le menu, de même pour le serveur si besoin. Une fois le jeu lancé, vous tombez directement sur une \RefGlossaire{-}{Terminal}{Console}{console} très chère aux joueurs de ce type de jeu. Appuyez sur la touche \Touche{Esc}\NotePage{Touche échap} pour accéder au menu.{\par}
+\item Site officiel : \url{http://openquartz.sourceforge.net}{\par}
+\end{itemize}
+
+\subsection{Sauerbraten (Cube 2)}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/Sauerbraten.png}
+\item Description : Magnifique FPS dont le moteur graphique est basé sur Cube premier du nom. Son but est, comme son ancêtre, de permettre l'édition dynamique des cartes pendant le jeu afin que les joueurs puissent prendre du plaisir et améliorer continuellement le gameplay en proposant des extensions. EisenStern \url{http://eisenstern.com}, un RPG \AddIndex{Philosophie}{-}{Libre}{Libre} en développement l'a même pris pour moteur 3D !{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install sauerbraten}{\par}
+\item Pour jouer : \Commande{sauerbraten}{\par}
+\item Pour installer un serveur : \Commande{sudo apt-get install sauerbraten-server}{\par}
+\item Site officiel : \url{http://sauerbraten.org}{\par}
+\end{itemize}
+\subsection{Tremulous}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/Tremulous.png}
+\item Description : Prenez un FPS bien sauvage avec des humains et des aliens, ajoutez un brin de RTS pour apporter une touche de nouveauté, et versez le mélange dans le moteur graphique de Quake3. Laissez mijoter le tout dans une ambiance sombre et futuriste. Tremulous est prêt !{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install tremulous}{\par}
+\item Pour jouer : \Commande{tremulous}{\par}
+\item Pour installer un serveur : \Commande{sudo apt-get install tremulous-server}{\par}
+\item Site officiel : \url{http://www.tremulous.net}{\par}
+\end{itemize}
+\subsection{War§oW}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/FPS/Warsow.png}
+\item Description : Warsow est un FPS multi-joueurs dont les graphismes mélangent 3D et BD/Cartoon --- cf. le jeu commercial XIII. Votre habileté à déplacer votre personnage -- possibilité de faire des sauts acrobatiques -- prime sur votre nervosité à la gâchette.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install warsow}{\par}
+\item Pour installer un serveur : \Commande{sudo apt-get install warsow-server}{\par}
+\item Pour jouer : \Commande{warsow}{\par}
+\item Site officiel : \url{http://www.warsow.net}{\par}
+\end{itemize}
+\section{Les RTS (Real Time Strategy game)}
+\subsection{Dark Oberon}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/Dark_Oberon.png}
+\item Description : Jeu de stratégie temps réel en pâte à modeler et développé par des slovaques, il faut le voir pour le croire ! Jouez seul ou en multi-joueurs -- en réseau -- à ce jeu qui a le mérite d'avoir un univers original.{\par}
+\endgroup
+\item Pour l'installer : Téléchargez et installez les .deb dark-oberon-data et dark-oberon à partir du site getdeb.net :
+\url{http://www.getdeb.net}. Veuillez noter que cette version vient sans les fichiers sons afin d'éviter des problèmes de licence.{\par}
+\item Pour jouer : \Commande{dark-oberon}{\par}
+\item Site officiel : \url{http://dark-oberon.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Glest}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/Glest.png}
+\item Description : RTS passionnant allant même jusqu'à dépasser graphiquement Warcraft 3 !{\par}
+\item Pour l'installer : \Commande{sudo apt-get install glest}{\par}
+\endgroup
+\item Pour jouer : \Commande{glest}{\par}
+\item Site officiel : \url{http://www.glest.org}{\par}
+\end{itemize}
+%%% sinon moche
+\subsection{Globulation 2}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/Globulation_2.png}
+\item Description : Vous aimez les RTS mais vous en avez marre des mondes médiévaux, jouez à Globulation 2. Vous contrôlez des globules, forme de vie plutôt difficiles à décrire, faites-les prospérer\ldots{}{\par}
+\item Pour l'installer : \Commande{sudo apt-get install glob2}{\par}
+\item Pour jouer : \Commande{glob2}{\par}
+\item Site officiel : \url{http://globulation2.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{LiquidWar}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/LiquidWar.png}
+\item Description : Liquid War est un «~wargame~» multi-joueurs. Ses règles sont vraiment originales et ont été inventées par Thomas Colcombet. L'idée est de contrôler une armée de liquide et d'essayer de «~manger~» ses adversaires. Il est possible de jouer seul, mais le jeu est conçu pour se jouer à plusieurs, un mode réseau étant disponible.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install liquidwar}{\par}
+\item Pour jouer : \Commande{liquidwar}{\par}
+\item Site officiel : \url{http://www.ufoot.org/liquidwar/v5}{\par}
+\endgroup
+\end{itemize}
+\subsection{Netpanzer}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/Netpanzer.png}
+\item Description : Wargame online, NetPanzer fait primer l'action et la gestion des unités en temps réel : aucune gestion des ressources n'est nécessaire. Pas de contrainte non plus : les joueurs peuvent se joindre à la partie ou la quitter à n'importe quel moment.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install netpanzer}{\par}
+\item Pour jouer : \Commande{netpanzer}{\par}
+\item Site officiel : \url{http://netpanzer.berlios.de}{\par}
+\endgroup
+\end{itemize}
+%%% sinon : moche
+\subsection{SAVAGE : The Battle for Newerth}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/Savage.png}
+\item Description : Jeu commercial sorti fin 2004, il est désormais gratuit, ce n'est donc ni un abandonware, ni un \RefGlossaire{Philosophie}{Libre}{Logiciel Libre}{Logiciel Libre}. Ce jeu a essayé, de manière assez réussie, à allier le RTS et le FPS, les deux genres qui dominent de nos jours les jeux PCs.{\par}
+\endgroup
+\item Pour l'installer : Installez le .run du site officiel présent sous le nom de SEP Package Primary Download Location (Linux). La clef, comme indiquée sur le site, est 00000000000000000000.{\par}
+\item Pour jouer : \Commande{savage}{\par}
+\item Patchs et Mods supplémentaires comme le Mod Full Enhancement (SFE) et SEP3T par exemple : \url{http://www.notforidiots.com/SFE} et \url{http://www.evolvedclan.com/forums/index.php/topic,259.0.html}.{\par}
+\item Site officiel : \url{http://www.s2games.com/savage}{\par}
+\end{itemize}
+\subsection{Total Annihilation Spring}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/Total_Annihilation_Spring.png}
+\item Description : Un jeu de stratégie en temps réel inspiré par le jeu Total Annihilation. Il est avant tout orienté vers le jeu en ligne ou en réseau local. Ce jeu est magnifique de par ses détails : terrains déformables, feux de forêt, reflets et vagues sur l'eau, ciel variable, intelligence artificielle poussée\ldots{}{\par}
+\endgroup
+\item Pour l'installer : Installez le .run se trouvant sur le site officiel.{\par}
+\item Pour jouer : \Commande{spring}{\par}
+\item Ajouter des cartes et beaucoup d'informations sur : \url{http://doc.ubuntu-fr.org/taspring}{\par}
+\item Site officiel : \url{http://taspring.clan-sy.com}{\par}
+\end{itemize}
+%%% sinon moche
+\subsection{Warzone 2100 Resurrection}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/Warzone2100.png}
+\item Description : Warzone 2100 est un jeu de stratégie temps réel sorti en 1999, développé par le studio Pumpkin et publié par Eidos Interactive. Ce jeu développait des éléments innovants à l'époque.  Une nouvelle version open-source a été publiée en 2004, ce qui fait de lui le premier des jeux de stratégie en temps réel commerciaux à être devenu un \RefGlossaire{Philosophie}{Libre}{Logiciel Libre}{Logiciel Libre}.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install warzone2100}{\par}
+\item Pour jouer : \Commande{warzone2100}. Si vous voulez changer la résolution avec un mode plein écran : \Commande{warzone2100 --fullscreen --viewport 1024x768}{\par}
+\item Site officiel : \url{http://wz2100.net}{\par}
+\end{itemize}
+\subsection{Widelands}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/RTS/Widelands.png}
+\item Description : Inspiré de «~The Settlers II~», Widelands est un jeu de stratégie en temps réel dans lequel vous devrez vous occuper de votre population en donnant des indications de construction sur les bâtiments et les routes. On peut y jouer seul contre l'ordinateur ou à plusieurs en réseau.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install widelands}{\par}
+\item Pour jouer : \Commande{widelands}{\par}
+\item Site officiel : \url{http://widelands.org}{\par}
+\endgroup
+\end{itemize}
+\section{Les MMORPG}
+\subsection{Daimonin}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/MMORPG/Daimonin.png}
+\item Description : Je vous entends d'ici : «~Je veux un MMORPG\NotePage{Jeu de Rôle Massivement Multi-Joueurs} !~». Votre vœu est exaucé ! Daimonin est là.{\par}
+\item Pour l'installer : Téléchargez et installez les .deb daimonin-client-data ainsi que daimonin-client à partir du site getdeb.net : \url{http://www.getdeb.net}.{\par}
+\endgroup
+\item Pour jouer : \Commande{daimonin}{\par}
+\item Site officiel : \url{http://www.daimonin.net}{\par}
+\end{itemize}
+\subsection{Landes éternelles}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/MMORPG/Landes_Eternelles.png}
+\item Description : Vous voulez toujours jouer à un RPG ? Voici donc Landes éternelles, un RPG français gratuit ouvrant sur un monde original et unique pour ceux qui espèrent rêver un peu et entendre le son de l'aventure !{\par}
+\endgroup
+\item Pour l'installer : Téléchargez le fichier .tgz du site officiel. Remplacez \Chemin{/opt/\IndicCesure{}maniadrive} par \Chemin{/opt/landeseternelles}. Vous pouvez y ajouter les fichiers supplémentaires de musiques. Pour plus de simplicité, créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/\IndicCesure{}landeseternelles/\IndicCesure{}el.x86.linux.bin} --- cf. section \ref{RefEditerMenus}. Le site officiel comprend les instructions pour s'inscrire et les règles de la communauté.{\par}
+\item Pour jouer : Vous pourrez lancer directement Landes Éternelles depuis le menu.{\par}
+\item Site officiel : \url{http://www.landes-eternelles.com}{\par}
+\end{itemize}
+\subsection{Planeshift}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/MMORPG/PlaneShift.png}
+\item Description : Joli MMORPG gratuit et qui le restera si l'on en croit le site officiel. Développé par des Italiens, ce jeu est uniquement en anglais pour l'instant. L'inscription est obligatoire pour pouvoir jouer dans le monde de Yliakum.{\par}
+\endgroup
+\item Pour l'installer : Téléchargez le .bin sur le site officiel sous le nom de «~Linux binary~». L'installation se fait comme expliqué dans la section «~Logiciels~» à quelques exceptions près. Faites d'abord un clic-droit sur le fichier .bin, onglet «~Permissions~», cochez  «~Autoriser l'exécution du fichier comme un programme~». Puis cliquez sur «~Fermer~». Dans le \RefGlossaire{-}{Console}{Terminal}{terminal}, remplacez \Commande{sudo sh  } par \Commande{sudo  }. Une fois l'installation lancée, gardez l'option par défaut «~32-bit~» -- sauf si votre processeur est 64 bits, ce qui, si vous ne savez pas ce que c'est, ne doit pas être le cas -- puis répondez par «~Yes~» à toutes les questions. Sélectionnez «~GNOME~» à la place de «~KDE~» --- si vous êtes sur \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}, ce qui est le cas par défaut avec Ubuntu. Lorsque l'on vous demande «~User and Group~», entrez root:root. À l'écran suivant, entrez 777 dans «~Permissions~».{\par}
+\item Pour jouer : Double cliquez sur PlaneShift Client{\par}
+\item Post-installation : Avant de jouer, double-cliquez sur PlaneShift Updater pour mettre à jour.{\par}
+\item Site officiel : \url{http://www.planeshift.it}{\par}
+\end{itemize}
+\section{Les jeux de stratégie et de gestion}
+\subsection{Advanced Strategic Command}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/Advanced_Strategic_Command.png}
+\item Description : Jeu de stratégie au tour par tour. Il a été développé dans l'esprit des jeux Battle Isle dans la tradition de Battle Island. Ses graphismes un peu vieillots n'empêchent pas le fun de s'installer très rapidement.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install asc}{\par}
+\item Pour jouer : \Commande{asc}{\par}
+\item Site officiel : \url{http://www.asc-hq.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{Battle for Wesnoth}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/Battle_For_Wesnoth.png}
+\item Description : Il y a des jeux qui veulent révolutionner le monde et n'arrivent jamais au niveau fixé -- souvent à peine à un niveau intéressant -- et des jeux dont les ambitions sont très limitées mais progressant à une vitesse fulgurante. Battle for Wesnoth fait partie de cette seconde catégorie. Ce jeu de stratégie tour par tour est vraiment très intéressant, jouable en solo ou en réseau.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install wesnoth}{\par}
+\item Pour jouer : \Commande{wesnoth}{\par}
+\item Pour installer un serveur : \Commande{sudo apt-get install wesnoth-server}{\par}
+\item Site officiel : \url{http://www.wesnoth.org}{\par}
+\end{itemize}
+\newpage
+\subsection{Crimson Field}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/Crimson_Field.png}
+\item Description : Jeu alliant stratégie et tactique dans la tradition de Battle Island. Protégez vos troupes et attaquez vos adversaires dans ce jeu où vous pourrez jouer seul ou en multi-joueurs.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install crimson}{\par}
+\item Pour jouer : \Commande{crimson}{\par}
+\item Site officiel : \url{http://crimson.seul.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{FreeCiv}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/FreeCiv.png}
+\item Description : Vous avez adoré Civilization ? Vous ne pourrez vivre sans FreeCiv. Tout comme son confrère, celui-ci est multi-joueurs. Vous pouvez également jouer avec vos amis sous Windows ou Mac OS. Eh oui, ce jeu est multi-plateforme !{\par}
+\item Pour l'installer : \Commande{sudo apt-get install freeciv}{\par}
+\item Pour jouer : \Commande{freeciv}{\par}
+\item Site officiel : \url{http://fr.freeciv.wikia.com/wiki/Freeciv}{\par}
+\endgroup
+\end{itemize}
+\subsection{LinCity - Next Generation}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/LinCity_NG.png}
+\item Description : LinCity est l'équivalent linuxien de SimCity. Vous devez gérer une ville en créant des résidences, commerces, industries\ldots{} LinCity-NG reprend le développement de Lincity -- depuis longtemps en stand-by -- qui était complètement dépassé graphiquement. Il est donc récent et progresse très vite.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install lincity-ng}{\par}
+\item Pour jouer : \Commande{lincity-ng}{\par}
+\item Site officiel : \url{http://lincity-ng.berlios.de/wiki/index.php/Main_Page}{\par}
+\end{itemize}
+\newpage%%% sinon moche
+\subsection{Open TTD}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/Open_TTD.png}
+\item Description : Open TTD est un clone open source parfait du jeu «~Transport Tycoon Deluxe~». Il le reprend en intégralité et ajoute quelques options et améliorations très intéressantes --- un peu comme le TTD Patch pour ceux qui connaissent. Cependant, ce dernier nécessite la version originale du jeu pour fonctionner et son installation est peut-être à recommander aux «~utilisateurs avertis~».{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install openttd}. Une fois installé, nous allons copier les graphismes depuis votre fichier tdd : entrez la commande suivante : \Commande{sudo cp -rp } --- avec l'espace finale. Faites ensuite un \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} du fichier trg1r.grf qui doit être dans votre dossier ou cd de Transport Tycoon Deluxe. Rajoutez une espace, puis entrez  \Chemin{/usr/share/games/openttd/data}. Vous devrez avoir à la fin quelque chose s'apparentant à ceci : \Commande{sudo cp -rp '/\IndicCesure{}\ldots{}/\IndicCesure{}trg1r.grf'  /usr/\IndicCesure{}share/\IndicCesure{}games/\IndicCesure{}openttd/\IndicCesure{}data}. Validez avec la touche \Touche{Entrée}. Si tout se passe bien, rien n'est affiché. Ensuite, entrez la commande suivante : \Commande{sudo chmod -R 755 /usr/\IndicCesure{}share/\IndicCesure{}games/\IndicCesure{}openttd/\IndicCesure{}data} et à nouveau la touche \Touche{Entrée}. Si rien n'est affiché, c'est qu'il n'y a pas eu d'erreur. Faites de même avec les fichiers suivants : trg1r.grf, trgcr.grf, trghr.grf, trgir.grf, trgtr.grf, sample.cat. Ensuite, si vous voulez de la musique, faites de même avec les fichiers gm :
+\Commande{sudo cp -rp '/\ldots{}/'*.gm /usr/\IndicCesure{}share/\IndicCesure{}games/\IndicCesure{}openttd/\IndicCesure{}gm} où /\ldots{}/ correspond à l'adresse du dossier de Transport Tycoon Deluxe où se situent tous les fichiers gm. Il faudra également que le \RefGlossaire{-}{-}{Codec}{codec} audio midi soit installé  pour pouvoir profiter des musiques.{\par}
+\item Pour jouer : \Commande{openttd}{\par}
+\item Post-installation : il est possible de télécharger de nombreux nouveaux graphismes et améliorations sur le site officiel de Open TTD.{\par}
+\item Un bon site français sur TTD : \url{http://perso.orange.fr/ttycoonfl}{\par}
+\item Site officiel : \url{http://www.openttd.com}{\par}
+\end{itemize}
+\newpage%%% sinon moche
+\subsection{Simutrans}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/Simutrans.png}
+\item Description : Un bon petit Transport Tycoon vous manque ? On a ça en stock avec Simutrans ! Cette simulation économique de transport ne peut que vous procurer du bonheur ainsi que de -- très -- longues heures de jeu.{\par}
+\endgroup
+\item Pour l'installer : Suivez la démarche de l'installation avec les deux fichiers simubase.zip et simulinux.zip du  site officiel. Décompressez ces archives dans le même dossier. Remplacez \Chemin{/opt/maniadrive} par \Chemin{/opt/simutrans}. Créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/\IndicCesure{}simutrans/\IndicCesure{}simutrans} -- cf. section \ref{RefEditerMenus} -- pour plus de simplicité.{\par}
+\item Pour jouer : Vous pourrez lancer directement Simutrans depuis le menu.{\par}
+\item Site officiel : \url{http://128.simutrans.com}{\par}
+\end{itemize}
+\subsection{Tenes Empanadas Graciela}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/Tenes_Empanadas_Graciela.png}
+\item Description : Vous feriez bien une «~petite~» partie de Risk ? Ce jeu en français permet d'accéder à votre requête en solo ou à plusieurs en réseau. Même à plusieurs, il est possible de jouer contre des ennemis gérés par l'ordinateur.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install teg}{\par}
+\item Pour jouer : \Commande{teg-client}{\par}
+\item Remarque : Pour ajouter des ennemis gérés par l'ordinateur allez dans Jeu \FlecheDroite Lancer robot.{\par}
+\item Site officiel : \url{http://teg.sourceforge.net}{\par}
+\end{itemize}
+\subsection{UFO : Alien Invasion}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Strategie_Gestion/UFO.png}
+\item Description : Largement inspiré de la série des X-COM par Mythos et Microprose, UFO est un jeu de stratégie et de combat tactique dans lequel vous vous battez contre des aliens hostiles tentant d'infiltrer la terre. Vous êtes le commandant d'une petite unité spéciale dans cette lutte. Il vous faudra également prévoir l'avenir en étudiant leur technologie.{\par}
+\endgroup
+\item Pour l'installer : Téléchargez et installez les .deb ufoai-data ainsi que ufoai à partir du site getdeb.net :
+\url{http://www.getdeb.net}.{\par}
+\item Pour jouer : \Commande{ufoai}{\par}
+\item Site officiel : \url{http://ufo.myexp.de}{\par}
+\end{itemize}
+\section{Jeux d'aventure et de plate-forme}
+\subsection{Balazar}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Aventure_Plate_Forme/Balazar.png}
+\item Description : Balazar est un jeu d'action/aventure aux graphismes soignés. À vous de traverser les 7 mondes : le village des Échassiens, la forêt de Pompon, la grande cathédrale, les déserts glacés, la citadelle de l'Arkanae, les marais de l'Abîme et enfin la Forge des Elfes, de retrouver les sceptres et de décider du destin de l'univers !{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install balazar}{\par}
+\item Pour jouer : \Commande{balazar}{\par}
+\item Site officiel : \url{http://home.gna.org/oomadness/fr/balazar}{\par}
+\end{itemize}
+\subsection{Balazar Brothers}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Aventure_Plate_Forme/Balazar_Brothers.png}
+\item Description : À ne pas confondre avec le jeu précédent, même s'il s'agit des mêmes graphismes et des mêmes développeurs. Balazar Brothers est également un jeu d'action/aventure. Le principe est simple : un univers de plate-forme en 3D, deux personnages et deux touches, une par personnage, et au bout du chemin deux princesses à délivrer. Appuyez sur une touche et le personnage correspondant saute sur la plate-forme suivante. Rien ne vous sera épargné : plate-formes mobiles, monstres sanguinaires, pièges vicieux\ldots{} Viendrez-vous à bout de toute cette folie pour délivrer vos bien-aimées ?{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install balazarbrothers}{\par}
+\item Pour jouer : \Commande{balazarbrothers}{\par}
+\item Site officiel : \url{http://home.gna.org/oomadness/fr/balazar_brothers}{\par}
+\end{itemize}
+\subsection{Blob wars : Metal Blob Solid}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Aventure_Plate_Forme/Blob_Wars_Metal_Blob_Solid.png}
+\item Description : Incarnez un véritable guerrier Blob -- qui a dit que c'était un smiley ? -- sans peur et sans reproche. Votre mission est de vous infiltrer dans des bases ennemies afin de sauver autant de Blobs que possible. Bonne chance, soldat !{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install blobwars}{\par}
+\item Pour jouer : \Commande{blobwars}{\par}
+\item Plus de site officiel, le développeur ayant arrêté sa maintenance.{\par}
+\end{itemize}
+%\subsection{Blob wars : Blob And Conquer}
+%\begin{itemize}
+%\begingroup
+%\ImgPar{r}{3}{corps/chapitre9/img/Aventure_Plate_Forme/Blob_Wars_Blob_And_Conquer.png}
+%\item Description : La suite du jeu précédent ! Retrouvez -- en 3D, cette fois -- votre agent Blob, qui, à peine remis de sa victoire sur Galdov va devoir accomplir une tâche encore plus importante. La bataille des Blobs vient juste de commencer et les forces aliens sont une véritable menace.{\par}
+%\endgroup
+%\item Pour l'installer : Téléchargez et installez les .deb blobandconquer-data ainsi que blobandconquer à partir du site getdeb.net :
+%\url{http://www.getdeb.net}.{\par}
+%\item Pour jouer : \Commande{blobandconquer}{\par}
+%\item Site officiel : \url{http://www.parallelrealities.co.uk/blobAndConquer.php}{\par}
+%\end{itemize}
+%%% sinon moche
+\subsection{Egoboo}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Aventure_Plate_Forme/Egoboo.png}
+\item Description : Vous aimez les quêtes fantastiques à la Donjons \& Dragons ? Egoboo est un jeu d'aventure en 3D inspiré de NetHack.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install egoboo}{\par}
+\item Pour jouer : \Commande{egoboo}{\par}
+\item Remarque : Les contrôles sont au départ déroutants. Visitez ce site avant toute chose : \url{http://zippy-egoboo.sourceforge.net/manual.htm}.{\par}
+\item Site officiel : \url{http://egoboo.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Holotz's Castle}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Aventure_Plate_Forme/Holotzs_Castle.png}
+\item Description : Jeu de plate-forme avec un brin de mystère. Que se cache-t-il derrière les hauts murs du château d'Hotlotz ? Testez votre dextérité et essayez de parvenir au bout avec vos deux comparses que vous contrôlez à tour de rôle.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install holotz-castle}{\par}
+\item Pour jouer : \Commande{holotz-castle}{\par}
+\item Site officiel : \url{http://www.mainreactor.net}{\par}
+\endgroup
+\end{itemize}
+\subsection{Slune}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Aventure_Plate_Forme/Slune.png}
+\item Description : Vous êtes lassé de sauver la planète de la énième invasion extraterrestre, de tuer les ennemis de la CIA, de faire la course avec Schumacher\ldots{} tout ceci vous semble bien routinier ? Que diriez-vous d'un jeu où le but de la course serait la distribution de médicaments en Afrique ?! Voici Slune : vous pilotez un bolide à l'aide de votre souris --- pas simple à prendre en main mais c'est pour la bonne cause\ldots{}{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install slune}{\par}
+\item Pour jouer : \Commande{slune}{\par}
+\item Site officiel : \url{http://home.gna.org/oomadness/fr/slune}{\par}
+\end{itemize}
+\subsection{SuperTux}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Aventure_Plate_Forme/SuperTux.png}
+\item Description : Vous avez passé des heures sur Super Mario Bros, vous êtes nostalgique des bons vieux jeux de plates-formes 2D ? Bienvenue dans le monde SuperTux. Pour remplacer le personnage fétiche de Nintendo, rien de moins que Tux, la mascotte de Linux ! Deux mondes en entier sont actuellement jouables, et la difficulté est déjà bien présente avec la cinquantaine de niveaux proposés.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install supertux}{\par}
+\item Pour jouer : \Commande{supertux}{\par}
+\item Site officiel : \url{http://supertux.berlios.de}{\par}
+\endgroup
+\end{itemize}
+\section{Jeux de course}
+\subsection{Automanic}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/Automanic.png}
+\item Description : Je sens en vous une irrésistible envie de froisser la tôle ! Eh bien Automanic est là pour vous. Équipez votre auto d'armes pour détruire vos adversaires sur 4 roues. Bien qu'en version béta, ce jeu est déjà assez réussi, si ce n'est très prometteur.{\par}
+\endgroup
+\item Pour l'installer : Après avoir installé le language python par \Commande{sudo apt-get install python}, téléchargez le fichier .tar.gz sous la rubrique «~Linux binary (recommended)~» du site officiel\NotePage{La version spéciale pour les cartes graphiques nVIDIA n'a pas fonctionné chez moi, bien que je possède une telle carte}. Remplacez \Chemin{/opt/maniadrive} par \Chemin{/opt/automanic}. Pour plus de simplicité, vous pouvez créer un raccourci dans le menu Applications vers la commande \Chemin{/opt/\IndicCesure{}automanic/\IndicCesure{}automanic} --- cf. section \ref{RefEditerMenus}.{\par}
+\item Pour jouer : Vous pourrez lancer directement Automanic depuis le menu.{\par}
+\item Site officiel : \url{http://automanic.sourceforge.net}{\par}
+\end{itemize}
+ %%% sinon moche
+\subsection{ManiaDrive}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/ManiaDrive.png}
+\item Description : Vous connaissez TrackMania Nations ? Vous enragez qu'il ne soit pas compatible Linux ? Réjouissez-vous, ManiaDrive est là pour vous servir. Ce jeu de voiture est un pur jeu d'arcade avec des circuits qui feront souffrir votre voiture d'une multitude de sauts aussi irréalistes que dangereux.{\par}
+\endgroup
+\item Pour l'installer : Téléchargez et installez les .deb maniadrive-data ainsi que maniadrive à partir du site getdeb.net :
+\url{http://www.getdeb.net}.{\par}
+\item Pour jouer : \Commande{maniadrive}{\par}
+\item Site officiel : \url{http://maniadrive.raydium.org}{\par}
+\end{itemize}
+\subsection{MiniRacer}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/MiniRacer.png}
+\item Description : Jeu de course de voiture basé sur le fameux moteur de Quake,  il propose plusieurs courses, thèmes et modèles de mini-voiture avec une vue à la MicroMachine. On peut y jouer à plusieurs pour décupler le fun !{\par}
+\endgroup
+\item Pour l'installer : Téléchargez le fichier .run du site officiel présent sous le nom «~Loki All in One Installer~». En effet, le .deb pour debian demande une dépendance incompatible avec Ubuntu.{\par}
+\item Pour jouer : \Commande{miniracer}{\par}
+\item Site officiel : \url{http://miniracer.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Extreme Tux Racer}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/Extreme_Tux_Racer.png}
+\item Description : Si un jeu devait être le symbole de GNU/\IndicCesure{}Linux, ce serait TuxRacer. Extreme Tux Racer est un \RefGlossaire{-}{-}{Fork}{fork} de PlanetPenguin Racer qui avait repris les choses en main à partir des dernières sources \AddIndex{Philosophie}{-}{Libre}{Libres} de TuxRacer, devenu un jeu commercial pour Windows\ldots{} Jeu de course contre la montre où un manchot dévale des pentes enneigées, simple, rapide, il vous fera passer un bon moment.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install extremetuxracer}{\par}
+\item Pour jouer : \Commande{etracer}{\par}
+\item Site officiel : \url{http://extremetuxracer.com}{\par}
+\end{itemize}
+\subsection{Racer}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/Racer.png}
+\item Description : Esthétique simulation de course automobile. Le contrôle par défaut se fait à la souris, au clavier le jeu est complètement ingérable.{\par}
+\item Pour l'installer : Installez le .tgz disponible sous le titre «~Linux v0.5.0 binaries~» du site officiel.{\par}
+\item Pour jouer : \Commande{racer}{\par}
+\item Site officiel : \url{http://www.racer.nl}{\par}
+\endgroup
+\end{itemize}
+\subsection{Rushing Bender}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/Rushing_Bender.png}
+\item Description : À jouer en solo ou à plusieurs. Contrôlez le robot Bender jonché sur une sorte de turbo-propulseur tout droit tiré de la série TV Futurama pour dépasser vos adversaires et rejoindre en premier la ligne d'arrivée d'un circuit futuriste.{\par}
+\endgroup
+\item Pour l'installer : Suivez la démarche de l'installation avec le fichier .zip  du  site officiel. Remplacez \Chemin{/opt/maniadrive} par \Chemin{/opt/rushing\_blender}. Créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/\IndicCesure{}rushing\_blender/\IndicCesure{}rushing\_bender.sh} -- cf. section \ref{RefEditerMenus} -- pour plus de simplicité.{\par}
+\item Pour jouer : Vous pourrez lancer directement Rushing Bender depuis le menu.{\par}
+\item Site officiel : \url{http://www.swiix.ch/rb/}{\par}
+\end{itemize}
+%%% sinon moche
+\subsection{SuperTuxKart}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/SuperTuxKart.png}
+\item Description : Une petite partie de karting vous tente ? Ce clone de Mario Kart vous fera passer un bon moment en compagnie de notre manchot favori malgré quelques graphismes un peu à la traîne\ldots{} SuperTuxKart est un dérivé de TuxKart -- également disponible par \Commande{sudo apt-get install tuxkart} :  \url{http://tuxkart.sourceforge.net} -- mais il ressemble peu à celui-ci : l'interface et les graphismes ont été revus, d'autres personnages sont disponibles, plus de circuits, moins de bugs et enfin il se rapproche plus de Mario Kart.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install supertuxkart}{\par}
+\item Pour jouer : \Commande{supertuxkart}{\par}
+\item Site officiel : \url{http://supertuxkart.berlios.de}{\par}
+\end{itemize}
+\subsection{Torcs}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/Torcs.png}
+\item Description : Un jeu de course automobile plutôt réaliste. Il n'est pas encore parfait mais prometteur. Pas de mode multi-joueurs pour le moment, ce qui manque cruellement. Son principal atout : une intelligence artificielle assez réussie.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install torcs}{\par}
+\item Pour jouer : \Commande{torcs}{\par}
+\item Site officiel : \url{http://torcs.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\subsection{Trigger}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/Trigger.png}
+\item Description : Un jeu de rallye fun et pour toute la famille avec un rendu de la vitesse assez réaliste. Les décors sont, cependant, un peu vides comparés à un jeu comme Torcs. Malheureusement, le développeur a arrêté son travail par manque de temps fin 2005. Cependant, d'autres ont repris très récemment son excellent travail.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install trigger}{\par}
+\item Pour jouer : \Commande{trigger}{\par}
+\item Site officiel : \url{http://sourceforge.net/projects/trigger-rally}{\par}
+\endgroup
+\end{itemize}
+\subsection{Trophy}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/Trophy.png}
+\item Description : Ce jeu de course en 2D n'est pas un simple petit jeu de course : vos voitures disposent d'une panoplie complète d'armes pour en faire voir de toutes les couleurs à vos adversaires : mitraillettes, bombes\ldots{} N'oubliez pas non plus de ramasser des dollars pour financer vos prochains achats et des cœurs pour réparer votre voiture. Il va sans dire que le plus naturellement du monde, tout cela traîne sur la route.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install trophy}{\par}
+\item Pour jouer : \Commande{trophy}{\par}
+\item Site officiel : \url{http://trophy.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\subsection{VDrift}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Courses/VDrift.png}
+\item Description : Course automobile -- de type simulation -- plutôt complexe à prendre en main.{\par}
+\item Pour l'installer : Téléchargez et installez le .deb vdrift-full à partir du site getdeb.net :
+\url{http://www.getdeb.net}.{\par}
+\item Pour jouer : \Commande{vdrift}{\par}
+\item Site officiel : \url{http://vdrift.net}{\par}
+\endgroup
+\end{itemize}
+%% sinon moche
+\section{Jeux de simulation}
+\subsection{BillardGL}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/BillardGL.png}
+\item Description : Jeu de billard pouvant être joué par une ou deux personnes. Cependant, et contrairement à FooBillard, celui-ci ne permet de jouer qu'au jeu à 8 et 9 boules.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install billard-gl}{\par}
+\item Pour jouer : \Commande{billard-gl}{\par}
+\item Site officiel : \url{http://www.tobias-nopper.de/BillardGL/index-en.html}{\par}
+\end{itemize}
+\subsection{Cannon Smash}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/Cannon_Smash.png}
+\item Description : Si je vous dis «~Ping~», vous me répondez\ldots{} «~Pong~». Eh bien voilà, vous connaissez le principe de ce jeu, rien à dire de plus !{\par}
+\item Pour l'installer : \Commande{sudo apt-get install csmash csmash-demosong}{\par}
+\item Pour jouer : \Commande{csmash}{\par}
+\endgroup
+\item Site officiel : \url{http://cannonsmash.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Coup de foot 2006}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/Coup_De_Foot_2006.png}
+\item Description : Parce qu'il n'y a pas que PES ou Fifa dans la vie, il existe un jeu \AddIndex{Philosophie}{-}{Libre}{Libre} de foot 3D de qualité sous Linux ! Bien évidemment, il ne peut souffrir la comparaison avec les 2 jeux commerciaux qui investissent des millions chaque année, mais ce dernier a un sérieux atout que les autres ne peuvent avoir : l'humour !{\par}
+\endgroup
+\item Pour l'installer : Suivez la procédure décrite en téléchargeant le .tar.gz du site officiel. Remplacez \Chemin{/opt/maniadrive} par \Chemin{/opt/bolzplatz}. Créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/\IndicCesure{}bolzplatz/\IndicCesure{}bolzplatz2006.sh} -- cf. section \ref{RefEditerMenus} -- pour plus de simplicité.{\par}
+\item Pour jouer : Vous pourrez lancer directement Coup de foot depuis le menu.{\par}
+\item Site officiel : \url{http://www.xenoage.com/bp2k6/fr}{\par}
+\end{itemize}
+\subsection{Danger From The Deep}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/Danger_From_The_Deep.png}
+\item Description : Jeu de sous-marin à la Silent Hill\NotePage{Oh, il nous fatigue avec ses références de vieux jeux !}. L'histoire se passe pendant la deuxième guerre mondiale. Cette simulation donne une large place à la tactique et se veut réaliste. Il est pour l'instant en version 0.3, donc encore très loin d'une version 1.0 stable, mais est déjà jouable.{\par}
+\endgroup
+\item Pour l'installer : Installez le .deb -- Debian unstable -- du site officiel.{\par}
+\item Pour jouer : \Commande{dangerdeep}{\par}
+\item Site officiel : \url{http://dangerdeep.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Emilia Pinball}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/Emilia_Pinball.png}
+\item Description : Simulation de flipper, sans avoir à insérer d'argent. Seulement deux tableaux sont disponibles et le développement du jeu est arrêté depuis quelques temps. Cependant, le jeu est jouable et permet de faire une petite partie de temps en temps.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install pinball}{\par}
+\item Pour jouer : \Commande{pinball}{\par}
+\item Site officiel : \url{http://pinball.sourceforge.net}{\par}
+\endgroup
+\end{itemize} 
+\subsection{FlightGear}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/Flightgear.png}
+\item Description : Simulateur de vol livré avec une trentaine d'avions de tout bord -- et un hélicoptère ! -- et une vingtaine d'aéroports tous autour de San Francisco. Il est évidemment possible de rajouter des fichiers scènes -- l'ensemble de la planète est couvert -- ou des avions -- plus durs à trouver sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}, mais les avions de MS FlightSimulator peuvent être convertis en un format compatible.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install flightgear}{\par}
+\item Pour jouer : \Commande{flightgear}{\par}
+\item Site officiel : \url{http://fr.flightgear.tuxfamily.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{FooBillard}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/FooBillard.png}
+\item Description : Magnifique jeu de Billard en OpenGL qui se veut reproduire fidèlement les lois de la physique de ce sport.  Sont proposés le jeu à 8 et 9 boules, le snooker et le Carambol\NotePage{Billard français}.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install foobillard}{\par}
+\item Pour jouer : \Commande{foobillard}{\par}
+\item Site officiel : \url{http://foobillard.sunsite.dk}{\par}
+\endgroup
+\end{itemize}
+\subsection{GL-117}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/GL_117.png}
+\item Description : Simulateur de vol de combat. Choisissez votre vaisseau de guerre et progressez à travers les différentes missions dans des paysages variés. Laissez bien le temps au démarrage que le jeu ajuste la qualité du rendu en fonction de votre configuration. L'utilisation d'un Joystick est fortement recommandée.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gl-117}{\par}
+\item Pour jouer : \Commande{gl-117}{\par}
+\item Site officiel : \url{http://www.heptargon.de/gl-117/gl-117.html}{\par}
+\endgroup
+\end{itemize}
+\subsection{Search And Rescue}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/Search_And_Rescue.png}
+\item Description : Peut-être que certains d'entre vous se souviennent d'un jeu Game Boy où l'on devait aller récupérer en hélicoptère des personnes afin de les emmener vers une base protégée. Search And Rescue est un jeu 3D reprenant ce concept.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install searchandrescue}{\par}
+\item Pour jouer : \Commande{searchandrescue}{\par}
+\item Site officiel : \url{http://wolfpack.twu.net/SearchAndRescue}{\par}
+\endgroup
+\end{itemize}
+\subsection{VegaStrike}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/VegaStrike.png}
+\item Description : Simulateur spatial avec une certaine dimension «~jeu de rôle~», au scénario totalement ouvert, aux graphismes vraiment très réussis. En route pour de longs voyages inter-galactiques.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install vegastrike\\vegastrike-music}{\par}
+\item Pour jouer : \Commande{vegastrike}{\par}
+\item Site officiel : \url{http://vegastrike.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Wing Commander : Privateer Remake}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Simulation/WingCommander_Privater_Remake.png}
+\item Description : Basé sur le moteur de Vega Strike, offrant une grande liberté d'action. Il est très semblable au titre dont il se veut le remake : Wing Commander : Privateer.{\par}
+\item Pour l'installer : Téléchargez le .run -- version full -- à partir du site officiel.{\par}
+\item Pour jouer : \Commande{wcuniverse}{\par}
+\item Site officiel : \url{http://wcuniverse.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\section{Jeux de réflexion/plateau}
+\subsection{Atlantik}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/Atlantik.png}
+\item Description : Jeu de Monopoly malheureusement mal intégré au bureau \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}, étant une application à destination de KDE. Il permet de jouer uniquement à plusieurs en réseau et intègre les règles du jeu classique, mais également certains ajouts. Tout cela est bien évidemment paramétrable.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install atlantik}{\par}
+\item Pour jouer : \Commande{atlantik}{\par}
+\item Site officiel : \url{http://www.robertjohnkaper.com/software/atlantik}{\par}
+\end{itemize}
+\subsection{BzTarot}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/BzTarot.png}
+\item Description : Jeu de tarot assez austère mais bien pensé. Il se joue seul contre l'ordinateur.{\par}
+\item Pour l'installer : Téléchargez le .deb du site officiel. Celui-ci se trouve sous «~deb pour Knoppix~».{\par}
+\item Pour jouer : \Commande{BzTarot}{\par}
+\item Site officiel : \url{http://vbeuselinck.free.fr/linux}{\par}
+\endgroup
+\end{itemize}
+\subsection{Enigma}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/Enigma.png}
+\item Description : Enigma est un casse-tête inspiré d'Oxyd sur Atari ST et Rock'n'Roll sur Amiga. L'objectif est de faire des paires de pierres colorées. Simple ? Oui. Facile ? Sûrement pas : de multiples pièges vous seront tendus pour entraver votre réussite.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install enigma}{\par}
+\item Pour jouer : \Commande{enigma}{\par}
+\item Site officiel : \url{http://www.nongnu.org/enigma}{\par}
+\endgroup
+\end{itemize}
+\subsection{Fish Fillets - Next Generation}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/Fish_Fillets.png}
+\item Description : Un puzzle parfois bien compliqué à résoudre. Vous contrôlez deux poissons de tailles différentes, l'un ne passe pas partout, l'autre ne peut pas porter d'objet lourd, à vous de jongler entre les deux pour finir chaque niveau.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install fillets-ng}{\par}
+\item Pour jouer : \Commande{fillets}{\par}
+\item Site officiel : \url{http://fillets.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+
+\subsection{Head over Hells}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/Head_Over_Hells.png}
+\item Description : Ce jeu de plate-forme/réflexion en vue isométrique\NotePage{$\frac{3}{4}$ vue de dessus, mais ça fait moins «~pro~» :-)} est un fidèle remake d'un fameux jeu de 1987 sur Spectrum, Head Over Hells ! Le but est de faire rejoindre la tête -- qui peut sauter, tirer des beignets et se diriger en l'air -- et les pieds -- qui peuvent courir et transporter des objets. Des graphismes très fins et un jeu absolument interminable pour notre plus grand plaisir !{\par}
+\endgroup
+\item Pour l'installer : Téléchargez le .tar.bz2 du site officiel. Attention, l'installation diffère un peu des autres archives du même type : décompressez-le. Ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal}\NotePage{Non, non, pas de panique !} : Applications \FlecheDroite Accessoires \FlecheDroite Terminal. Écrivez alors \Commande{cd } -- notez l'espace finale -- puis faites un \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} du dossier décompressé dans votre \RefGlossaire{-}{Console}{Terminal}{terminal}. Normalement, vous devrez vous retrouver avec quelque chose du genre \Commande{cd '/\ldots{}/hoh-install-version'} --- où \ldots{} est variable, tout comme version. Appuyez sur \Touche{Entrée}. Si rien n'est affiché, c'est qu'il n'y a pas eu d'erreur. Ensuite, entrez la commande suivante : \Commande{sudo ./install.sh}. Appuyez sur \Touche{Entrée}. Vous devrez à nouveau appuyer sur \Touche{Entrée} pour confirmer l'installation.{\par}
+\item Pour jouer : \Commande{hoh}{\par}
+\item Pour le désinstaller : \Commande{sudo hoh-uninstall}{\par}
+\item Site officiel : \url{http://www.retrospec.sgn.net/games/hoh}{\par}
+\end{itemize}
+\subsection{Lost Labyrinth}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/Lost_Labyrinth.png}
+\item Description : Jeu assez atypique car il s'agit de rejoindre la sortie d'un labyrinthe généré aléatoirement. Les parties sont plutôt courtes -- 10 à 40 minutes environ -- ce qui permet de se détendre pendant un laps de temps limité.{\par}
+\item Pour l'installer : Installez le .deb du site officiel.{\par}
+\item Pour jouer : \Commande{laby}{\par}
+\item Site officiel : \url{http://www.lostlabyrinth.com}{\par}
+\endgroup
+\end{itemize}
+%%% sinon moche
+\subsection{Mahjongg3d}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/Mahjongg3d.png}
+\item Description : Si vous pensez que même les jeux de plateau doivent allier esthétisme à efficacité, ce jeu est pour vous ! Ne rejettez tout de même pas le magnifique jeu de Mahjongg de \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} installé par défaut. Attention, ce jeu est conçu pour KDE, il est donc moins intégré graphiquement à \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}.{\par}
+\endgroup
+\item Pour l'installer : Sachez tout d'abord que le paquet .deb ne fonctionne pas sous Ubuntu. Vous devez alors installer alien\NotePage{Logiciel qui convertit les .rpm en .deb} par \Commande{sudo apt-get install alien}. Ensuite, téléchargez le .rpm (package Suse) du site officiel. Ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal} : Applications \FlecheDroite Accessoires \FlecheDroite Terminal. Écrivez alors \Commande{sudo alien -d  } -- avec l'espace finale -- puis faites un \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} du fichier rpm dans votre \RefGlossaire{-}{Console}{Terminal}{terminal}. Normalement, vous devrez vous retrouver avec quelque chose du genre \Commande{sudo alien -d '/\ldots{}/mahjongg3d-version-SuSE\_91.i586.rpm'} où \ldots{} est variable, tout comme version. Appuyez sur \Touche{Entrée} pour valider. Si tout se passe bien -- ignorez les Warnings qui s'affichent à l'écran -- vous lirez : \Code{mahjongg3d\_version\_i386.deb generated}Installez alors ce .deb qui doit se trouver dans votre dossier personnel.{\par}
+\item Pour jouer : \Commande{mahjongg3d}{\par}
+\item Site officiel : \url{http://www.reto-schoelly.de/mahjongg3d}{\par}
+\end{itemize}
+\subsection{Monsterz}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/Monsterz.png}
+\item Description : Sorte de Tétris similaire à Bejeweled ou encore à Zookeeper. Ce petit jeu d'arcade vous demandera d'aligner les monstres de même couleur par ligne ou par colonne et de récolter un maximum de points en effectuant des réactions en chaîne.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install monsterz}{\par}
+\item Pour jouer : \Commande{monsterz}{\par}
+\item Site officiel : \url{http://sam.zoy.org/monsterz}{\par}
+\endgroup
+\end{itemize}
+\subsection{Pingus}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/Pingus.png}
+\item Description : Pingus est une version de Lemmings avec des manchots. Si vous ne connaissez pas les Lemmings, vous avez sûrement été enfermé dans une grotte au fin fond de l'Alaska ces 15 dernières années ! En résumé, des manchots doivent franchir des obstacles et pour y arriver vous devez les équiper de divers accessoires commes des escaliers, parachutes, pioches\ldots{}{\par}
+\item Pour l'installer : \Commande{sudo apt-get install pingus}{\par}
+\item Pour jouer : \Commande{pingus}{\par}
+\item Site officiel : \url{http://pingus.seul.org}{\par}
+\endgroup
+\end{itemize}
+\subsection{PokerTH}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Reflexion_Plateau/PokerTH.png}
+\item Description : Je suis sûr que vous mourez d'envie de vous faire un petit poker, et PokerTH est là pour vous lancer le défi, en solo ou en réseau ! Les variantes les plus classiques du poker sont disponibles. À vous de bluffer.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install pokerth}{\par}
+\item Pour jouer : \Commande{pokerth}{\par}
+\item Site officiel : \url{http://www.pokerth.net/}{\par}
+\end{itemize}
+\section{Jeux d'arcade solo ou à deux (Shoot'em up et compagnie\ldots{})}
+\subsection{AirStrike}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/AirStrike.png}
+\item Description : Tout seul contre l'ordinateur ou à 2, ce  jeu en 2D de combat aérien a pour but de pulvériser l'adversaire tout en évitant le canon central.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install airstrike}{\par}
+\item Pour jouer : \Commande{airstrike}{\par}
+\item Site officiel : \url{http://icculus.org/airstrike}{\par}
+\endgroup
+\end{itemize}
+\subsection{Briquolo}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Briquolo.png}
+\item Description : Casse brique entièrement 3D. Même s'il est encore en version béta, ce jeu développé par un Français vous fera passer un excellent moment de détente.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install briquolo}{\par}
+\item Pour jouer : \Commande{briquolo}{\par}
+\item Site officiel : \url{http://briquolo.free.fr}{\par}
+\endgroup
+\end{itemize}
+\subsection{Chromium B.S.U.}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Chromium.png}
+\item Description : Shoot-em-up très esthétique. Le vaisseau se contrôle à la souris, rendant le jeu très rapide. Aucun ennemi ne doit arriver en bas de l'écran, compliquant pas mal le niveau. Je vous conseille de jouer vos premières parties avec skill niveau : «~fish in a barrel~». {\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install chromium}{\par}
+\item Pour jouer : \Commande{chromium}{\par}
+\item Site officiel : \url{http://www.reptilelabour.com/software/chromium}{\par}
+\end{itemize}
+%%% sinon moche
+\subsection{FloboPuyo}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/FloboPuyo.png}
+\item Description : Ce remake de PuyoPuyo est très simple à comprendre puisqu'il est lui-même basé sur Tetris. Agréable à jouer, on y passe facilement de nombreuses heures tout seul ou à 2.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install flobopuyo}{\par}
+\item Pour jouer : \Commande{flobopuyo}{\par}
+\item Site officiel : \url{http://www.ios-software.com/?page=projet&quoi=29&lg=FR}{\par}
+\end{itemize}
+\subsection{Frets On Fire}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Frets_On_Fire.png}
+\item Description : Réveillez la star qui est en vous ! Vous allez pouvoir déchaîner votre Rock'n Roll attitude dans ce jeu où vous jouez de la guitare. Contrairement à StepMania ou encore Pydance, si vous manquez une note, elle ne se jouera pas ! Ne manquez pas le tutorial désopilant--- à ne pas mettre entre toutes les oreilles.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install fretsonfire fretsonfire-songs-sectoid}{\par}
+\item Pour jouer : \Commande{fretsonfire}{\par}
+\item Site officiel : \url{http://www.fretsonfire.fr}{\par}
+\end{itemize}
+\subsection{Grid Wars 2}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Grid_Wars_2.png}
+\item Description : Ce digne successeur d'Asteroids, en graphisme vectoriel comme son prédécesseur, est un jeu comme on les aime : on se dit «~je vais jouer 5 minutes~» et on n'arrive plus à en décrocher. Le but est simple : vous allez devoir piloter un vaisseau scotché sur une grille magnétique et empêcher vos ennemis de vous nuire en les détruisant. Bien évidemment, plus vous progressez et plus vos ennemis deviennent nombreux. Le but du jeu est de tenir le plus longtemps possible !{\par}
+\endgroup
+\item Pour l'installer : Téléchargez et installez le .deb à partir du site getdeb.net :
+\url{http://www.getdeb.net}.{\par}
+\item Pour jouer : \Commande{gridwars}{\par}
+\item Une explication des commandes et des bonus, le site officiel étant très dépouillé : \url{http://www.jeuvinux.net/article.php3?id_article=69}{\par}
+\item Site officiel : \url{http://gridwars.marune.de}{\par}
+\end{itemize}
+\subsection{Kobo Deluxe}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Kobo_Deluxe.png}
+\item Description : Ne vous attendez pas à un graphisme dernier cri. Vous contrôlez un vaisseau, vous détruisez des plates-formes. C'est simple mais après quelques niveaux vous ne pourrez plus vous arrêter.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install kobodeluxe}{\par}
+\item Pour jouer : \Commande{kobodl}{\par}
+\item Site officiel : \url{http://olofson.net/kobodl}{\par}
+\endgroup
+\end{itemize}
+\subsection{LBreakout2}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/LBreakout2.png}
+\item Description : Un casse-brique c'est classique et plutôt sympa une fois de temps en temps. LBreakout2 est un casse-brique classique avec plein d'objets à récupérer, des niveaux à ne plus savoir qu'en faire, des parties en réseau\ldots{}{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install lbreakout2}{\par}
+\item Pour jouer : \Commande{lbreakout2}{\par}
+\item Site officiel :\\\url{http://lgames.sourceforge.net/index.php?project=LBreakout2}{\par}
+\end{itemize}
+\subsection{MachineBall}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/MachineBall.png}
+\item Description : Un jeu de foot futuriste où deux machines ressemblant à des voitures blindées dignes de James Bond se donnent en spectacle. On y trouve évidemment des bonus sur le terrain afin de pouvoir dribbler son adversaire et marquer !{\par}
+\endgroup
+\item Pour l'installer : Installez le .deb -- se trouvant sous la dénomination «~Debian package~» -- du site officiel.{\par}
+\item Pour jouer : \Commande{machineball}{\par}
+\item Site officiel : \url{http://benny.kramekweb.com/machineball}{\par}
+\end{itemize}
+\subsection{Neverball - Neverputt}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Neverball.png}
+\item Description : Dans Neverball, vous êtes un plateau sur lequel on place une balle ! En bougeant votre souris vous inclinez plus ou moins votre plateau et faites ainsi se déplacer la balle. Votre but est de récolter des pièces pour ouvrir un vortex pour passer au niveau suivant. À peine croyable mais après 30 secondes de jeu, on devient accro ! Neverputt est un mini golf qui utilise le même moteur graphique que Neverball, mais beaucoup plus classique et moins intéressant, à mon avis.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install neverball}{\par}
+\item Pour jouer : \Commande{neverball} et \Commande{neverputt}{\par}
+\item Site officiel : \url{http://www.icculus.org/neverball}{\par}
+\endgroup
+\end{itemize}
+\subsection{No Gravity}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/No_Gravity.png}
+\item Description : Jeu de tir spatial aux graphismes particulièrement soignés. L'avènement du huitième millénaire marque la fin des jours heureux et une guerre se déclenche entre les planètes. Le joueur doit remplir des objectifs variés comme l'escorte, le massacre convivial des ennemis ou encore un peu de déminage.{\par}
+\endgroup
+\item Pour l'installer : Installez le .package du jeu à partir du site officiel. Celui-ci se trouve dans la catégorie Download. Choisissez «~no Gravity~», puis «~Linux~».{\par}
+\item Pour jouer : \Commande{nogravity}{\par}
+\item Site officiel : \url{http://www.realtech-vr.com/nogravity}{\par}
+\end{itemize}
+
+\subsection{Pathological}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Pathological.png}
+\item Description : Jeu de puzzle, constitué de boules qui roulent le long de chemins, et interagissent avec différents gadgets, son but est de compléter toutes les roues du niveau par quatre boules de même couleur. En résumé, un petit jeu graphiquement sobre mais joli, très simple d'utilisation et pourtant un vrai casse-tête.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install pathological}{\par}
+\item Pour jouer : \Commande{pathological}{\par}
+\item Site officiel : \url{http://pathological.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Powermanga}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Powermanga.png}
+\item Description : «~Encore un jeu de vaisseaux ?~» allez-vous me dire. En effet, mais celui-ci est très différent des autres : un style graphique hors du commun, façon manga. Les débuts de parties sont quelque peu lents et ennuyeux mais après quelques niveaux, la complexité augmente et l'intérêt est alors décuplé.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install powermanga}{\par}
+\item Pour jouer : \Commande{powermanga}{\par}
+\item Site officiel : \url{http://linux.tlk.fr/games/Powermanga}{\par}
+\end{itemize}
+\subsection{Pydance}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Pydance.png}
+\item Description : Vous avez choisi GNU/Linux ? Ne jetez pas votre tapis de danse ! Avec Pydance, ce dernier retrouvera une seconde vie. À noter qu'il existe également StepMania tout aussi intéressant, si ce n'est plus. Jouer à 2 est possible.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install pydance pydance-music}{\par}
+\item Pour jouer : \Commande{pydance}{\par}
+\item Post-installation : Seules 3 musiques sont présentes par défaut. Il vous faudra, tout comme pour StepMania, aller sur le site officiel pour télécharger des musiques \AddIndex{Philosophie}{-}{Libre}{Libres} supplémentaires.{\par}
+\item Site officiel : \url{http://icculus.org/pyddr}{\par}
+\end{itemize}
+\subsection{SolarWolf}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/SolarWolf.png}
+\item Description : Collectez les boîtes et ne devenez pas fou ! Solarwolf est un jeu d'action/arcade avec des graphismes impressionnants et de belles musiques. Ce jeu puise son inspiration dans le jeu SolarFox sur Atari 2600.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install solarwolf}{\par}
+\item Pour jouer : \Commande{solarwolf}{\par}
+\item Site officiel : \url{http://pygame.org/shredwheat/solarwolf}{\par}
+\endgroup
+\end{itemize}
+\subsection{StarFighter}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/StarFighter.png}
+\item Description : Un bon vieux shoot-em-up comme on les aime, avec ennemis à gogo, boss énormes et difficultés au rendez-vous ! Vieux de la vieille -- et moins vieux -- ce jeu est fait pour vous, ne vous en privez pas.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install starfighter}{\par}
+\item Pour jouer : \Commande{starfighter}{\par}
+\item Site officiel : \url{http://www.parallelrealities.co.uk/starfighter.php}{\par}
+\end{itemize}
+\subsection{StepMania}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/StepMania.png}
+\item Description : Encore un jeu qui va beaucoup vous faire bouger avec votre tapis de danse. Ce jeu est beaucoup plus dynamique et entraînant que son confrère Pydance, à mon avis. Bien sûr, vous pouvez également jouer à 2 et connecter divers accessoires !{\par}
+\endgroup
+\item Pour l'installer : Téléchargez et installez les .deb stepmania4-data ainsi que stepmania4 à partir du site getdeb.net :
+\url{http://www.getdeb.net}.{\par}
+\item Pour jouer : \Commande{stepmania4}{\par}
+\item Post-installation : Aucune musique n'est présente par défaut. Il faut les télécharger, par exemple, à partir du site officiel où vous trouverez des .smzip : un tel fichier contient une ou plusieurs chansons, des thèmes, et autres ajouts. Décompressez les archives contenant tout cela dans le dossier caché \Chemin{.stepmania4/Songs} présent dans votre dossier personnel.{\par}
+\item Site officiel : \url{http://www.stepmania.com}{\par}
+\end{itemize}
+\subsection{Torus Trooper}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Torus_Trooper.png}
+\item Description : Des graphismes simples en  fil de fer et un principe plutôt classique, mais tout ceci au rythme d'une vitesse psychédélique. À bord de votre vaisseau, évitez les tirs ennemis, détruisez tout sur votre passage, rien ne doit ralentir votre course poursuite infernale, votre but est d'aller le plus loin possible, le temps joue contre vous.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install torus-trooper}{\par}
+\item Pour jouer : \Commande{torus-trooper}
+\item Site officiel : \url{http://www.emhsoft.com/ttrooper}{\par}
+\end{itemize}
+\subsection{Trackballs}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/Trackballs.png}
+\item Description : Vous devez diriger une balle sur un parcours tri-dimensionnel semé d'embûches pour l'amener à la sortie. Un éditeur de niveaux est également disponible.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install trackballs \IndicCesure{}trackballs\IndicCesure{}-music}{\par}
+\endgroup
+\item Pour jouer : \Commande{trackballs}{\par}
+\item Post-installation : Il y a une possibilité de trouver des niveaux supplémentaires sur le site officiel.{\par}
+\item Site officiel : \url{http://trackballs.sourceforge.net}{\par}
+\end{itemize}
+%%% sinon moche
+\subsection{TuxPuck}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/TuxPuck.png}
+\item Description : Quelqu'un dans la salle se souvient du jeu Shufflepuck Cafe sorti sur the Amiga/AtariST ? Non ? C'est pas grave, session de rattrapage avec TuxPuck où le joueur doit bouger la manette pour marquer dans le camp adverse.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install tuxpuck}{\par}
+\item Pour jouer : \Commande{tuxpuck}{\par}
+\item Site officiel : \url{http://home.no.net/munsuun/tuxpuck}{\par}
+\endgroup
+\end{itemize}
+\subsection{XMoto}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade/XMoto.png}
+\item Description : X-Moto est un clone du jeu Elasto Mania : vous êtes au guidon d'une moto, vous pouvez accélérer, freiner, cabrer, piquer du nez ou pivoter instantanément vers la gauche ou la droite, et vous devez parcourir des niveaux 2D, vue de profil.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install xmoto}{\par}
+\item Pour jouer : \Commande{xmoto}{\par}
+\item Site officiel : \url{http://xmoto.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\section{Jeux d'arcade surtout intéressants en multi-joueurs !}
+\subsection{Armagetron}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/Armagetron.png}
+\item Description : Clone de Tron en 3D. Multi-joueurs, vous pourrez jouer contre l'ordinateur, à plusieurs sur le même poste -- écran coupé -- ou en réseau par LAN ou l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install armagetron}{\par}
+\item Pour jouer : \Commande{armagetron}{\par}
+\item Pour installer un serveur : \Commande{sudo apt-get install armagetron-server}{\par}
+\item Site officiel : \url{http://armagetron.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Battlemech}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/Battlemech.png}
+\item Description : Affrontez vos ennemis dans ce jeu de simulation de robots à l'aide des diverses armes disponibles sur la carte de jeu. Ce jeu aux graphismes léchés est malheureusement uniquement multi-joueurs, aucune intelligence artificielle n'ayant été développée à ce jour.{\par}
+\endgroup
+\item Pour l'installer : Téléchargez le fichier .tar.gz sous le nom «~New Battle Mech files~» du site officiel. Remplacez \Chemin{/opt/\IndicCesure{}maniadrive} par \Chemin{/opt/\IndicCesure{}battlemech}. Créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/battlemech/\IndicCesure{}battlemech-glx} -- cf. section \ref{RefEditerMenus} -- pour plus de simplicité. Pour lancer un serveur et pouvoir jouer en réseau, il faudra aussi que vous fassiez un raccourci vers \Chemin{/opt/battlemech/battlemech-dedicated}.{\par}
+\item Pour jouer : Vous pourrez lancer directement Battlemech depuis le menu, de même pour le serveur si besoin.{\par}
+\item Site officiel : \url{http://static.condemned.com/bmech.shtml}{\par}
+\end{itemize}
+\subsection{BomberClone}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/BomberClone.png}
+\item Description : Vous êtes nostalgique de BomberMan ? Voici BomberClone, prêt à vous servir. Autant l'on peut s'ennuyer tout seul, autant à plusieurs en réseau, ce jeu est démoniaque !{\par}
+\item Pour l'installer : \Commande{sudo apt-get install bomberclone}{\par}
+\item Pour jouer : \Commande{bomberclone}{\par}
+\item Site officiel : \url{http://bomberclone.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+%%% sinon moche
+\subsection{BZFlag}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/BZFlag.png}
+\item Description : Jeu en réseau dans lequel, aux commandes d'un char, vous devrez attraper le drapeau de l'équipe adverse et le rapporter dans votre camp.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install bzflag}{\par}
+\item Pour jouer : \Commande{bzflag}{\par}
+\item Pour installer un serveur : \Commande{sudo apt-get install bzflag-server}{\par}
+\item Site officiel : \url{http://bzflag.org}{\par}
+\end{itemize}
+\subsection{CarTerrain}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/CarTerrain.png}
+\item Description : Jeu pouvant faire entrer jusqu'à 6 compétiteurs sur le même ordinateur, avancez prudemment sur un parcours jonché de pièges où la moindre erreur est fatale : si vous vous retournez, vous êtes éliminé. Autant les graphismes sont moyens, autant le fun à plusieurs est garanti !{\par}
+\endgroup
+\item Pour l'installer : Suivez la procédure décrite en téléchargeant le .tar.gz du site officiel. Remplacez \Chemin{/opt/maniadrive} par \Chemin{/opt/\IndicCesure{}carterrain}. Créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/\IndicCesure{}carterrain/\IndicCesure{}carterrain} -- cf. section \ref{RefEditerMenus} -- pour plus de simplicité.{\par}
+\item Pour jouer : Vous pourrez lancer directement CarTerrain depuis le menu.{\par}
+\item Site officiel : \url{http://benny.kramekweb.com/carterrain}{\par}
+\end{itemize}
+\subsection{ClanBomber}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/ClanBomber.png}
+\item Description : Un autre BomberMan-clone. Cependant celui-ci n'est pas à mettre entre toutes les mains vu les armes mises à votre disposition --- viagra, cocaïne, hash\ldots{} Il peut y avoir jusqu'à 8 concurrents dont 3 humains.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install clanbomber}{\par}
+\item Pour jouer : \Commande{clanbomber}{\par}
+\item Site officiel : \url{http://clanbomber.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\subsection{Frozen-Bubble 2}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/Frozen_Bubble_2.png}
+\item Description : Puzzle-Bubble, souvenez-vous, c'était ce jeu d'arcade où deux dinosaures envoyaient des boules en haut de l'écran pour en faire des paquets de couleurs identiques afin de les faire disparaître. Frozen-Bubble 2, c'est la même chose, avec des manchots!  Vous pouvez désormais jouer sur le net ou créer des parties locales, jusqu'à 5. Un hit indispensable !{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install frozen-bubble}{\par}
+\item Pour jouer : \Commande{frozen-bubble}{\par}
+\item Site officiel : \url{http://www.frozen-bubble.org}{\par}
+\end{itemize}
+\subsection{GLtron}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/GLtron.png}
+\item Description : Si vous connaissez Tron, il n'est pas nécessaire de décrire ce jeu. Sinon, imaginez : le jeu snake -- vous savez le serpent qui mange des pommes et qui n'aime pas se cogner -- en 3D, avec jusqu'à 4 joueurs, sur le même poste, qui tentent de barrer la route aux autres, ajoutez à cela une vitesse phénoménale, un boost, et enfin une jouabilité excellente qui feront de ce jeu un pur délire avec n'importe quel quidam. Toutes les personnes avec qui j'ai joué sont devenues accros.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install gltron}{\par}
+\item Pour jouer : \Commande{gltron}{\par}
+\item Site officiel : \url{http://gltron.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\subsection{Gtetrinet}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/Gtetrinet.png}
+\item Description : Gtetrinet est un Tetris, mais celui-ci peut se jouer en réseau jusqu'à 6 joueurs simultanés. Parties endiablées assurées !{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install gtetrinet}{\par}
+\item Pour jouer : \Commande{gtetrinet}{\par}
+\item Post-installation : il faudra au moins que l'un des PC, si vous faites une partie en réseau local, soit un serveur. Sur celui-ci : \Commande{sudo apt-get install tetrinetx} puis lancez \Commande{tetrinetx}.{\par}
+\item Site officiel : \url{http://gtetrinet.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Jump And Bump}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/Jump_And_Bump.png}
+\item Description : Vous êtes un gentil petit lapin et devez éviter les attaques des autres lapins en essayant de leur renvoyer la pareille, et ceci, en même temps ! Vous pouvez jouer jusqu'à 4 simultanément sur un seul PC ou en réseau.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install jumpnbump jumpnbump-levels}{\par}
+\item Pour jouer : \Commande{jumpnbump}{\par}
+\item Site officiel : \url{http://www.jumpbump.mine.nu}{\par}
+\end{itemize}
+\subsection{Pong$^2$}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/Pong_2.png}
+\item Description : Jouer à Pong tout seul, c'est bien mais il y a mieux. Pong en 3 dimensions c'est déjà plus intéressant. Maintenant, si je vous propose de jouer à Pong en 3D et en réseau, je suis sûr que l'idée vous intéresse un peu plus.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install pong2}{\par}
+\item Pour jouer : \Commande{pong2}{\par}
+\item Site officiel : \url{http://pong2.berlios.de}{\par}
+\endgroup
+\end{itemize}
+\subsection{Scorched 3D}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/Scorched_3D.png}
+\item Description : Vous vous souvenez de ce jeu dans lequel deux petits chars se balançaient des pruneaux (balistiques) sur la tronche ? Découvrez le magnifique petit frère 3D de ce vénérable ancêtre. Graphiquement très séduisant, Scorched3D permet de jouer à plusieurs sur une même machine, ou en réseau.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install scorched3d}{\par}
+\item Pour jouer : \Commande{scorched3d}{\par}
+\item Post-installation : Une documentation complète est accessible : \Commande{sudo apt-get install scorched3d-doc}{\par}
+\item Site officiel : \url{http://www.scorched3d.co.uk}{\par}
+\end{itemize}
+\subsection{Wormux}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Arcade_Multi_Joueurs/Wormux.png}
+\item Description : faites s'affronter les mascottes de vos \RefGlossaire{Philosophie}{Libre}{Logiciel Libre}{Logiciels Libres} favoris dans l'arène de Wormux. Exterminez votre adversaire dans un décor toon 2D destructible et une ambiance bon enfant. Chaque joueur -- 2 minimum, sur un même PC -- commande l'équipe de son choix et doit détruire celle de son adversaire à l'aide d'armes plus ou moins conventionnelles. Bien qu'un minimum de stratégie soit nécessaire pour vaincre, Wormux est avant tout un jeu de «~massacre convivial~» !!!{\par}
+\item Pour l'installer : \Commande{sudo apt-get install wormux}{\par}
+\item Pour jouer : \Commande{wormux}{\par}
+\item Site officiel : \url{http://www.wormux.org/fr/}{\par}
+\endgroup
+\end{itemize}
+\section{Jeux pour les plus jeunes d'entre nous --- ou ceux qui ont gardé leur cœur d'enfant !}
+\subsection{Childsplay}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Enfants/ChildsPlay.png}
+\item Description : Ce logiciel éducatif vise un public d'enfants âgés de 4 à 7-8 ans. Il utilise un système de plugins, ce qui permet à de nombreux contributeurs d'ajouter très facilement de nouveaux jeux. Malheureusement, il n'y en a que peu à ce jour.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install childsplay \IndicCesure{}childsplay\IndicCesure{}-alphabet-sounds-fr childsplay-plugins-lfc childsplay-\IndicCesure{}lfc-\IndicCesure{}names-fr childsplay\IndicCesure{}-\IndicCesure{}plugins}{\par}
+\item Pour jouer : \Commande{childsplay}{\par}
+\item Site officiel : \url{http://childsplay.sourceforge.net}{\par}
+\end{itemize}
+\subsection{Circus Linux !}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Enfants/Circus_Linux.png}
+\item Description : Clone du jeu Circus sur Atari, celui-ci est similaire à un casse-brique. Cependant, il vous faudra dans ce cas lancer les clowns en l'air pour faire éclater des ballons. Normal quoi !{\par}
+\item Pour l'installer : \Commande{sudo apt-get install circuslinux}{\par}
+\item Pour jouer : \Commande{circuslinux}{\par}
+\item Site officiel : \url{http://www.newbreedsoftware.com/circus-linux}{\par}
+\endgroup
+\end{itemize}
+\subsection{Gcompris}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{6}{corps/chapitre9/img/Enfants/Gcompris.png}
+\item Description : Logiciel éducatif proposant des activités variées aux enfants de 2 à 10 ans, équivalent linuxien d'Adibou, développé par Bruno Coudouin. Ce père français ajoute des activités de grande qualité au fur et à mesure que ses enfants grandissent.{\par}
+\endgroup
+\item Pour l'installer : \Commande{sudo apt-get install gcompris}{\par}
+\item Pour jouer : \Commande{gcompris}{\par}
+\item Site officiel : \url{http://gcompris.net/-fr-}{\par}
+\end{itemize}
+\subsection{MeMaker}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Enfants/MeMaker.png}
+\item Description : Vos enfants pourront par le biais de jeu créer leurs avateurs en choisissant divers éléments à assembler.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install memaker}{\par}
+\item Pour jouer : \Commande{memaker}{\par}
+\item Site officiel : \url{https://www.launchpad.net/memaker}{\par}
+\endgroup
+\end{itemize}
+\subsection{Ri-Li}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Enfants/ri-li.png}
+\item Description : Ce jeu est une version modifiée du célibrissime snake (le serpent qui grandit) où le joueur doit guider un train en changeant les aiguilles, tout cela avec des graphismes trognons.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install ri-li}{\par}
+\item Pour jouer : \Commande{ri-li}{\par}
+\item Site officiel : \url{http://ri-li.sourceforge.net/}{\par}
+\endgroup
+\end{itemize}
+\subsection{TuxMath}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Enfants/TuxMath.png}
+\item Description : Pour que les tables de multiplication ne soient plus jamais un supplice pour vos chers bambins. Aidez Tux à surmonter toutes ces difficiles équations.{\par}
+\item Pour l'installer : \Commande{sudo apt-get install tuxmath}{\par}
+\item Pour jouer : \Commande{tuxmath}{\par}
+\item Site officiel : \url{http://www.newbreedsoftware.com/tuxmath}{\par}
+\endgroup
+\end{itemize}
+%%% sinon moche
+\subsection{TuxPaint}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Enfants/TuxPaint.png}
+\item Description : Pour les petits «~n'enfants~» ! Bien plus divertissant que le paintbrush de mon époque, ce jeu leur permettra de dessiner sans se -- ou vous -- tâcher ! À vous, futurs artistes, et vous parents, n'en profitez pas pour y jouer !{\par}
+\item Pour l'installer : \Commande{sudo apt-get install tuxpaint tuxpaint-config}{\par}
+\item Pour jouer : \Commande{tuxpaint}{\par}
+\item Site officiel : \url{http://www.newbreedsoftware.com/tuxpaint}{\par}
+\endgroup
+\end{itemize}
+\subsection{TuxType}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre9/img/Enfants/TuxType.png}
+\item Description : Permettra à vos enfants d'apprendre, tout en s'amusant, à taper sur un clavier et à nourrir Tux. Quoi, vous l'utilisez aussi ? :-){\par}
+\item Pour l'installer : \Commande{sudo apt-get install tuxtype}{\par}
+\item Pour jouer : \Commande{tuxtype}{\par}
+\item Site officiel : \url{http://tuxtype.sourceforge.net}{\par}
+\endgroup
+\end{itemize}
+\section{Oui, mais je veux mes jeux Windows moi !}
+\label{RefWineJeux}
+\subsection{La solution payante qui supporte un grand nombre de jeux}
+Et bien, ce sera peut-être possible ! Il existe une maison d'édition du nom de transgaming qui édite un émulateur Windows payant par abonnement mensuel. Il existe une version gratuite, supportant moins de jeux, mais à compiler soi-même. Ce logiciel s'appelle CEDEGA et prend en charge de l'installation au lancement du jeu. Cependant, de nombreux jeux ne sont pas encore supportés. Un système de vote permet de choisir pour quels jeux CEDEGA doit être compatible. Le site officiel se trouve sur \url{http://www.transgaming.com}. Vous y trouverez un lien vers leurs logiciels CEDEGA ainsi qu'une liste de jeux supportés.
+\subsection{Ça coûte trop cher !}
+CEDEGA s'appuie sur un ensemble de bibliothèques Windows regroupées par Wine\NotePage{Wine n'a rien à voir avec une confrérie d'alcooliques anonymes : il s'agit d'un acronyme récursif -- oui, encore un ! -- de Wine Is Not an Emulator.}. Wine est un outil \AddIndex{Philosophie}{-}{Libre}{Libre} permettant de faire tourner certains logiciels et jeux prévus pour Windows. Son utilisation n'est pas aussi simple que CEDEGA et il est compatible avec moins de jeux. De plus, le temps qu'un jeu soit supporté est assez long --- notamment pour les jeux s'appuyant sur DirectX. Plus d'informations sur le site officiel : \url{http://www.winehq.com}.\par
+\ImgCentree{7}{corps/chapitre9/img/Wine.png}{Utilisation de programmes ou jeux Windows par Wine}{ImgWine}
+\begin{nota}
+Vous trouverez une liste de jeux commerciaux compatibles avec Wine sur \url{http://doc.ubuntu-fr.org/jeux#wine}. Attention, les manipulations présentées ne sont, la plupart du temps, pas triviales. Un autre site en anglais -- \url{http://www.frankscorner.org} -- liste les manipulations nécessaires afin de faire tourner avec Wine un grand nombre d'applications et de jeux créés pour Windows.
+\end{nota}
+Si vous trouvez que les applications ressemblent à du Windows 95 et que vous désirez une meilleure intégration à \AddIndex{Environnement graphique}{Personnalisation}{GNOME}{GNOME}, vous pouvez créer le fichier \RefGlossaire{Système}{Fichier de configuration}{Texte brut}{texte} suivant sous le nom, par exemple, de couleur.reg :\\
+\Code{%
+REGEDIT4\\
+{[HKEY\_CURRENT\_USER\textbackslash{}Control Panel\textbackslash{}Colors]}\\
+"Background"="0 0 0"\\
+"Scrollbar"="234 233 232"\\
+"Menu"="234 233 232"\\
+"MenuText"="0 0 0"\\
+"ActiveBorder"="234 233 232"\\
+"InactiveBorder"="234 233 232"\\
+"Hilight"="169 209 255"\\
+"HilightText"="0 0 0"\\
+"ButtonFace"="234 233 232"\\
+"ButtonShadow"="128 128 128"\\
+"GrayText"="128 128 128"\\
+"ButtonText"="0 0 0"\\
+"InactiveTitleText"="234 233 232"\\
+"ButtonHilight"="255 255 255"\\
+"ButtonDkShadow"="64 64 64"\\
+"ButtonLight"="234 233 232"\\
+"InfoText"="0 0 0"\\
+"InfoWindow"="255 255 225"}
+Ensuite, ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal}\NotePage{Par Applications \FlecheDroite Accessoires \FlecheDroite Terminal}, tapez avec l'espace finale \Commande{regedit }, puis glissez ce fichier dans ce dernier. Finissez en appuyant sur \Touche{Entrée}.\par
+\begin{nota}
+Cependant la configuration de Wine peut être complexe pour un jeu précis. De plus, la problématique se voulant complexe, un jeu pourra très bien fonctionner avec une version précise de Wine, puis plus avec les versions ultérieures. C'est pour cela qu'une configuration automatique de Wine pour des jeux ciblés existe : ce projet, baptisé PlayOnLinux, prend de plus en plus de l'ampleur et je le conseille fortement à tous ceux qui ne peuvent se passer de leur jeux Windows, pour y jouer en toute sérénité. Pour plus d'informations à ce sujet voir \url{http://www.playonlinux.com}.
+\end{nota}
+\subsection{Et des jeux commerciaux directement développés pour GNU/Linux ?}
+Citons quelques\NotePage{Si seulement il y en avait plus !} jeux commerciaux directement développés pour les systèmes GNU/Linux. Souvent, vous trouverez le logiciel d'installation soit directement sur le site, soit sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}. Il vous demandera dans ce dernier cas vos CD-ROM originaux pour pouvoir fonctionner.\par
+\begin{description}
+\item[Bridge Construction Kit :] Mettez à l'épreuve vos connaissances en résistance des matériaux et affrontez ce digne successeur du freeware «~Bridge Builder~». \url{http://www.garagegames.com}.
+\item[Dark Horizons Lore :] FPS vous mettant aux commandes de robots. \url{http://www.darkhorizons-lore.com}
+\item[Descent 3 :] Jeu célèbre de vaisseau où vous devez vous frayer un passage dans des niveaux labyrinthiques sans toucher les murs.
+\item[Doom 1 \& 2, Hexen, Heretic\ldots{} :] Doomsday est un moteur amélioré qui gère les jeux doom et ses dérivés offrant une vraie gestion 3D et non plus 2.5D. L'installation est décrite sur \url{http://doc.ubuntu-fr.org/doomsday}.
+\item[Doom3 :] Un désormais grand classique du FPS . Documentation d'installation -- pour utilisateurs avertis -- sur \url{http://doc.ubuntu-fr.org/doom3}.
+\item[Heretic II :] Plongez-vous dans un monde de sorcellerie, trouvez le remède d'une épidémie qui fait des ravages et sauvez le monde de D'sparil dans ce jeu à la troisième personne utilisant le moteur de Quake II.
+\item[Heroes of Might and Magic III :] Jeu de stratégie au tour par tour dont la réputation n'est plus à faire.
+\item[Hopkings FBI :] Vous êtes un agent spécial du FBI et votre mission est de retrouver un dangereux terroriste. Des scènes assez violentes, âmes sensibles s'abstenir. \url{http://www.hopkinsfbi.com}
+\item[Kohan : Immortal Sovereigns :] Jeu de stratégie dans un univers fantastique mêlant un brin de RPG.
+\item[Quake2, Quake3 et Quake4 :] FPS multi-joueurs qu'il n'est plus la peine de présenter. Il est possible d'installer des mods tels que Rocket Arena : \url{http://www.planetquake.com/servers/arena} ou encore Urban terror : \url{http://www.urbanterror.net}.
+\item[Lugaru :] Jeu d'action à la $3^{eme}$ personne où vous incarnez un lapin-garou ayant d'impressionnantes aptitudes au combat. \url{http://wolfire.com/lugaru.html}
+\item[Mutant Storm :] Jeu de shoot 3D à la robotron/smath TV. Voir \url{http://www.pompomgames.com/mutantstorm.htm}
+\item[Never winter nights :] RPG de fantasy médiévale.
+\item[Postal 2 : share the pain :] FPS très sanglant : \url{http://www.gopostal.com/postal2}
+\item[Railroad Tycoon II :] Jeu de gestion à la Transport Tycoon remis au goût du jour dans lequel il est possible de gérer en plus certains \RefGlossaire{Système}{Démon}{Service}{services} de restauration ou encore d'hôtellerie.
+\item[Return to the Castle Wolfenstein :] Si vous êtes un aficionado des FPS, vous connaissez sûrement déjà ce hit datant de quelques années : \url{http://returntocastlewolfenstein.filefront.com}
+\item[Robin Hood :] La légende de Sherwood : Incarnez Robin des bois dans un jeu à la commando.
+\item[Serious Sam :] Bien que les versions «~The First Encounter~» et «~The Second Encounter~» commencent à dater, ces jeux peuvent vous faire passer de bons moments. Il suffit de télécharger l'installateur en .run correspondant à l'adresse suivante : \url{http://liflg.org/?catid=6&gameid=71}.
+\item[Soldier of Fortune :] Bon jeu très violent qui a connu son heure de gloire. Il suffit juste de «~sauver le monde~», la routine quoi ! 
+\item[Tribal Trouble :] Jeu dans lequel vous incarnez une bande de pirates échoués sur une île tropicale où résident des indigènes. \url{http://tribaltrouble.com}
+\item[Unreal Tournament :] Le premier du nom, ainsi que les versions 2003 et 2004 sont disponibles pour Linux. Citons également quelques mods tels que Red orchestra : \url{http://redorchestramod.gameservers.net}, Death Ball : \url{http://www.deathball.net} ou encore Strike force : \url{http://www.strike-force.com}. Vous trouverez des informations sur leur installation à l'adresse suivante : \url{http://doc.ubuntu-fr.org/ut}.
+\end{description}
+\begin{nota}
+Nous ne pouvons que déplorer qu'America's Army, depuis sa version 2.6 ne soit plus adapté à GNU/Linux, ni Mac. La dernière version -- 2.7 -- fonctionne tout de même avec Wine, cf. section \ref{RefWineJeux}.
+\end{nota}
+\subsection{Les émulateurs}
+De nombreux émulateurs existent sous Linux. Nous ne parlerons ici que des émulateurs permettant de faire fonctionner les jeux Windows. Sachez également qu'il existe des émulateurs Playstation, Neo Geo, Super Nes, Megadrive\ldots{} vous trouverez un lien très utile à cette adresse : \url{http://doc.ubuntu-fr.org/emulateurs_console}. Enfin, une bonne adresse pour des compléments d'informations et l'installation de certains jeux non cités ici à cause d'une installation trop complexe : \url{http://doc.ubuntu-fr.org/jeux}.
+\begin{itemize}
+\item Deux émulateurs MS-DOS permettant de faire tourner des programmes ou jeux DOS : dosemu -- \Commande{sudo apt-get install dosemu} : \url{http://www.dosemu.org} -- et dosbox \Commande{sudo apt-get install dosbox} : \url{http://dosbox.sourceforge.net}.
+\item FreeSCI vous permet de jouer de la même manière des vieux jeux Sierra --- \Commande{sudo apt-get install freesci}. \url{http://freesci.linuxgames.com}
+\item Mame : un émulateur d'anciens jeux d'arcade. Indispensable pour les plus nostalgiques d'entre-nous --- \Commande{sudo apt-get install xmame-x}. \url{http://www.mame.net}
+\item ScummVM vous permet de faire tourner tous les anciens jeux Lucas Art point-and-click, comme par exemple, Sam Et Max\ldots{}  --- \Commande{sudo apt-get install scummvm}. \url{http://www.scummvm.org}
+\end{itemize}

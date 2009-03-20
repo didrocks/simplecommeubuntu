@@ -1,0 +1,18 @@
+\TitreIntro{Le plan de cet ouvrage}
+Ce livre se veut comme une progression pas à pas dans la découverte de votre nouveau système d'exploitation ; chaque chapitre marque une étape importante de ce déroulement. Je conseille donc à tout nouvel apprenti de lire ce livre dans l'ordre, sans faire de grandes coupes franches afin de comprendre sans trop d'efforts les étapes suivantes.\par
+\begin{DescriptionChapitres}
+\item [Chapitre 1] Ce chapitre comprend une courte introduction au Logiciel Libre et, en particulier à GNU/Linux, en insistant sur la philosophie et les différences avec le logiciel propriétaire. Vous y retrouverez également les réponses à quelques questions d'ordre général.
+\item [Chapitre 2] On y découvre comment obtenir Ubuntu, l'essayer sans risquer de perdre des données et enfin, se lancer dans une séance d'installation.
+\item [Chapitre 3] Le chapitre 3 explique les notions de bases à connaître lorsqu'on «~plonge~» dans GNU/Linux ! Il vous guidera aussi dans la découverte de votre nouvel environnement de travail.
+\item [Chapitre 4] Vous retrouverez dans ce chapitre une explication sur l'installation d'un réseau (et de l'Internet) sur votre nouveau système d'exploitation. Vous serez également initié à la bonne manière de procéder à l'installation de logiciels et de jeux à partir des outils mis en place par Ubuntu.
+\item [Chapitre 5] Il présente les derniers points à effectuer pour rendre votre système utilisable quotidiennement, avec, par exemple, le téléchargement des codecs vidéos, la liaison de Firefox avec des composants tels que Flash et Java\ldots{}
+\item [Chapitre 6] Voici sûrement le chapitre qui vous intéressera le plus : il décrit les trucs et astuces qui permettent de gagner du temps et d'utiliser plus intelligemment son environnement de travail. Vous y trouverez également quelques conseils sur l'utilisation de Firefox.
+\item [Chapitre 7] Le chapitre 7 traite des derniers points matériels qui peuvent vous poser problèmes comme l'installation de l'imprimante. Il vous guide également à l'aide d'un exemple dans l'utilisation d'un scanner et d'une configuration du démarrage.
+\item [Chapitre 8] Vous y retrouverez un liste de logiciels classés par catégorie vous permettant de rapidement repérer et choisir un logiciel à installer pour tel ou tel type d'utilisation.
+\item [Chapitre 9] Dans le chapitre 9, vous découvrirez le nombre impressionnant de jeux disponibles sous GNU/Linux. Ceux-ci, classés par genre, contiennent les instructions complètes d'installation.
+\item [Chapitre 10] Le chapitre 10 est un aparté qui peut vous emmener plus loin dans la connaissance et la compréhension de votre système d'exploitation. Bonne nouvelle, celui-ci est optionnel !
+\item [Chapitre 11] Conclusion de cet ouvrage, ce chapitre vous permettra de savoir où chercher de l'aide, des informations et comment s'investir dans le monde du Libre.
+%il présentera notamment des notions telles que «~Pourquoi le libre~» et vous amènera très certainement à voir les enjeux présents et la culture libre sous un angle différent.
+\item [Glossaire] Le glossaire vous permettra d'accéder rapidement à la définition de certains termes réservés au monde de l'informatique.
+\item [Index] Un index, très pratique, vous permettra de mieux vous retrouver dans le livre par une recherche par catégorie et mots clefs.
+\end{DescriptionChapitres}
