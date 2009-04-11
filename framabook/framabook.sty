@@ -455,7 +455,10 @@
 	% Mets le prénom de la personne suivi du nom en petites capitales
 \newcommand\Personne[2]{#1~\textsc{#2}}
 	% Mets en évidence une commande
-\newcommand\Commande[1]{\textbf{#1}}
+\newcommand\Commande[1]{\begin{otherlanguage}{english}
+			\textbf{#1}%
+		\end{otherlanguage}
+}
 	% Note de pied de page
 \newcommand\NotePage[1]{\footnote{#1}}
 	% Mise en présentation "chemin"

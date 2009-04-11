@@ -109,6 +109,9 @@ Le menu système contient des applications pour l'administration de votre ordina
 Ubuntu fournit une vaste palette d'applications faciles à utiliser permettant aux utilisateurs de personnaliser leur bureau selon leurs exigences particulières. Toutes ces applications sont disponibles à partir de Système \FlecheDroite Préférences. 
 % \subsubsubsection{Accès universel}
 % Le deuxième, quant à lui, active l'aide technique dans le bureau \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}. Cet outil sert également à spécifier quelles applications des aides techniques démarrer lorsque vous vous connectez : Lecteur d'écran, Loupe ou Clavier visuel.
+\subsubsubsection{Affichage}
+Ce panel tant attendu des Linuxiens vous permet de configurer très facilement la résolution, la fréquence, l'orientation et de tester tous ces choix. Vous pourrez également activer un seul ou plusieurs écrans -- en étendant votre écran ou en mode clone. Un nom et une couleur sont attribués à chaque écran et ceux-ci sont visibles en haut à gauche de chaque espace d'affichage détecté.
+%Un système d'enregistrement des configurations, similaire à celui qui sera décrit pour les réseaux à la section \ref{RefEnregistrementConfig} page \pageref{RefEnregistrementConfig} vous facilitera le basculement entre plusieurs groupes de paramètres.
 \subsubsubsection{Apparence}
 Ce nouvel élément de menu regroupe tout ce dont vous aurez besoin afin d'agrémenter l'apparence de votre environnement graphique de travail. Vous y retrouverez plusieurs onglets :
 \begin{itemize}
@@ -118,6 +121,8 @@ Ce nouvel élément de menu regroupe tout ce dont vous aurez besoin afin d'agré
 \item Cet onglet permet de personnaliser l'apparence des menus, des barres de menus et des barres d'outils pour les applications \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}. 
 \item Vous aurez, ici, trois options d'activation des effets graphiques 3D permis par la puissance de votre carte graphique. Pour plus d'informations sur ce point, voir la section \ref{RefBureau3D}.
 \end{itemize}
+\subsubsubsection{Applications au démarrage}
+Utilisez la boîte de dialogue de choix des applications à lancer à la connexion pour déterminer vos options de session. Plus d'informations sur ce point en \ref{RefEnrSession}.
 \subsubsubsection{Applications préférées}
 Utilisez Applications préférées pour paramétrer les applications par défaut de votre système comme le navigateur Web, le lecteur de courrier, lecteur multimédia ou encore le \RefGlossaire{-}{Console}{Terminal}{terminal} et quelques options d'outils d'accessibilité.
 \subsubsubsection{À propos de moi}
@@ -142,6 +147,9 @@ Utilisez l'outil de configuration Clavier pour modifier les préférences d'auto
 Imaginons un cas pratique et que vous parliez Espéranto\NotePage{Si si, vous ne saviez pas ? :-)}. Certains caractères comme les «~s, c ou h~», agrémentés d'un accent circonflexe ne sont pas directement accessibles. Revenez à l'onglet «~Agencements~» et ajoutez -- par l'icône représentant un \Touche{+} «~Espéranto\NotePage{Prenez garde à choisir l'agencement «~France~» par défaut sinon, au prochain démarrage de \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}, vous n'aurez pas un clavier français}~». Vous remarquerez d'ailleurs que vous aurez un aperçu -- que vous pouvez imprimer par la suite -- de la disposition du clavier. Cliquez sur l'onglet «~Options de l'agencement~», puis sur «~Combinaisons pour changer de groupe~» et choisissez une méthode de changement d'agencement. Par défaut, cette dernière est l'appui simultané des deux touches \Touche{Alt} + \Touche{Alt Gr}. Essayez et lancez un éditeur de texte, tapez quelques lettres, le clavier est en espéranto. Un nouvel appui sur les douches touche \Touche{Alt} et \Touche{Alt Gr} et le clavier revient en français.
 \subsubsubsection{Configuration de la méthode de saisie SCIM}
 Pour écrire des langues dont l'écriture s'effectue sans alphabet, comme par exemple le chinois (on parle de sinogrammes), on utilise un logiciel de saisie spécialisé. Dans Ubuntu\NotePage{Coup de chance, sachez que cette fonctionnalité n'est pas aussi aisée à utiliser sur tous les systèmes d'exploitation ;-)}, ce logiciel est intégré ! Cet outil dans le menu permet de configurer le logiciel qui permet d'écrire dans ces langues.
+\subsubsubsection{Connexions réseau}
+\AddIndex{Réseau}{-}{Configuration}{-}
+L'outil de configuration des connexions réseau vous permet de spécifier la façon dont votre système se connecte à d'autres ordinateurs et à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} : filaire, sans fil, par téléphone mobile\ldots{} Plus d'explications sur son utilisation à la section \ref{ConfigReseauManuelle} page \pageref{ConfigReseauManuelle}.
 \subsubsubsection{Économiseur d'écran}
 Cette option\NotePage{Écran de veille dans une autre langue :-)} sert à paramétrer l'activation ou non d'un économiseur d'écran lorsque vous vous éloignez de votre ordinateur. Plusieurs choix s'offrent à vous : d'humeur égale et vous choississez un seul économiseur d’écran, ou d'humeur changeante et ce dernier variera aléatoirement. Un raccourci vers le gestionnaire d'énergie est proposé.
 \subsubsubsection{Fenêtres}
@@ -160,9 +168,6 @@ Cet outil est surtout utile pour les possesseurs de portables et permet de gére
 Si plusieurs imprimantes sont installées comme indiqué en \ref{RefInstallImprimante} page \pageref{RefInstallImprimante}, cet écran permet de choisir l'imprimante proposée par défaut pour toutes les applications du système.
 \subsubsubsection{Menu principal}
 Cette option ouvre un éditeur de menus afin que vous puissiez les personnaliser. Pour plus d'explications sur son fonctionnement, référez-vous à la section \ref{RefEditerMenus}. La même application peut être ouverte par simple clic-droit \FlecheDroite Éditer les menus.
-\subsubsubsection{Network Configuration}
-\AddIndex{Réseau}{-}{Configuration}{-}
-L'outil de configuration des connexions réseau vous permet de spécifier la façon dont votre système se connecte à d'autres ordinateurs et à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} : filaire, sans fil, par téléphone mobile\ldots{} Plus d'explications sur son utilisation à la section \ref{ConfigReseauManuelle} page \pageref{ConfigReseauManuelle}.
 \subsubsubsection{Outils d'accessibilité}
 Cette fenêtre contient quatre éléments, raccourcis d'autres menus décrits dans cette section : Applications préférées, Accessibilité du clavier, Accessibilité de l'identification et Accessibilité de la souris. Ces outils -- mais ce ne sont pas les seuls -- seront notamment utiles pour les personnes atteintes d'un handicap, et leur permettront de disposer aisément de leur Ubuntu.
 %\subsubsubsection{Périphériques et médias amovibles}
@@ -181,16 +186,11 @@ Cette fenêtre contient quatre éléments, raccourcis d'autres menus décrits da
 Utilisez «~Périphériques PalmOS~» pour lancer l'application Paramètres de Gnome Pilot, laquelle permet la gestion des paramètres de communication avec les appareils Palm OS™ supportant la technologie HotSync™. 
 \subsubsubsection{Raccourcis clavier}
 Un raccourci clavier est une touche ou une combinaison de touches fournissant une alternative rapide aux moyens usuels d'exécuter une tâche. Utilisez l'outil de configuration Raccourcis clavier pour afficher les raccourcis clavier par défaut et pour personnaliser vos raccourcis.
-\subsubsubsection{Recherche et indexation}
-Utilisez préférences d'indexation pour configurer le mode de fonctionnement du tracker. Ces éléments seront développés plus en détail à la section \ref{RefTracker} page \pageref{RefTracker}.
-\subsubsubsection{Résolution de l'écran}
-Ce panel tant attendu des Linuxiens vous permet de configurer très facilement la résolution, la fréquence, l'orientation et de tester tous ces choix. Vous pourrez également activer un seul ou plusieurs écrans -- en étendant votre écran ou en mode clone. Un nom et une couleur sont attribués à chaque écran et ceux-ci sont visibles en haut à gauche de chaque espace d'affichage détecté.
-%Un système d'enregistrement des configurations, similaire à celui qui sera décrit pour les réseaux à la section \ref{RefEnregistrementConfig} page \pageref{RefEnregistrementConfig} vous facilitera le basculement entre plusieurs groupes de paramètres.
+%\subsubsubsection{Recherche et indexation}
+%Utilisez préférences d'indexation pour configurer le mode de fonctionnement du tracker. Ces éléments seront développés plus en détail à la section \ref{RefTracker} page \pageref{RefTracker}.
 \subsubsubsection{Serveur mandataire}
 Un serveur mandataire, souvent appelé «~proxy réseau~», joue le rôle d'intermédiaire entre vous et l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}(d'où son nom). Lorsqu'un grand nombre d'utilisateurs exercent une activité commune, une partie conséquente des données qu'ils consultent sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} sont identiques. Il est inutile de télécharger ces données plusieurs fois. Un serveur mandataire a pour rôle de gérer ce problème pour les utilisateurs d'un réseau de manière à économiser leur connexion.\\
 En utilisant cet outil, vous pouvez configurer votre connexion à \RefGlossaire{-}{L'Internet}{Internet}{Internet} pour qu'elle passe par un serveur mandataire, ou même -- si vous êtes administrateur -- configurer la connexion pour que tous les utilisateurs de votre ordinateur passent par ce serveur mandataire.
-\subsubsubsection{Sessions}
-Utilisez la boîte de dialogue de Sessions pour déterminer vos options de session et les programmes qui seront automatiquement lancés lors de l'ouverture d'une session. Plus d'informations sur ce point en \ref{RefEnrSession}.
 \subsubsubsection{Son}
 Cette boîte de dialogue vous permet de choisir les périphériques -- matériels -- de sortie pour chaque type de son, très utile si vous possédez plusieurs cartes son. Les sons système, joués lors d'interactions ou d'événements système, y sont également listés et peuvent être désactivés et/ou changés. Le dernier onglet «~Bip système~» permet de changer l'option pour obtenir seulement une sonnerie audible ou l'allier avec un clignotement de vos fenêtres afin d'attirer l'attention. 
 \subsubsubsection{Souris}
@@ -205,7 +205,9 @@ Utilisez l'outil de configuration Souris pour régler celle-ci pour droitier ou 
 Ubuntu fournit une vaste palette d'applications faciles d'usage permettant aux utilisateurs d'administrer les différents aspects de leur système. Toutes ces applications se trouvent sous Système \FlecheDroite Administration. Pour avoir accès à ces applications, il faut être «~Ami de root~» comme vu au paragraphe \ref{RefMdpRoot}.
 \subsubsubsection{Autorisations}
 Cette application permet un réglage précis des droits et permissions directement utilisateur par utilisateur, ou par groupe. Les options paramétrables sont les droits de changer l'heure courante, d'arrêter l'ordinateur, de changer de place les tableaux de bord\ldots{}
-\subsubsubsection{Create a USB startup}
+\subsubsubsection{Computer Janitor}
+Cet outil vous permettra de garder votre système «~propre~» en nettoyant tout ce qui peut s'accumuler sur votre ordinateur au fil de votre utilisation et des mises à jours d'une version d'Ubuntu vers une autre. Il vous sera ainsi aisé de nettoyer tous les résidus systèmes de votre gestionnaire de paquets. Plus d'explication sur son utilité et son usage à la section \ref{RefCleaner} 
+\subsubsubsection{Créateur de disque de démarrage USB}
 Cet outil permet de créer facilement à partir d'un desktop CD ou d'une image iso, une clef USB bootable qui permet, selon l'option choisie, de garder ou non les documents créés dans votre répertoire personnel.
 \subsubsubsection{Date et heure}
 Date et heure\NotePage{Également accessible en cliquant-droit sur la date, puis «~Régler la date et l'heure~» \FlecheDroite «~régler l'heure du système~»} vous permet d'ajuster les réglages de la date et de l'heure de votre ordinateur, de spécifier votre fuseau horaire, et de synchroniser la date et l'heure avec des serveurs \RefGlossaire{-}{L'Internet}{Internet}{Internet}. Vous pouvez opter pour une synchronisation périodique avec des serveurs \RefGlossaire{-}{L'Internet}{Internet}{Internet} si vous avez installé au préalable le support NTP\NotePage{Network Time Protocol}. Lorsque vous activez l'option pour synchroniser périodiquement l'horloge avec des serveurs \RefGlossaire{-}{L'Internet}{Internet}{Internet}, vous avez alors la possibilité d'installer le support NTP si ce n'est déjà fait. Plus d'informations sur cette fonctionnalité en \ref{RefHeureNTP}, page \pageref{RefHeureNTP}. Une version plus légère, destinée à l'utilisateur courant uniquement est disponible par clic-droit sur la date, puis «~Régler la date et l'heure~».
@@ -219,8 +221,6 @@ Le Gestionnaire de paquets Synaptic est utilisé pour gérer les logiciels suppo
 Utilisez la boîte de dialogue Impression pour gérer/supprimer/ajouter des imprimantes, ainsi que gérer les tâches d'impression des imprimantes existantes. Plus d'informations à ce sujet à la section \ref{RefInstallImprimante}.
 \subsubsubsection{Moniteur système}
 Cet outil ressemble beaucoup au gestionnaire des tâches de Windows. Vous pourrez y voir les processus (programmes) en cours et l'utilisation du processeur, de la mémoire vive, etc.
-%\subsubsubsection{Nettoyage du système} PAS PAR Défaut dans cette release
-%Cette application assez récente permet de nettoyer facilement tous les résidus systèmes de votre gestionnaire de paquets. Plus d'explication sur son utilité et son usage à la section \ref{RefCleaner} 
 \subsubsubsection{Outils réseau}
 L'outil réseau permet d'effectuer de nombreux tests sur votre réseau, comme des pings, des traceroutes, ou un scannage de \RefGlossaire{Réseau}{-}{Port}{ports}, etc. Bref, l'utilisateur moyen n'en aura pas besoin !
 \subsubsubsection{Pilotes de périphériques}
@@ -229,7 +229,7 @@ Cet outil vous permet d'installer des \RefGlossaire{Système}{Pilote}{Driver}{dr
 Si votre système n'était pas connecté à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} lors de l'installation, il se peut que votre système ne soit pas entièrement francisé. Vous pourrez ici demander le téléchargement des traductions manquantes. Il est également possible d'installer d'autres langues si des utilisateurs de différentes nationalités utilisent votre ordinateur. Se référer à la section \ref{RefSupportLangue}.
 \subsubsubsection{Services}
 Un \RefGlossaire{Système}{Démon}{Service}{service} est un programme qui tourne en tâche de fond, c'est-à-dire continuellement\NotePage{Exemple : l'heure qui s'affiche est en quelque sorte, «~un \RefGlossaire{Système}{Démon}{Service}{service}~»}. Les \RefGlossaire{Système}{Démon}{Service}{services} sont démarrés dès que l'affichage graphique est lancé. Vous pouvez ici désactiver les \RefGlossaire{Système}{Démon}{Service}{services} dont vous n'avez pas besoin. Un autre nom également utilisé est \RefGlossaire{Système}{Service}{Démon}{démon}.
-\subsubsubsection{Sources de logiciels}
+\subsubsubsection{Sources de mise à jour}
 Vous gérerez ici, entres autres, la localité des serveurs d'où Ubuntu télécharge les programmes et vérifie les mises à jour. Plus d'informations dans la section \ref{RefSourceMAJ}.
 \subsubsubsection{Test du matériel}
 Ce logiciel vous permet de voir facilement les différents composants constituant votre ordinateur. Cet élément est assez similaire au gestionnaire de périphériques de Windows.
@@ -244,27 +244,40 @@ L'option Aide et soutien vous permet de visualiser différentes documentations s
 Cette option ouvre une page d'introduction à \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} dans un navigateur.
 \subsubsubsection{À propos d'Ubuntu}
 Cette option ouvre une page d'introduction à Ubuntu dans un navigateur.
-\subsubsubsection{Verrouiller l'écran}
-Également accessible par la combinaison de touches \Touche{Ctrl} + \Touche{Alt} + \Touche{L} comme indiqué \ref{RefVerrouillageOrdi} ou encore par clic sur l'applet de changement rapide d'utilisateur décrit à la section \ref{RefSwitchUser}, en cas d'absence prolongée\NotePage{Pause café par exemple ? Le temps de commander une
-pizza ? ;-)}, cela vous permet de bloquer immédiatement l'écran et un mot de passe est requis pour pouvoir avoir accès à nouveau à votre bureau.
-\subsubsubsection{Fermer la session\ldots{}}
-Vous pouvez, par le biais de ce bouton, choisir de vous déconnecter -- c'est à dire fermer votre session courante et revenir à l'écran présenté en \ref{ImgGDM} comme si votre ordinateur venait de démarrer -- ou encore changer d'utilisateur -- ce qui signifie de suspendre temporairement votre session pour qu'un autre utilisateur puisse se connecter. Une fois que ce dernier aura terminé ou cliqué également sur «~changer d'utilisateur~», vous pourrez retrouver votre session dans l'état où vous l'avez quittée (les programmes déjà ouverts le resteront à la reprise).
-\ImgCentree{5}{corps/chapitre3/img/Deco.png}{Action de déconnexion}{ImgChoixDeco}
-\subsubsubsection{Éteindre\ldots{}}
-Vous aurez le choix dans cette boîte de dialogue entre plusieurs opérations plus importantes pour votre ordinateur : l'éteindre, le redémarrer, le mettre en veille (permet de le passer en mode économie d'énergie et de retrouver l'état actuel assez rapidement lors de sa réactivation) ou encore hiberner votre ordinateur (permet de l'éteindre, et, lors de son redémarrage, vous retrouverez votre session dans l'état exact où elle était lors de sa mise en hibernation : applications/documents ouverts)\ldots{}
-\ImgCentree{5}{corps/chapitre3/img/Quitter.png}{Action d'extinction}{ImgChoixQuitter}
+%\subsubsubsection{Verrouiller l'écran}
+%Également accessible par la combinaison de touches \Touche{Ctrl} + \Touche{Alt} + \Touche{L} comme indiqué \ref{RefVerrouillageOrdi} ou encore par clic sur l'applet de changement rapide d'utilisateur décrit à la section \ref{RefSwitchUser}, en cas d'absence prolongée\NotePage{Pause café par exemple ? Le temps de commander une pizza ? ;-)}, cela vous permet de bloquer immédiatement l'écran et un mot de passe est requis pour pouvoir avoir accès à nouveau à votre bureau.
+%\subsubsubsection{Fermer la session\ldots{}}
+%Vous pouvez, par le biais de ce bouton, choisir de vous déconnecter -- c'est à dire fermer votre session courante et revenir à l'écran présenté en \ref{ImgGDM} comme si votre ordinateur venait de démarrer -- ou encore changer d'utilisateur -- ce qui signifie de suspendre temporairement votre session pour qu'un autre utilisateur puisse se connecter. Une fois que ce dernier aura terminé ou cliqué également sur «~changer d'utilisateur~», vous pourrez retrouver votre session dans l'état où vous l'avez quittée (les programmes déjà ouverts le resteront à la reprise).
+%\ImgCentree{5}{corps/chapitre3/img/Deco.png}{Action de déconnexion}{ImgChoixDeco}
+%\subsubsubsection{Éteindre\ldots{}}
+%Vous aurez le choix dans cette boîte de dialogue entre plusieurs opérations plus importantes pour votre ordinateur : l'éteindre, le redémarrer, le mettre en veille (permet de le passer en mode économie d'énergie et de retrouver l'état actuel assez rapidement lors de sa réactivation) ou encore hiberner votre ordinateur (permet de l'éteindre, et, lors de son redémarrage, vous retrouverez votre session dans l'état exact où elle était lors de sa mise en hibernation : applications/documents ouverts)\ldots{}
+%\ImgCentree{5}{corps/chapitre3/img/Quitter.png}{Action d'extinction}{ImgChoixQuitter}
 \subsection{Autres éléments du tableau de bord supérieur}
-\label{RefSwitchUser}
 \AddIndex{Environnement graphique}{-}{GNOME}{-}
+\IconeBarreHaut
 Se trouvent immédiatement à droite de la zone «~menu~», deux raccourcis vers des applications bien pratiques : le premier concerne Firefox, le célèbre navigateur \RefGlossaire{-}{L'Internet}{Internet}{Internet} -- équivalent d'Internet Explorer -- que vous connaissez et utilisez sûrement.\par
 Le second est un gestionnaire de messagerie -- équivalent d'Outlook -- nommé Évolution, offrant une intégration parfaite au bureau \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}, notamment au niveau de la gestion de votre agenda, carnet d'adresses ou encore de vos différentes tâches. Nous verrons ces points dans la partie \ref{RefCalendrierEvolution}. Suit ensuite l'aide très complète de GNOME.\par
 Vous avez plutôt sur la droite, entres autres : une zone de notification dans laquelle le système fera apparaître, par exemple, une petite \RefGlossaire{-}{-}{Icône}{icône} avec un message lors de la disponibilité de nouvelles mises à jour, une application pourra également y intégrer des évènements --- comme prévenir de l'arrivée de nouveaux mails. Les -- heureux -- possesseurs d'un ordinateur portable y ont également un indicateur de batterie.\\
 Puis nous retrouvons le Network-Manager, gestionnaire de réseaux dont l'utilisation sera décrite dans la section \ref{RefUtilisationNM}. Celui-ci se présente sous la forme de 2 \RefGlossaire{-}{-}{Icône}{icônes} différentes selon que vous soyez en connexion filaire -- figure \ref{ImgConnexionFilaire} -- ou en connexion sans fil --- figure \ref{ImgConnexionWifi}.\\
-Apparaît ensuite un contrôleur de volume\NotePage{En utilisant la roulette de souris sur cet indicateur de volume général, il est possible ainsi de directement contrôler le niveau sonore !}, puis la date et l'heure avec possibilité de les copier par un simple clic-droit !\par
-Vous trouvez également l'applet de changement rapide d'utilisateurs qui permet de passer de manière pragmatique d'un utilisateur à un autre sans avoir à clôturer sa session courante\NotePage{Il est possible de ne pas avoir à renseigner à chaque fois son mot de passe lorsque vous basculez entre plusieurs sessions déjà ouvertes en cliquant-droit, puis «~Préférences~» et en décochant «~Vérrouiller l'écran après avoir changé d'utilisateur~»}. D'autres options comme le paramétrage de l'affichage ou des raccourcis à des éléments comme la modification des informations personnelles, utilisateurs et groupes ou encore les paramètres de l'écran de connexion sont disponibles.\\
-Une option spéciale «~utilisateur invité~» est disponible. Ce compte temporaire vous permet de laisser une personne -- un ami ou leur des expositions/démonstrations -- utiliser votre système d'exploitation en toute sécurité et en préservant vos données personnelles. De plus, tout dossier/fichier créé sera détruit lors de la déconnexion. Vous n'aurez vraiment plus aucune excuse pour laisser une autre individu utiliser votre compte utilisateur\NotePage{Ce qui est MAL, je le répète : un compte = un utilisateur} !\\
-Vous y retrouvez également les options de déconnexion, hibernation, redémarrage et extinction classiques. Enfin, une option et non des moindres : vous verrez et pourrez changer votre statut d'activité de votre outil de messagerie instantanée -- à noter que pour l'instant seul Pidgin, cf \ref{RefPidgin} page \pageref{RefPidgin}, installé par défaut et Telepathy le supportent.
-\IconeBarreHaut
+Apparaît ensuite un contrôleur de volume\NotePage{En utilisant la roulette de souris sur cet indicateur de volume général, il est possible ainsi de directement contrôler le niveau sonore !}, puis la date et l'heure avec possibilité de les copier par un simple clic-droit !
+\subsection{L'applet FUSA}
+\label{RefSwitchUser}
+L'applet de changement rapide d'utilisateur («~Fast User Switch Applet~») se trouve tout en haut à droite de votre écran. Elle vous permet d'accéder à plusieurs élements de manière simple.\par
+Elle permet de passer de manière pragmatique d'un utilisateur à un autre sans avoir à clôturer sa session courante\NotePage{Il est possible de ne pas avoir à renseigner à chaque fois son mot de passe lorsque vous basculez entre plusieurs sessions déjà ouvertes en cliquant-droit, puis «~Préférences~» et en décochant «~Vérrouiller l'écran après avoir changé d'utilisateur~»}.\\
+D'autres options comme le paramétrage de l'affichage ou des raccourcis à des éléments comme la modification des informations personnelles, utilisateurs et groupes ou encore les paramètres de l'écran de connexion sont disponibles.\par
+Vous trouverez dans ce menu le nom de tous les utilisateurs enregistrés de votre ordinateur. En cliquant sur l'un d'eux, il est possible de changer d'utilisateur -- ce qui signifie de suspendre temporairement votre session courante pour qu'un autre utilisateur puisse se connecter. Une fois que ce dernier aura terminé ou cliqué également sur «~changer d'utilisateur~», vous pourrez retrouver votre session dans l'état où vous l'avez quittée (les programmes déjà ouverts le resteront à la reprise).\\
+Une option spéciale «~Session d'invité~» est disponible. Ce compte temporaire vous permet de laisser une personne -- un ami ou leur des expositions/démonstrations -- utiliser votre système d'exploitation en toute sécurité et en préservant vos données personnelles. De plus, tout dossier/fichier créé sera détruit lors de la déconnexion. Vous n'aurez vraiment plus aucune excuse pour laisser une autre individu utiliser votre compte utilisateur\NotePage{Ce qui est MAL, je le répète : un compte = un utilisateur} !\par
+Cette applet s'ornera également d'un indicateur votre statut d'activité de votre outil de messagerie instantannée -- à noter que pour l'instant seul Pidgin, cf \ref{RefPidgin} page \pageref{RefPidgin}, installé par défaut et Telepathy le supportent -- présent, absent, occupé\ldots{}. Il vous permettra aussi de le changer directement. Essayez de lancer un de ces outils de messagerie et vous verrez par vous-même.\par
+Enfin, vous trouverez les options de gestion de votre session : Également accessible par la combinaison de touches \Touche{Ctrl} + \Touche{Alt} + \Touche{L} comme indiqué \ref{RefVerrouillageOrdi}, en cas d'absence prolongée\NotePage{Pause café par exemple ? Le temps de commander une pizza ? ;-)}, cela vous permet de bloquer immédiatement l'écran et un mot de passe est requis pour pouvoir avoir accès à nouveau à votre bureau.
+\begin{itemize}
+\item Verrouiller l'écran : également accessible par la combinaison de touches \Touche{Ctrl} + \Touche{Alt} + \Touche{L} comme indiqué \ref{RefVerrouillageOrdi}, en cas d'absence prolongée\NotePage{Pause café par exemple ? Le temps de commander une pizza ? ;-)}, cela vous permet de bloquer immédiatement l'écran et un mot de passe est requis pour pouvoir avoir accès à nouveau à votre bureau.
+\item Fermer la session\ldots{} : vous pouvez, par le biais de ce bouton, choisir de vous déconnecter -- c'est à dire fermer votre session courante et revenir à l'écran présenté en \ref{ImgGDM} comme si votre ordinateur venait de démarrer -- ou encore changer d'utilisateur.
+\item Hiberner : permet d'éteindre complètement votre ordinateur, et, lors de son redémarrage, vous retrouverez votre session dans l'état exact où elle était lors de sa mise en hibernation : applications/documents ouverts)\ldots{} En réalité, tout ce qui est dans la mémoire vive de votre ordinateur sera écrit sur le disque dur, puis récupéré au démarrage.
+\item Redémarrer\ldots{} : vous permet de redémarrer l'ordinateur
+\item Éteindre\ldots{} : est-ce nécessaire de préciser ? Ah si ! Un décompte de quelques secondes vous permet de revenir sur votre décision ou de forcr l'exctinction immédiate.
+\end{itemize}
+%Vous y retrouvez également les options de déconnexion, hibernation, redémarrage et extinction classiques. Enfin, une option et non des moindres : vous verrez et pourrez changer votre statut d'activité de votre outil de messagerie instantanée -- à noter que pour l'instant seul Pidgin, cf \ref{RefPidgin} page \pageref{RefPidgin}, installé par défaut et Telepathy le supportent.
+\ImgCentree{5}{corps/chapitre3/img/FUSA.png}{Applet FUSA en détail}{ImgAppletFUSA}
 \subsection{Le tableau de bord inférieur}
 Celui-ci contient par défaut quatre \AddIndex{Environnement graphique}{-}{Applet}{applets} :
 \begin{itemize}
