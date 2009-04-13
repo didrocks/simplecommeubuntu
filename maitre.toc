@@ -44,9 +44,9 @@
 \contentsline {section}{\numberline {2.2}Session Live}{21}{section.2.2}
 \contentsline {section}{\numberline {2.3}L'installation}{22}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Bienvenue}{24}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Emplacement g\IeC {\'e}ographique}{25}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Disposition du clavier}{25}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}S\IeC {\'e}lectionner un disque / Pr\IeC {\'e}parer l'espace disque}{26}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.2}Emplacement g\IeC {\'e}ographique}{24}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Disposition du clavier}{24}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}S\IeC {\'e}lectionner un disque / Pr\IeC {\'e}parer l'espace disque}{25}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Votre identit\IeC {\'e}}{30}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}Migration des donn\IeC {\'e}es depuis Windows vers Ubuntu}{31}{subsection.2.3.6}
 \contentsline {subsection}{\numberline {2.3.7}Pr\IeC {\^e}t \IeC {\`a} installer}{31}{subsection.2.3.7}
@@ -131,11 +131,11 @@
 \contentsline {chapter}{\numberline {4}R\IeC {\'e}seau, installation de nouvelles applications et sources de mises \IeC {\`a} jour}{65}{chapter.4}
 \contentsline {section}{\numberline {4.1}R\IeC {\'e}seau}{66}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Configuration enti\IeC {\`e}rement automatis\IeC {\'e}e}{66}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Configuration manuelle}{68}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Configuration manuelle}{67}{subsection.4.1.2}
 \contentsline {subsubsection}{Connexion filaire}{68}{section*.83}
 \contentsline {subsubsection}{Wi-Fi}{69}{section*.84}
 \contentsline {subsubsection}{Autres onglets}{69}{section*.85}
-\contentsline {section}{\numberline {4.2}Qu'est-ce qu'un paquet ?}{69}{section.4.2}
+\contentsline {section}{\numberline {4.2}Qu'est-ce qu'un paquet ?}{70}{section.4.2}
 \contentsline {section}{\numberline {4.3}J'entends parler de code source, de compilation, de binaires ex\IeC {\'e}cutables\dots {}}{71}{section.4.3}
 \contentsline {section}{\numberline {4.4}Installer un logiciel ou un jeu sous Ubuntu}{72}{section.4.4}
 \select@language {english}
@@ -162,15 +162,15 @@
 \contentsline {section}{\numberline {4.6}Maintenir son syst\IeC {\`e}me \IeC {\`a} jour}{87}{section.4.6}
 \contentsline {chapter}{\numberline {5}Rendre votre distribution Ubuntu pleinement fonctionnelle}{91}{chapter.5}
 \contentsline {section}{\numberline {5.1}Que faire si certaines applications install\IeC {\'e}es par d\IeC {\'e}faut sont en anglais ?}{92}{section.5.1}
-\contentsline {section}{\numberline {5.2}Pourquoi je ne peux lire directement ni mes DIVX, ni mes MP3 ?}{93}{section.5.2}
+\contentsline {section}{\numberline {5.2}Pourquoi je ne peux lire directement ni mes DIVX, ni mes MP3 ?}{94}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Les faits}{94}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Euh\dots {} cela signifie que ce n'est pas possible de lire des fichiers audios/vid\IeC {\'e}os non-libres ?}{95}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Mes DVD commerciaux ?}{97}{subsection.5.2.3}
 \contentsline {section}{\numberline {5.3}Bon, on peut passer \IeC {\`a} Flash maintenant ?}{97}{section.5.3}
-\contentsline {section}{\numberline {5.4}Dansons la javanaise !}{98}{section.5.4}
-\contentsline {section}{\numberline {5.5}Mais que fait la police ?}{99}{section.5.5}
+\contentsline {section}{\numberline {5.4}Dansons la javanaise !}{99}{section.5.4}
+\contentsline {section}{\numberline {5.5}Mais que fait la police ?}{100}{section.5.5}
 \contentsline {section}{\numberline {5.6}Pouvoir lire tous les types d'archives}{100}{section.5.6}
-\contentsline {section}{\numberline {5.7}Pourquoi y-a-t-il un \IeC {\'e}cart entre mon heure sous Ubuntu et sous Windows ?}{100}{section.5.7}
+\contentsline {section}{\numberline {5.7}Pourquoi y-a-t-il un \IeC {\'e}cart entre mon heure sous Ubuntu et sous Windows ?}{101}{section.5.7}
 \select@language {english}
 \select@language {french}
 \select@language {english}
@@ -178,9 +178,9 @@
 \select@language {english}
 \select@language {french}
 \contentsline {section}{\numberline {5.8}Je cherche sans succ\IeC {\`e}s un outil de d\IeC {\'e}fragmentation. O\IeC {\`u} se trouve-t-il ?}{102}{section.5.8}
-\contentsline {section}{\numberline {5.9}Ai-je besoin d'un antivirus ?}{103}{section.5.9}
-\contentsline {section}{\numberline {5.10}Bon, un firewall alors ?}{105}{section.5.10}
-\contentsline {section}{\numberline {5.11}Pav\IeC {\'e} num\IeC {\'e}rique}{106}{section.5.11}
+\contentsline {section}{\numberline {5.9}Ai-je besoin d'un antivirus ?}{104}{section.5.9}
+\contentsline {section}{\numberline {5.10}Bon, un firewall alors ?}{106}{section.5.10}
+\contentsline {section}{\numberline {5.11}Pav\IeC {\'e} num\IeC {\'e}rique}{107}{section.5.11}
 \select@language {english}
 \select@language {french}
 \select@language {english}
@@ -333,10 +333,10 @@
 \contentsline {subsubsection}{nVIDIA}{183}{section*.113}
 \contentsline {subsubsection}{Intel}{184}{section*.114}
 \contentsline {subsection}{\numberline {7.3.2}Installation d'un driver propri\IeC {\'e}taire}{184}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}Activer le bureau en 3D}{185}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Pr\IeC {\'e}sentation}{185}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Installation}{186}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Utilisation}{187}{subsection.7.4.3}
+\contentsline {section}{\numberline {7.4}Activer le bureau en 3D}{184}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Pr\IeC {\'e}sentation}{184}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Installation}{185}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Utilisation}{186}{subsection.7.4.3}
 \contentsline {subsection}{\numberline {7.4.4}Comment avoir plus de choix ?}{188}{subsection.7.4.4}
 \contentsline {section}{\numberline {7.5}Optimisation selon le processeur}{189}{section.7.5}
 \select@language {english}
@@ -585,63 +585,68 @@
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.8.4}gFTP}{213}{subsection.8.8.4}
+\contentsline {subsection}{\numberline {8.8.4}Giver}{213}{subsection.8.8.4}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.8.5}Liferea}{214}{subsection.8.8.5}
+\contentsline {subsection}{\numberline {8.8.5}gFTP}{214}{subsection.8.8.5}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.8.6}Mozilla Firefox}{214}{subsection.8.8.6}
+\contentsline {subsection}{\numberline {8.8.6}Liferea}{214}{subsection.8.8.6}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.8.7}Mozilla Thunderbird}{214}{subsection.8.8.7}
+\contentsline {subsection}{\numberline {8.8.7}Mozilla Firefox}{214}{subsection.8.8.7}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.8.8}Pidgin -- anciennement Gaim}{215}{subsection.8.8.8}
+\contentsline {subsection}{\numberline {8.8.8}Mozilla Thunderbird}{215}{subsection.8.8.8}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {section}{\numberline {8.9}Utiles}{215}{section.8.9}
-\contentsline {subsection}{\numberline {8.9.1}GNOME-schedule}{215}{subsection.8.9.1}
+\contentsline {subsection}{\numberline {8.8.9}Pidgin -- anciennement Gaim}{215}{subsection.8.8.9}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.9.2}Baobab}{216}{subsection.8.9.2}
+\contentsline {section}{\numberline {8.9}Utiles}{216}{section.8.9}
+\contentsline {subsection}{\numberline {8.9.1}Baobab}{216}{subsection.8.9.1}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.9.3}Brasero}{216}{subsection.8.9.3}
+\contentsline {subsection}{\numberline {8.9.2}Brasero}{216}{subsection.8.9.2}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.9.4}Comix}{217}{subsection.8.9.4}
+\contentsline {subsection}{\numberline {8.9.3}Comix}{216}{subsection.8.9.3}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.9.5}FreeMind}{217}{subsection.8.9.5}
+\contentsline {subsection}{\numberline {8.9.4}FreeMind}{217}{subsection.8.9.4}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.9.6}F-Spot}{217}{subsection.8.9.6}
+\contentsline {subsection}{\numberline {8.9.5}F-Spot}{217}{subsection.8.9.5}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.9.7}GCstar}{218}{subsection.8.9.7}
+\contentsline {subsection}{\numberline {8.9.6}GCstar}{218}{subsection.8.9.6}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\select@language {french}
+\contentsline {subsection}{\numberline {8.9.7}GNOME-schedule}{218}{subsection.8.9.7}
 \select@language {english}
 \select@language {french}
 \select@language {english}
@@ -661,7 +666,7 @@
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.9.11}GShutdown}{219}{subsection.8.9.11}
+\contentsline {subsection}{\numberline {8.9.11}GShutdown}{220}{subsection.8.9.11}
 \select@language {english}
 \select@language {french}
 \select@language {english}
@@ -701,7 +706,7 @@
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.10.4}Kdenlive}{222}{subsection.8.10.4}
+\contentsline {subsection}{\numberline {8.10.4}Kdenlive}{223}{subsection.8.10.4}
 \select@language {english}
 \select@language {french}
 \select@language {english}
@@ -713,12 +718,17 @@
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.10.6}Mplayer}{223}{subsection.8.10.6}
+\contentsline {subsection}{\numberline {8.10.6}Miro}{223}{subsection.8.10.6}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {subsection}{\numberline {8.10.7}VLC}{224}{subsection.8.10.7}
+\contentsline {subsection}{\numberline {8.10.7}Mplayer}{224}{subsection.8.10.7}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\select@language {french}
+\contentsline {subsection}{\numberline {8.10.8}VLC}{224}{subsection.8.10.8}
 \select@language {english}
 \select@language {french}
 \select@language {english}
@@ -1294,36 +1304,36 @@
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {chapter}{\numberline {10}Pour aller plus loin}{275}{chapter.10}
-\contentsline {section}{\numberline {10.1}\IeC {\`A} quoi sert r\IeC {\'e}ellement un syst\IeC {\`e}me d'exploitation ?}{276}{section.10.1}
-\contentsline {section}{\numberline {10.2}Driver, kernel, et d\IeC {\'e}marrage\dots {}}{276}{section.10.2}
-\contentsline {section}{\numberline {10.3}L'arborescence des fichiers}{278}{section.10.3}
-\contentsline {section}{\numberline {10.4}O\IeC {\`u} sont enregistr\IeC {\'e}es mes pr\IeC {\'e}f\IeC {\'e}rences ?}{282}{section.10.4}
-\contentsline {section}{\numberline {10.5}Diff\IeC {\'e}rences entre serveur graphique, environnement de bureau et gestionnaire de fen\IeC {\^e}tres}{283}{section.10.5}
-\contentsline {section}{\numberline {10.6}Quelles diff\IeC {\'e}rences entre Ubuntu / Kubuntu / Edubuntu / Xubuntu ?}{286}{section.10.6}
-\contentsline {section}{\numberline {10.7}GTK, QT, les biblioth\IeC {\`e}ques, c'est quoi ?}{287}{section.10.7}
+\contentsline {chapter}{\numberline {10}Pour aller plus loin}{277}{chapter.10}
+\contentsline {section}{\numberline {10.1}\IeC {\`A} quoi sert r\IeC {\'e}ellement un syst\IeC {\`e}me d'exploitation ?}{278}{section.10.1}
+\contentsline {section}{\numberline {10.2}Driver, kernel, et d\IeC {\'e}marrage\dots {}}{278}{section.10.2}
+\contentsline {section}{\numberline {10.3}L'arborescence des fichiers}{280}{section.10.3}
+\contentsline {section}{\numberline {10.4}O\IeC {\`u} sont enregistr\IeC {\'e}es mes pr\IeC {\'e}f\IeC {\'e}rences ?}{284}{section.10.4}
+\contentsline {section}{\numberline {10.5}Diff\IeC {\'e}rences entre serveur graphique, environnement de bureau et gestionnaire de fen\IeC {\^e}tres}{285}{section.10.5}
+\contentsline {section}{\numberline {10.6}Quelles diff\IeC {\'e}rences entre Ubuntu / Kubuntu / Edubuntu / Xubuntu ?}{288}{section.10.6}
+\contentsline {section}{\numberline {10.7}GTK, QT, les biblioth\IeC {\`e}ques, c'est quoi ?}{289}{section.10.7}
 \select@language {english}
 \select@language {french}
-\contentsline {section}{\numberline {10.8}Compl\IeC {\'e}ments sur les utilisateurs et les droits}{288}{section.10.8}
-\select@language {english}
-\select@language {french}
-\select@language {english}
-\select@language {french}
-\select@language {english}
-\select@language {french}
-\contentsline {section}{\numberline {10.9}Un shell, \IeC {\c c}a console ?}{289}{section.10.9}
-\select@language {english}
-\select@language {french}
-\contentsline {section}{\numberline {10.10}Les run levels}{291}{section.10.10}
-\contentsline {subsection}{\numberline {10.10.1}Signification}{291}{subsection.10.10.1}
-\select@language {english}
-\select@language {french}
-\contentsline {subsection}{\numberline {10.10.2}Les scripts}{292}{subsection.10.10.2}
+\contentsline {section}{\numberline {10.8}Compl\IeC {\'e}ments sur les utilisateurs et les droits}{290}{section.10.8}
 \select@language {english}
 \select@language {french}
 \select@language {english}
 \select@language {french}
-\contentsline {chapter}{\numberline {11}Et maintenant ?}{295}{chapter.11}
-\contentsline {chapter}{Glossaire}{297}{chapter*.116}
-\contentsline {chapter}{Index}{307}{chapter*.116}
-\contentsline {chapter}{Table des mati\`eres}{313}{chapter*.117}
+\select@language {english}
+\select@language {french}
+\contentsline {section}{\numberline {10.9}Un shell, \IeC {\c c}a console ?}{291}{section.10.9}
+\select@language {english}
+\select@language {french}
+\contentsline {section}{\numberline {10.10}Les run levels}{293}{section.10.10}
+\contentsline {subsection}{\numberline {10.10.1}Signification}{293}{subsection.10.10.1}
+\select@language {english}
+\select@language {french}
+\contentsline {subsection}{\numberline {10.10.2}Les scripts}{294}{subsection.10.10.2}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\select@language {french}
+\contentsline {chapter}{\numberline {11}Et maintenant ?}{297}{chapter.11}
+\contentsline {chapter}{Glossaire}{299}{chapter*.116}
+\contentsline {chapter}{Index}{309}{chapter*.116}
+\contentsline {chapter}{Table des mati\`eres}{315}{chapter*.117}

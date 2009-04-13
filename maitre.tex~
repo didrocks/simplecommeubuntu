@@ -7,6 +7,7 @@
 \frontmatter % Intro (numéro de page en chiffres romains)
 \include{framabook/titre}
 \sommaire
+\include{intro/preface/preface_Erwan}
 \include{intro/preface/preface}
 \include{intro/notrepublic/notrepublic}
 \include{intro/planlivre/planlivre}
