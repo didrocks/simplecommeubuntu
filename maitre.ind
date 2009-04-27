@@ -2,466 +2,460 @@
 {\large\sffamily\bfseries\shadowbox{A}\hfill}\nopagebreak
 
   \item Acc\IeC {\'e}l\IeC {\'e}ration graphique
-    \subitem Driver \dotfill  \hyperpage{179, 180}, 
-		\hyperpage{186, 187}
-    \subitem Pilote \dotfill  \hyperpage{179, 180}, 
-		\hyperpage{186, 187}
-  \item Antivirus \dotfill  \hyperpage{102, 103}
+    \subitem Driver \dotfill  \hyperpage{183, 184}, \hyperpage{189}, 
+		\hyperpage{191}
+    \subitem Pilote \dotfill  \hyperpage{183, 184}, \hyperpage{189}, 
+		\hyperpage{191}
+  \item Antivirus \dotfill  \hyperpage{104}, \hyperpage{106}
   \item Applet \dotfill  \hyperpage{39}, \hyperpage{41--43}, 
-		\hyperpage{61, 62}, \hyperpage{64}, \hyperpage{75}, 
-		\hyperpage{85}, \hyperpage{97}, \hyperpage{114}, 
-		\hyperpage{124}, \hyperpage{135}, \hyperpage{138}, 
-		\hyperpage{209}, \hyperpage{217}
-  \item Avahi \dotfill  \hyperpage{22}, \hyperpage{64}, \hyperpage{66}, 
-		\hyperpage{197}
+		\hyperpage{61, 62}, \hyperpage{66}, \hyperpage{77}, 
+		\hyperpage{99, 100}, \hyperpage{118}, \hyperpage{128}, 
+		\hyperpage{140}, \hyperpage{142, 143}, \hyperpage{213}, 
+		\hyperpage{222}
+  \item Avahi \dotfill  \hyperpage{23}, \hyperpage{66}, \hyperpage{69}, 
+		\hyperpage{201}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{B}\hfill}\nopagebreak
 
   \item BIOS \dotfill  \hyperpage{18, 19}, \hyperpage{23}, 
-		\hyperpage{98--100}
-  \item Boot loader \dotfill  \hyperpage{10}, \hyperpage{24}
+		\hyperpage{101, 102}
+  \item Boot loader \dotfill  \hyperpage{10}, \hyperpage{23}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{C}\hfill}\nopagebreak
 
-  \item Chargeur d'amorce \dotfill  \hyperpage{24}
-  \item Codec \dotfill  \hyperpage{79}, \hyperpage{92--95}, 
-		\hyperpage{234}
-  \item Configuration \dotfill  \hyperpage{52}
+  \item Chargeur d'amorce \dotfill  \hyperpage{23}
+  \item Codec \dotfill  \hyperpage{81}, \hyperpage{94--97}, 
+		\hyperpage{240}
+  \item Configuration \dotfill  \hyperpage{51}
   \item Configuration R\IeC {\'e}seau \dotfill  \hyperpage{47}
-  \item Connexion filaire \dotfill  \hyperpage{64--66}
-  \item Connexion r\IeC {\'e}seau \dotfill  \hyperpage{22}, 
-		\hyperpage{64}, \hyperpage{66}, \hyperpage{197}
-  \item Connexion sans fil \dotfill  \hyperpage{64}, \hyperpage{67}, 
-		\hyperpage{77}, \hyperpage{93}, \hyperpage{273}, 
-		\hyperpage{292}
-  \item Console \dotfill  \hyperpage{48}, \hyperpage{70}, 
-		\hyperpage{80}, \hyperpage{100}, \hyperpage{104}, 
-		\hyperpage{127}, \hyperpage{150}, \hyperpage{168, 169}, 
-		\hyperpage{186--188}, \hyperpage{191, 192}, 
-		\hyperpage{194}, \hyperpage{217}, \hyperpage{222}, 
-		\hyperpage{225}, \hyperpage{231}, \hyperpage{248, 249}, 
-		\hyperpage{268}, \hyperpage{285, 286}
+  \item Connexion filaire \dotfill  \hyperpage{66--68}
+  \item Connexion r\IeC {\'e}seau \dotfill  \hyperpage{23}, 
+		\hyperpage{66--69}, \hyperpage{201}
+  \item Connexion sans fil \dotfill  \hyperpage{66}, \hyperpage{69}, 
+		\hyperpage{79}, \hyperpage{95}, \hyperpage{281}, 
+		\hyperpage{300}
+  \item Console \dotfill  \hyperpage{49}, \hyperpage{72}, 
+		\hyperpage{82}, \hyperpage{102}, \hyperpage{107}, 
+		\hyperpage{131}, \hyperpage{155}, \hyperpage{172--174}, 
+		\hyperpage{189--191}, \hyperpage{195, 196}, 
+		\hyperpage{198}, \hyperpage{222}, \hyperpage{228}, 
+		\hyperpage{232}, \hyperpage{237}, \hyperpage{254, 255}, 
+		\hyperpage{274}, \hyperpage{293, 294}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{D}\hfill}\nopagebreak
 
-  \item D\IeC {\'e}fragmentation \dotfill  \hyperpage{100, 101}
+  \item D\IeC {\'e}fragmentation \dotfill  \hyperpage{102}, 
+		\hyperpage{104}
   \item D\IeC {\'e}mon \dotfill  \hyperpage{47}, \hyperpage{57}, 
-		\hyperpage{75}, \hyperpage{103}, \hyperpage{136}, 
-		\hyperpage{197}, \hyperpage{212}, \hyperpage{269}, 
-		\hyperpage{287--289}
-  \item DHCP \dotfill  \hyperpage{22}, \hyperpage{64}, \hyperpage{66}
+		\hyperpage{77}, \hyperpage{106}, \hyperpage{140, 141}, 
+		\hyperpage{201}, \hyperpage{219}, \hyperpage{275}, 
+		\hyperpage{295--297}
+  \item DHCP \dotfill  \hyperpage{23}, \hyperpage{66}, \hyperpage{68}
   \item Drag'n'Drop \dotfill  \hyperpage{42}, \hyperpage{62}, 
-		\hyperpage{107, 108}, \hyperpage{111, 112}, 
-		\hyperpage{119}, \hyperpage{126}, \hyperpage{132}, 
-		\hyperpage{139}, \hyperpage{145}, \hyperpage{159}, 
-		\hyperpage{166, 167}, \hyperpage{184}, \hyperpage{192}, 
-		\hyperpage{194}, \hyperpage{234}, \hyperpage{248, 249}
-  \item Driver \dotfill  \hyperpage{12, 13}, \hyperpage{56}, 
-		\hyperpage{71}, \hyperpage{75}, \hyperpage{77}, 
-		\hyperpage{93}, \hyperpage{172}, \hyperpage{179--182}, 
-		\hyperpage{186, 187}, \hyperpage{222}, 
-		\hyperpage{272, 273}
-  \item DRM \dotfill  \hyperpage{4}, \hyperpage{94}
+		\hyperpage{111, 112}, \hyperpage{115, 116}, 
+		\hyperpage{123}, \hyperpage{130}, \hyperpage{136}, 
+		\hyperpage{143}, \hyperpage{149}, \hyperpage{163}, 
+		\hyperpage{171, 172}, \hyperpage{188}, \hyperpage{196}, 
+		\hyperpage{198}, \hyperpage{214}, \hyperpage{240}, 
+		\hyperpage{254, 255}
+  \item Driver \dotfill  \hyperpage{12, 13}, \hyperpage{57}, 
+		\hyperpage{73}, \hyperpage{77}, \hyperpage{79}, 
+		\hyperpage{95}, \hyperpage{176}, \hyperpage{183--185}, 
+		\hyperpage{189}, \hyperpage{191}, \hyperpage{228}, 
+		\hyperpage{280, 281}
+  \item DRM \dotfill  \hyperpage{4}, \hyperpage{97}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{E}\hfill}\nopagebreak
 
-  \item E17 \dotfill  \hyperpage{279}, \hyperpage{281}
+  \item E17 \dotfill  \hyperpage{287}, \hyperpage{289}
   \item Environnement graphique
     \subitem Applet \dotfill  \hyperpage{39}, \hyperpage{41--43}, 
-		\hyperpage{61, 62}, \hyperpage{64}, \hyperpage{75}, 
-		\hyperpage{85}, \hyperpage{97}, \hyperpage{114}, 
-		\hyperpage{124}, \hyperpage{135}, \hyperpage{138}, 
-		\hyperpage{209}, \hyperpage{217}
-    \subitem E17 \dotfill  \hyperpage{279}, \hyperpage{281}
-    \subitem FluxBox \dotfill  \hyperpage{279}, \hyperpage{281}
+		\hyperpage{61, 62}, \hyperpage{66}, \hyperpage{77}, 
+		\hyperpage{99, 100}, \hyperpage{118}, \hyperpage{128}, 
+		\hyperpage{140}, \hyperpage{142, 143}, \hyperpage{213}, 
+		\hyperpage{222}
+    \subitem E17 \dotfill  \hyperpage{287}, \hyperpage{289}
+    \subitem FluxBox \dotfill  \hyperpage{287}, \hyperpage{289}
     \subitem GNOME \dotfill  \hyperpage{5}, \hyperpage{8, 9}, 
 		\hyperpage{39, 40}, \hyperpage{43}, \hyperpage{46}, 
-		\hyperpage{48}, \hyperpage{50}, \hyperpage{58}, 
-		\hyperpage{60}, \hyperpage{69}, \hyperpage{75}, 
-		\hyperpage{95}, \hyperpage{104}, \hyperpage{107, 108}, 
-		\hyperpage{110}, \hyperpage{113}, \hyperpage{119, 120}, 
-		\hyperpage{127}, \hyperpage{132}, \hyperpage{138}, 
-		\hyperpage{140}, \hyperpage{142}, \hyperpage{146}, 
-		\hyperpage{150}, \hyperpage{154}, \hyperpage{156}, 
-		\hyperpage{172}, \hyperpage{188}, \hyperpage{197, 198}, 
-		\hyperpage{206, 207}, \hyperpage{210, 211}, 
-		\hyperpage{218, 219}, \hyperpage{231}, \hyperpage{246}, 
-		\hyperpage{249}, \hyperpage{266}, \hyperpage{278--284}
+		\hyperpage{49}, \hyperpage{51}, \hyperpage{58}, 
+		\hyperpage{77}, \hyperpage{97}, \hyperpage{107}, 
+		\hyperpage{111, 112}, \hyperpage{114}, \hyperpage{117}, 
+		\hyperpage{123, 124}, \hyperpage{131}, \hyperpage{136}, 
+		\hyperpage{142, 143}, \hyperpage{146}, \hyperpage{150}, 
+		\hyperpage{153}, \hyperpage{158--160}, \hyperpage{176}, 
+		\hyperpage{192}, \hyperpage{201, 202}, 
+		\hyperpage{210--212}, \hyperpage{215, 216}, 
+		\hyperpage{223--225}, \hyperpage{238}, \hyperpage{253}, 
+		\hyperpage{255}, \hyperpage{273}, \hyperpage{286--292}
     \subitem KDE \dotfill  \hyperpage{37}, \hyperpage{39}, 
-		\hyperpage{69}, \hyperpage{279--284}
+		\hyperpage{71}, \hyperpage{287--292}
     \subitem Personnalisation \dotfill  \hyperpage{39, 40}, 
-		\hyperpage{48}, \hyperpage{75}, \hyperpage{104}, 
-		\hyperpage{106--111}, \hyperpage{138}, \hyperpage{156}, 
-		\hyperpage{162, 163}, \hyperpage{188}, \hyperpage{266}, 
-		\hyperpage{278}, \hyperpage{282}
+		\hyperpage{48}, \hyperpage{77}, \hyperpage{107}, 
+		\hyperpage{110--115}, \hyperpage{142, 143}, 
+		\hyperpage{160}, \hyperpage{167}, \hyperpage{192}, 
+		\hyperpage{273}, \hyperpage{286}, \hyperpage{290}
     \subitem Th\IeC {\`e}me \dotfill  \hyperpage{40}, \hyperpage{48}, 
-		\hyperpage{106--111}, \hyperpage{162, 163}, 
-		\hyperpage{278}, \hyperpage{282}
-    \subitem Window Maker \dotfill  \hyperpage{279}, \hyperpage{281}
-    \subitem Xfce \dotfill  \hyperpage{279}, \hyperpage{281--283}
-  \item Ethernet \dotfill  \hyperpage{64--66}
+		\hyperpage{110--115}, \hyperpage{167}, \hyperpage{286}, 
+		\hyperpage{290}
+    \subitem Window Maker \dotfill  \hyperpage{287}, \hyperpage{289}
+    \subitem Xfce \dotfill  \hyperpage{287}, \hyperpage{289--291}
+  \item Ethernet \dotfill  \hyperpage{66--68}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{F}\hfill}\nopagebreak
 
   \item Fichier de configuration \dotfill  \hyperpage{58}, 
-		\hyperpage{75}, \hyperpage{79, 80}, \hyperpage{83, 84}, 
-		\hyperpage{104}, \hyperpage{115}, \hyperpage{186}, 
-		\hyperpage{212}, \hyperpage{266}, \hyperpage{277--280}, 
-		\hyperpage{283}, \hyperpage{286}
-  \item Firewall \dotfill  \hyperpage{102--104}
-  \item FluxBox \dotfill  \hyperpage{279}, \hyperpage{281}
-  \item Fork \dotfill  \hyperpage{195}, \hyperpage{240}
+		\hyperpage{78}, \hyperpage{82}, \hyperpage{85, 86}, 
+		\hyperpage{106}, \hyperpage{119}, \hyperpage{190}, 
+		\hyperpage{219}, \hyperpage{273}, \hyperpage{285--288}, 
+		\hyperpage{291}, \hyperpage{294}
+  \item Firewall \dotfill  \hyperpage{104}, \hyperpage{106}
+  \item FluxBox \dotfill  \hyperpage{287}, \hyperpage{289}
+  \item Fork \dotfill  \hyperpage{199}, \hyperpage{246}
   \item Free Software Foundation \dotfill  \hyperpage{2}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{G}\hfill}\nopagebreak
 
-  \item GDN \dotfill  \hyperpage{4}, \hyperpage{94}
+  \item GDN \dotfill  \hyperpage{4}, \hyperpage{97}
   \item Geek \dotfill  \hyperpage{3}, \hyperpage{5}
   \item Glisser-D\IeC {\'e}poser \dotfill  \hyperpage{42}, 
-		\hyperpage{62}, \hyperpage{107, 108}, 
-		\hyperpage{111, 112}, \hyperpage{119}, \hyperpage{126}, 
-		\hyperpage{132}, \hyperpage{139}, \hyperpage{145}, 
-		\hyperpage{159}, \hyperpage{166, 167}, \hyperpage{184}, 
-		\hyperpage{192}, \hyperpage{194}, \hyperpage{234}, 
-		\hyperpage{248, 249}
+		\hyperpage{62}, \hyperpage{111, 112}, 
+		\hyperpage{115, 116}, \hyperpage{123}, \hyperpage{130}, 
+		\hyperpage{136}, \hyperpage{143}, \hyperpage{149}, 
+		\hyperpage{163}, \hyperpage{171, 172}, \hyperpage{188}, 
+		\hyperpage{196}, \hyperpage{198}, \hyperpage{214}, 
+		\hyperpage{240}, \hyperpage{254, 255}
   \item GNOME \dotfill  \hyperpage{5}, \hyperpage{8, 9}, 
 		\hyperpage{39, 40}, \hyperpage{43}, \hyperpage{46}, 
-		\hyperpage{48}, \hyperpage{50}, \hyperpage{58}, 
-		\hyperpage{60}, \hyperpage{69}, \hyperpage{75}, 
-		\hyperpage{95}, \hyperpage{104}, \hyperpage{107, 108}, 
-		\hyperpage{110}, \hyperpage{113}, \hyperpage{119, 120}, 
-		\hyperpage{127}, \hyperpage{132}, \hyperpage{138}, 
-		\hyperpage{140}, \hyperpage{142}, \hyperpage{146}, 
-		\hyperpage{150}, \hyperpage{154}, \hyperpage{156}, 
-		\hyperpage{172}, \hyperpage{188}, \hyperpage{197, 198}, 
-		\hyperpage{206, 207}, \hyperpage{210, 211}, 
-		\hyperpage{218, 219}, \hyperpage{231}, \hyperpage{246}, 
-		\hyperpage{249}, \hyperpage{266}, \hyperpage{278--284}
+		\hyperpage{49}, \hyperpage{51}, \hyperpage{58}, 
+		\hyperpage{77}, \hyperpage{97}, \hyperpage{107}, 
+		\hyperpage{111, 112}, \hyperpage{114}, \hyperpage{117}, 
+		\hyperpage{123, 124}, \hyperpage{131}, \hyperpage{136}, 
+		\hyperpage{142, 143}, \hyperpage{146}, \hyperpage{150}, 
+		\hyperpage{153}, \hyperpage{158--160}, \hyperpage{176}, 
+		\hyperpage{192}, \hyperpage{201, 202}, 
+		\hyperpage{210--212}, \hyperpage{215, 216}, 
+		\hyperpage{223--225}, \hyperpage{238}, \hyperpage{253}, 
+		\hyperpage{255}, \hyperpage{273}, \hyperpage{286--292}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{I}\hfill}\nopagebreak
 
-  \item Ic\IeC {\^o}ne \dotfill  \hyperpage{17}, \hyperpage{22}, 
-		\hyperpage{60}, \hyperpage{86}, \hyperpage{109}, 
-		\hyperpage{114}, \hyperpage{122}, \hyperpage{124, 125}, 
-		\hyperpage{151}, \hyperpage{164}, \hyperpage{172}, 
-		\hyperpage{192, 193}, \hyperpage{195}, \hyperpage{276}
+  \item Ic\IeC {\^o}ne \dotfill  \hyperpage{17}, \hyperpage{23}, 
+		\hyperpage{58, 59}, \hyperpage{113}, \hyperpage{118}, 
+		\hyperpage{126}, \hyperpage{128, 129}, \hyperpage{155}, 
+		\hyperpage{168}, \hyperpage{176}, \hyperpage{196, 197}, 
+		\hyperpage{199}, \hyperpage{284}
   \item Identifiant \dotfill  \hyperpage{30}, \hyperpage{36--38}, 
-		\hyperpage{111}, \hyperpage{188}, \hyperpage{277, 278}, 
-		\hyperpage{284}
+		\hyperpage{115}, \hyperpage{192}, \hyperpage{285, 286}, 
+		\hyperpage{292}
   \item Internet \dotfill  \textsc{xii}, \hyperpage{13}, 
 		\hyperpage{21, 22}, \hyperpage{32}, \hyperpage{39}, 
-		\hyperpage{44}, \hyperpage{52, 53}, \hyperpage{55}, 
-		\hyperpage{57}, \hyperpage{60}, \hyperpage{63, 64}, 
-		\hyperpage{66, 67}, \hyperpage{70}, \hyperpage{72}, 
-		\hyperpage{90}, \hyperpage{97}, \hyperpage{99}, 
-		\hyperpage{102}, \hyperpage{104}, \hyperpage{107}, 
-		\hyperpage{142}, \hyperpage{156}, \hyperpage{158}, 
-		\hyperpage{167}, \hyperpage{190--192}, 
-		\hyperpage{196--198}, \hyperpage{206}, 
-		\hyperpage{208, 209}, \hyperpage{214}, \hyperpage{223}, 
-		\hyperpage{244}, \hyperpage{258}, \hyperpage{268}, 
-		\hyperpage{273}, \hyperpage{286}
-  \item IP \dotfill  \hyperpage{64}, \hyperpage{66}
+		\hyperpage{44}, \hyperpage{51}, \hyperpage{53--55}, 
+		\hyperpage{57, 58}, \hyperpage{65--67}, \hyperpage{69}, 
+		\hyperpage{73}, \hyperpage{92}, \hyperpage{100, 101}, 
+		\hyperpage{104}, \hyperpage{106}, \hyperpage{111}, 
+		\hyperpage{146}, \hyperpage{160--162}, \hyperpage{172}, 
+		\hyperpage{194--196}, \hyperpage{200--202}, 
+		\hyperpage{210}, \hyperpage{212}, \hyperpage{214}, 
+		\hyperpage{218}, \hyperpage{229}, \hyperpage{250}, 
+		\hyperpage{264}, \hyperpage{274}, \hyperpage{281}, 
+		\hyperpage{294}
+  \item IP \dotfill  \hyperpage{66--68}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{J}\hfill}\nopagebreak
 
   \item Jargon
     \subitem Geek \dotfill  \hyperpage{3}, \hyperpage{5}
-    \subitem Troll \dotfill  \hyperpage{280}
+    \subitem Troll \dotfill  \hyperpage{288}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{K}\hfill}\nopagebreak
 
-  \item KDE \dotfill  \hyperpage{37}, \hyperpage{39}, \hyperpage{69}, 
-		\hyperpage{279--284}
+  \item KDE \dotfill  \hyperpage{37}, \hyperpage{39}, \hyperpage{71}, 
+		\hyperpage{287--292}
   \item Kernel \dotfill  \hyperpage{4, 5}, \hyperpage{8}, 
-		\hyperpage{86}, \hyperpage{185, 186}, 
-		\hyperpage{272, 273}
+		\hyperpage{89}, \hyperpage{189}, \hyperpage{280, 281}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{L}\hfill}\nopagebreak
 
   \item L'Internet \dotfill  \textsc{xii}, \hyperpage{13}, 
 		\hyperpage{21, 22}, \hyperpage{32}, \hyperpage{39}, 
-		\hyperpage{44}, \hyperpage{52, 53}, \hyperpage{55}, 
-		\hyperpage{57}, \hyperpage{60}, \hyperpage{63, 64}, 
-		\hyperpage{66, 67}, \hyperpage{70}, \hyperpage{72}, 
-		\hyperpage{90}, \hyperpage{97}, \hyperpage{99}, 
-		\hyperpage{102}, \hyperpage{104}, \hyperpage{107}, 
-		\hyperpage{142}, \hyperpage{156}, \hyperpage{158}, 
-		\hyperpage{167}, \hyperpage{190--192}, 
-		\hyperpage{196--198}, \hyperpage{206}, 
-		\hyperpage{208, 209}, \hyperpage{214}, \hyperpage{223}, 
-		\hyperpage{244}, \hyperpage{258}, \hyperpage{268}, 
-		\hyperpage{273}, \hyperpage{286}
+		\hyperpage{44}, \hyperpage{51}, \hyperpage{53--55}, 
+		\hyperpage{57, 58}, \hyperpage{65--67}, \hyperpage{69}, 
+		\hyperpage{73}, \hyperpage{92}, \hyperpage{100, 101}, 
+		\hyperpage{104}, \hyperpage{106}, \hyperpage{111}, 
+		\hyperpage{146}, \hyperpage{160--162}, \hyperpage{172}, 
+		\hyperpage{194--196}, \hyperpage{200--202}, 
+		\hyperpage{210}, \hyperpage{212}, \hyperpage{214}, 
+		\hyperpage{218}, \hyperpage{229}, \hyperpage{250}, 
+		\hyperpage{264}, \hyperpage{274}, \hyperpage{281}, 
+		\hyperpage{294}
   \item Libre \dotfill  \hyperpage{1--4}, \hyperpage{7}, \hyperpage{12}, 
-		\hyperpage{16}, \hyperpage{77, 78}, \hyperpage{92--95}, 
-		\hyperpage{97, 98}, \hyperpage{102}, 
-		\hyperpage{179, 180}, \hyperpage{190}, 
-		\hyperpage{197--199}, \hyperpage{202}, \hyperpage{205}, 
-		\hyperpage{222}, \hyperpage{225, 226}, \hyperpage{229}, 
-		\hyperpage{240}, \hyperpage{243}, \hyperpage{255}, 
-		\hyperpage{262}, \hyperpage{266}, \hyperpage{273}, 
-		\hyperpage{291, 292}
+		\hyperpage{16}, \hyperpage{79, 80}, \hyperpage{94--96}, 
+		\hyperpage{98}, \hyperpage{100}, \hyperpage{104, 105}, 
+		\hyperpage{183, 184}, \hyperpage{194}, 
+		\hyperpage{201--203}, \hyperpage{206}, \hyperpage{209}, 
+		\hyperpage{228}, \hyperpage{231, 232}, 
+		\hyperpage{235, 236}, \hyperpage{246}, \hyperpage{249}, 
+		\hyperpage{261}, \hyperpage{269}, \hyperpage{272}, 
+		\hyperpage{281}, \hyperpage{299, 300}
   \item Licence Libre \dotfill  \textsc{xiv}
-  \item Logiciel \dotfill  \hyperpage{79}, \hyperpage{92}
+  \item Logiciel \dotfill  \hyperpage{81}, \hyperpage{94}
   \item Logiciel Libre \dotfill  \hyperpage{2--4}, \hyperpage{7}, 
-		\hyperpage{92}, \hyperpage{94}, \hyperpage{102}, 
-		\hyperpage{205}, \hyperpage{229}, \hyperpage{262}
+		\hyperpage{95, 96}, \hyperpage{104, 105}, 
+		\hyperpage{209}, \hyperpage{235, 236}, \hyperpage{269}
   \item Logiciel Propri\IeC {\'e}taire \dotfill  \hyperpage{1, 2}, 
-		\hyperpage{7}, \hyperpage{56}, \hyperpage{93}, 
-		\hyperpage{98}, \hyperpage{154}, \hyperpage{179--181}, 
-		\hyperpage{186}, \hyperpage{222}
+		\hyperpage{7}, \hyperpage{57}, \hyperpage{95}, 
+		\hyperpage{100}, \hyperpage{158}, \hyperpage{183, 184}, 
+		\hyperpage{189}, \hyperpage{228}
   \item Login \dotfill  \hyperpage{30}, \hyperpage{36--38}, 
-		\hyperpage{111}, \hyperpage{188}, \hyperpage{277, 278}, 
-		\hyperpage{284}
+		\hyperpage{115}, \hyperpage{192}, \hyperpage{285, 286}, 
+		\hyperpage{292}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{M}\hfill}\nopagebreak
 
-  \item M\IeC {\'e}moire vive \dotfill  \hyperpage{18, 19}, 
-		\hyperpage{29}
-  \item Masque de sous-r\IeC {\'e}seau \dotfill  \hyperpage{66}
-  \item MBR \dotfill  \hyperpage{23, 24}, \hyperpage{272}
+  \item M\IeC {\'e}moire vive \dotfill  \hyperpage{17}, \hyperpage{19}, 
+		\hyperpage{27, 28}
+  \item Masque de sous-r\IeC {\'e}seau \dotfill  \hyperpage{69}
+  \item MBR \dotfill  \hyperpage{23}, \hyperpage{280}
   \item Menu contextuel \dotfill  \hyperpage{39}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{N}\hfill}\nopagebreak
 
-  \item Noyau \dotfill  \hyperpage{4, 5}, \hyperpage{8}, \hyperpage{86}, 
-		\hyperpage{185, 186}, \hyperpage{272, 273}
+  \item Noyau \dotfill  \hyperpage{4, 5}, \hyperpage{8}, \hyperpage{89}, 
+		\hyperpage{189}, \hyperpage{280, 281}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{O}\hfill}\nopagebreak
 
   \item OS \dotfill  \textsc{xii--xiv}, \hyperpage{2}, \hyperpage{4, 5}, 
 		\hyperpage{9--12}, \hyperpage{15}, \hyperpage{19}, 
-		\hyperpage{22}, \hyperpage{24}, \hyperpage{30}, 
-		\hyperpage{36}, \hyperpage{63}, \hyperpage{86}, 
-		\hyperpage{89}, \hyperpage{96}, \hyperpage{98}, 
-		\hyperpage{105}, \hyperpage{118}, \hyperpage{132}, 
-		\hyperpage{135, 136}, \hyperpage{154}, \hyperpage{186}, 
-		\hyperpage{221}, \hyperpage{271, 272}, \hyperpage{274}, 
-		\hyperpage{276}, \hyperpage{279}, \hyperpage{292}
+		\hyperpage{22, 23}, \hyperpage{30}, \hyperpage{36}, 
+		\hyperpage{65}, \hyperpage{89}, \hyperpage{91}, 
+		\hyperpage{99, 100}, \hyperpage{109}, \hyperpage{122}, 
+		\hyperpage{136}, \hyperpage{139, 140}, \hyperpage{158}, 
+		\hyperpage{190}, \hyperpage{227}, \hyperpage{279, 280}, 
+		\hyperpage{282}, \hyperpage{284}, \hyperpage{287}, 
+		\hyperpage{300}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{P}\hfill}\nopagebreak
 
-  \item Pare-Feu \dotfill  \hyperpage{102--104}
-  \item Passerelle \dotfill  \hyperpage{66}
+  \item Pare-Feu \dotfill  \hyperpage{104}, \hyperpage{106}
+  \item Passerelle \dotfill  \hyperpage{69}
   \item Personnalisation \dotfill  \hyperpage{39, 40}, \hyperpage{48}, 
-		\hyperpage{75}, \hyperpage{104}, \hyperpage{106--111}, 
-		\hyperpage{138}, \hyperpage{156}, \hyperpage{162, 163}, 
-		\hyperpage{188}, \hyperpage{266}, \hyperpage{278}, 
-		\hyperpage{282}
+		\hyperpage{77}, \hyperpage{107}, \hyperpage{110--115}, 
+		\hyperpage{142, 143}, \hyperpage{160}, \hyperpage{167}, 
+		\hyperpage{192}, \hyperpage{273}, \hyperpage{286}, 
+		\hyperpage{290}
   \item Philosophie
     \subitem Free Software Foundation \dotfill  \hyperpage{2}
     \subitem Libre \dotfill  \hyperpage{1--4}, \hyperpage{7}, 
-		\hyperpage{12}, \hyperpage{16}, \hyperpage{77, 78}, 
-		\hyperpage{92--95}, \hyperpage{97, 98}, 
-		\hyperpage{102}, \hyperpage{179, 180}, \hyperpage{190}, 
-		\hyperpage{197--199}, \hyperpage{202}, \hyperpage{205}, 
-		\hyperpage{222}, \hyperpage{225, 226}, \hyperpage{229}, 
-		\hyperpage{240}, \hyperpage{243}, \hyperpage{255}, 
-		\hyperpage{262}, \hyperpage{266}, \hyperpage{273}, 
-		\hyperpage{291, 292}
+		\hyperpage{12}, \hyperpage{16}, \hyperpage{79, 80}, 
+		\hyperpage{94--96}, \hyperpage{98}, \hyperpage{100}, 
+		\hyperpage{104, 105}, \hyperpage{183, 184}, 
+		\hyperpage{194}, \hyperpage{201--203}, \hyperpage{206}, 
+		\hyperpage{209}, \hyperpage{228}, \hyperpage{231, 232}, 
+		\hyperpage{235, 236}, \hyperpage{246}, \hyperpage{249}, 
+		\hyperpage{261}, \hyperpage{269}, \hyperpage{272}, 
+		\hyperpage{281}, \hyperpage{299, 300}
     \subitem Licence Libre \dotfill  \textsc{xiv}
     \subitem Logiciel Libre \dotfill  \hyperpage{2--4}, \hyperpage{7}, 
-		\hyperpage{92}, \hyperpage{94}, \hyperpage{102}, 
-		\hyperpage{205}, \hyperpage{229}, \hyperpage{262}
+		\hyperpage{95, 96}, \hyperpage{104, 105}, 
+		\hyperpage{209}, \hyperpage{235, 236}, \hyperpage{269}
     \subitem Logiciel Propri\IeC {\'e}taire \dotfill  \hyperpage{1, 2}, 
-		\hyperpage{7}, \hyperpage{56}, \hyperpage{93}, 
-		\hyperpage{98}, \hyperpage{154}, \hyperpage{179--181}, 
-		\hyperpage{186}, \hyperpage{222}
+		\hyperpage{7}, \hyperpage{57}, \hyperpage{95}, 
+		\hyperpage{100}, \hyperpage{158}, \hyperpage{183, 184}, 
+		\hyperpage{189}, \hyperpage{228}
     \subitem Propri\IeC {\'e}taire \dotfill  \hyperpage{2}
     \subitem Richard Stallman \dotfill  \hyperpage{2}
-  \item Phishing \dotfill  \hyperpage{164}
-  \item Pilote \dotfill  \hyperpage{12, 13}, \hyperpage{56}, 
-		\hyperpage{71}, \hyperpage{75}, \hyperpage{77}, 
-		\hyperpage{93}, \hyperpage{172}, \hyperpage{179--182}, 
-		\hyperpage{186, 187}, \hyperpage{222}, 
-		\hyperpage{272, 273}
-  \item Port \dotfill  \hyperpage{56}, \hyperpage{104}, \hyperpage{177}
-  \item PPPoE \dotfill  \hyperpage{67}
+  \item Phishing \dotfill  \hyperpage{169}
+  \item Pilote \dotfill  \hyperpage{12, 13}, \hyperpage{57}, 
+		\hyperpage{73}, \hyperpage{77}, \hyperpage{79}, 
+		\hyperpage{95}, \hyperpage{176}, \hyperpage{183--185}, 
+		\hyperpage{189}, \hyperpage{191}, \hyperpage{228}, 
+		\hyperpage{280, 281}
+  \item Port \dotfill  \hyperpage{56}, \hyperpage{106}, \hyperpage{181}
+  \item PPPoE \dotfill  \hyperpage{69}
   \item Probl\IeC {\`e}mes l\IeC {\'e}gaux
-    \subitem Codec \dotfill  \hyperpage{79}, \hyperpage{92}
-    \subitem DRM \dotfill  \hyperpage{4}, \hyperpage{94}
-    \subitem GDN \dotfill  \hyperpage{4}, \hyperpage{94}
-    \subitem Logiciel \dotfill  \hyperpage{79}, \hyperpage{92}
+    \subitem Codec \dotfill  \hyperpage{81}, \hyperpage{94}
+    \subitem DRM \dotfill  \hyperpage{4}, \hyperpage{97}
+    \subitem GDN \dotfill  \hyperpage{4}, \hyperpage{97}
+    \subitem Logiciel \dotfill  \hyperpage{81}, \hyperpage{94}
   \item Propri\IeC {\'e}taire \dotfill  \hyperpage{2}
-  \item Protocole \dotfill  \hyperpage{99}, \hyperpage{209}, 
-		\hyperpage{211}
+  \item Protocole \dotfill  \hyperpage{101}, \hyperpage{213}, 
+		\hyperpage{216}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{R}\hfill}\nopagebreak
 
   \item R\IeC {\'e}flexes Windows
-    \subitem Antivirus \dotfill  \hyperpage{102, 103}
-    \subitem D\IeC {\'e}fragmentation \dotfill  \hyperpage{100, 101}
-    \subitem Firewall \dotfill  \hyperpage{102--104}
-    \subitem Pare-Feu \dotfill  \hyperpage{102--104}
+    \subitem Antivirus \dotfill  \hyperpage{104}, \hyperpage{106}
+    \subitem D\IeC {\'e}fragmentation \dotfill  \hyperpage{102}, 
+		\hyperpage{104}
+    \subitem Firewall \dotfill  \hyperpage{104}, \hyperpage{106}
+    \subitem Pare-Feu \dotfill  \hyperpage{104}, \hyperpage{106}
   \item R\IeC {\'e}seau
-    \subitem Avahi \dotfill  \hyperpage{22}, \hyperpage{64}, 
-		\hyperpage{66}, \hyperpage{197}
-    \subitem Configuration \dotfill  \hyperpage{52}
+    \subitem Avahi \dotfill  \hyperpage{23}, \hyperpage{66}, 
+		\hyperpage{69}, \hyperpage{201}
+    \subitem Configuration \dotfill  \hyperpage{51}
     \subitem Configuration R\IeC {\'e}seau \dotfill  \hyperpage{47}
-    \subitem Connexion filaire \dotfill  \hyperpage{64--66}
-    \subitem Connexion r\IeC {\'e}seau \dotfill  \hyperpage{22}, 
-		\hyperpage{64}, \hyperpage{66}, \hyperpage{197}
-    \subitem Connexion sans fil \dotfill  \hyperpage{64}, 
-		\hyperpage{67}, \hyperpage{77}, \hyperpage{93}, 
-		\hyperpage{273}, \hyperpage{292}
-    \subitem DHCP \dotfill  \hyperpage{22}, \hyperpage{64}, 
-		\hyperpage{66}
-    \subitem Ethernet \dotfill  \hyperpage{64--66}
-    \subitem IP \dotfill  \hyperpage{64}, \hyperpage{66}
-    \subitem Masque de sous-r\IeC {\'e}seau \dotfill  \hyperpage{66}
-    \subitem Passerelle \dotfill  \hyperpage{66}
-    \subitem Port \dotfill  \hyperpage{56}, \hyperpage{104}
-    \subitem PPPoE \dotfill  \hyperpage{67}
-    \subitem Protocole \dotfill  \hyperpage{99}, \hyperpage{209}, 
-		\hyperpage{211}
-    \subitem Wi-Fi \dotfill  \hyperpage{64}, \hyperpage{67}, 
-		\hyperpage{77}, \hyperpage{93}, \hyperpage{273}, 
-		\hyperpage{292}
-    \subitem ZeroConf \dotfill  \hyperpage{64}
-  \item RAM \dotfill  \hyperpage{18, 19}, \hyperpage{29}
+    \subitem Connexion filaire \dotfill  \hyperpage{66--68}
+    \subitem Connexion r\IeC {\'e}seau \dotfill  \hyperpage{23}, 
+		\hyperpage{66--69}, \hyperpage{201}
+    \subitem Connexion sans fil \dotfill  \hyperpage{66}, 
+		\hyperpage{69}, \hyperpage{79}, \hyperpage{95}, 
+		\hyperpage{281}, \hyperpage{300}
+    \subitem DHCP \dotfill  \hyperpage{23}, \hyperpage{66}, 
+		\hyperpage{68}
+    \subitem Ethernet \dotfill  \hyperpage{66--68}
+    \subitem IP \dotfill  \hyperpage{66--68}
+    \subitem Masque de sous-r\IeC {\'e}seau \dotfill  \hyperpage{69}
+    \subitem Passerelle \dotfill  \hyperpage{69}
+    \subitem Port \dotfill  \hyperpage{56}, \hyperpage{106}
+    \subitem PPPoE \dotfill  \hyperpage{69}
+    \subitem Protocole \dotfill  \hyperpage{101}, \hyperpage{213}, 
+		\hyperpage{216}
+    \subitem Wi-Fi \dotfill  \hyperpage{66}, \hyperpage{69}, 
+		\hyperpage{79}, \hyperpage{95}, \hyperpage{281}, 
+		\hyperpage{300}
+    \subitem ZeroConf \dotfill  \hyperpage{66}
+  \item RAM \dotfill  \hyperpage{17}, \hyperpage{19}, 
+		\hyperpage{27, 28}
   \item Richard Stallman \dotfill  \hyperpage{2}
-  \item RSS \dotfill  \hyperpage{162}, \hyperpage{210}
+  \item RSS \dotfill  \hyperpage{166}, \hyperpage{215}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{S}\hfill}\nopagebreak
 
   \item S\IeC {\'e}quence de d\IeC {\'e}marrage \dotfill  
-		\hyperpage{19, 20}
-  \item Secteur d'amor\IeC {\c c}age \dotfill  \hyperpage{272}
+		\hyperpage{19}
+  \item Secteur d'amor\IeC {\c c}age \dotfill  \hyperpage{280}
   \item Secteur d'amorce \dotfill  \hyperpage{10}
-  \item Serveur graphique \dotfill  \hyperpage{8}, \hyperpage{279, 280}, 
-		\hyperpage{287}
+  \item Serveur graphique \dotfill  \hyperpage{8}, \hyperpage{287, 288}, 
+		\hyperpage{295}
   \item Service \dotfill  \hyperpage{47}, \hyperpage{57}, 
-		\hyperpage{75}, \hyperpage{103}, \hyperpage{136}, 
-		\hyperpage{197}, \hyperpage{212}, \hyperpage{269}, 
-		\hyperpage{287--289}
+		\hyperpage{77}, \hyperpage{106}, \hyperpage{140, 141}, 
+		\hyperpage{201}, \hyperpage{219}, \hyperpage{275}, 
+		\hyperpage{295--297}
   \item Syst\IeC {\`e}me
     \subitem BIOS \dotfill  \hyperpage{18, 19}, \hyperpage{23}, 
-		\hyperpage{98--100}
-    \subitem Boot loader \dotfill  \hyperpage{10}, \hyperpage{24}
-    \subitem Chargeur d'amorce \dotfill  \hyperpage{24}
+		\hyperpage{101, 102}
+    \subitem Boot loader \dotfill  \hyperpage{10}, \hyperpage{23}
+    \subitem Chargeur d'amorce \dotfill  \hyperpage{23}
     \subitem D\IeC {\'e}mon \dotfill  \hyperpage{47}, \hyperpage{57}, 
-		\hyperpage{75}, \hyperpage{103}, \hyperpage{136}, 
-		\hyperpage{197}, \hyperpage{212}, \hyperpage{269}, 
-		\hyperpage{287--289}
-    \subitem Driver \dotfill  \hyperpage{12, 13}, \hyperpage{56}, 
-		\hyperpage{71}, \hyperpage{75}, \hyperpage{77}, 
-		\hyperpage{93}, \hyperpage{172}, \hyperpage{180--182}, 
-		\hyperpage{222}, \hyperpage{272, 273}
+		\hyperpage{77}, \hyperpage{106}, \hyperpage{140, 141}, 
+		\hyperpage{201}, \hyperpage{219}, \hyperpage{275}, 
+		\hyperpage{295--297}
+    \subitem Driver \dotfill  \hyperpage{12, 13}, \hyperpage{57}, 
+		\hyperpage{73}, \hyperpage{77}, \hyperpage{79}, 
+		\hyperpage{95}, \hyperpage{176}, \hyperpage{184, 185}, 
+		\hyperpage{228}, \hyperpage{280, 281}
     \subitem Fichier de configuration \dotfill  \hyperpage{58}, 
-		\hyperpage{75}, \hyperpage{79, 80}, \hyperpage{83, 84}, 
-		\hyperpage{104}, \hyperpage{115}, \hyperpage{186}, 
-		\hyperpage{266}, \hyperpage{277--280}, \hyperpage{283}, 
-		\hyperpage{286}
+		\hyperpage{78}, \hyperpage{82}, \hyperpage{85, 86}, 
+		\hyperpage{106}, \hyperpage{119}, \hyperpage{190}, 
+		\hyperpage{273}, \hyperpage{285--288}, \hyperpage{291}, 
+		\hyperpage{294}
     \subitem Kernel \dotfill  \hyperpage{4, 5}, \hyperpage{8}, 
-		\hyperpage{86}, \hyperpage{185, 186}, 
-		\hyperpage{272, 273}
-    \subitem MBR \dotfill  \hyperpage{23, 24}
+		\hyperpage{89}, \hyperpage{189}, \hyperpage{280, 281}
+    \subitem MBR \dotfill  \hyperpage{23}
     \subitem Noyau \dotfill  \hyperpage{4, 5}, \hyperpage{8}, 
-		\hyperpage{86}, \hyperpage{185, 186}, 
-		\hyperpage{272, 273}
+		\hyperpage{89}, \hyperpage{189}, \hyperpage{280, 281}
     \subitem OS \dotfill  \textsc{xii--xiv}, \hyperpage{2}, 
 		\hyperpage{4, 5}, \hyperpage{9--12}, \hyperpage{15}, 
-		\hyperpage{19}, \hyperpage{22}, \hyperpage{24}, 
-		\hyperpage{30}, \hyperpage{36}, \hyperpage{63}, 
-		\hyperpage{86}, \hyperpage{89}, \hyperpage{96}, 
-		\hyperpage{98}, \hyperpage{105}, \hyperpage{118}, 
-		\hyperpage{132}, \hyperpage{135, 136}, \hyperpage{154}, 
-		\hyperpage{186}, \hyperpage{221}, \hyperpage{271, 272}, 
-		\hyperpage{274}, \hyperpage{276}, \hyperpage{279}, 
-		\hyperpage{292}
-    \subitem Pilote \dotfill  \hyperpage{12, 13}, \hyperpage{56}, 
-		\hyperpage{71}, \hyperpage{75}, \hyperpage{77}, 
-		\hyperpage{93}, \hyperpage{172}, \hyperpage{180--182}, 
-		\hyperpage{222}, \hyperpage{272, 273}
-    \subitem Port \dotfill  \hyperpage{177}
+		\hyperpage{19}, \hyperpage{22, 23}, \hyperpage{30}, 
+		\hyperpage{36}, \hyperpage{65}, \hyperpage{89}, 
+		\hyperpage{91}, \hyperpage{99, 100}, \hyperpage{109}, 
+		\hyperpage{122}, \hyperpage{136}, \hyperpage{139, 140}, 
+		\hyperpage{158}, \hyperpage{190}, \hyperpage{227}, 
+		\hyperpage{279, 280}, \hyperpage{282}, \hyperpage{284}, 
+		\hyperpage{287}, \hyperpage{300}
+    \subitem Pilote \dotfill  \hyperpage{12, 13}, \hyperpage{57}, 
+		\hyperpage{73}, \hyperpage{77}, \hyperpage{79}, 
+		\hyperpage{95}, \hyperpage{176}, \hyperpage{184, 185}, 
+		\hyperpage{228}, \hyperpage{280, 281}
+    \subitem Port \dotfill  \hyperpage{181}
     \subitem S\IeC {\'e}quence de d\IeC {\'e}marrage \dotfill  
-		\hyperpage{19, 20}
+		\hyperpage{19}
     \subitem Secteur d'amorce \dotfill  \hyperpage{10}
     \subitem Serveur graphique \dotfill  \hyperpage{8}, 
-		\hyperpage{279, 280}, \hyperpage{287}
+		\hyperpage{287, 288}, \hyperpage{295}
     \subitem Service \dotfill  \hyperpage{47}, \hyperpage{57}, 
-		\hyperpage{75}, \hyperpage{103}, \hyperpage{136}, 
-		\hyperpage{197}, \hyperpage{212}, \hyperpage{269}, 
-		\hyperpage{287--289}
+		\hyperpage{77}, \hyperpage{106}, \hyperpage{140, 141}, 
+		\hyperpage{201}, \hyperpage{219}, \hyperpage{275}, 
+		\hyperpage{295--297}
     \subitem Syst\IeC {\`e}me d'exploitation \dotfill  
 		\textsc{xii--xiv}, \hyperpage{2}, \hyperpage{4, 5}, 
 		\hyperpage{9--12}, \hyperpage{15}, \hyperpage{19}, 
-		\hyperpage{22}, \hyperpage{24}, \hyperpage{30}, 
-		\hyperpage{36}, \hyperpage{63}, \hyperpage{86}, 
-		\hyperpage{89}, \hyperpage{96}, \hyperpage{98}, 
-		\hyperpage{105}, \hyperpage{118}, \hyperpage{132}, 
-		\hyperpage{135, 136}, \hyperpage{154}, \hyperpage{186}, 
-		\hyperpage{221}, \hyperpage{271, 272}, \hyperpage{274}, 
-		\hyperpage{276}, \hyperpage{279}, \hyperpage{292}
-    \subitem Texte brut \dotfill  \hyperpage{58}, \hyperpage{75}, 
-		\hyperpage{79, 80}, \hyperpage{83, 84}, 
-		\hyperpage{104}, \hyperpage{115}, \hyperpage{186}, 
-		\hyperpage{266}, \hyperpage{277--280}, \hyperpage{283}, 
-		\hyperpage{286}
-    \subitem Zone d'amor\IeC {\c c}age \dotfill  \hyperpage{23, 24}
+		\hyperpage{22, 23}, \hyperpage{30}, \hyperpage{36}, 
+		\hyperpage{65}, \hyperpage{89}, \hyperpage{91}, 
+		\hyperpage{99, 100}, \hyperpage{109}, \hyperpage{122}, 
+		\hyperpage{136}, \hyperpage{139, 140}, \hyperpage{158}, 
+		\hyperpage{190}, \hyperpage{227}, \hyperpage{279, 280}, 
+		\hyperpage{282}, \hyperpage{284}, \hyperpage{287}, 
+		\hyperpage{300}
+    \subitem Texte brut \dotfill  \hyperpage{58}, \hyperpage{78}, 
+		\hyperpage{82}, \hyperpage{85, 86}, \hyperpage{106}, 
+		\hyperpage{119}, \hyperpage{190}, \hyperpage{273}, 
+		\hyperpage{285--288}, \hyperpage{291}, \hyperpage{294}
+    \subitem Zone d'amor\IeC {\c c}age \dotfill  \hyperpage{23}
   \item Syst\IeC {\`e}me d'exploitation \dotfill  \textsc{xii--xiv}, 
 		\hyperpage{2}, \hyperpage{4, 5}, \hyperpage{9--12}, 
-		\hyperpage{15}, \hyperpage{19}, \hyperpage{22}, 
-		\hyperpage{24}, \hyperpage{30}, \hyperpage{36}, 
-		\hyperpage{63}, \hyperpage{86}, \hyperpage{89}, 
-		\hyperpage{96}, \hyperpage{98}, \hyperpage{105}, 
-		\hyperpage{118}, \hyperpage{132}, \hyperpage{135, 136}, 
-		\hyperpage{154}, \hyperpage{186}, \hyperpage{221}, 
-		\hyperpage{271, 272}, \hyperpage{274}, \hyperpage{276}, 
-		\hyperpage{279}, \hyperpage{292}
+		\hyperpage{15}, \hyperpage{19}, \hyperpage{22, 23}, 
+		\hyperpage{30}, \hyperpage{36}, \hyperpage{65}, 
+		\hyperpage{89}, \hyperpage{91}, \hyperpage{99, 100}, 
+		\hyperpage{109}, \hyperpage{122}, \hyperpage{136}, 
+		\hyperpage{139, 140}, \hyperpage{158}, \hyperpage{190}, 
+		\hyperpage{227}, \hyperpage{279, 280}, \hyperpage{282}, 
+		\hyperpage{284}, \hyperpage{287}, \hyperpage{300}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{T}\hfill}\nopagebreak
 
-  \item Terminal \dotfill  \hyperpage{48}, \hyperpage{70}, 
-		\hyperpage{80}, \hyperpage{100}, \hyperpage{104}, 
-		\hyperpage{127}, \hyperpage{150}, \hyperpage{168, 169}, 
-		\hyperpage{186--188}, \hyperpage{191, 192}, 
-		\hyperpage{194}, \hyperpage{217}, \hyperpage{222}, 
-		\hyperpage{225}, \hyperpage{231}, \hyperpage{248, 249}, 
-		\hyperpage{268}, \hyperpage{285, 286}
-  \item Texte brut \dotfill  \hyperpage{58}, \hyperpage{75}, 
-		\hyperpage{79, 80}, \hyperpage{83, 84}, 
-		\hyperpage{104}, \hyperpage{115}, \hyperpage{186}, 
-		\hyperpage{212}, \hyperpage{266}, \hyperpage{277--280}, 
-		\hyperpage{283}, \hyperpage{286}
+  \item Terminal \dotfill  \hyperpage{49}, \hyperpage{72}, 
+		\hyperpage{82}, \hyperpage{102}, \hyperpage{107}, 
+		\hyperpage{131}, \hyperpage{155}, \hyperpage{172--174}, 
+		\hyperpage{189--191}, \hyperpage{195, 196}, 
+		\hyperpage{198}, \hyperpage{222}, \hyperpage{228}, 
+		\hyperpage{232}, \hyperpage{237}, \hyperpage{254, 255}, 
+		\hyperpage{274}, \hyperpage{293, 294}
+  \item Texte brut \dotfill  \hyperpage{58}, \hyperpage{78}, 
+		\hyperpage{82}, \hyperpage{85, 86}, \hyperpage{106}, 
+		\hyperpage{119}, \hyperpage{190}, \hyperpage{219}, 
+		\hyperpage{273}, \hyperpage{285--288}, \hyperpage{291}, 
+		\hyperpage{294}
   \item Th\IeC {\`e}me \dotfill  \hyperpage{40}, \hyperpage{48}, 
-		\hyperpage{106--111}, \hyperpage{162, 163}, 
-		\hyperpage{278}, \hyperpage{282}
-  \item Troll \dotfill  \hyperpage{280}
+		\hyperpage{110--115}, \hyperpage{167}, \hyperpage{286}, 
+		\hyperpage{290}
+  \item Troll \dotfill  \hyperpage{288}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{W}\hfill}\nopagebreak
 
-  \item Wi-Fi \dotfill  \hyperpage{64}, \hyperpage{67}, \hyperpage{77}, 
-		\hyperpage{93}, \hyperpage{273}, \hyperpage{292}
-  \item Window Maker \dotfill  \hyperpage{279}, \hyperpage{281}
+  \item Wi-Fi \dotfill  \hyperpage{66}, \hyperpage{69}, \hyperpage{79}, 
+		\hyperpage{95}, \hyperpage{281}, \hyperpage{300}
+  \item Window Maker \dotfill  \hyperpage{287}, \hyperpage{289}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{X}\hfill}\nopagebreak
 
-  \item Xfce \dotfill  \hyperpage{279}, \hyperpage{281--283}
+  \item Xfce \dotfill  \hyperpage{287}, \hyperpage{289--291}
 
   \indexspace
 {\large\sffamily\bfseries\shadowbox{Z}\hfill}\nopagebreak
 
-  \item ZeroConf \dotfill  \hyperpage{64}
-  \item Zone d'amor\IeC {\c c}age \dotfill  \hyperpage{23, 24}
+  \item ZeroConf \dotfill  \hyperpage{66}
+  \item Zone d'amor\IeC {\c c}age \dotfill  \hyperpage{23}
 
 \end{theindex}
