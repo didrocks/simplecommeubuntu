@@ -159,6 +159,13 @@ Couleurs & 640x480 & 800x600 & 1024x768 & 1280x1024 & 1600x1200\\
 \hline
 \hline
 \end{tabular}
+\subsection{Pavé numérique}
+Si votre pavé numérique ne s'active pas au démarrage, vous pouvez faire ce qui suit : installer numlockx par Synaptic. Cependant, ici, le pavé numérique ne sera disponible qu'une fois connecté sous \AddIndex{Environnement graphique}{Personnalisation}{GNOME}{GNOME}.\\
+Si vous voulez que le pavé numérique soit disponible même sous GDM, il va falloir ouvrir un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal, puis rentrer : \Commande{gksudo gedit /etc/gdm/Init/Default} et appuyer sur \Touche{Entrée}. Une fois le mot de passe renseigné, l'éditeur de texte s'affiche. Il faut alors ajouter au début du fichier :
+\Code{%
+if [ -x /usr/bin/numlockx ]; then\\
+        exec /usr/bin/numlockx on\\
+fi}
 \subsection{GDM : Se connecter automatiquement}
 \label{RefConnexionAuto}
 GDM\NotePage{GNOME Desktop Manager} correspond au logiciel auquel vous faites face lorsque vous devez vous connecter sur votre session. Si votre poste est mono-utilisateur, vous pouvez trouver inutile de saisir votre \RefGlossaire{-}{Identifiant}{Login}{login} ainsi que votre mot de passe à chaque démarrage. Soyez donc certain que vous serez le seul à avoir accès physiquement à la machine, je ne reviendrai pas sur les bienfaits d'un utilisateur par personne, pour cela, référez-vous à la partie \ref{PremiereConnexion}.\par
