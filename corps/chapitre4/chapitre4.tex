@@ -120,7 +120,7 @@ Sachez que de nombreux autres dépôts existent ailleurs sur le web. Toutefois, 
 Je vous propose, pour suivre sans encombre la partie «~Logiciels~» \ref{RefChapLogiciel} et «~Jeux~» \ref{RefChapJeux}, de cliquer sur «~Ajouter~», de l'onglet «~Logiciels de tierces parties~» et de rentrer la ligne de texte mise en évidence pour chacun des dépôts :
 \begin{itemize}
 \item Medibuntu\NotePage{Signifiant Multimedia, Entertainment \& Distractions In Ubuntu} est un projet dédié à la mise en paquets et à la distribution de paquets ne pouvant pas être inclus par défaut dans Ubuntu pour diverses raisons, liées aux législations en vigueur dans certains pays à propos de sécurité, de propriété intellectuelle et autres problématiques. Par exemple, c'est par ce dépôt que vous pourrez permettre à Ubuntu de lire vos DVD du commerce cryptés.\AddIndex{Problèmes légaux}{Logiciel}{Codec}{-} Pour plus d'informations à ce sujet, voir le point \ref{RefLireDVD}. Notez qu'il est de votre responsabilité légale de vous assurer que vous avez le droit d'utiliser les logiciels et technologies présents dans le dépôt Medibuntu\NotePage{\url{http://www.medibuntu.org/}} pour l'utilisation que vous désirez en faire :\\
-\Chemin{deb http://fr.packages.medibuntu.org/ jaunty free non-free}\\
+\Chemin{deb http://fr.packages.medibuntu.org/ karmic free non-free}\\
 Puis, cliquez sur «~Ajouter une source de mise à jour~». Vous devrez faire de même avec les autres sources de mise à jour.\par
 \item pour Gnormalize :\\
 \Chemin{deb http://asher256-repository.tuxfamily.org ubuntu main dupdate french}\par
@@ -139,15 +139,15 @@ Ensuite, remplacez le contenu du fichier par ceci :\\
 \# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to\\
 \# newer versions of the distribution.\\
 \\
-deb http://archive.ubuntu.com/ubuntu/ jaunty main universe restricted multiverse\\
+deb http://archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse\\
 \\
 \#\# Major bug fix updates produced after the final release of the\\
 \#\# distribution.\\
-deb http://security.ubuntu.com/ubuntu/ jaunty-security universe main multiverse restricted\\
+deb http://security.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted\\
 deb http://archive.ubuntu.com/ubuntu/ intrepid-updates universe main multiverse restricted\\
 \\
 \# Dépôt de Medibuntu et Ahser256 - cf mise en garde\\
-deb http://fr.packages.medibuntu.org/ jaunty free non-free\\
+deb http://fr.packages.medibuntu.org/ karmic free non-free\\
 deb http://asher256-repository.tuxfamily.org ubuntu main dupdate french\\
 		\end{otherlanguage}%
 	\end{breakbox}%
