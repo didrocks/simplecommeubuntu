@@ -6,8 +6,9 @@ Build-Depends: debhelper (>= 5),
                texlive-latex-base,
                texlive-latex-extra,
                lmodern,
+               texlive-fonts-recommended,
                latex-xcolor
-Standards-Version: 3.8.2
+Standards-Version: 3.8.1
 Homepage: http://framabook.org/ubuntu
 
 Package: simplecommeubuntu
