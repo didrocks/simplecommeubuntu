@@ -1,0 +1,18 @@
+Source: simplecommeubuntu
+Section: doc
+Priority: extra
+Maintainer: Didier Roche <didrocks@ubuntu.com>
+Build-Depends: debhelper (>= 5),
+               texlive-latex-base,
+               texlive-latex-extra,
+               lmodern,
+               latex-xcolor
+Standards-Version: 3.8.2
+Homepage: http://framabook.org/ubuntu
+
+Package: simplecommeubuntu
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: free Ubuntu book for beginners
+ Simple Comme Ubuntu is a French language book
+ to help new users discover Ubuntu.
