@@ -6,7 +6,7 @@ simplecommeubuntu (9.10~prerc) karmic; urgency=low
     - change arch to all
     - add texlive-fonts-recommended as build-dep
 
- -- Didier Roche <didrocks@didrocks-karmic>  Mon, 19 Oct 2009 18:02:28 +0200
+ -- Didier Roche <didrocks@ubuntu.com>  Mon, 19 Oct 2009 18:05:01 +0200
 
 simplecommeubuntu (9.04-0ubuntu1) karmic; urgency=low
 
