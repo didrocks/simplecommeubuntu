@@ -1,12 +1,12 @@
 simplecommeubuntu (9.10~prerc) karmic; urgency=low
 
-  * Update to karmic version:
+  * Update to karmic version: (LP: #454820)
     - pre RC, no final images
   * debian/control:
     - change arch to all
     - add texlive-fonts-recommended as build-dep
 
- -- Didier Roche <didrocks@didrocks-karmic>  Fri, 16 Oct 2009 20:29:39 +0200
+ -- Didier Roche <didrocks@didrocks-karmic>  Mon, 19 Oct 2009 18:02:28 +0200
 
 simplecommeubuntu (9.04-0ubuntu1) karmic; urgency=low
 
