@@ -133,7 +133,7 @@ Cette application vous permettra de paramétrer l'affichage d'une icône de noti
 \subsubsubsection{Bureau à distance}
 L'option Bureau à distance affiche une boîte de dialogue permettant aux utilisateurs de partager leur bureau avec des utilisateurs distants. Les connexions à un bureau distant peuvent s'effectuer au moyen de la technologie VNC\NotePage{Virtual Network Connection}. L'application «~Visionneur de bureaux distants~» du menu «~Applications \FlecheDroite Internet~» permet aux utilisateurs d'ordinateurs distants de se connecter, d'accéder et d'interagir avec le bureau de l'utilisateur comme s'ils étaient réellement assis devant l'ordinateur auquel ils sont connectés. Normalement, vous devriez laisser cette option désactivée si vous n'en avez pas l'utilité.
 \subsubsubsection{Chiffrement et trousseaux}
-Vous pouvez ici paramétrer et choisir la clef de chiffrement GPG à utiliser par défaut. Signer ses mails est important pour spécifier que vous en êtes bien l'expéditeur\NotePage{Tout le monde peut, avec des connaissances basiques, envoyer un mail president@ubuntu-fr.org, par exemple, ce qui serait un sacrilège !}. Vous pouvez permettre ici de signer automatiquement vos mails sans répéter la phrase de passe -- mot de passe très très long ressemblant plus à une phrase -- ou encore quelques paramètres visuels.
+Uniquement si vous utilisez un trousseau de clef. Vous pouvez ici paramétrer et choisir la clef de chiffrement GPG à utiliser par défaut. Signer ses mails est important pour spécifier que vous en êtes bien l'expéditeur\NotePage{Tout le monde peut, avec des connaissances basiques, envoyer un mail president@ubuntu-fr.org, par exemple, ce qui serait un sacrilège !}. Vous pouvez permettre ici de signer automatiquement vos mails sans répéter la phrase de passe -- mot de passe très très long ressemblant plus à une phrase -- ou encore quelques paramètres visuels.
 % PLUS LE CAS : voir si on ajoute seahorse. dans le futur
 %Vous pouvez sauvegarder sous un trousseau de clef les mots de passe et clef de chiffrement que vous avez à utiliser régulièrement. Ces trousseaux de clefs enregistrent vos différents mots de passe et clefs de manière cryptée par un mot de passe que vous définissez pour le trousseau. Comme cela, vous n'avez plus qu'un seul mot de passe à mémoriser et pas les dizaines associées à vos sites FTP et autres\ldots{} Dès que vous aurez la possibilité d'ajouter un mot de passe à un trousseau, Ubuntu vous fera signe. Vous pourrez ensuite les gérer à votre guise.\par
 \subsubsubsection{Clavier}
@@ -163,10 +163,10 @@ Utilisez les options à disposition pour déterminer l'action associée au doubl
 \item Touche de mouvement\\
 Utilisez les options à disposition pour paramétrer le raccourci clavier permettant de déplacer une fenêtre dans le champ du bureau. Sélectionnez une option, puis cliquez à l'intérieur de la fenêtre active pour la déplacer. Ceci est utile si votre fenêtre est plus grande que la résolution de votre bureau. 
 \end{itemize}
-\subsubsubsection{Imprimante par défaut}
-Si plusieurs imprimantes sont installées comme indiqué en \ref{RefInstallImprimante} page \pageref{RefInstallImprimante}, cet écran permet de choisir l'imprimante proposée par défaut pour toutes les applications du système.
 \subsubsubsection{Gestionnaire d'énergie}
 Cet outil est surtout utile pour les possesseurs de portables et permet de gérer les modes d'économie d'énergie de ce dernier suivant les cas d'alimentation (branché sur secteur, sur batterie\ldots{}).
+\subsubsubsection{Imprimante par défaut}
+Si plusieurs imprimantes sont installées comme indiqué en \ref{RefInstallImprimante} page \pageref{RefInstallImprimante}, cet écran permet de choisir l'imprimante proposée par défaut pour toutes les applications du système.
 \subsubsubsection{Menu principal}
 Cette option ouvre un éditeur de menus afin que vous puissiez les personnaliser. Pour plus d'explications sur son fonctionnement, référez-vous à la section \ref{RefEditerMenus}. La même application peut être ouverte par simple clic-droit \FlecheDroite Éditer les menus.
 \subsubsubsection{Outils d'accessibilité}
@@ -206,8 +206,8 @@ Utilisez l'outil de configuration Souris pour régler celle-ci pour droitier ou 
 \end{itemize}
 \subsubsection{Administration}
 Ubuntu fournit une vaste palette d'applications faciles d'usage permettant aux utilisateurs d'administrer les différents aspects de leur système. Toutes ces applications se trouvent sous Système \FlecheDroite Administration. Pour avoir accès à ces applications, il faut être «~Ami de root~» comme vu au paragraphe \ref{RefMdpRoot}.
-\subsubsubsection{Ajouter/supprimer des applications}
-Cette application était le défaut avant la version 9.10 pour installer des applications et a été remplacée par la logithèque Ubuntu décrite à la section \ref{RefInstallApp}.
+%\subsubsubsection{Ajouter/supprimer des applications}
+%Cette application était le défaut avant la version 9.10 pour installer des applications et a été remplacée par la logithèque Ubuntu décrite à la section \ref{RefInstallApp}.
 %\subsubsubsection{Autorisations}
 %Cette application permet un réglage précis des droits et permissions directement utilisateur par utilisateur, ou par groupe. Les options paramétrables sont les droits de changer l'heure courante, d'arrêter l'ordinateur, de changer de place les tableaux de bord\ldots{}
 \subsubsubsection{Créateur de disque de démarrage USB}
@@ -230,13 +230,13 @@ Cet outil vous permettra de garder votre système «~propre~» en nettoyant tout
 L'outil réseau permet d'effectuer de nombreux tests sur votre réseau, comme des pings, des traceroutes, ou un scannage de \RefGlossaire{Réseau}{-}{Port}{ports}, etc. Bref, l'utilisateur moyen n'en aura pas besoin !
 \subsubsubsection{Pilotes de périphériques}
 Cet outil vous permet d'installer des \RefGlossaire{Système}{Pilote}{Driver}{drivers} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires}, nécessaires, par exemple, lors de l'utilisation de la 3D par votre carte graphique. Vous trouverez plus d'informations sur ce point à la section \ref{RefInstallProprio}.
-\subsubsubsection{Prise en charge linguistique}
+\subsubsubsection{Prise en charge des langues}
 Si votre système n'était pas connecté à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} lors de l'installation, il se peut que votre système ne soit pas entièrement francisé. Vous pourrez ici demander le téléchargement des traductions manquantes. Il est également possible d'installer d'autres langues si des utilisateurs de différentes nationalités utilisent votre ordinateur. Se référer à la section \ref{RefSupportLangue}.
 %\subsubsubsection{Services}
 %Un \RefGlossaire{Système}{Démon}{Service}{service} est un programme qui tourne en tâche de fond, c'est-à-dire continuellement\NotePage{Exemple : l'heure qui s'affiche est en quelque sorte, «~un \RefGlossaire{Système}{Démon}{Service}{service}~»}. Les \RefGlossaire{Système}{Démon}{Service}{services} sont démarrés dès que l'affichage graphique est lancé. Vous pouvez ici désactiver les \RefGlossaire{Système}{Démon}{Service}{services} dont vous n'avez pas besoin. Un autre nom également utilisé est \RefGlossaire{Système}{Service}{Démon}{démon}.
 \subsubsubsection{Sources de logiciels}
 Vous gérerez ici, entre autres, la localité des serveurs d'où Ubuntu télécharge les programmes et vérifie les mises à jour. Plus d'informations dans la section \ref{RefSourceMAJ}.
-\subsubsubsection{Test du matériel}
+\subsubsubsection{Test du système}
 Ce logiciel vous permet de voir facilement les différents composants constituant votre ordinateur. Cet élément est assez similaire au gestionnaire de périphériques de Windows.
 \subsubsubsection{Utilisateurs et groupes}
 La boîte de dialogue «~Utilisateurs et groupes~» vous permet de gérer les comptes des utilisateurs et les groupes. Chaque utilisateur possède son propre nom de connexion et son mot de passe, ainsi qu'un bureau indépendant, des paramètres et préférences individuels pour le courrier électronique, la navigation sur l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} et les autres applications. Généralement, vous utiliserez cet outil pour gérer les utilisateurs humains de votre ordinateur.
