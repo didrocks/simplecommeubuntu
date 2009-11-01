@@ -114,23 +114,6 @@ Les notes s'enregistrent automatiquement quand vous fermez la fenêtre.\par
 \begin{nota}
 Il est également possible de synchroniser vos notes soit dans un dossier, soit par WebDav dans les préférences afin que tous vos ordinateurs aient des notes en cohérences. De plus, Tomboy comporte de très nombreux greffons, comme par exemple effectuer un tracé des mind-maps de vos notes\ldots{} À vous de les essayer !
 \end{nota}
-\section{Graver simplement des données}
-\subsection{Graver sans se poser de question}
-\label{RefGravureNautilus}
-La gravure de CD/DVD de données sous Ubuntu est relativement simple. En effet, il vous suffit de cliquer sur le menu Raccourcis \FlecheDroite Créateur de CD/DVD. Une fenêtre Nautilus du nom «~Créateur de CD/DVD~» s'ouvre alors comme dans la figure \ref{ImgNautilusGraveur}. Il vous suffit de \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} les fichiers/dossiers que vous souhaitez graver dans cette fenêtre. Une fois la composition réalisée, vous avez juste à cliquer sur «~Graver sur le disque~», une fenêtre s'ouvre et vous pourrez choisir le graveur à utiliser -- si vous en possédez plusieurs -- indiquer le nom du disque et choisir la vitesse de gravure. Cliquez sur «~Graver~» pour lancer la gravure du CD. Il ne vous reste plus qu'à insérer le disque à graver. Si vous insérez un disque réinscriptible non vide, Ubuntu va vous le signaler et vous demander si vous souhaitez le formater -- par «~Effacer ce disque~» -- ou introduire un autre disque.\par
-\ImgCentree{10}{corps/chapitre6/img/Graver_Nautilus.png}{Graver par Nautilus}{ImgNautilusGraveur}
-\begin{nota}
-Ceci est un logiciel de gravure primaire, il ne permet pas, par exemple, de formater un disque sans le graver par la suite ou encore la gravure d'un CD audio ou d'une image CD. Pour un logiciel plus complet, permettant entre autres de graver un CD audio, voyez «~Brasero~» déjà installé par défaut, présenté dans la section \ref{RefInstallBrasero}.\\
-Vous pouvez aussi copier ainsi directement un CD/DVD. Après insertion de celui-ci, rendez-vous dans le menu Raccourcis \FlecheDroite Poste de travail. Ensuite, cliquez-droit sur le disque et choisissez «~Copier le disque\ldots{}~».
-\end{nota}
-\subsection{Activer l'overburning et le burnproof}
-Cette manipulation est à réserver aux utilisateurs «~avancés~».\\
-Si votre graveur supporte ces deux fonctions, je ne vois aucune raison de vous en priver. Il vous suffit de lancer la commande -- dans un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal ou directement par \Touche{ALT} + \Touche{F2} -- \Commande{gconf-editor}. Ensuite, rendez-vous dans apps \FlecheDroite nautilus-cd-burner pour y cocher les cases «~burnproof~» et «~overburn~» comme dans l'image \ref{ImgOverBurnNautilus}.
-\ImgCentree{10}{corps/chapitre6/img/Activer_OverBurning_Et_BurnProof.png}{Graver en utilisant l'overburning et le burnproof}{ImgOverBurnNautilus}
-\section{GNOME gère directement le FTP ?}
-Exactement ! Plutôt que de télécharger un logiciel FTP, pour de simples transferts, \AddIndex{Environnement graphique}{-}{GNOME}{GNOME} intègre une fonction bien utile. Pour bénéficier de celle-ci, il suffit de choisir dans le menu Raccourcis \FlecheDroite Se connecter à un serveur\ldots{} Vous pouvez choisir de vous connecter à un serveur anonyme ou avec identification, sur simple choix dans la liste déroulante, cf. \ref{ImgNautilusFTP}.\par
-\ImgCentree{7}{corps/chapitre6/img/FTP_Nautilus.png}{FTP géré par Nautilus}{ImgNautilusFTP}
-Ceci terminé, vous avez accès au site FTP par le biais d'un signet système -- si vous avez coché «~Ajouter un signet~» et renseigné le nom correspondant -- aussi simplement qu'à un disque dur. Comme tout signet, il apparaît également sur le bureau et dans le menu Raccourcis.
 \section{Prendre une capture d'écran}
 \subsection{Généralités}
 Je pense que vous connaissez tous le concept de la capture d'écran\NotePage{Screenshot en anglais} consistant à prendre une photo de votre écran et la conserver dans un fichier image. Très pratique pour montrer aux autres ce qui vous bloque ou ne fonctionne pas.\\
