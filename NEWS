@@ -1,0 +1,65 @@
+SCU 9.10
+--------
+
+• mise à jour des tous les éléments de jaunty vers karmic.
+  Nombreuses images également modifées.
+• revue de la procédure d'installation. Quelques remarques
+  supplémentaires sur l'installation et le chiffrement de partition
+• Modification suite au passage de gdm 2.28
+• Modification des éléments dans Systèmes (un vrai bento de
+  renommage), ajout d'ibus et suppression de SCIM
+• sources de mises à jour redevient sources de logiciels une énième fois :/
+• ajout de palimpset
+• suppression d'évolution dans la barre supérieure par défaut
+• Modifier des éléments du tableau de bord en haut à droite (NM, Icône
+  présente, etc.): une bonne pelletée de changements :)
+• Nombreux changements dans l'applet FUSA
+• Remplacement d'ajouter/supprimer par l'app center d'ubuntu.
+  Adaptation de la partie dédiée. Beaucoup de modifications tout au long
+  du livre (notamment le fait qu'il n'y ait plus de confirmation pour
+  l'installation d'appli dans universe et également que toutes les
+  applications soient disponibles par défaut). Il n'y a plus
+  d'indicateur de popularité non plus
+• Modifications de la nettoyeur système
+• Suppression de l'installation de la version propriétaire de Java vu
+  que la version libre a bien évolué et permet maintenant d'adresser la
+  plupart des cas.
+• Ajout et modification de l'écran de changement de fond d'écran
+• Le clin d'oeil du thème vista basic a été gardé le temps de trouver
+  un screenshot potable pour faire un seven basic :)
+• La nouvelle version de gdm n'est plus thémable graphiquement
+• gnome-screenshot -> option pour prendre une partie de l'écran.
+• petite note pour indiquer que tracker n'est pas installé par défaut
+• idem pour deskbar
+• changement de l'outil pour gérer la connexion automatique et par défaut de GDM
+• ajout de exec devant numlock et déplacement au chapitre 7
+• ajout précision sur ami de root et la notification pour dropper les privilèges
+• changement de la méthode de notification de connexion wiki/ethernet.
+  Suppression des icônes et modifiant du descriptif correspondant.
+• ajout d'empathy
+• rafraichissement de la description de pidgin
+• racketiciel et detaxe.org ont maintenant fusionnés: un seul lien
+• le clavier par défaut proposé maintenant en « France - Alternative »
+• ext4 est maintenant utilisé par défaut
+• support linguistique: prise en charge des langues
+• Puis prise en charge linguistique -> prise en charges des langues
+• Note sur chiffrement et trousseau qui apparait désormais uniquement si vous
+  utilisez un trousseau de clef.
+• Test du matériel -> Test du système
+• renommage de certains boutons comme Installer/supprimer des langues ->
+  Installer / supprimer des langues
+• Suppression de la gravure directement par Nautilus
+• comparaison de Cinelerra avec Adobe Premiere et ajout des dépôts de lprod pour
+  installer ce dernier.
+• Quelques modifications sur la description des onglets dans FireFox
+• La situation des cartes graphiques d'ATI se sont améliorés. Remarque
+  mise à jour
+• Suppression de la remarque sur Waow de vista vu que maintenant seven est
+  sorti ;)
+• Modification sur une remarque sur les noyaux
+  (Pour 1 Gio de RAM, t'as plus rien ;))
+• Des liens de logiciel changés, textes rafraichis
+• Sélectionner avec un motif -> Sélectionner les éléments correspondants
+  à \ldots{}
+• corrections de quelques zillions de coquilles, reformulations, etc. :-)
+
