@@ -4,6 +4,9 @@
 \makeindex % dit à LaTeX de générer les index
 
 \begin{document}
+\ifversionpdf
+    \include{framabook/projet}
+\fi
 \frontmatter % Intro (numéro de page en chiffres romains)
 \include{framabook/titre}
 \sommaire
