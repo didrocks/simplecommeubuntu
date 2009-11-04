@@ -1,8 +1,8 @@
-simplecommeubuntu (9.10) karmic; urgency=low
+simplecommeubuntu (9.10) karmic-proposed; urgency=low
 
-  * New release, updating pictures and typos from the prerc
+  * New release, updating pictures and typos from the pre-rc (LP: #474668)
 
- -- Didier Roche <didrocks@ubuntu.com>  Tue, 03 Nov 2009 21:37:12 +0100
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 04 Nov 2009 21:11:47 +0100
 
 simplecommeubuntu (9.10~prerc) karmic; urgency=low
 
