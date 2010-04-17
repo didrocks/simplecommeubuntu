@@ -47,16 +47,17 @@ Sur les ordinateurs récents, il est souvent possible d'appuyer simplement sur l
 Si cela ne fonctionne pas ou que vous ne vous sentez pas à même de configurer \RefGlossaire{Système}{-}{Séquence de démarrage}{l'ordre de démarrage}, Ubuntu peut effectuer cette tâche pour vous. Pour cela, insérez votre CD-ROM lorsque Windows est démarré. La fenêtre \ref{ImgHelpBootOnCD} apparaîtra alors et vous proposera plusieurs options en anglais. Choississez «~Démo and full installation~». Redémarrer la machine sera alors nécessaire et la troisième option «~Help me to boot from CD~» devra alors être sélectionné.
 \ImgCentree{8}{corps/chapitre2/img/HelpBootSurCD.png}{Vous pouvez choisir ici de démarrer sur le CD-ROM}{ImgHelpBootOnCD}
 \subsubsubsection{Premier écran et lancement d'Ubuntu}
-Un menu est automatiquement présenté sur lequel vous pourrez choisir la langue désirée par les touches fléchées puis en appuyant sur \Touche{Entrée}. Il vous est possible de revenir sur votre choix en appuyant sur la touche \Touche{F2}.\par
+Un premier écran \ref{ImgLiveCD0} s'affiche alors pendant quelques secondes. Si vous n'appuyez sur aucune touche, ubuntu démarrera (voir \ref{ImgLiveCD3}), et il vous sera présenté un écran \ref{ImgLiveCD4-2} vous permettant de choisir votre langue, puis soit d'installer, soit d'essayer d'ubuntu sans effectuer immédiatement l'installation. Si l'installation est sélectionnée, vous pouvez passer à la section \ref{RefInstall}, sinon, vous pouvez passer à \ref{RefSessionLive}.\par
+\ChoixDebutLive
+Si vous appuyez sur une touche lors du premier écran, un menu est automatiquement présenté sur lequel vous pourrez choisir la langue désirée par les touches fléchées puis en appuyant sur \Touche{Entrée}. Il vous est possible de revenir sur votre choix en appuyant sur la touche \Touche{F2}.\par
 Vous obtiendrez ainsi un menu et une interface en Français (ou autres) comme montré sur la figure \ref{ImgLiveCD2}.\par
-\ChoixDebutInstall
 À noter que vous n'aurez pas à faire cette action si vous utilisez le CD d'ubuntu-fr entièrement francisé, on l'a fait pour vous.
+\ChoixDebutInstall
 \section{Session Live}
 \label{RefSessionLive}
 C'est parti, vous avez validé «~Essayer Ubuntu sans rien changer sur votre ordinateur~», une session live se lance. Soyez patient, la détection du matériel de votre ordinateur est en cours et une jolie icône de chargement est là pour vous faire patienter, puis une barre défilante --- cf \ref{ImgLiveCD3}\ldots{}\par
-\ImgCentree{4.99}{corps/chapitre2/img/LiveCD3.png}{Démarrage du Desktop CD}{ImgLiveCD3}
 \begin{nota}
-Vous aurez noté l'option «~Installer Ubuntu~» sur l'image \ref{ImgLiveCD2}. Cette option correspond à un raccourci vous amenant directement à installer votre nouveau système d'exploitation sans essai au préalable. Le résultat est le même que la démarche plus complète que je vous donne -- hormis que vous ne pourrez pas configurer votre connexion à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} par ce moyen-ci.\\
+Vous aurez noté l'option «~Installer Ubuntu~» sur les images \ref{ImgLiveCD} \ref{ImgLiveCD2}. Cette option correspond à un raccourci vous amenant directement à installer votre nouveau système d'exploitation sans essai au préalable. Le résultat est le même que la démarche plus complète que je vous donne -- hormis que vous ne pourrez pas configurer votre connexion à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} par ce moyen-ci.\\
 Les autres options permettent de vérifier la bonne intégration de votre CD-ROM, tester la mémoire vive de votre ordinateur ou encore de démarrer classiquement à partir du disque dur.
 \end{nota}
 Une fois l'interface graphique chargée, vous devriez retrouver l'écran comme présenté en image \ref{ImgLiveCD4}.\par
@@ -66,6 +67,7 @@ Profitez-en pour découvrir votre futur \RefGlossaire{Système}{OS}{Système d'e
 Je vous conseille, si vous avez accès à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet}, de configurer ce dernier si cela n'est déjà fait automatiquement. En effet, vous aurez ainsi les dernières mises à jour si vous décidez d'installer Ubuntu sur votre ordinateur, et ce, dès l'installation ! Essayez de lancer Firefox -- la première \RefGlossaire{-}{-}{Icône}{icône} à côté du menu «~Système~» -- pour le vérifier. Cela devrait être le cas, si vous êtes connecté par un câble Ethernet,  avec ou sans\NotePage{Oui, vous avez bien lu, même «~sans~», grâce à \RefGlossaire{Réseau}{Connexion réseau}{Avahi}{Avahi} que l'on peut choisir comme indiqué en \ref{RefAvahi}.} attribution des adresses par \RefGlossaire{Réseau}{Connexion réseau}{DHCP}{DHCP}. Dans tous les cas, veuillez vous référer à la section d'installation du réseau en \ref{RefInstallReseau}.
 \end{nota}
 \section{L'installation}
+\label{RefInstall}
 Un Live c'est beau, une installation c'est mieux ! Vous aimez Ubuntu et voulez l'installer ? Double-cliquez sur l'\RefGlossaire{-}{-}{Icône}{icône} «~Installer Ubuntu 9.10~» présente sur le bureau. L'installeur répondant au doux nom «~d'Ubiquity~» se lance\ldots{}
 \begin{attention}
 Petite remarque préalable sur les PCs tatoués.\label{RefTatouage}
