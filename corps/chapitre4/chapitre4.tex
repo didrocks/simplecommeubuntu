@@ -127,12 +127,12 @@ Sachez que de nombreux autres dépôts existent ailleurs sur le web. Toutefois, 
 Je vous propose, pour suivre sans encombre la partie \ref{RefChapLogiciel}, «~Logiciels~» et \ref{RefChapJeux} «~Jeux~», de cliquer sur «~Ajouter~», de l'onglet «~Logiciels de tierces parties~» et de rentrer la ligne de texte mise en évidence pour chacun des dépôts :
 \begin{itemize}
 \item Medibuntu\NotePage{Signifiant Multimedia, Entertainment \& Distractions In Ubuntu} est un projet dédié à la mise en paquets et à la distribution de paquets ne pouvant pas être inclus par défaut dans Ubuntu pour diverses raisons, liées aux législations en vigueur dans certains pays à propos de sécurité, de propriété intellectuelle et autres problématiques. Par exemple, c'est par ce dépôt que vous pourrez permettre à Ubuntu de lire vos DVD du commerce cryptés.\AddIndex{Problèmes légaux}{Logiciel}{Codec}{-} Pour plus d'informations à ce sujet, voir le point \ref{RefLireDVD}. Notez qu'il est de votre responsabilité légale de vous assurer que vous avez le droit d'utiliser les logiciels et technologies présents dans le dépôt Medibuntu\NotePage{\url{http://www.medibuntu.org/}} pour l'utilisation que vous désirez en faire :\\
-\Chemin{deb http://fr.packages.medibuntu.org/ karmic free non-free}\\
+\Chemin{deb http://fr.packages.medibuntu.org/ lucid free non-free}\\
 Puis, cliquez sur «~Ajouter une source de mise à jour~». Vous devrez faire de même avec les autres sources de logiciels.\par
 \item pour Gnormalize :\\
 \Chemin{deb http://asher256-repository.tuxfamily.org ubuntu main dupdate french}\par
 \item pour Cinelerra :\\
-\Chemin{deb http://lprod.org/deb/karmic/ ./}\par
+\Chemin{deb http://lprod.org/deb/lucid/ ./}\par
 \end{itemize}\par
 Une clef GPG est nécessaire pour le dépôt de Medibuntu afin de garantir l'authenticité de la connexion\NotePage{Brièvement, il s'agit d'être certain que vous téléchargez bien à partir du dépôt de Medibuntu et qu'il n'y ait pas un pirate qui se fasse passer pour eux et installe des virus}. Téléchargez le fichier \RefGlossaire{Système}{Fichier de configuration}{Texte brut}{texte} -- en le copiant-collant dans un fichier \RefGlossaire{Système}{Fichier de configuration}{Texte brut}{texte}, si besoin est -- à l'adresse suivante : \url{http://fr.packages.medibuntu.org/medibuntu-key.gpg}. Puis, dans l'onglet «~Authentification\NotePage{Vous remarquerez qu'il y a déjà les clefs d'authentification pour les dépôts officiels d'Ubuntu}~» : bouton «~Importer la clé\ldots{}~» et choisissez ce fichier. Vous pouvez ensuite supprimer le fichier téléchargé. Et voilà !\\
 Malheureusement, tous les dépôts, comme vous pouvez le voir, n'utilisent pas ce système d'authentification\ldots{}\par
@@ -148,17 +148,17 @@ Ensuite, remplacez le contenu du fichier par ceci :\\
 \# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to\\
 \# newer versions of the distribution.\\
 \\
-deb http://archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse\\
+deb http://archive.ubuntu.com/ubuntu/ lucid main universe restricted multiverse\\
 \\
 \#\# Major bug fix updates produced after the final release of the\\
 \#\# distribution.\\
-deb http://security.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted\\
-deb http://archive.ubuntu.com/ubuntu/ intrepid-updates universe main multiverse restricted\\
+deb http://security.ubuntu.com/ubuntu/ lucid-security universe main multiverse restricted\\
+deb http://archive.ubuntu.com/ubuntu/ lucid-updates universe main multiverse restricted\\
 \\
 \# Dépôts tierces Medibuntu, Ahser256 et lprod - cf mise en garde\\
-deb http://fr.packages.medibuntu.org/ karmic free non-free\\
+deb http://fr.packages.medibuntu.org/ lucid free non-free\\
 deb http://asher256-repository.tuxfamily.org ubuntu main dupdate french\\
-deb http://lprod.org/deb/karmic/ ./
+deb http://lprod.org/deb/lucid/ ./
 		\end{otherlanguage}%
 	\end{breakbox}%
 %}
