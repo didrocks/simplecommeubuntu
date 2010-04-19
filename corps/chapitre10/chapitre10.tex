@@ -155,20 +155,20 @@ Vous pouvez trouver sur la documentation du site Ubuntu-fr une bonne introductio
 \section{Les run levels}
 \subsection{Signification}
 Le run level, ou niveau de fonctionnement, est une fonction utilisée par le système d'init -- système V -- notamment lors du démarrage de votre système.\par
-Il existe différents run levels, qui correspondent chacun à un ensemble d'applications et de \RefGlossaire{Système}{Démon}{Service}{services} à mettre en marche et à arrêter. Ainsi, quand le système est démarré, il passe par le run level 1 puis par le run level 2, et il est possible de configurer les applications et \RefGlossaire{Système}{Service}{Démon}{démons}\NotePage{Surtout ceux de minuit\dots{}} qui seront lancés ou arrêtés à ce moment. Il existe en tout six run levels. Sous Ubuntu\NotePage{Il en est de même pour d'autres distributions comme Mandriva et Red Hat}, les run levels se répartissent ainsi -- à quelques différences près  :
+Il existe différents run levels, qui correspondent chacun à un ensemble d'applications et de \RefGlossaire{Système}{Démon}{Service}{services} à mettre en marche et à arrêter. Ainsi, quand le système est démarré, il passe par le run level 1 puis par le run level 2, et il est possible de configurer les applications et \RefGlossaire{Système}{Service}{Démon}{démons}\NotePage{Surtout ceux de minuit\dots{}} qui seront lancés ou arrêtés à ce moment. Il existe en tout six run levels. Sous Ubuntu\NotePage{Cela est différent pour d'autres distributions comme Mandriva et Red Hat}, les run levels se répartissent ainsi -- à quelques différences près  :
 \begin{description}
 \item[S] : Runlevel d'initialisation minimale de tous les runlevels (vérification de l'intégrité des systèmes de fichiers par exemple) 
 \item[0] : Arrêt 
 \item[1] : Mode mono-utilisateur 
-\item[2] : Mode multi-utilisateurs (sans NFS) 
-\item[3] : Mode multi-utilisateurs 
-\item[4] : Inutilisé 
+\item[2] : Mode multi-utilisateurs avec \AddIndex{Système}{-}{Serveur graphique}{serveur graphique}
+\item[3] : Mode multi-utilisateurs avec \AddIndex{Système}{-}{Serveur graphique}{serveur graphique} 
+\item[4] : Mode multi-utilisateurs avec \AddIndex{Système}{-}{Serveur graphique}{serveur graphique}
 \item[5] : Mode multi-utilisateurs avec \AddIndex{Système}{-}{Serveur graphique}{serveur graphique}
 \item[6] : Redémarrage 
 \end{description}
-Les run levels 0, 1 et 6 sont plus ou moins standardisés et communs à tous les systèmes appliquant le système V. Lorsque vous démarrez votre système en «~Safe-Mode~» -- deuxième ligne de Grub -- vous lancez en fait le runlevel S. Lors d'un démarrage «~normal~», vous passez les niveaux 1, 2, puis 5 lorsque GDM se lance. Notons qu'il n'y a pas de hiérarchie ni de chronologie dans les run levels : il n'est pas nécessaire de passer par 3 pour aller de 2 à 5, par exemple.\\
+Les run levels 0, 1 et 6 sont plus ou moins standardisés et communs à tous les systèmes appliquant le système V. Lorsque vous démarrez votre système en «~Safe-Mode~» -- deuxième ligne de Grub -- vous lancez en fait le runlevel S. Lors d'un démarrage «~normal~», vous passez les niveaux S, puis 2 lorsque GDM se lance. Notons qu'il n'y a pas de hiérarchie ni de chronologie dans les run levels : il n'est pas nécessaire de passer par 3 pour aller de 2 à 5, par exemple --- sur Ubuntu et Debian, 2, 3, 4, 5 sont identiques alors que ce n'est pas le cas sur d'autres distributions auxquelles uniquement le runlevel 5 correspond au niveau graphique.\\
 Les niveaux utilisés pour un fonctionnement continu de la machine -- excluant donc ceux permettant de la redémarrer ou de l'arrêter -- vont donc de un à cinq, et il est possible de passer de l'un à l'autre. Pour cela, une simple commande telle \Commande{sudo init 3} fonctionne, mais faites attention à bien avoir enregistré vos données, car aucune confirmation n'est demandée !\par
-Par défaut, sur la plupart des systèmes issus de Debian comme Ubuntu, le runlevel par défaut est le runlevel 5 lorsque l'interface graphique est lancée.
+Par défaut, sur la plupart des systèmes issus de Debian comme Ubuntu, le runlevel par défaut est le runlevel 2 lorsque l'interface graphique est lancée. Notez qu'upstart est en train de remplacer système V et introduit de nouvelles notions que nous n'étudierons pas ici.
 \subsection{Les scripts}
 C'est bien beau tout cela, mais à quoi cela sert ?\par
 Tous les \RefGlossaire{Système}{Démon}{Service}{services} et applications qui doivent être démarrés ou arrêtés lors d'un passage d'un run level à un autre le sont à partir de scripts. Ceux-ci sont regroupés dans le dossier \Chemin{/etc/init.d/}. Ces scripts reçoivent un paramètre qui peut être start, stop, restart, etc.\\
