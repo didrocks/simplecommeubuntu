@@ -125,40 +125,6 @@ Mais comment connaitre la version de votre \RefGlossaire{Système}{Kernel}{Noyau
 Ce qui nous intéresse ici, c'est la dernière partie --- generic ici. Cela vous renseignera ainsi sur la version et le type de \RefGlossaire{Système}{Kernel}{Noyau}{noyau} en cours d'utilisation.\par
 Pour installer un nouveau \RefGlossaire{Système}{Kernel}{Noyau}{noyau}, installez à partir de Synaptic\NotePage{Plus d'informations sur l'installation d'un paquet par Synaptic dans la section \ref{RefInstallSynaptic}}  le paquet «~linux-image-???~» où «~???~» varie suivant l'élément au tableau ci-dessus. Enfin, si vous avez installé un \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire}, n'oubliez pas de remplacer, par Synaptic\NotePage{Même remarque} au besoin, linux-restricted-modules-generic\NotePage{Votre ancien \RefGlossaire{Système}{Kernel}{Noyau}{noyau}} par linux-restricted-modules-???.
 \section{Fignoler le démarrage}
-\subsection{Modification de GRUB}
-Pour utilisateurs «~avertis~» seulement !\\
-\ImgCentree{11}{corps/chapitre7/img/Grub.png}{Le menu GRUB}{ImgGrubModif}
-Ce logiciel visible par l'image \ref{ImgGrubModif} s'occupe de démarrer les différents \RefGlossaire{Système}{OS}{Système d'exploitation}{systèmes d'exploitation} présents sur votre ordinateur. Il vous donne dix secondes pour choisir GNU/Linux ou Windows -- si vous avez une partition Windows -- et prend 3 secondes au démarrage si vous n'avez que GNU/Linux. Il est personnalisable, pour cela il suffit d'éditer son \AddIndex{Système}{Texte brut}{Fichier de configuration}{fichier de configuration} : taper la commande\NotePage{Toujours et encore dans un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal ou après avoir fait \Touche{ALT} + \Touche{F2}} : \Commande{gksudo gedit /boot/grub/menu.lst}\NotePage{Si vous vous rappelez ce qui a été indiqué en \ref{RefMdpRoot}, gksudo -- le module graphique de sudo -- indique que l'on prend les droits de l'administrateur afin d'éditer un fichier, ici le fichier menu.lst se trouvant dans \Chemin{/boot/grub/}, d'où la demande de votre mot de passe}.\\
-Quelques éléments intéressants sont :
-\begin{itemize}
-\item default 0 : \RefGlossaire{Système}{OS}{Système d'exploitation}{Système d'exploitation} lancé par défaut -- ici le premier.
-\item timeout 10 : Le temps d'attente en secondes avant de lancer le choix par défaut.
-\item \#{}hiddenmenu : Cette ligne est commentée\NotePage{Indiqué par la présence du \# en début de ligne}, cette option est donc désactivée. Si vous ne voulez pas voir le menu à chaque démarrage, enlevez le \#. Ensuite, pour afficher GRUB, Il faudra appuyer sur la touche \Touche{Échap}\NotePage{Ou \Touche{Esc}} dans les 3 secondes du démarrage.
-\item \#{}color cyan/blue white/blue : Pour les personnes préférant la couleur, décommentez cette ligne, «~it's more eye-candy~». ;-)
-\end{itemize}
-Il y a d'autres options pour les plus érudits. Une dernière, tout de même intéressante : un mot de passe qui permet de bloquer l'édition de GRUB.\par
-On peut aussi améliorer la résolution d'écran lors du démarrage -- et corriger un problème d'inaccessibilité aux \RefGlossaire{-}{Terminal}{Console}{consoles} virtuelles sur certaines cartes graphiques avec le \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} nVIDIA -- en ajoutant vga=791 au bout de la ligne : \Code{\# defoptions=quiet splash} qui ainsi deviendra :\\
-\Code{\# defoptions=quiet splash vga=791}
-Il faut ensuite entrer la commande\NotePage{Dans un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal ou après avoir appuyé sur \Touche{ALT} + \Touche{F2}} : \Commande{sudo update-grub} pour que ce paramètre prenne effet.\\ Pour ajuster au mieux ce paramètre, référez-vous au tableau suivant :\par
-\begin{tabular}{||c||c|c|c|c|c||}
-\cline{2-6}
-\cline{2-6}
-\multicolumn{1}{c||}{} & \multicolumn{5}{c|}{Résolution}\\
-\hline
-\hline
-Couleurs & 640x480 & 800x600 & 1024x768 & 1280x1024 & 1600x1200\\
-\hline
-\hline
-8 bits (256) & 769 & 771 & 773 & 775 &796\\
-\hline
-15 bits (32k) & 784 & 787 & 790 & 793 & 797\\
-\hline
-16 bits (64k) & 785 & 788 & 791 & 794 & 798\\
-\hline
-24 bits (16m) & 786 & 789 & 792 & 795 & 799\\
-\hline
-\hline
-\end{tabular}
 \subsection{Pavé numérique}
 Si votre pavé numérique ne s'active pas au démarrage, vous pouvez faire ce qui suit : installer numlockx par Synaptic. Cependant, ici, le pavé numérique ne sera disponible qu'une fois connecté sous \AddIndex{Environnement graphique}{Personnalisation}{GNOME}{GNOME}.\\
 Si vous voulez que le pavé numérique soit disponible même sous GDM, il va falloir ouvrir un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal, puis rentrer : \Commande{gksudo gedit /etc/gdm/Init/Default} et appuyer sur \Touche{Entrée}. Une fois le mot de passe renseigné, l'éditeur de texte s'affiche. Il faut alors ajouter au début du fichier :
