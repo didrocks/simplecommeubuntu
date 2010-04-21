@@ -16,8 +16,13 @@ Vous remarquerez également qu'une imprimante virtuelle PDF est installée par d
 \subsection{Derniers conseils}
 Comme vous pouvez le voir, la reconnaissance d'une imprimante avec Ubuntu n'est en rien complexe. Pour les imprimantes récalcitrantes, l'application de configuration \ref{ImgImpress2} permet d'en ajouter une manuellement et de sélectionner son driver. En alliant cet outil à l'aide que l'on peut trouver sur de forums tels celui de \url{http://www.ubuntu-fr.org}, il vous sera possible de faire fonctionner pratiquement n'importe quel type d'imprimante. Si tel n'était pas le cas, cela signifierait que le constructeur de l'imprimante a refusé de délivrer la moindre information à propos de son matériel mais, fort heureusement, ce cas est de plus en plus rare.
 \section{Passons au scanner}
+\subsection{Scanner simplement}
+Sous Ubuntu, l'outil de scanner par défaut est avant tout axé sur la simplicité. La version 10.04 LTS a introduit un nouvel outil pour effectuer ceci : Simple Scan que l'on retrouve dans Applications \FlecheDroite Graphisme \FlecheDroite Simple Scan.\par
+Cet outil permet de numériser des documents en fonction de leur type (Photo, Texte), effectuer des rotations et du recadrage, ajouter plusieurs pages et les imprimer, exporter en pdf ou encore au format image. Bref, cet outil devraient combler la plupart des utilisations. La couche utilisée est sane que l'on retrouve également dans le deuxième outil, plus évolué, mais plus complexe.
+\ImgCentree{7.8}{corps/chapitre7/img/Simple_Scan.png}{Scanner simplement vos document}{ImgSimpleScan}
+\subsection{XSane}
 \ImgPar{r}{3}{corps/chapitre7/img/Installer_Scanner_1.png}
-Avec Ubuntu, le scanner s'installe et s'utilise avec l'application XSane. Vous trouverez XSane dans le menu  Applications \FlecheDroite Graphisme \FlecheDroite Scanneur d'images XSane. C'est un outil d'acquisition graphique qui permet aussi de faire de la reconnaissance de caractère, si le paquet «~gocr~» est installé. Pour cela, installez simplement le paquet «~gocr~» via Synaptic\NotePage{Toujours selon la méthode expliquée à la section \ref{RefInstallSynaptic}}.\par
+Simple Scan étant à son début de développement et voulant se concentrer sur des fonctionnalités nécessaires au grand public, il est possible sous Ubuntu d'utiliser l'application XSane pour des besoins plus avancés. Après son installation, vous le trouverez XSane dans le menu  Applications \FlecheDroite Graphisme \FlecheDroite Scanneur d'images XSane. C'est un outil d'acquisition graphique qui permet aussi de faire de la reconnaissance de caractère, si le paquet «~gocr~» est installé. Pour cela, installez simplement le paquet «~gocr~» via la méthode de votre choix.\par
 XSane permet de :
 \begin{itemize}
 \item scanner une image, photo, dessin ou document texte, 
