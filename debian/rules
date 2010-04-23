@@ -4,14 +4,14 @@ build: build-stamp
 
 build-stamp:
 	dh_testdir
-	$(MAKE) pdf
+	$(MAKE) all
 	touch $@
 
 clean: 
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
-	$(MAKE) proper
+	$(MAKE) clean
 	dh_clean 
 
 install: build

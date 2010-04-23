@@ -7,17 +7,19 @@
 #*******************************************************
 
 DOC = maitre
+VERSION = $$(sed -n 's/\\def\\version{v \(.*\)}/\1/p' main/VotreFramabook.sty | sed 's/ //g')
 
-.PHONY: clean proper
+.PHONY: install all clean proper
 
-pdf: $(DOC).tex
+all build: $(DOC).pdf
+
+$(DOC).pdf: $(DOC).tex
 	while ( \
         makeindex -s framabook/glossaire.ist $(DOC).glo -o $(DOC).glx ; \
         makeindex -s framabook/index.ist $(DOC) ; \
 		pdflatex -interaction=nonstopmode $(DOC).tex || true ; \
 		grep -q "get cross-references right" $(DOC).log ) do true ; \
 	done
-	touch pdf
 
 clean:
 	for i in "." "*" "*/*" ; do \
@@ -35,17 +37,13 @@ clean:
 		rm -rf $$i/*.toc ; \
 	    rm -rf $$i/*.som ; \
 	done ;
-	rm -f pdf
-
-proper: clean
 	rm -f $(DOC).pdf
 
-install: pdf
-	version=$$(sed -n 's/\\def\\version{v \(.*\)}/\1/p' main/VotreFramabook.sty) ; \
+install: $(DOC).pdf
 	if [ "$(DESTDIR)" != "" ] ; then \
 		mkdir -p $(DESTDIR) ; \
-		cp $(DOC).pdf $(DESTDIR)/scu-$${version}.pdf ; \
+		cp $(DOC).pdf $(DESTDIR)/scu-$(VERSION).pdf ; \
 	else \
-		cp $(DOC).pdf ./scu-$${version}.pdf ; \
+		cp $(DOC).pdf ./scu-$(VERSION).pdf ; \
 	fi
 
