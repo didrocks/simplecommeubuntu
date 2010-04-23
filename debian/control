@@ -5,6 +5,7 @@ Maintainer: Didier Roche <didrocks@ubuntu.com>
 Build-Depends: debhelper (>= 5),
                texlive-latex-base,
                texlive-latex-extra,
+               texlive-lang-french,
                lmodern,
                texlive-fonts-recommended,
                latex-xcolor

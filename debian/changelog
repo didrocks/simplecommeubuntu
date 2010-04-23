@@ -1,3 +1,10 @@
+simplecommeubuntu (10.04) UNRELEASED; urgency=low
+
+  * debian/control:
+    - add texlive-lang-french build-dep to fix wrong hyphenation
+
+ -- Didier Roche <didrocks@ubuntu.com>  Fri, 23 Apr 2010 19:50:01 +0200
+
 simplecommeubuntu (9.10) karmic; urgency=low
 
   * New release, updating pictures and typos from the pre-rc
