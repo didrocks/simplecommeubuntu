@@ -58,7 +58,7 @@ Comme vous l'avez sans doute compris lors de l'explication du terme «~paquet~»
 \begin{enumerate}
 \item Aller sur 01net, Framasoft ou Clubic
 \item Trouver le logiciel correspondant à vos besoins
-\item Télécharger le Set-up.exe
+\item Télécharger le Setup.exe
 \item Double-cliquer sur le fichier Setup.exe fraîchement téléchargé
 \item Suivant, Suivant, Suivant,\ldots{} Avez-vous pensé à lire le CLUF\NotePage{Contrat de licence détaillant les conditions que vous acceptez en installant ce logiciel} ?
 \item Redémarrer l'ordinateur
@@ -178,7 +178,7 @@ Puis, toujours dans Synaptic, allez dans le menu «~Configuration \FlecheDroite 
 En cliquant alors sur le bouton «~Filtres personnalisés~» de Synaptic, vous aurez accès à ce filtre, et vous pourrez désinstaller sans crainte toutes les librairies, cf. image \ref{ImgOrph2}.\\
 \ImgCentree{12}{corps/chapitre4/img/Paquets_Orphelins.png}{Recherche des paquets orphelins}{ImgOrph2}
 \begin{nota}
-Cette section est seulement valable si vous utilisez le système APT\NotePage{c'est-à-dire Synaptic, «~Logithèque Ubuntu~», la ligne de commande -- sauf aptitude --, ou encore l'installation manuelle d'un .deb} et non des binaires indépendants -- comme vous le verrez pour quelques jeux au chapitre \ref{RefChapJeux} -- qui nécessitent des librairies installées par APT : ces librairies seront vues comme orphelines pour APT, puisque le logiciel qui les utilise n'est pas recensé comme installé -- ne faisant pas partie de Synaptic -- mais ne seront pas supprimées puisque vous les aurez installées manuellement (c'est à dire, en les spécifiant).
+Cette section est seulement valable si vous utilisez le système APT\NotePage{c'est-à-dire Synaptic, «~Logithèque Ubuntu~», la ligne de commande -- sauf aptitude --, ou encore l'installation manuelle d'un .deb} et non des binaires indépendants -- comme vous le verrez pour quelques jeux au chapitre \ref{RefChapJeux} -- qui nécessitent des librairies installées par APT : ces librairies seront vues comme orphelines pour APT, puisque le logiciel qui les utilise n'est pas recensé comme installé -- ne faisant pas partie de Synaptic -- mais ne seront pas supprimées puisque vous les aurez installées manuellement (c'est à dire, en les spécifiant). Faites enfin attention à l'utilisation de deborphan, normallement pour les paquets installés manuellement.
 \end{nota}
 \subsubsection{Les résidus de configuration}
 En réalité, lorsque vous désinstallez un logiciel, vous ne supprimez pas votre \AddIndex{Système}{Texte brut}{Fichier de configuration}{configuration} personnelle. Ceci a un but précis : si l'envie vous reprenait, un jour, d'installer à nouveau ledit logiciel, vous retrouveriez ainsi toutes les préférences de ce dernier que vous avez mis tant de temps à configurer. Ces \AddIndex{Système}{Texte brut}{Fichier de configuration}{fichiers de configuration}, correspondant aux préférences utilisateurs\NotePage{Et donc, chaque utilisateur à ses propres préférences sauvegardées}, vous l'aurez compris, sont de petits fichiers \RefGlossaire{Système}{Fichier de configuration}{Texte brut}{texte}, qui, la plupart du temps, ne prennent pas énormément de place. Plus d'informations à ce sujet dans la section \ref{RefEnrPref}.\par
