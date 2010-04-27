@@ -15,7 +15,7 @@ Un grand soin a été apporté à cette liste pour n'avoir qu'un seul logiciel p
 Certains logiciels cités sont déjà installés par défaut sous Ubuntu, ils sont tout de même présents dans cette liste pour indiquer comment ajouter quelques fonctions, modifier certains paramètres, expliquer leur utilité\ldots{}\par
 En plus de toutes les applications présentées ici, je suis sûr que vous trouverez également quelques perles par le biais de Applications \FlecheDroite Logithèque Ubuntu. Il suffit souvent de chercher le terme anglais. Exemple : «~Comics~» pour un logiciel spécialisé dans l'affichage de bandes dessinées\NotePage{Si si, ça existe, il est même présent dans ce livre !}, etc. Vous pouvez aussi vous laisser guider par les thèmes -- exemple : «~\RefGlossaire{-}{L'Internet}{Internet}{Internet}~» -- pour trouver ce que vous désirez.\par
 \begin{nota}
-De nombreuses équivalences logiciels Windows/Linux existent et vous pourrez le trouver sur l'Internet. Attention cependant, toutes les applications ne seront peut-être pas disponibles dans les sources de logiciels que nous avons paramétrées.
+De nombreuses équivalences logiciels Windows/Linux existent et vous pourrez les trouver sur l'Internet. Attention cependant, toutes les applications ne seront peut-être pas disponibles dans les sources de logiciels que nous avons paramétrées.
 \end{nota}
 \section{Différents cas d'installation}
 \label{RefInstallJeuEtLogiciel}
@@ -30,7 +30,7 @@ Pour le désinstaller, il suffit de le faire par Synaptic -- le logiciel n'est p
 Les .deb extérieurs, et spécialement ceux faits par «~getdeb~» ne donnent absolument aucune garantie en terme de fiabilité de contenu et de qualité de packaging. De plus, ceux-ci sont très souvent mis à jour et il est difficile de garantir que la version que j'ai testée soit encore disponible. Préférez toujours les logiciels et jeux disponibles dans les sources de mises à jour officielles. Concernant les jeux que je conseille d'installer par getdeb, certains sont disponibles pour de plus anciennes versions d'Ubuntu mais ont été installés sans problème chez moi.
 \end{attention}
 \subsection{Installation d'un .bin, d'un .sh ou de .run}
-Certains jeux ou logiciels ne sont malheureusement pas accessibles dans les sources de logiciels. Vous allez alors télécharger des fichiers en .run ou en .bin. Pour les installer, une fois en possession du fichier (.run, d'un .sh ou d'un .bin) : clic-droit sur l'\RefGlossaire{-}{-}{Icône}{icône}, onglet Permissions, cochez  «~Autoriser l'exécution du fichier comme un programme~». Fermer. Puis, ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal}\NotePage{Non, non, pas de panique ! Et c'est toujours par Applications \FlecheDroite Accessoires \FlecheDroite Terminal}. Écrivez alors \Commande{sudo sh } -- notez qu'il y a une espace\NotePage{Eh oui, une espace : le genre féminin désigne alors les petites tiges métalliques utilisées autrefois en imprimerie pour séparer les mots et les lettres. Aujourd'hui, le genre féminin est utilisé dans le monde de la typographie et de la photo-composition.} à la fin -- puis faites un \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} du fichier -- .run ou .bin -- dans votre \RefGlossaire{-}{Console}{Terminal}{terminal}. Normalement, vous devrez vous retrouver avec quelque chose du genre \Commande{sudo sh '/\ldots{}/VotreFichier.run'} où \ldots{} est variable, tout comme VotreFichier. Appuyez sur \Touche{Entrée}. Une fois votre mot de passe renseigné -- car vous utilisez les droits de root, l'administrateur -- l'installation démarre. Gardez les champs «~Install path~»\NotePage{Chemin d'installation} et «~Link path~» ou «~Binary Path~»\NotePage{Chemin vers l'exécutable} inchangés avant d'appuyer sur «~Lancer l'installation~». C'est bon, votre jeu ou votre logiciel est installé ! Si vous avez laissé coché «~Entrées du menu Démarrer~», normalement un raccourci dans le menu Applications est disponible. Sinon vous pouvez créer un raccourci dans le menu Applications comme expliqué dans la section \ref{RefEditerMenus}. Renseignez dans le champ «~Commande~» ou «~Exécutable~» la valeur qui se trouve après «~Pour jouer :~» de chaque jeu ou «~Pour le lancer :~» de chaque logiciel.\\
+Certains jeux ou logiciels ne sont malheureusement pas accessibles dans les sources de logiciels. Vous allez alors télécharger des fichiers en .run ou en .bin. Pour les installer, une fois en possession du fichier (.run, d'un .sh ou d'un .bin) : clic-droit sur l'\RefGlossaire{-}{-}{Icône}{icône}, onglet Permissions, cochez  «~Autoriser l'exécution du fichier comme un programme~». Fermer. Puis, ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal}\NotePage{Non, non, pas de panique ! Et c'est toujours par Applications \FlecheDroite Accessoires \FlecheDroite Terminal}. Écrivez alors \Commande{sudo sh } -- notez qu'il y a une espace\NotePage{Eh oui, une espace : le genre féminin désigne alors les petites tiges métalliques utilisées autrefois en imprimerie pour séparer les mots et les lettres. Aujourd'hui, le genre féminin est utilisé dans le monde de la typographie et de la photo-composition.} à la fin -- puis faites un \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} du fichier -- .run ou .bin -- dans votre \RefGlossaire{-}{Console}{Terminal}{terminal}. Normalement, vous devrez vous retrouver avec quelque chose du genre \Commande{sudo sh '/\ldots{}/VotreFichier.run'} où \ldots{} est variable, tout comme VotreFichier. Appuyez sur \Touche{Entrée}. Une fois votre mot de passe renseigné -- car vous utilisez les droits de root, l'administrateur -- l'installation démarre. Gardez les champs «~Install path~»\NotePage{Chemin d'installation} et «~Link path~» ou «~Binary Path~»\NotePage{Chemin vers l'exécutable} inchangés avant d'appuyer sur «~Lancer l'installation~». C'est bon, votre jeu ou votre logiciel est installé ! Si vous avez laissé coché «~Entrées du menu Démarrer~», normalement un raccourci dans le menu Applications est disponible. Sinon vous pouvez le créer comme expliqué dans la section \ref{RefEditerMenus}. Renseignez dans le champ «~Commande~» ou «~Exécutable~» la valeur qui se trouve après «~Pour jouer :~» de chaque jeu ou «~Pour le lancer :~» de chaque logiciel.\\
 Il y a toujours une \RefGlossaire{-}{-}{Icône}{icône} uninstall dans le dossier d'installation -- comme par exemple dans le dossier \Chemin{/usr/local/games/alienarena2006} -- vous permettant, par double-clic, de désinstaller le jeu ou le logiciel. Vous pouvez ensuite effacer le .run ou le .bin.\par
 \begin{nota}
 Les .run se situant sur le site \url{http://www.liflg.org/}\NotePage{Site officiel de Loki Installer : l'installeur gérant les fichiers .run} sont des liens torrent : ils ouvrent GNOMETorrent, qui est un système de partage de fichiers, et lance le téléchargement. Cependant, celui-ci peut ne pas démarrer immédiatement, mais une fois lancé, le téléchargement est rapide.
@@ -43,7 +43,7 @@ Lors de la désinstallation, il faudra donc supprimer l'installeur si vous n'ave
 Attention, cette méthode n'est valable que pour les liens indiqués dans cette documentation correspondants à des fichiers déjà compilés. En effet, les sources, qui ne sont pas directement exécutables contrairement aux binaires -- cf. section \ref{RefSourceBinaire} pour plus d'explications à ce sujet -- sont souvent distribuées dans des archives en .tar.gz.
 \end{nota}
 Téléchargez le fichier .tar.gz -- par exemple -- que je vous indiquerai. Double-cliquez dessus et décompressez l'archive. Ouvrez un \RefGlossaire{-}{Console}{Terminal}{terminal} par Applications \FlecheDroite Accessoires \FlecheDroite Terminal. Entrez la commande \Commande{sudo cp -r  } avec de nouveau l'espace finale. Faites ensuite un \RefGlossaire{-}{Drag'n'Drop}{Glisser-Déposer}{glisser-déposer} du dossier décompressé sur le \RefGlossaire{-}{Console}{Terminal}{terminal}. Rajoutez une espace, puis tapez, par exemple\NotePage{Ce sera indiqué pour chaque fichier, soyez rassuré} \Chemin{/opt/maniadrive}. Vous devrez avoir à la fin quelque chose s'apparentant à ceci : \Commande{sudo cp -r '/\ldots{}/ManiaDrive-'version'-linux-i386' /opt/maniadrive} où, à nouveau, \ldots{} est variable, tout comme 'version'. Validez avec la touche \Touche{Entrée}. Si tout se passe bien, rien n'est affiché. Entrez ensuite la commande : \Commande{sudo chmod -R 777 /opt/maniadrive} et à nouveau la touche \Touche{Entrée}. Si rien n'est affiché, c'est qu'il n'y a pas eu d'erreur. Créez un raccourci dans le menu Applications vers la commande \Chemin{/opt/maniadrive/\IndicCesure{}mania\_drive.sh} comme expliqué à la section \ref{RefEditerMenus} pour plus de simplicité. Vous pouvez ensuite effacer l'archive -- .rar, .zip , .tar.gz \ldots{} -- ainsi que le dossier décompressé.\\
-Pour le désinstaller, il suffit de tapez la commande -- dans cet exemple -- \Commande{sudo rm -r  /opt/maniadrive}.
+Pour le désinstaller, il suffit de taper la commande -- dans cet exemple -- \Commande{sudo rm -r  /opt/maniadrive}.
 \begin{nota}
 Le problème de cette dernière méthode d'installation est qu'elle n'installe pas les dépendances nécessaires. Il se peut alors que le jeu ne fonctionne pas à cause d'une dépendance manquante alors qu'il fonctionne très bien chez une autre personne ayant par ailleurs installé un autre jeu demandant ladite dépendance. Si un jeu installé de cette manière ne fonctionne pas, n'hésitez pas à chercher sur les forums où on vous indiquera les dépendances à installer. Par exemple, vous trouverez sur le Wiki d'Ubuntu-fr que ActionCube a besoin des dépendances suivantes : libsdl1.2debian et libsdl-image1.2. Il vous faudra alors installer, si ce n'est déjà fait, ces deux paquets par Synaptic.
 \end{nota}
@@ -257,7 +257,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 %%%\item Équivalent Windows : Quark Xpress{\par}
 \item Pour l'installer : \Commande{sudo apt-get install drgeo}{\par}
 \item Pour le lancer : \Commande{drgeo}{\par}
-\item Site officiel : \url{http://www.ofset.org/drgeo}{\par}
+\item Site officiel : \url{http://www.gnu.org/software/dr_geo/dr_geo.html}{\par}
 \endgroup
 \end{itemize}
 \subsection{Geg}
@@ -268,7 +268,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 %%%\item Équivalent Windows : Quark Xpress{\par}
 \item Pour l'installer : \Commande{sudo apt-get install geg}{\par}
 \item Pour le lancer : \Commande{geg}{\par}
-\item Site officiel : \url{http://www.infolaunch.com/~daveb}{\par}
+\item Site de la communauté : \url{http://doc.ubuntu-fr.org/geg}{\par}
 \endgroup
 \end{itemize}
 \subsection{GPeriodic}
@@ -294,7 +294,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \endgroup
 \item Post-installation : À noter que Maxima est le backend -- le programme permettant de calculer -- il faut donc, si vous le désirez, télécharger une interface graphique. De plus, afficher les graphes pourrait être intéressant : \Commande{sudo apt-get install wxmaxima gnuplot-nox}. Enfin, la documentation n'est pas installée automatiquement par la «~Logithèque Ubuntu~» : \Commande{sudo apt-get install gnuplot maxima-doc}.{\par}
 \item Pour le lancer avec une interface graphique : \Commande{wxmaxima}{\par}
-\item Site en français avec une bonne documenation : \url{http://www.ma.utexas.edu/users/wfs/maxima.html}{\par}
+\item Site en français avec une bonne documentation : \url{http://www.ma.utexas.edu/users/wfs/maxima.html}{\par}
 \item Site officiel : \url{http://wxmaxima.sourceforge.net}{\par}
 \end{itemize}
 \subsection{Solfege}
@@ -363,7 +363,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \item Équivalent Windows : 3D Studio Max{\par}
 \item Pour l'installer : \Commande{sudo apt-get install blender}{\par}
 \item Pour le lancer : \Commande{blender}{\par}
-\item Site officiel : \url{http://www.blender3d.org}{\par}
+\item Site officiel : \url{http://www.blender.org}{\par}
 \endgroup
 \end{itemize}
 \newpage
@@ -377,17 +377,6 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \item Pour le lancer : \Commande{cheese}{\par}
 \item Lancer dès le branchement d'une webcam : «~Système \FlecheDroite Applications \FlecheDroite  Périphériques et médias amovibles~», puis cochez «~Modifier la vidéo à la connexion~».{\par}
 \item Site officiel : \url{http://www.gnome.org/projects/cheese}{\par}
-\endgroup
-\end{itemize}
-\subsection{GNOME Scan}
-\begin{itemize}
-\begingroup
-\ImgPar{r}{3}{corps/chapitre8/img/Gnome_Scan.png}
-\item Description : Permet d'intégrer une alternative au scannage par Xsane pour les applications \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}.{\par}
-\item Équivalent Windows : EasyScan{\par}
-\item Pour l'installer : \Commande{sudo apt-get install gnomescan}{\par}
-\item Pour le lancer : \Commande{flegita} ou dans Gimp, par exemple : Fichier \FlecheDroite Acquisition \FlecheDroite Numériser.{\par}
-\item Site officiel :\\\url{http://www.gnome.org/projects/gnome-scan/index}{\par}
 \endgroup
 \end{itemize}
 \subsection{Gimp}
@@ -407,6 +396,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \end{itemize}
 \item Site officiel : \url{http://www.gimp.org}{\par}
 \end{itemize}
+\newpage
 \subsection{ImageMagick}
 \begin{itemize}
 \begingroup
@@ -419,7 +409,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \item Exemple d'utilisation en ligne de commande, pour redimensionner toutes les images jpeg d'un dossier : \Commande{mogrify -resize 800x600 *.jpg}\NotePage{Attention toutefois, la commande mogrify écrase les fichiers d'origine, ne pas jouer à ça avec les photos de vacances}. Ceci est également possible graphiquement par le visionneur d'images gThumb, en sélectionnant plusieurs images, puis  Outils \FlecheDroite Redimensionner les images.{\par}
 \item Site officiel : \url{http://www.imagemagick.org}{\par}
 \end{itemize}
-\newpage
+
 \subsection{Inkscape}
 \begin{itemize}
 \begingroup
@@ -443,7 +433,17 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \item Pour le lancer : \Commande{qcad}{\par}
 \item Site officiel : \url{www.ribbonsoft.com/qcad.html}{\par}
 \end{itemize}
-\newpage
+\subsection{Simple Scan}
+\begin{itemize}
+\begingroup
+\ImgPar{r}{3}{corps/chapitre8/img/Simple_Scan.png}
+\item Description : Permet d'intégrer une alternative au scannage par Xsane pour les applications \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}.{\par}
+\item Équivalent Windows : EasyScan{\par}
+\item Pour l'installer : \Commande{installé par défaut}{\par}
+\item Pour le lancer : \Commande{simple-scan}{\par}
+\item Site officiel : \url{https://edge.launchpad.net/simple-scan}{\par}
+\endgroup
+\end{itemize}
 \subsection{XaraXtreme}
 \label{RefXaraXtreme}
 \begin{itemize}
@@ -471,7 +471,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \item Post-installation : Vous devez entrer votre pseudonyme/mot de passe et l'adresse pour vous connecter à votre blog. Pour un blog sous WordPress par exemple, indiquez «~Movable Type~», puis comme adresse du serveur : \Chemin{http://\IndicCesure{}votre\_\IndicCesure{}blog.com/\IndicCesure{}xmlrpc.php}\NotePage{xmlrpc.php est un fichier se trouvant à la racine de WordPress}.{\par}
 \item Site officiel : \url{http://www.dropline.net/drivel}{\par}
 \end{itemize}
-\newpage
+
 \subsection{Ekiga}
 \begin{itemize}
 \begingroup
@@ -484,7 +484,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \item Site officiel : \url{http://www.ekiga.org}{\par}
 \endgroup
 \end{itemize}
-
+\newpage
 \subsection{Empathy}
 \label{RefEmpathy}
 \begin{itemize}
@@ -509,7 +509,7 @@ Pour toutes les installations contenant \Commande{wget\ldots{}}, la suite est so
 \item Site officiel : \url{http://www.gnome.org/projects/evolution}{\par}
 \endgroup
 \end{itemize}
-
+\newpage
 \subsection{Giver}
 \begin{itemize}
 \begingroup
