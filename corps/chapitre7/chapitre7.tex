@@ -10,7 +10,7 @@ Une fois cette dernière prête, le système vous en fera part comme dans l'imag
 \subsection{Configuration de l'imprimante}
 L'appui sur le bouton «~Configurer~» revient à cliquer sur Système \FlecheDroite Administration \FlecheDroite Impression, et permet d'ouvrir la fenêtre \ref{ImgImpress2} de gestion des imprimantes. Dans celle-ci, vous pouvez imprimer une page de test, nettoyer les têtes d'impression et accéder à des fonctions plus avancées comme l'accès aux imprimantes réseaux, la politique de comportement en cas d'erreur, le choix de la résolution, de l'orientation du papier\ldots{}\par
 \ImgCentree{11}{corps/chapitre7/img/Imprimante_3.png}{Panneau d'administration des imprimantes}{ImgImpress2}
-\subsection{Une deuxième imprimante ?}
+\subsection{Une imprimante virtuelle ?}
 Vous remarquerez également qu'une imprimante virtuelle PDF est installée par défaut. Elle vous permettra de créer des fichiers éponymes depuis n’importe quelle application. Vous pourrez la sélectionner depuis la boîte de dialogue de choix de l'imprimante accessible la plupart du temps par Fichier \FlecheDroite Imprimer\dots{} comme indiqué sur l'illustration \ref{ImgImpress3}.\par
 \ImgCentree{11}{corps/chapitre7/img/Imprimante_4.png}{Choix de l'imprimante}{ImgImpress3}
 \subsection{Derniers conseils}
@@ -18,8 +18,8 @@ Comme vous pouvez le voir, la reconnaissance d'une imprimante avec Ubuntu n'est 
 \section{Passons au scanner}
 \subsection{Scanner simplement}
 Sous Ubuntu, l'outil de scanner par défaut est avant tout axé sur la simplicité. La version 10.04 LTS a introduit un nouvel outil pour effectuer ceci : Simple Scan que l'on retrouve dans Applications \FlecheDroite Graphisme \FlecheDroite Simple Scan.\par
-Cet outil permet de numériser des documents en fonction de leur type (Photo, Texte), effectuer des rotations et du recadrage, ajouter plusieurs pages et les imprimer, exporter en pdf ou encore au format image. Bref, cet outil devraient combler la plupart des utilisations. La couche utilisée est sane que l'on retrouve également dans le deuxième outil, plus évolué, mais plus complexe.
-\ImgCentree{7.8}{corps/chapitre7/img/Simple_Scan.png}{Scanner simplement vos document}{ImgSimpleScan}
+Cet outil permet de numériser des documents en fonction de leur type (Photo, Texte), effectuer des rotations et du recadrage, ajouter plusieurs pages et les imprimer, exporter en pdf ou encore au format image. Bref, cet outil devrait combler la plupart des utilisations. La couche utilisée est sane que l'on retrouve également dans le deuxième outil, plus évolué, mais plus complexe.
+\ImgCentree{7.8}{corps/chapitre7/img/Simple_Scan.png}{Scanner simplement vos documents}{ImgSimpleScan}
 \newpage
 \subsection{XSane}
 \ImgPar{r}{3}{corps/chapitre7/img/Installer_Scanner_1.png}
@@ -30,7 +30,7 @@ XSane permet de :
 \item créer un courriel, 
 \item créer un fax. 
 \end{itemize}
-Lançons-nous dans l'installation sans plus attendre.
+Lançons-nous dans l'utilisation sans plus attendre.
 \subsection{Reconnaissance de votre matériel}
 Au premier lancement, XSane tentera de détecter et reconnaître votre matériel. Ensuite, à chaque démarrage, il cherchera la présence de scanner(s) et affichera la fenêtre d'attente \ref{ImgScanner2}.
 \ImgCentree{7.8}{corps/chapitre7/img/Installer_Scanner_2.png}{Recherche de scanner}{ImgScanner2}
@@ -44,8 +44,8 @@ Dès votre matériel détecté, trois fenêtres apparaîtront à l'écran :
 \end{itemize}
 \subsection{Mettons tout ceci en pratique par un exemple}
 \subsubsection{Étape 1 : L'aperçu}
-Placez votre document sur la vitre du scanner et dans la fenêtre d'aperçu, choisissez «~Acquisition de l'aperçu~», vous devriez obtenir un écran comme celui-ci représenté en \ref{ImgScanner6}.\\
-Sélectionnez ensuite la zone à numériser par les délimitations en pointillés comme en \ref{ImgScanner7}. Cela peut s'effectuer d'une manière similaire à la sélection par la souris de plusieurs fichiers : on clique sur un endroit, puis, sans relacher la souris, on déplace le curseur jusqu'à la zone finale de délimitation. On peut ensuite «~ajuster~» et déplacer chaque bord du cadre comme si l'on redimensionnait une fenêtre.\par
+Placez votre document sur la vitre du scanner et dans la fenêtre d'aperçu, choisissez «~Acquisition de l'aperçu~», vous devriez obtenir un écran comme celui représenté en \ref{ImgScanner6}.\\
+Sélectionnez ensuite la zone à numériser par les délimitations en pointillés comme en \ref{ImgScanner7}. Cela peut s'effectuer d'une manière similaire à la sélection par la souris de plusieurs fichiers : on clique sur un endroit, puis, sans relâcher la souris, on déplace le curseur jusqu'à la zone finale de délimitation. On peut ensuite «~ajuster~» et déplacer chaque bord du cadre comme si l'on redimensionnait une fenêtre.\par
 \ScannerEtapeUn
 \subsubsection{Étape 2 : La numérisation}
 Lancez la numérisation proprement dite, via le bouton «~Numériser~» de la fenêtre principale. Une barre de progression \ref{ImgScanner8} vous indiquera l'état d'avancement du scanner. La vitesse dépend essentiellement de votre scanner et des agents de transmission des informations, comme le type de câble et le \RefGlossaire{Système}{-}{Port}{port} utilisé.\par
@@ -65,15 +65,15 @@ La fenêtre principale, comme indiqué précédemment, contient de nombreuses op
 Les cartes graphiques de marque ATI sont de mieux en mieux supportées sous GNU/Linux en général, notamment depuis le rachat de cette firme par AMD plus favorable aux Logiciels Libres. Ubuntu propose deux \RefGlossaire{Accélération graphique}{Driver}{Pilote}{pilotes} permettant de tirer parti de l'accélération matérielle de ces cartes. Attention, ces \RefGlossaire{Accélération graphique}{Driver}{Pilote}{pilotes} ont des performances relativement faibles par rapport à leurs homologues sous Windows. Il n'est cependant, pas recommandé d'installer le \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} pour toute carte graphique antérieure à la 9250Pro : en effet, les deux \RefGlossaire{Accélération graphique}{Pilote}{Driver}{drivers} \AddIndex{Philosophie}{-}{Libre}{Libres} proposés directement par Ubuntu fonctionnent très bien. Si vous possédez une telle carte et ne souhaitez pas en changer, vous pouvez toujours vous rendre sur le wiki de Ubuntu-fr : \url{http://doc.ubuntu-fr.org/ati} ou tenter directement l'installation du \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} -- mais ce terme «~\RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire}~» pourra gêner certains : le code source n'est pas accessible et par conséquent, Ubuntu n'a absolument aucun contrôle sur la sécurité de ces derniers -- qui sera détaillée dans la partie \ref{RefInstallDriverProprietaire}.
 \subsubsection{nVIDIA}
 \ImgPar{r}{1.5}{corps/chapitre7/img/Logo_nVIDIA.png}
-Le \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} proposé par Ubuntu permet un affichage graphique, mais ne tire absolument pas parti de l'accélération graphique. Donc, tous les jeux en 3D ou autres, ne fonctionnent pas par défaut. Un \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \AddIndex{Philosophie}{-}{Libre}{Libre} appelé «~nouveau~» est en cours d'élaboration mais reste, à l'heure actuelle, dans un état très expérimental. Heureusement, nVIDIA propose de très bons \RefGlossaire{Accélération graphique}{Pilote}{Driver}{drivers} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires} -- mais nous pouvons faire la même remarque que précédemment, car «~\RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires}~» -- pour GNU/Linux. Pour plus d'informations, référez-vous au wiki d'Ubuntu-fr à l'adresse suivante : \url{http://doc.ubuntu-fr.org/nvidia}. L'installation du \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} est décrite dans la section suivante.
+Le \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} proposé par Ubuntu permet un affichage graphique, mais ne tire absolument pas parti de l'accélération graphique. Donc, tous les jeux en 3D ou autres, ne fonctionnent pas par défaut. Un \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \AddIndex{Philosophie}{-}{Libre}{Libre} appelé «~nouveau~» est en cours d'élaboration mais reste, à l'heure actuelle, dans un état très expérimental vu qu'il ne gère que la 2D (c'est d'ailleurs celui installé par défaut). Heureusement, nVIDIA propose de très bons \RefGlossaire{Accélération graphique}{Pilote}{Driver}{drivers} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires} -- mais nous pouvons faire la même remarque que précédemment, car «~\RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires}~» -- pour GNU/Linux. Pour plus d'informations, référez-vous au wiki d'Ubuntu-fr à l'adresse suivante : \url{http://doc.ubuntu-fr.org/nvidia}. L'installation du \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} est décrite dans la section suivante.
 \subsubsection{Intel}
 \ImgPar{r}{1.5}{corps/chapitre7/img/Logo_Intel.png}
 Je peux donner directement une bonne nouvelle à tous les possesseurs d'une telle carte : Intel a libéré depuis quelques temps son \RefGlossaire{Accélération graphique}{Pilote}{Driver}{driver} GNU/Linux, qui était à l'époque très en retard au regard de ses performances. Ceci lui a rapidement permis de profiter de très grandes améliorations de la part de la communauté du \AddIndex{Philosophie}{-}{Libre}{Libre}\NotePage{Et notamment, un très bon support pour la gestion de l'énergie ainsi que la mise en hibernation.} et il intègre, dorénavant, l'accélération graphique par défaut. Vous n'avez donc rien à faire de particulier !
 \subsection{Installation d'un driver propriétaire}
 \AddIndex{Système}{Driver}{Pilote}{-}
 \label{RefInstallDriverProprietaire}
-Pour installer tout \RefGlossaire{Système}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} et être sûr de ne pas se tromper, il suffit d'activer le «~Pilote de périphériques~» de l'image \ref{ImgPiloteProprio1} que vous trouverez par le biais du menu «~Système \FlecheDroite Administration~» ou de cliquer sur l'icône de notification dans le tableau de bord supérieur lorsque celui-ci apparaît --- ce qui sera le cas uniquement si vous possédez un matériel nécessitant de tels drivers. Il faut, de plus, que les sources de mise à jour «~restricted~» soient activées, ce qui vous sera demandé de faire si tel n'est pas le cas. Plus d'informations sont disponibles à ce sujet si l'on se réfère à la partie \ref{RefSourceMAJ}.\\
-Une fois lancé, vous visualiserez les \RefGlossaire{Système}{Driver}{Pilote}{pilotes} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires} -- correspondant à votre matériel -- et pourrez sélectionner ceux à installer et, enfin, cliquer sur «~Activate~». Renseignez votre mot de passe. Vous aurez, après l'installation, un avertissement \ref{ImgPiloteProprio2} selon lequel le système doit être redémarré\NotePage{En fait, il suffit simplement, dans le cas des \RefGlossaire{Système}{Pilote}{Driver}{drivers} de cartes graphiques, de redémarrer l'interface graphique après vous être déconnecté de votre session par les touches \Touche{Ctrl} + \Touche{Alt} + \Touche{BackSpace}, mais choisissez le redémarrage si vous n'êtes pas sûr de ce que vous faites.}.
+Pour installer tout \RefGlossaire{Système}{Pilote}{Driver}{driver} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaire} et être sûr de ne pas se tromper, il suffit d'activer le «~Pilote de périphériques~» de l'image \ref{ImgPiloteProprio1} que vous trouverez par le biais du menu «~Système \FlecheDroite Administration~» ou de cliquer sur l'icône de notification dans le tableau de bord supérieur lorsque celle-ci apparaît --- ce qui sera le cas uniquement si vous possédez un matériel nécessitant de tels drivers. Il faut, de plus, que les sources de mise à jour «~restricted~» soient activées, ce qui vous sera demandé de faire si tel n'est pas le cas. Plus d'informations sont disponibles à ce sujet si l'on se réfère à la partie \ref{RefSourceMAJ}.\\
+Une fois lancé, vous visualiserez les \RefGlossaire{Système}{Driver}{Pilote}{pilotes} \RefGlossaire{Philosophie}{-}{Logiciel Propriétaire}{propriétaires} -- correspondant à votre matériel -- et pourrez sélectionner ceux à installer et, enfin, cliquer sur «~Activate~». Renseignez votre mot de passe. Vous aurez, après l'installation, un avertissement \ref{ImgPiloteProprio2} selon lequel le système doit être redémarré\NotePage{En fait, il suffit simplement, dans le cas des \RefGlossaire{Système}{Pilote}{Driver}{drivers} de cartes graphiques, de redémarrer l'interface graphique en se déconnectant, mais choisissez le redémarrage si vous n'êtes pas sûr de ce que vous faites.}.
 \PiloteProprio
 \section{Activer le bureau en 3D}
 \label{RefBureau3D}
@@ -100,8 +100,8 @@ Pour les activer, il vous faudra installer un gestionnaire de configuration spé
 \ImgCentree{8}{corps/chapitre7/img/Bureau3D_config.png}{Configuration avancée du bureau 3D}{ImgBureauConfig3D}
 \section{Optimisation selon le processeur}
 Cette partie est à réserver aux seuls utilisateurs «~avertis~».\\
-Par défaut l'installation devrait choisir le \RefGlossaire{Système}{Kernel}{Noyau}{noyau} le plus adapté à votre matériel. Ce point précis mérite d'être vérifier car il est à noter qu'un \RefGlossaire{Système}{Kernel}{Noyau}{noyau} adapté est vivement conseillé. Notez aussi que si vous avez plus de 1 Gio de RAM, celle-ci sera entièrement prise en compte avec le \RefGlossaire{Système}{Kernel}{Noyau}{noyau} 386.\par
-Il existe plusieurs versions du \RefGlossaire{Système}{Kernel}{Noyau}{noyau} adaptées aux différents types de microprocesseurs «~PC~» et utilisation. Vous les trouverez toutes listées dans le logiciel Synaptic. Voici un tableau récapitulatif des \RefGlossaire{Système}{Kernel}{Noyau}{noyaux} adaptés au différents types de microprocesseur et de cas d'utilisation :\par
+Par défaut l'installation devrait choisir le \RefGlossaire{Système}{Kernel}{Noyau}{noyau} le plus adapté à votre matériel. Ce point précis mérite d'être vérifié car il est à noter qu'un \RefGlossaire{Système}{Kernel}{Noyau}{noyau} adapté est vivement conseillé. Notez aussi que si vous avez plus de 1 Gio de RAM, celle-ci sera entièrement prise en compte avec le \RefGlossaire{Système}{Kernel}{Noyau}{noyau} 386.\par
+Il existe plusieurs versions du \RefGlossaire{Système}{Kernel}{Noyau}{noyau} adaptées aux différents types de microprocesseurs «~PC~» et utilisation. Vous les trouverez toutes listées dans le logiciel Synaptic. Voici un tableau récapitulatif des \RefGlossaire{Système}{Kernel}{Noyau}{noyaux} adaptés aux différents types de microprocesseur et de cas d'utilisation :\par
 \renewcommand{\multirowsetup}{\centering}
 \begin{center}
 \begin{tabular}{||c|c||}
@@ -114,7 +114,7 @@ Microprocesseur & Noyaux\\
 \hline
 %\multirow{2}{10cm}{Intel Pentium 2, 3, 4, AMD Athlon,\\Athlon Thunderbird, Athlon XP} & linux-image-generic\\
 %& (noyau par défaut)\\
-Intel Pentium 2, 3, 4, AMD Athlon,& linux-image-generic\\
+Intel Pentium 2, 3, 4, AMD Athlon,& linux-image-generic / linux-image-generic-pae (si plus de 4 Mio de RAM)\\
 Athlon Thunderbird, Athlon XP & (noyau par défaut)\\
 \hline
 Noyau temps réel & linux-image-rt\\
