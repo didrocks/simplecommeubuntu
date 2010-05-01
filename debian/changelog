@@ -1,6 +1,6 @@
 simplecommeubuntu (10.04) lucid-proposed; urgency=low
 
-  * New upstream version:
+  * New upstream version: (LP: #573081)
     - update all content to last version
   * debian/control:
     - add texlive-lang-french build-dep to fix wrong hyphenation
