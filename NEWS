@@ -1,3 +1,48 @@
+SCU 10.04 LTS
+-------------
+
+• remplacement de toutes les références de l'ancienne à la nouvelle
+  version, ainsi que le nombre d'inscrits sur le forum ubuntu-fr. Comme
+  d'hab :)
+• remise à jour de la procédure d'installation
+• remplacement des notifications par les indicateurs
+• remplacement de la barre FUSA par le session indicateur.
+• Mise à jour de la partie mise à jour nécessitant un redémarrage
+• pitivi est maintenant installé par défaut, il a gagné sa description
+  au chapitre 8 :)
+• gimp n'est plus installé par défaut
+• suppression de la modification de grub (plus valable dans grub2), non
+  nécessaire maintenant.
+• paufinnage de termes et présentation au chapitre 2
+• changement des étapes d'installations
+• Changement de la prise en charge des langues
+• Précisions concernant les runlevels et introduction d'une note sur
+  upstart.
+• Mise à jour de la partie sur les distributions en ajoutant les
+  netbooks
+• Mise à jour de la fiche de l'auteur :)
+• mise à jour de nautilus qui ne contient plus de bouton pour basculer
+  le comportement de l'affichage de l'url
+• Affichage s'appelle maintenant écran
+• nouvelle entrée micro-blogage
+• nouvelle entrée partage de fichiers
+• explication d'ubuntu one, accès, son rôle.
+• ajout de simpescan (installé par défaut), avec encore des explications
+  sur xsane.
+• Mis à jour de plups de 200 images, notamment grâce à la communauté
+  ubuntu-fr. Merci à eux !
+• suppression de Créateur de CD/DVD
+• ajout de enventelibre.org
+• remis à jour complet des liens et de certains modes d'installation des jeux du
+  chapitre 9. Tout frais, tout beau, tout neuf
+• Remplacement de UNR par UNE et suppression de Mobile Edition.
+• suppression de ctrl + alt + backspace
+• Quelques précisions sur l'installation.
+• driver nouveau par défaut
+• 4 bureau par défaut
+• des tonnes de reformulation, corrections, etc. Merci aux relectures à nouveau
+
+
 SCU 9.10
 --------
 
