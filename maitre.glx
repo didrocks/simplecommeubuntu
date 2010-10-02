@@ -28,7 +28,7 @@
 		\pasdenumerodepage{301}
   \item [Driver] Terme anglais de \IeC {\guillemotleft }~pilote~\IeC {\guillemotright }. Se r\IeC {\'e}f\IeC {\'e}rer \IeC {\`a} sa d\IeC {\'e}finition.
 		\pasdenumerodepage{301}
-  \item [Ethernet (c\IeC {\^a}ble)] Le c\IeC {\^a}ble ethernet le plus connu est certainement le c\IeC {\^a}ble RJ11, \IeC {\'e}quipant la plupart des t\IeC {\'e}l\IeC {\'e}phones. Cette interface physique est souvent utilis\IeC {\'e}e pour terminer les c\IeC {\^a}bles de type paire torsad\IeC {\'e}e, et sa version RJ45 est celle choisie pour \IeC {\'e}quiper la plupart des cartes r\IeC {\'e}seaux actuelles d'ordinateur.
+  \item [Ethernet (c\IeC {\^a}ble)] Cette interface physique est souvent utilis\IeC {\'e}e pour terminer les c\IeC {\^a}bles de type paire torsad\IeC {\'e}e, et sa version RJ45 est celle choisie pour \IeC {\'e}quiper la plupart des cartes r\IeC {\'e}seaux actuelles d'ordinateur. \IeC {\`A} noter que par abus de langage, on parle de c\IeC {\^a}ble Ethernet alors qu'il d\IeC {\'e}nomme en r\IeC {\'e}alit\IeC {\'e} le protocole de connexion utilis\IeC {\'e}.
 		\pasdenumerodepage{301}
   \item [Firewall] Terme anglais de \IeC {\guillemotleft }~pare-feu~\IeC {\guillemotright }. Se r\IeC {\'e}f\IeC {\'e}rer \IeC {\`a} la d\IeC {\'e}finition de ce dernier.
 		\pasdenumerodepage{301}
@@ -68,7 +68,7 @@
 		\pasdenumerodepage{301}
   \item [Operating System] Souvent appel\IeC {\'e} OS. Terme anglais de Syst\IeC {\`e}me d'exploitation. Voir cette d\IeC {\'e}finition.
 		\pasdenumerodepage{301}
-  \item [PPPoE] En anglais \IeC {\guillemotleft }~point-to-point protocol over Ethernet~\IeC {\guillemotright }, PPPoE est un protocole d'encapsulation de PPP sur Ethernet permettant de b\IeC {\'e}n\IeC {\'e}ficier des avantages de PPP, telles la s\IeC {\'e}curit\IeC {\'e} (chiffrement) et le contr\IeC {\^o}le de la connexion (d\IeC {\'e}bit, etc.).
+  \item [PPPoE] En anglais \IeC {\guillemotleft }~point-to-point protocol over Ethernet~\IeC {\guillemotright }, PPPoE est un protocole d'encapsulation de PPP sur Ethernet permettant de b\IeC {\'e}n\IeC {\'e}ficier des avantages de PPP en y ajoutant donc la possibilit\IeC {\'e} d'y int\IeC {\'e}grer des protocoles suppl\IeC {\'e}mentaires pouvant \IeC {\^e}tre compatibles avec des protocoles d'authentification (PAP, CHAP, etc.) et le contr\IeC {\^o}le de la connexion (d\IeC {\'e}bit, etc.).
 		\pasdenumerodepage{301}
   \item [Pare-feu] Un pare-feu est un \IeC {\'e}l\IeC {\'e}ment du r\IeC {\'e}seau informatique, logiciel et/ou mat\IeC {\'e}riel, qui a pour fonction de faire respecter la politique de s\IeC {\'e}curit\IeC {\'e} du r\IeC {\'e}seau, celle-ci d\IeC {\'e}finissant les types de communication autoris\IeC {\'e}s ou interdits. Il a pour principale t\IeC {\^a}che de contr\IeC {\^o}ler le trafic entre diff\IeC {\'e}rentes zones de confiance, en filtrant les flux de donn\IeC {\'e}es qui y transitent. G\IeC {\'e}n\IeC {\'e}ralement, les zones de confiance incluent l'Internet -- une zone dont la confiance est nulle -- et au moins un r\IeC {\'e}seau interne --- une zone dont la confiance est plus importante.
 		\pasdenumerodepage{301}
