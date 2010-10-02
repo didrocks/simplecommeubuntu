@@ -1,3 +1,10 @@
+simplecommeubuntu (10.10) UNRELEASED; urgency=low
+
+  * New upstream version:
+    - update content to ubuntu maverick meerkat
+
+ -- Didier Roche <didrocks@ubuntu.com>  Sat, 02 Oct 2010 13:59:27 +0200
+
 simplecommeubuntu (10.04) lucid-proposed; urgency=low
 
   * New upstream version: (LP: #573081)
