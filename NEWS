@@ -1,3 +1,30 @@
+SCU 10.10
+---------
+
+• remplacement de toutes les références de l'ancienne à la nouvelle
+  version, ainsi que le nombre d'inscrits sur le forum ubuntu-fr. Comme
+  d'hab :)
+• plus de powerpc, ajout de ARM
+• support de langue incomplet -> c'est maintenant une boîte de dialogue qui
+  apparait
+• précision sur les définitions de pppoe et du câble ethernet
+• f-spot est remplacé par shotwell
+• Les "sources de logiciel" se lance maintenant depuis la logithèque ubuntu et
+  plus depuis de le menu.
+• grand remaniement et réécriture du chapitre 2 : mise à jour de la procédure
+  d'installation, complètement changée pour cette version
+• précision au chapitre 5 maintenant que le mp3 peut être installé dès
+  l'installation de Ubuntu.
+• mise à jour des informations pour bien insister sur le fait qu'une partition
+  /home n'est absolument pas supplémentaire
+• chapitre 3: réécriture de la description du menu supérieure (suppression de
+  yelp, explication de l'indicator son et indicateur de message, mis à jour du me
+  menu)
+• ajout de détails sur indicateur son, indicateur message et retravail de la
+  description de la partie supérieure
+• mise à jour des images, photos, etc. ainsi que des typos/"fôtes" corrigées!
+  Merci à la communauté :)
+
 SCU 10.04 LTS
 -------------
 
