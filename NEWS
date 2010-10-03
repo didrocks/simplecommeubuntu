@@ -18,8 +18,17 @@ SCU 10.10
 • mise à jour des informations pour bien insister sur le fait qu'une partition
   /home n'est absolument pas supplémentaire
 • chapitre 3: réécriture de la description du menu supérieure (suppression de
-  yelp, explication de l'indicator son et indicateur de message, mis à jour du me
-  menu)
+  yelp, explication de l'indicator son et indicateur de message, mis à jour du
+  me menu)
+• Nombreux changements dans le menu Préférences:
+  • Chiffrement et trousseaux s'appellle maintenant Mots de passe et clés de
+    chiffrement
+  • Ajout de Comptes de messagerie et VoIP et de comptes de microblogage
+  • Ajout de Input Method Switcher et Keyboard Input Methods
+  • Micro-blogage -> Microblogage
+  • Suppression de Partage de fichiers personnels
+  • Ajout de OpenJDK Java 6 Policy Tool
+  • Ajout de Paramètres de messagerie
 • ajout de détails sur indicateur son, indicateur message et retravail de la
   description de la partie supérieure
 • mise à jour des images, photos, etc. ainsi que des typos/"fôtes" corrigées!

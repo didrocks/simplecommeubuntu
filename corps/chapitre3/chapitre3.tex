@@ -127,10 +127,6 @@ Vous pouvez, ici, vérifier et, éventuellement compléter, vos données personn
 Cette application vous permettra de paramétrer l'affichage d'une icône de notification lorsqu'un périphérique Bluetooth est connecté à votre ordinateur.
 \subsubsubsection{Bureau à distance}
 L'option Bureau à distance affiche une boîte de dialogue permettant aux utilisateurs de partager leur bureau avec des utilisateurs distants. Les connexions à un bureau distant peuvent s'effectuer au moyen de la technologie VNC\NotePage{Virtual Network Connection}. L'application «~Visionneur de bureaux distants~» du menu «~Applications \FlecheDroite Internet~» permet aux utilisateurs d'ordinateurs distants de se connecter, d'accéder et d'interagir avec le bureau de l'utilisateur comme s'ils étaient réellement assis devant l'ordinateur auquel ils sont connectés. Normalement, vous devriez laisser cette option désactivée si vous n'en avez pas l'utilité.
-\subsubsubsection{Chiffrement et trousseaux}
-Uniquement si vous utilisez un trousseau de clef. Vous pouvez ici paramétrer et choisir la clef de chiffrement GPG à utiliser par défaut. Signer ses mails est important pour spécifier que vous en êtes bien l'expéditeur\NotePage{Tout le monde peut, avec des connaissances basiques, envoyer un mail de la part de president@ubuntu-fr.org, par exemple, ce qui serait un sacrilège !}. Vous pouvez permettre ici de signer automatiquement vos mails sans répéter la phrase de passe -- mot de passe très très long ressemblant plus à une phrase -- ou encore quelques paramètres visuels.
-% PLUS LE CAS : voir si on ajoute seahorse. dans le futur
-%Vous pouvez sauvegarder sous un trousseau de clef les mots de passe et clef de chiffrement que vous avez à utiliser régulièrement. Ces trousseaux de clefs enregistrent vos différents mots de passe et clefs de manière cryptée par un mot de passe que vous définissez pour le trousseau. Comme cela, vous n'avez plus qu'un seul mot de passe à mémoriser et pas les dizaines associées à vos sites FTP et autres\ldots{} Dès que vous aurez la possibilité d'ajouter un mot de passe à un trousseau, Ubuntu vous fera signe. Vous pourrez ensuite les gérer à votre guise.\par
 \subsubsubsection{Clavier}
 Utilisez l'outil de configuration Clavier pour modifier les préférences d'auto-répétition pour votre clavier, et pour régler les paramètres de pause de saisie.
 \begin{itemize}
@@ -141,8 +137,10 @@ Utilisez l'outil de configuration Clavier pour modifier les préférences d'auto
 \item Le dernier onglet, «~Pause de saisie~», vous permet de paramétrer des pauses. Lorsque vous travaillez sur un ordinateur, il est recommandé de faire régulièrement une pause. En activant l'option, vous pourrez choisir votre intervalle de travail et la durée de la pause. Par défaut, si cette option est active, l'écran se verrouillera pendant trois minutes au bout d'une heure de travail.
 \end{itemize}\par
 Imaginons un cas pratique et que vous parliez Espéranto\NotePage{Si si, vous ne saviez pas ? :-)}. Certains caractères comme les «~s, c ou h~», agrémentés d'un accent circonflexe ne sont pas directement accessibles. Revenez à l'onglet «~Agencements~» et ajoutez -- par l'icône représentant un \Touche{+} «~Espéranto\NotePage{Prenez garde à choisir l'agencement «~France~» par défaut sinon, au prochain démarrage de \AddIndex{Environnement graphique}{-}{GNOME}{GNOME}, vous n'aurez pas un clavier français}~». Vous remarquerez d'ailleurs que vous aurez un aperçu -- que vous pouvez imprimer par la suite -- de la disposition du clavier. Cliquez sur l'onglet «~Options de l'agencement~», puis sur «~Combinaisons pour changer de groupe~» et choisissez une méthode de changement d'agencement. Par défaut, cette dernière est l'appui simultané des deux touches \Touche{Alt} + \Touche{Alt Gr}. Essayez et lancez un éditeur de texte, tapez quelques lettres, le clavier est en espéranto. Un nouvel appui sur les douches touche \Touche{Alt} et \Touche{Alt Gr} et le clavier revient en français.
-%\subsubsubsection{Configuration de la méthode de saisie SCIM}
-%Pour écrire des langues dont l'écriture s'effectue sans alphabet, comme par exemple le chinois (on parle de sinogrammes), on utilise un logiciel de saisie spécialisé. Dans Ubuntu\NotePage{Coup de chance, sachez que cette fonctionnalité n'est pas aussi aisée à utiliser sur tous les systèmes d'exploitation ;-)}, ce logiciel est intégré ! Cet outil dans le menu permet de configurer le logiciel qui permet d'écrire dans ces langues.
+\subsubsubsection{Comptes de messagerie et VoIP}
+Vous pourrez configurer ici directement l'outil de messagerie instantannée inclue par défaut dans Ubuntu (empathy). Ajouter ou éditer les comptes des différents réseaux utilisés.
+\subsubsubsection{Comptes de microblogage}
+À l'image de l'option précédente, cet utilitaire vous permet de configurer également les comptes de gwibber sur vos différents réseaux sociaux comme Twitter, Identica, Facebook\ldots{}
 \subsubsubsection{Connexions réseau}
 \AddIndex{Réseau}{-}{Configuration}{-}
 L'outil de configuration des connexions réseau vous permet de spécifier la façon dont votre système se connecte à d'autres ordinateurs et à l'\RefGlossaire{-}{L'Internet}{Internet}{Internet} : filaire, sans fil, par téléphone mobile\ldots{} Plus d'explications sur son utilisation à la section \ref{ConfigReseauManuelle} page \pageref{ConfigReseauManuelle}.
@@ -165,10 +163,18 @@ Utilisez les options à disposition pour paramétrer le raccourci clavier permet
 Cet outil est surtout utile pour les possesseurs de portables et permet de gérer les modes d'économie d'énergie de ce dernier suivant les cas d'alimentation (branché sur secteur, sur batterie\ldots{}).
 \subsubsubsection{Imprimante par défaut}
 Si plusieurs imprimantes sont installées comme indiqué en \ref{RefInstallImprimante} page \pageref{RefInstallImprimante}, cet écran permet de choisir l'imprimante proposée par défaut pour toutes les applications du système.
+\subsubsubsection{Input Method Switcher et Keyboard Input Methods}
+Pour écrire des langues dont l'écriture s'effectue dans des caractères non romans, comme par exemple le chinois (on parle de sinogrammes), on utilise un logiciel de saisie spécialisé. Dans Ubuntu\NotePage{Coup de chance, sachez que cette fonctionnalité n'est pas aussi aisée à utiliser sur tous les systèmes d'exploitation ;-)}, ce logiciel est intégré ! Cet outil dans le menu permet de configurer le logiciel qui permet d'écrire dans ces langues.
 \subsubsubsection{Menu principal}
 Cette option ouvre un éditeur de menus afin que vous puissiez les personnaliser. Pour plus d'explications sur son fonctionnement, référez-vous à la section \ref{RefEditerMenus}. La même application peut être ouverte par simple clic-droit \FlecheDroite Éditer les menus.
-\subsubsubsection{Micro-blogage}
+\subsubsubsection{Microblogage}
 Fan de Twitter et autres Facebook ? Cette application vous permettra de configurer gwibber à votre aise pour pouvoir suivre vos réseaux sociaux préférés plus facilement --- voir également dans ce même chapitre la section \ref{RefSwitchUser}.
+\subsubsubsection{Mots de passe clés de chiffrement}
+Uniquement si vous utilisez un trousseau de clef. Vous pouvez ici paramétrer et choisir la clef de chiffrement GPG à utiliser par défaut. Signer ses mails est important pour spécifier que vous en êtes bien l'expéditeur\NotePage{Tout le monde peut, avec des connaissances basiques, envoyer un mail de la part de president@ubuntu-fr.org, par exemple, ce qui serait un sacrilège !}. Vous pouvez permettre ici de signer automatiquement vos mails sans répéter la phrase de passe -- mot de passe très très long ressemblant plus à une phrase -- ou encore quelques paramètres visuels.
+% PLUS LE CAS : voir si on ajoute seahorse. dans le futur
+%Vous pouvez sauvegarder sous un trousseau de clef les mots de passe et clef de chiffrement que vous avez à utiliser régulièrement. Ces trousseaux de clefs enregistrent vos différents mots de passe et clefs de manière cryptée par un mot de passe que vous définissez pour le trousseau. Comme cela, vous n'avez plus qu'un seul mot de passe à mémoriser et pas les dizaines associées à vos sites FTP et autres\ldots{} Dès que vous aurez la possibilité d'ajouter un mot de passe à un trousseau, Ubuntu vous fera signe. Vous pourrez ensuite les gérer à votre guise.\par
+\subsubsubsection{OpenJDK Java 6 Policy Tool}
+Il vous sera possible de paramétrer ici les règles de la machine virtuelle Java, notamment utile lors que vous utiliser de tels outils intégrés aux pages web. Un outil à réserver aux utilisateurs avancés.
 \subsubsubsection{Outils d'accessibilité}
 Cette fenêtre contient quatre éléments, raccourcis d'autres menus décrits dans cette section : Applications préférées, Accessibilité du clavier, Accessibilité de l'identification et Accessibilité de la souris. Ces outils -- mais ce ne sont pas les seuls -- seront notamment utiles pour les personnes porteuses de handicap, et leur permettront de disposer aisément de leur Ubuntu.
 %\subsubsubsection{Périphériques et médias amovibles}
@@ -185,10 +191,10 @@ Cette fenêtre contient quatre éléments, raccourcis d'autres menus décrits da
 %\end{itemize}
 %\subsubsubsection{Périphériques PalmOS}
 %Utilisez «~Périphériques PalmOS~» pour lancer l'application Paramètres de Gnome Pilot, laquelle permet la gestion des paramètres de communication avec les appareils Palm OS™ supportant la technologie HotSync™. 
-\subsubsubsection{Partage de fichiers personnels}
-Cet écran de configuration vous permet de configurer les droits d'accès de partage de fichiers sur votre réseau ainsi que par Bluetooth, aussi bien en émission qu'en réception.
-\subsubsubsection{Préférence d'IBus}
-Pour écrire des langues dont l’expression s’effectue sans alphabet, comme par exemple le chinois (on parle de sinogrammes), on utilise un logiciel de saisie spécialisé. Dans Ubuntu\NotePage{Coup de chance, sachez que cette fonctionnalité n'est pas aussi aisée à utiliser sur tous les systèmes d'exploitation ;-)}, ce logiciel est intégré ! Cet outil dans le menu permet de configurer le logiciel qui permet d'écrire dans ces langues.
+%\subsubsubsection{Partage de fichiers personnels}
+%Cet écran de configuration vous permet de configurer les droits d'accès de partage de fichiers sur votre réseau ainsi que par Bluetooth, aussi bien en émission qu'en réception.
+\subsubsubsection{Paramètres de messagerie}
+Ajouter ou configurer un ou plusieurs comptes emails au logiciel de messagerie Evolution, courrielleur par défaut de Ubuntu. 
 \subsubsubsection{Raccourcis clavier}
 Un raccourci clavier est une touche ou une combinaison de touches fournissant une alternative rapide aux moyens usuels d'exécuter une tâche. Utilisez l'outil de configuration Raccourcis clavier pour afficher les raccourcis clavier par défaut et pour personnaliser vos raccourcis.
 %\subsubsubsection{Recherche et indexation}
