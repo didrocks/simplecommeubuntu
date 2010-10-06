@@ -32,7 +32,10 @@ SCU 10.10
 • ajout de détails sur indicateur son, indicateur message et retravail de la
   description de la partie supérieure
 • Firefox est maintenant mis à jour à chaque version, même sur des versions
-stables
+  stables
+• Le mode spatial n'est plus le mode par défaut de GNOME depuis 2.30
+• Extension foxmarks -> Xmarks (+ note bientôt appelé à disparaître)
+• Suppression de Glipper, ajout de Parcellite
 • Description de la procédure pour ouvrir le lecteur de CD mécaniquement
 • mise à jour des images, photos, etc. ainsi que des typos/"fôtes" corrigées!
   Merci à la communauté :)
