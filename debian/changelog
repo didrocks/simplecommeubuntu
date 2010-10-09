@@ -1,4 +1,4 @@
-simplecommeubuntu (10.10) UNRELEASED; urgency=low
+simplecommeubuntu (10.10) maverick-proposed; urgency=low
 
   * New upstream version:
     - update content to ubuntu maverick meerkat
