@@ -1,7 +1,7 @@
 simplecommeubuntu (10.10) maverick-proposed; urgency=low
 
   * New upstream version:
-    - update content to ubuntu maverick meerkat
+    - update content to ubuntu maverick meerkat (LP: #660994)
 
  -- Didier Roche <didrocks@ubuntu.com>  Sat, 02 Oct 2010 13:59:27 +0200
 
